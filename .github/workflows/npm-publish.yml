@@ -3,9 +3,7 @@
 
 name: Node.js Package
 
-on:
-  release:
-    types: [created]
+on: push
 
 jobs:
   build:
@@ -15,6 +13,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
+      - run: npm version patch
       - run: npm ci
       - run: npm test
 
