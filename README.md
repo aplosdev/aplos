@@ -1,10 +1,10 @@
 <div align="center">
-<h1>Aplós - Theme</h1>
-Aplós, but just the theme files, as a Git Submodule.
+<h1>Aplós - NPM Package</h1>
+Aplós, but just the theme files, as an NPM Package
 </div>
 
 > [!IMPORTANT]
-As I said above, this repo is just for these theme files for Git Submodule. For the actual Aplós Project check [GabsEdits/aplos](https://github.com/GabsEdits/aplos)
+As I said above, this package is just for theme files. For the actual Aplós Project check [GabsEdits/aplos](https://github.com/GabsEdits/aplos)
 
 ## Usage
 First, Init the Submodules:
