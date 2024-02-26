@@ -1,6 +1,6 @@
 {
   "name": "aplos",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The Aplos VitePress theme as an NPM package.",
   "main": "index.ts",
   "keywords": [
