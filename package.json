@@ -1,6 +1,6 @@
 {
   "name": "aplos",
-  "version": "1.0.3",
+  "version": "0.0.1",
   "description": "The Aplos VitePress theme as an NPM package.",
   "main": "index.ts",
   "keywords": [
@@ -14,5 +14,20 @@
     "@fontsource/source-code-pro": "^5.0.16",
     "inter-ui": "^4.0.2",
     "sass": "^1.71.1"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabsEdits/aplos-npm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GabsEdits/aplos-npm/issues"
+  },
+  "homepage": "https://github.com/GabsEdits/aplos-npm#readme"
 }

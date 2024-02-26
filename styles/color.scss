@@ -1,7 +1,5 @@
 @use "sass:color";
 
-@import "../../custom.scss";
-
 $color-accent: #a8a8a8 !default;
 
 $color-accent-l: color.scale($color-accent, $lightness: -60%) !default;
