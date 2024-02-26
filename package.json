@@ -1,0 +1,18 @@
+{
+  "name": "aplos",
+  "version": "1.0.0",
+  "description": "The Aplos VitePress theme as an NPM package.",
+  "main": "index.ts",
+  "keywords": [
+    "VitePress",
+    "Aplos",
+    "Theme"
+  ],
+  "author": "Gabriel Cozma",
+  "license": "MIT",
+  "dependencies": {
+    "@fontsource/source-code-pro": "^5.0.16",
+    "inter-ui": "^4.0.2",
+    "sass": "^1.71.1"
+  }
+}

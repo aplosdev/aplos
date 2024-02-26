@@ -1,0 +1,74 @@
+@use "sass:color";
+
+@import "../../custom.scss";
+
+$color-accent: #a8a8a8 !default;
+
+$color-accent-l: color.scale($color-accent, $lightness: -60%) !default;
+$color-accent-d: color.scale($color-accent, $lightness: 60%) !default;
+
+$bg-color-l: color.scale(
+  $color-accent,
+  $lightness: 90%,
+  $saturation: -75%
+) !default;
+
+$bg-color-d: color.scale(
+  $color-accent,
+  $lightness: -85%,
+  $saturation: -80%
+) !default;
+
+$nav-bg-l: color.scale($bg-color-l, $alpha: -20%) !default;
+$nav-bg-d: color.scale($bg-color-d, $alpha: -20%) !default;
+
+$bg-color-s-l: color.scale($color-accent, $lightness: 75%) !default;
+$bg-color-s-d: color.scale(
+  $color-accent,
+  $saturation: -80%,
+  $lightness: -70%
+) !default;
+
+$bg-color-m-l: color.scale($bg-color-s-l, $lightness: -5%) !default;
+$bg-color-m-d: color.scale($bg-color-s-d, $lightness: 5%) !default;
+
+$bg-color-code-l: color.scale($bg-color-l, $lightness: -5%) !default;
+$bg-color-code-d: mix($bg-color-d, $bg-color-s-d, 60%);
+
+$text-color-secondary-l: color.scale(
+  $bg-color-l,
+  $lightness: -80%,
+  $alpha: -15%
+) !default;
+$text-color-secondary-d: color.scale(
+  $bg-color-l,
+  $alpha: -40%,
+  $saturation: -90%
+) !default;
+
+:root {
+  --color-accent: #{$color-accent-l};
+  --base-shadow: 0px 10px 34px 0px rgba(0, 0, 0, 0.15);
+  --color-text-secondary: #{$text-color-secondary-l};
+  --color-border: #75757560;
+
+  --color-background: #{$bg-color-l};
+  --color-background-second: #{$bg-color-s-l};
+  --color-background-mute: #{$bg-color-m-l};
+  --color-background-code: #{$bg-color-code-l};
+  --color-header: #{$nav-bg-l};
+  --color-text: #{color.scale($bg-color-l, $lightness: -90%)};
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-accent: #{$color-accent-d};
+    --color-background: #{$bg-color-d};
+    --color-background-second: #{$bg-color-s-d};
+    --color-background-mute: #{$bg-color-m-d};
+    --color-background-code: #{$bg-color-code-d};
+    --color-header: #{$nav-bg-d};
+    --color-text: #{color.scale($bg-color-l, $lightness: 85%)};
+    --color-text-secondary: #{$text-color-secondary-d};
+  }
+}

@@ -1,0 +1,58 @@
+.tip,
+.danger,
+.info,
+.warning {
+  margin: 20px 0;
+  width: 50%;
+  border-radius: 10px;
+  padding: 30px 20px;
+
+  p {
+    margin-bottom: 0 !important;
+    color: var(--color-text) !important;
+  }
+}
+
+.tip .custom-block-title {
+  font-size: 2em !important;
+  margin-top: 0 !important;
+  font-weight: 800;
+  margin-bottom: 10px !important;
+}
+
+.danger .custom-block-title {
+  font-size: 2em !important;
+  margin-top: 0 !important;
+  font-weight: 800;
+  margin-bottom: 10px !important;
+}
+
+.details {
+  border-radius: 10px !important;
+  margin: 20px 0 !important;
+  width: 50%;
+
+  summary {
+    font-size: 1.2em !important;
+    margin-top: 0 !important;
+    font-weight: 800;
+  }
+}
+
+.info .custom-block-title {
+  font-size: 2em !important;
+  margin-top: 0 !important;
+  font-weight: 800;
+  margin-bottom: 10px !important;
+}
+
+.warning {
+  color: var(--vp-c-text-2);
+
+  .custom-block-title {
+    font-size: 2em !important;
+    margin-top: 0 !important;
+    font-weight: 800;
+    margin-bottom: 10px !important;
+  }
+}
