@@ -1,7 +1,7 @@
 {
   "name": "aplos",
-  "version": "0.0.1",
-  "description": "The Aplos VitePress theme as an NPM package.",
+  "version": "1.2.0",
+  "description": "The Aplos VitePress theme",
   "main": "index.ts",
   "keywords": [
     "VitePress",
@@ -11,16 +11,9 @@
   "author": "Gabriel Cozma",
   "license": "MIT",
   "dependencies": {
-    "@fontsource/source-code-pro": "^5.0.16",
     "inter-ui": "^4.0.2",
-    "sass": "^1.71.1"
-  },
-  "directories": {
-    "test": "test"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "non.geist": "^1.0.2",
+    "sass": "^1.74.1"
   },
   "repository": {
     "type": "git",
@@ -29,5 +22,5 @@
   "bugs": {
     "url": "https://github.com/GabsEdits/aplos-npm/issues"
   },
-  "homepage": "https://github.com/GabsEdits/aplos-npm#readme"
+  "homepage": "https://aplos.gxbs.me"
 }

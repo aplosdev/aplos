@@ -1,9 +1,9 @@
 /*
- * Aplos version 1.0.0 (https://aplos.gxbs.me/)
+ * Aplos (https://aplos.gxbs.me/)
  * Copyright 2023-2024 Gabriel Cozma/Gabs
  * Licensed under MIT (https://github.com/GabsEdits/aplos/src/branch/main/LICENSE)
  
- * Based on Vitepress (https://vitepress.dev) & inspired Duckquill (https://daudix.codeberg.page/duckquill)
+ * Based on VitePress (https://vitepress.dev) & inspired Duckquill (https://daudix.codeberg.page/duckquill)
 */
 
 @import "common.scss";
@@ -14,6 +14,7 @@
 :root {
   font-family: Inter, sans-serif;
   font-feature-settings: "liga" 1, "calt" 1, "cv05" 1;
+  scroll-behavior: smooth;
   /* fix for Chrome */
 }
 
@@ -27,22 +28,32 @@
   }
 }
 
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Inter, sans-serif, "Noto Color Emoji";
+  font-family: Inter, sans-serif;
   scroll-behavior: smooth;
   background-color: var(--color-background);
   color: var(--color-text);
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  font-synthesis: style;
+  text-rendering: optimizeLegibility;
 }
 
 main {
   width: 60vw;
+  scroll-behavior: smooth;
   margin-top: 7%;
   margin-bottom: 4%;
   font-size: 1rem;
   line-height: 1.5;
   margin-left: auto;
   margin-right: auto;
-  max-width: 60.1875rem;
+  max-width: 60rem;
 }
 
 ::selection {
@@ -52,9 +63,10 @@ main {
 
 :target {
   scroll-margin-top: 15vh;
-  animation: highlight-in-out 800ms .4s;
+  animation: highlight-in-out 800ms 0.4s;
   color: var(--color-accent);
-  text-shadow: var(--color-background-second) 0 0 4px,var(--color-accent) 0 0 12px;
+  text-shadow: var(--color-background-second) 0 0 0.25rem,
+    var(--color-accent) 0 0 0.75rem;
 
   @keyframes highlight-in-out {
     50% {
@@ -67,62 +79,63 @@ main {
 }
 
 html {
-  scrollbar-color: var(--color-accent) rgba(0, 0, 0, 0);
   accent-color: var(--color-accent);
+  scroll-behavior: smooth;
 }
 
-nav {
-  background-color: none;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  overflow: hidden;
-  position: fixed;
-  top: 3rem;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 2.5rem;
-  background-color: var(--color-header);
-  border: 0.4px solid var(--color-border);
-  z-index: 9999;
-  padding: 0.0625rem 1.5625rem;
-  text-align: center;
-
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+header {
+  nav {
+    background-color: none;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    position: fixed;
+    top: 3rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2.5rem;
+    background-color: var(--color-header);
+    border: 0.4px solid var(--color-border);
+    z-index: 9999;
+    padding: 0.0625rem 1.5625rem;
+    text-align: center;
 
-    li {
-      display: inline-block;
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
 
-      a {
-        display: block;
-        text-align: center;
-        color: var(--color-text-secondary);
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 14px;
-        letter-spacing: -0.045rem;
-        margin: 0 0.3125rem;
-        transform: scale(1);
-        font-size: 14px;
-        transition: color 0.7s ease, transform 100ms ease;
+      li {
+        display: inline-block;
 
-        &:hover {
-          color: var(--color-accent);
-        }
+        a {
+          display: block;
+          text-align: center;
+          color: var(--color-text-secondary);
+          text-decoration: none;
+          font-weight: 600;
+          font-size: 14px;
+          letter-spacing: -0.015rem;
+          margin: 0 0.3125rem;
+          transform: scale(1);
+          transition: color 0.7s ease, transform 100ms ease;
 
-        &:active {
-          color: var(--color-accent);
-          transform: scale(0.9);
-        }
+          &:hover {
+            color: var(--color-accent);
+          }
 
-        &.active {
-          color: var(--color-accent);
+          &:active {
+            color: var(--color-accent);
+            transform: scale(0.9);
+          }
+
+          &.active {
+            color: var(--color-accent);
+          }
         }
       }
     }
@@ -134,7 +147,7 @@ nav {
 
     * {
       font-size: 16px;
-      letter-spacing: -0.0625rem;
+      letter-spacing: -0.0325rem;
       font-weight: 800;
       color: var(--color-text);
       margin: 0.5rem 0.3125rem 0.5rem 0.3125rem;
@@ -154,6 +167,7 @@ nav {
       content: "";
       position: absolute;
       height: 110%;
+      margin: 0;
       width: 0.0625rem;
       background-color: var(--color-border);
       top: 0;
@@ -196,8 +210,20 @@ footer {
   #copyright,
   #copyleft,
   #powered {
+    font-weight: 500;
+
+    b {
+      font-weight: 700;
+    }
+  }
+
+  #powered {
     color: var(--color-text-secondary);
-    font-weight: 600;
+    font-weight: 500;
+  }
+
+  small {
+    margin-top: 0.625rem;
   }
 
   #author {
@@ -207,7 +233,7 @@ footer {
 
 .lang {
   color: var(--color-text-secondary);
-  font-family: "Source Code Pro", monospace;
+  font-family: "Geist Mono", monospace;
   font-size: 14px;
   position: absolute;
   right: 20px;
@@ -216,9 +242,67 @@ footer {
 
 /* Other */
 
+.table-of-contents {
+  background-color: none;
+  backdrop-filter: blur(0.625rem);
+  -webkit-backdrop-filter: blur(0.625rem);
+  overflow: hidden;
+  position: fixed;
+  top: 9.375rem;
+  left: 10%;
+  border-radius: 1rem;
+  z-index: 9999;
+  padding: 0.625rem 1.5625rem;
+  text-align: left;
+
+  ul {
+    list-style-type: decimal;
+    color: var(--color-text-secondary);
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin: 0 0 0 0.9375rem;
+    padding: 0;
+
+    li {
+      text-align: left;
+
+      ul li {
+        list-style-type: disc;
+      }
+
+      a {
+        display: block;
+        text-align: left;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.875rem;
+        letter-spacing: -0.045rem;
+        margin: 0 0.3125rem;
+        transform: scale(1);
+        font-size: 0.875rem;
+        transition: color 0.7s ease, transform 100ms ease;
+
+        &:hover {
+          color: var(--color-accent);
+        }
+
+        &:active {
+          color: var(--color-accent);
+          transform: scale(0.9);
+        }
+
+        &.active {
+          color: var(--color-accent);
+        }
+      }
+    }
+  }
+}
+
 button.copy {
   direction: ltr;
   position: absolute;
+  display: none;
   top: 12px;
   right: 12px;
   z-index: 3;
@@ -238,4 +322,19 @@ button.copy {
 
 .header-anchor {
   display: none; // I will hide it for now
+}
+
+a,
+area,
+button,
+[role="button"],
+input,
+label,
+select,
+summary,
+textarea {
+  touch-action: manipulation;
+  font-family: inherit;
+  font-feature-settings: inherit;
+  color: var(--color-text);
 }

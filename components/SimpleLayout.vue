@@ -2,7 +2,7 @@
   <section id="simple-layout">
     <hr />
     <p class="dialog-buttons">
-      <a href="#top">↑ Go to top</a>
+      <a href="#top" target="_top">↑ Go to top</a>
       <a id="file-an-issue" v-bind:href="theme.nav.git + '/issues/new'"
         >File an issue</a
       >
@@ -18,37 +18,38 @@ const { theme } = useData();
 
 <style lang="scss">
 #simple-layout {
-  margin-top: 6rem;
+  margin-top: 3rem;
+}
 
-  .dialog-buttons {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: space-between;
-    margin-top: 2rem;
+.dialog-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top: 2rem;
 
-    a {
-      padding: 0.5rem 1rem;
-      border-radius: 0.5rem;
-      text-decoration: none;
-      color: var(--color-accent);
-      background-color: var(--color-background-second);
-      transition: all 0.3s ease;
+  a {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--color-accent);
+    cursor: pointer;
+    background-color: var(--color-background-second);
+    transition: all 0.3s ease;
 
-      &:hover {
-        background-color: var(--color-background-mute);
-      }
+    &:hover {
+      background-color: var(--color-background-mute);
     }
+  }
+}
 
-    #file-an-issue {
-      background-color: transparent;
-      color: var(--color-accent);
+#file-an-issue {
+  background-color: transparent;
+  color: var(--color-accent);
 
-      &:hover {
-        background-color: var(--color-accent);
-        color: var(--color-background-second);
-      }
-    }
+  &:hover {
+    background-color: var(--color-accent);
+    color: var(--color-background-second);
   }
 }
 </style>

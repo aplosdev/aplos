@@ -1,25 +1,26 @@
-@media screen and (max-width: 1414px) {
+@media screen and (max-width: 88.375rem) {
   main {
-    margin-top: 150px !important;
-    margin-bottom: 150px !important;
+    margin-top: 9.375rem !important;
+    margin-bottom: 9.375rem !important;
     width: 90vw !important;
   }
+
   nav {
-    padding: 5px 20px !important;
+    padding: 0.3125rem 1.25rem !important;
 
     h1,
     ul li a {
-      font-size: 16px !important;
+      font-size: 1rem !important;
     }
 
     .fa-brands {
-      font-size: 16px !important;
+      font-size: 1rem !important;
     }
   }
 
   code {
-    padding: 3px 10px !important;
-    margin-top: 15px;
+    padding: 0.1875rem 0.625rem !important;
+    margin-top: 0.9375rem;
     line-height: 1.2;
   }
 
@@ -34,9 +35,32 @@
   .lang {
     display: none;
   }
+
+  .table-of-contents {
+    left: 6% !important;
+  }
 }
 
-@media screen and (min-width: 1414px) and (max-width: 1902px) {
+@media screen and (max-width: 1828px) {
+  .table-of-contents {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 37.5rem){
+  ul, ol {
+    margin: 0 0 0 10px;
+  }
+
+  aside {
+    float: none;
+    width: 100%;
+    margin-inline-start: 0;
+  }
+}
+
+
+@media screen and (min-width: 88.375rem) and (max-width: 118.875rem) {
   main {
     margin: 7% 20%;
   }

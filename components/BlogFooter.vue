@@ -6,10 +6,35 @@
       If you have any questions or comments about this post, please feel free to
       leave a comment below.
     </p>
+
+    <noscript
+      ><small
+        >Heads Up! You <i>need</i> JavaScript to view/write comments or to react
+        to the post. So you can't do anything unless you turn on
+        JavaScript.</small
+      ></noscript
+    >
     <div id="giscusContainer"></div>
-    <a href="/blog/">
-      <span>← Go back to the blog's home</span>
-    </a>
+    <br />
+    <hr />
+    <p class="dialog-buttons" v-if="frontmatter.prev || frontmatter.next">
+      <a
+        :href="`${frontmatter.prev.toLowerCase().replace(/\s+/g, '-')}.html`"
+        target="_self"
+        v-if="frontmatter.prev"
+      >
+        <span><small>← Previous</small></span>
+        <br /><span>{{ frontmatter.prev }}</span>
+      </a>
+      <a
+        :href="`${frontmatter.next.toLowerCase().replace(/\s+/g, '-')}.html`"
+        target="_self"
+        v-if="frontmatter.next"
+      >
+        <span><small>Next →</small></span>
+        <br /><span>{{ frontmatter.next }}</span>
+      </a>
+    </p>
   </section>
 </template>
 
@@ -17,11 +42,9 @@
 import { useData } from "vitepress";
 import { onMounted } from "vue";
 
-const { theme } = useData();
+const { theme, frontmatter } = useData();
 
 onMounted(() => {
-  const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
   // Load GitHub Comments script dynamically
   const script = document.createElement("script");
   script.src = "https://giscus.app/client.js";
@@ -35,12 +58,8 @@ onMounted(() => {
   script.setAttribute("data-reactions-enabled", "1");
   script.setAttribute("data-emit-metadata", "0");
   script.setAttribute("data-input-position", "bottom");
-  
-  // Apply different theme attributes based on color mode
-  script.setAttribute("data-theme", isDarkMode ? "transparent_dark" : "light");
-  
+  script.setAttribute("data-theme", "preferred_color_scheme");
   script.setAttribute("data-lang", "en");
-  script.setAttribute("data-loading", "lazy");
   script.setAttribute("crossorigin", "anonymous");
 
   // Append the script to the document
@@ -55,17 +74,25 @@ onMounted(() => {
   a {
     display: block;
     padding: 20px;
-    border-radius: 10px;
-    color: var(--color-text-secondary);
-    width: 100%;
+    color: var(--color-accent);
+    margin: 0 0.2rem;
     text-align: center;
     text-decoration: none;
+    background-color: transparent;
     transition: all 0.3s ease;
-    margin-top: 30px;
+
+    &:first-child {
+      border-radius: 10px;
+      text-align: left;
+    }
+
+    &:last-child {
+      border-radius: 10px;
+      text-align: right;
+    }
 
     &:hover {
       transform: translateY(-5px);
-      background-color: var(--color-background-second);
     }
 
     &:active {
@@ -74,7 +101,6 @@ onMounted(() => {
 
     span {
       font-size: 1em;
-      font-weight: 800;
       margin-bottom: 0 !important;
     }
   }

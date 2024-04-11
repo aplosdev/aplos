@@ -1,58 +1,74 @@
-.tip,
-.danger,
-.info,
-.warning {
-  margin: 20px 0;
-  width: 50%;
-  border-radius: 10px;
-  padding: 30px 20px;
+.custom-block:not(.details) {
+  margin: 1.25rem 0;
+  width: max-content;
+  max-width: 70%;
+  min-width: 45%;
+  border-radius: 0.625rem;
+  padding: 1.8rem 1.25rem;
+  line-height: 24px;
 
   p {
-    margin-bottom: 0 !important;
-    color: var(--color-text) !important;
+    color: var(--color-text);
+  }
+
+  p:not(.custom-block-title) {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+
+  .custom-block-title {
+    font-size: 1.8rem;
+    margin-top: 0;
+    font-weight: 800;
+    margin-bottom: 10px;
   }
 }
 
-.tip .custom-block-title {
-  font-size: 2em !important;
-  margin-top: 0 !important;
-  font-weight: 800;
-  margin-bottom: 10px !important;
+.danger {
+  background-color: #ff001936;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: #39181b;
+  }
 }
 
-.danger .custom-block-title {
-  font-size: 2em !important;
-  margin-top: 0 !important;
-  font-weight: 800;
-  margin-bottom: 10px !important;
+.warning {
+  background-color: #ffcc007e;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: #372a1a;
+  }
+}
+
+.tip {
+  background-color: #00ff006a;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: #1f3f1f;
+  }
+
+}
+
+.info {
+  background-color: var(--color-background-mute);
 }
 
 .details {
-  border-radius: 10px !important;
-  margin: 20px 0 !important;
-  width: 50%;
+  border-radius: 0.625rem;
+  background-color: var(--color-background-second);
+  padding: 16px;
+  margin: 1.25rem 0;
+  min-width: 45%;
+  max-width: max-content;
 
   summary {
-    font-size: 1.2em !important;
-    margin-top: 0 !important;
-    font-weight: 800;
+    margin-top: 0;
+    cursor: pointer;
+    font-weight: 700;
   }
-}
 
-.info .custom-block-title {
-  font-size: 2em !important;
-  margin-top: 0 !important;
-  font-weight: 800;
-  margin-bottom: 10px !important;
-}
-
-.warning {
-  color: var(--vp-c-text-2);
-
-  .custom-block-title {
-    font-size: 2em !important;
-    margin-top: 0 !important;
-    font-weight: 800;
-    margin-bottom: 10px !important;
+  p {
+    font-size: 15px;
+    margin: 10px 0 0 0;
   }
 }

@@ -30,6 +30,9 @@ $bg-color-s-d: color.scale(
 $bg-color-m-l: color.scale($bg-color-s-l, $lightness: -5%) !default;
 $bg-color-m-d: color.scale($bg-color-s-d, $lightness: 5%) !default;
 
+$bg-color-accent-alpha-l: color.scale($color-accent-l, $alpha: -60%) !default;
+$bg-color-accent-alpha-d: color.scale($color-accent, $alpha: -60%) !default;
+
 $bg-color-code-l: color.scale($bg-color-l, $lightness: -5%) !default;
 $bg-color-code-d: mix($bg-color-d, $bg-color-s-d, 60%);
 
@@ -46,7 +49,8 @@ $text-color-secondary-d: color.scale(
 
 :root {
   --color-accent: #{$color-accent-l};
-  --base-shadow: 0px 10px 34px 0px rgba(0, 0, 0, 0.15);
+  --color-accent-alpha: #{$bg-color-accent-alpha-l};
+  --base-shadow: 0 0.625rem 2.125rem 0 rgba(0, 0, 0, 0.15);
   --color-text-secondary: #{$text-color-secondary-l};
   --color-border: #75757560;
 
@@ -56,11 +60,10 @@ $text-color-secondary-d: color.scale(
   --color-background-code: #{$bg-color-code-l};
   --color-header: #{$nav-bg-l};
   --color-text: #{color.scale($bg-color-l, $lightness: -90%)};
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
+  @media (prefers-color-scheme: dark) {
     --color-accent: #{$color-accent-d};
+    --color-accent-alpha: #{$bg-color-accent-alpha-d};
     --color-background: #{$bg-color-d};
     --color-background-second: #{$bg-color-s-d};
     --color-background-mute: #{$bg-color-m-d};
