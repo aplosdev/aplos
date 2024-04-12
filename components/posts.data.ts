@@ -1,5 +1,7 @@
 import path from "path";
 import { createContentLoader } from "vitepress";
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
 
 interface Post {
   title: string;
@@ -8,9 +10,13 @@ interface Post {
 }
 
 declare const data: Post[];
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
 export { data };
 
-export default createContentLoader(path.join(__dirname, "../../blog/posts/*.md"), {
+export default createContentLoader(path.join(__dirname, "../../../pages/blog/posts/*.md"), {
   excerpt: true,
   transform(raw): Post[] {
     return raw
