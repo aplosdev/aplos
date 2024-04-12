@@ -32,10 +32,7 @@
 
 <script setup lang="ts">
 import { ref, computed } from "vue";
-import { useData } from "vitepress";
-
-const { theme } = useData();
-const posts = theme.value.blog.posts;
+import { data as posts } from "./posts.data";
 
 const selectedTag = ref(null);
 
