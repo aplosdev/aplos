@@ -7,6 +7,7 @@ import Navigation from "./components/Navigation.vue";
 import BlogHead from "./components/BlogHead.vue";
 import BlogFooter from "./components/BlogFooter.vue";
 import SimpleLayout from "./components/SimpleLayout.vue";
+import BlogList from "./components/BlogList.vue";
 
 const { site, frontmatter, page } = useData();
 </script>
@@ -24,6 +25,7 @@ const { site, frontmatter, page } = useData();
     <div v-else :class="frontmatter.pageClass">
       <Content />
     </div>
+    <BlogList v-if="frontmatter.layout == 'blog-list'" />
     <SimpleLayout v-if="frontmatter.layout == 'simple'" />
     <div v-if="frontmatter.layout == 'blog'">
       <BlogFooter />

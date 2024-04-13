@@ -1,6 +1,6 @@
 {
   "name": "aplos",
-  "version": "1.2.5",
+  "version": "1.2.6.unstable",
   "description": "The Aplos VitePress theme",
   "main": "index.ts",
   "keywords": [
