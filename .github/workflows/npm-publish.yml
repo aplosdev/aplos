@@ -5,12 +5,13 @@ name: Node.js Package
 
 on:
   push:
-    tags:
-      - '*'
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
   build:
+    if: startsWith(github.event.head_commit.message, 'release:')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
