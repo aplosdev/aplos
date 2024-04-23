@@ -31,6 +31,7 @@ jobs:
         with:
           version: latest
       - run: pnpm install
+      - run: git diff-index --quiet HEAD -- || { echo "Git working directory not clean."; exit 1; }
       - run: pnpm version patch
       - run: pnpm publish
         env:
