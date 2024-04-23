@@ -1,7 +1,7 @@
 {
   "name": "aplos",
   "version": "1.3.1",
-  "description": "The Aplos VitePress theme",
+  "description": "A sleek, contemporary, and purposefully designed VitePress theme",
   "main": "index.ts",
   "keywords": [
     "VitePress",
@@ -22,10 +22,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GabsEdits/aplos-npm.git"
+    "url": "git+https://github.com/aplosdev/aplos.git"
   },
   "bugs": {
-    "url": "https://github.com/GabsEdits/aplos-npm/issues"
+    "url": "https://github.com/aplosdev/aplos/issues"
   },
   "homepage": "https://aplos.gxbs.me"
 }
