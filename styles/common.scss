@@ -243,6 +243,7 @@ time {
     from {
       opacity: 1;
     }
+
     to {
       opacity: 0.5;
     }
@@ -256,6 +257,52 @@ time {
 
     span {
       animation: none;
+    }
+  }
+}
+
+.spoiler {
+  font-weight: 600;
+
+  span {
+    filter: blur(4px);
+    transition: filter 0.3s ease;
+    font-weight: normal;
+    animation: glow 1.5s infinite linear alternate-reverse;
+
+    &:hover {
+      filter: none;
+      animation: none;
+    }
+
+    &:active {
+      font-style: italic;
+    }
+  }
+
+  @keyframes glow {
+    0% {
+      text-shadow: 0 0 0 var(--color-accent);
+    }
+
+    20% {
+      text-shadow: 0 0 4px var(--color-accent);
+    }
+
+    40% {
+      text-shadow: 0 0 6px var(--color-accent);
+    }
+
+    60% {
+      text-shadow: 0 0 8px var(--color-accent);
+    }
+
+    80% {
+      text-shadow: 0 0 10px var(--color-accent);
+    }
+
+    100% {
+      text-shadow: 0 0 15px var(--color-accent);
     }
   }
 }
