@@ -39,3 +39,57 @@ const { theme } = useData();
     </small>
   </footer>
 </template>
+
+<style lang="scss">
+
+footer {
+  position: relative;
+  bottom: 0;
+  max-width: 100%;
+  right: 0;
+  padding: 20px;
+  margin: 0 10px 10px 10px;
+  border-top: 1px solid var(--color-border);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 963px;
+
+  a {
+    text-decoration: underline 1.4px;
+    color: var(--color-accent);
+    font-weight: 700;
+  }
+
+  p {
+    margin: 0;
+
+    &:first-child {
+      margin-top: 10px;
+    }
+  }
+
+  #copyright,
+  #copyleft,
+  #powered {
+    font-weight: 500;
+
+    b {
+      font-weight: 700;
+    }
+  }
+
+  #powered {
+    color: var(--color-text-secondary);
+    font-weight: 500;
+  }
+
+  small {
+    margin-top: 0.625rem;
+  }
+
+  #author {
+    font-weight: 900;
+  }
+}
+</style>
