@@ -5,7 +5,7 @@ A sleek, contemporary, and purposefully designed VitePress theme
 </div>
 
 > [!IMPORTANT]
-This package containes all the files of the Aplós theme. For the actual documentation check https://aplos.gxbs.me
+If you want to see the documentation/guide check https://aplos.gxbs.me.
 
 ![Screenshot of Aplos](https://github.com/GabsEdits/aplos/assets/110247388/3c98f962-b560-442a-9f56-9b805156a272)
 
@@ -20,11 +20,17 @@ This package containes all the files of the Aplós theme. For the actual documen
 
 ## Name
 
-The name 'Aplós', pronounced as `/aplós/` is the Romanized representation of the Greek word 'Απλός,' which translates to 'Simple' or 'Pure and simple'. This naming choice that showcases the essence of the project— it's dedication to providing users with a traightforward and modern web experience. Aplós is centered around the philosophy of simplicity, aiming to deliver an uncomplicated and contemporary solution for website creation.
+The name 'Aplós', pronounced as `/aplós/` is the Romanized representation of the Greek word 'Απλός,' which translates to 'Simple'. This naming choice showcases the essence of the project— it's dedication to providing users with a traightforward and modern web experience. Aplós is centered around the philosophy of simplicity, aiming to deliver an uncomplicated and contemporary solution for website creation.
 
 ## Try & Use
 
-To try and use this project you can check the [Guide](https://aplos.gxbs.me/guide/) I made.
+You can install the package with the following command:
+
+```bash
+npm i aplos
+```
+
+You can check the next steps by looking at the [Guide](https://aplos.gxbs.me/guide/) I made.
 
 ## Thanks ❤ & Credits️:
 
