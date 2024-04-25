@@ -14,6 +14,7 @@
   "author": "Gabriel Cozma",
   "license": "MIT",
   "dependencies": {
+    "@csstools/normalize.css": "^12.1.1",
     "inter-ui": "^4.0.2",
     "non.geist": "^1.0.2",
     "path": "^0.12.7",
