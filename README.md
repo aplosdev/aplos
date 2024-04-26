@@ -32,6 +32,10 @@ npm i aplos
 
 You can check the next steps by looking at the [Guide](https://aplos.gxbs.me/guide/) I made.
 
+## Release Cycle 
+
+Now that Aplós is an NPM Packge, a release cycle is required. There is a new version every 2 weeks for regular small updates, and for more critical updates every time there is a need. 
+
 ## Thanks ❤ & Credits️:
 
 - [Duckquill](https://daudix.codeberg.page/duckquill), from where I got inspired to create this project (and many ideas are from there)
