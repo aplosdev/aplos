@@ -1,11 +1,12 @@
 <div align="center">
 <h1>Aplós</h1>
   
-A sleek, contemporary, and purposefully designed VitePress theme 
+A sleek, contemporary, and purposefully designed VitePress theme
+
 </div>
 
 > [!IMPORTANT]
-If you want to see the documentation/guide check https://aplos.gxbs.me.
+If you want to see the documentation/guide check <https://aplos.gxbs.me>.
 
 ![Screenshot of Aplos](https://github.com/GabsEdits/aplos/assets/110247388/3c98f962-b560-442a-9f56-9b805156a272)
 
@@ -32,11 +33,11 @@ npm i aplos
 
 You can check the next steps by looking at the [Guide](https://aplos.gxbs.me/guide/) I made.
 
-## Release Cycle 
+## Release Cycle
 
-Now that Aplós is an NPM Packge, a release cycle is required. There is a new version every 2 weeks for regular small updates, and for more critical updates every time there is a need. 
+Now that Aplós is an NPM Package, a release cycle is required. There is a new version every Saturday at 04:00 GMT for regular small updates (if there are changes), and for more critical updates every time there is a need.
 
-## Thanks ❤ & Credits️:
+## Thanks ❤ & Credits️
 
 - [Duckquill](https://daudix.codeberg.page/duckquill), from where I got inspired to create this project (and many ideas are from there)
 - [Inter](https://rsms.me/inter/), used for all Sans Serif text.
