@@ -28,5 +28,8 @@
   "bugs": {
     "url": "https://github.com/aplosdev/aplos/issues"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "homepage": "https://aplos.gxbs.me"
 }
