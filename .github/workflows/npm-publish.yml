@@ -8,6 +8,10 @@ on:
     branches:
       - main
   workflow_dispatch:
+  workflow_run:
+    workflows: ["weekly-release"]
+    branches:
+      - main
 
 jobs:
   build:
