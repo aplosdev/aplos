@@ -8,16 +8,22 @@ on:
     branches:
       - main
   workflow_dispatch:
-  workflow_run:
-    workflows: ["weekly-release"]
-    branches:
-      - main
 
 jobs:
   build:
-    if: startsWith(github.event.head_commit.message, 'release:')
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
     steps:
+      - name: Check commit message
+        id: check_commit
+        run: echo "::set-output name=is_release::$(echo ${{ github.event.head_commit.message }} | grep -c '^release:')"
+
+      - name: Run on release commit
+        if: steps.check_commit.outputs.is_release == '1'
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
