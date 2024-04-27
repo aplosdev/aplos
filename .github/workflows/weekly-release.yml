@@ -1,9 +1,12 @@
 name: Weekly Release
 
 on:
-    workflow_dispatch:
-    schedule:
-        - cron: '0 16 * * 6'
+  workflow_dispatch:
+  schedule:
+    - cron: "0 16 * * 6"
+
+env:
+  token: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
   release:
@@ -20,7 +23,7 @@ jobs:
 
       - name: Remove version suffix
         run: |
-            sed -i 's/"version": "\([0-9]\+\.[0-9]\+\.[0-9]\+\)-[0-9]\+",/"version": "\1",/g' package.json
+          sed -i 's/"version": "\([0-9]\+\.[0-9]\+\.[0-9]\+\)-[0-9]\+",/"version": "\1",/g' package.json
 
       - name: Update CHANGELOG.md
         run: |
