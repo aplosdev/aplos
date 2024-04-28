@@ -62,6 +62,7 @@ header {
     ul {
       list-style-type: none;
       margin: 0;
+      min-height: 40px;
       padding: 0;
       overflow: hidden;
       display: flex;
@@ -125,11 +126,11 @@ header {
     &::after {
       content: "";
       position: absolute;
-      height: 110%;
+      height: 50px;
       margin: 0;
       width: 0.0625rem;
       background-color: var(--color-border);
-      top: 0;
+      top: -0.3125rem;
       right: -1.25rem;
     }
   }

@@ -8,6 +8,8 @@
 
 - Allow a changable dark mode background color for code snippets
 
+- Made the navigation island have a specific minimum height
+
 ### Feature(s)
 
 - Provide a `title` for the navigation icons to improve accessibility
