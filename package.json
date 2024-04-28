@@ -17,9 +17,7 @@
     "@csstools/normalize.css": "^12.1.1",
     "inter-ui": "^4.0.2",
     "non.geist": "^1.0.2",
-    "path": "^0.12.7",
-    "sass": "^1.74.1",
-    "url": "^0.11.3"
+    "sass": "^1.74.1"
   },
   "repository": {
     "type": "git",
