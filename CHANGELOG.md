@@ -4,6 +4,8 @@
 
 - Remove dublicated styles that are now provided by `normalize.css`
 
+- Provide a easier way to make the time blink in the `time` tag (now using bold instead of `span`)
+
 ### Fix(es)
 
 - Allow a changable dark mode background color for code snippets

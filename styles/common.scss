@@ -234,8 +234,9 @@ time {
   font-size: 0.875rem;
   cursor: pointer;
 
-  span {
+  strong {
     display: inline-block;
+    font-weight: 700;
     animation: blink 0.7s infinite alternate;
   }
 
@@ -255,7 +256,7 @@ time {
     font-weight: 800;
     padding-top: 0.25rem;
 
-    span {
+    strong {
       animation: none;
     }
   }
