@@ -265,7 +265,7 @@ time {
   font-weight: 600;
 
   span {
-    filter: blur(4px);
+    filter: blur(0.25rem);
     transition: filter 0.3s ease;
     font-weight: normal;
     animation: glow 1.5s infinite linear alternate-reverse;
@@ -286,23 +286,23 @@ time {
     }
 
     20% {
-      text-shadow: 0 0 4px var(--color-accent);
+      text-shadow: 0 0 0.25rem var(--color-accent);
     }
 
     40% {
-      text-shadow: 0 0 6px var(--color-accent);
+      text-shadow: 0 0 0.375rem var(--color-accent);
     }
 
     60% {
-      text-shadow: 0 0 8px var(--color-accent);
+      text-shadow: 0 0 0.5rem var(--color-accent);
     }
 
     80% {
-      text-shadow: 0 0 10px var(--color-accent);
+      text-shadow: 0 0 0.625rem var(--color-accent);
     }
 
     100% {
-      text-shadow: 0 0 15px var(--color-accent);
+      text-shadow: 0 0 0.9375rem var(--color-accent);
     }
   }
 }
@@ -392,5 +392,4 @@ button {
 
 abbr {
   cursor: help;
-  text-decoration: 1px dotted underline;
 }

@@ -34,7 +34,7 @@ $bg-color-accent-alpha-l: color.scale($color-accent-l, $alpha: -60%) !default;
 $bg-color-accent-alpha-d: color.scale($color-accent, $alpha: -60%) !default;
 
 $bg-color-code-l: color.scale($bg-color-l, $lightness: -5%) !default;
-$bg-color-code-d: mix($bg-color-d, $bg-color-s-d, 60%);
+$bg-color-code-d: mix($bg-color-d, $bg-color-s-d, 60%) !default;
 
 $text-color-secondary-l: color.scale(
   $bg-color-l,

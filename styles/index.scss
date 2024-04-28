@@ -37,8 +37,7 @@ body {
   scroll-behavior: smooth;
   background-color: var(--color-background);
   color: var(--color-text);
-  line-height: 24px;
-  font-size: 16px;
+  font-size: normal;
   font-weight: 400;
   font-synthesis: style;
   text-rendering: optimizeLegibility;
@@ -86,10 +85,10 @@ html {
 .lang {
   color: var(--color-text-secondary);
   font-family: "Geist Mono", monospace;
-  font-size: 14px;
+  font-size: 0.875rem;
   position: absolute;
-  right: 20px;
-  margin-top: 10px;
+  right: 1.25rem;
+  margin-top: 0.625rem;
 }
 
 /* Other */
@@ -155,19 +154,19 @@ button.copy {
   direction: ltr;
   position: absolute;
   display: none;
-  top: 12px;
-  right: 12px;
+  top: 0.75rem;
+  right: 0.75rem;
   z-index: 3;
-  border: 1px solid var(--vp-code-copy-code-border-color);
-  border-radius: 4px;
-  width: 40px;
-  height: 40px;
+  border: 0.0625rem solid var(--vp-code-copy-code-border-color);
+  border-radius: 0.25rem;
+  width: 2.5rem;
+  height: 2.5rem;
   background-color: var(--vp-code-copy-code-bg);
   opacity: 0;
   cursor: pointer;
   background-image: var(--vp-icon-copy);
   background-position: 50%;
-  background-size: 20px;
+  background-size: 1.25rem;
   background-repeat: no-repeat;
   transition: border-color 0.25s, background-color 0.25s, opacity 0.25s;
 }

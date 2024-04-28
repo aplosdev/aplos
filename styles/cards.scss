@@ -5,7 +5,7 @@
   min-width: 45%;
   border-radius: 0.5rem 0.625rem 0.625rem 0.625rem;
   padding: 1.8rem 1.25rem;
-  line-height: 24px;
+  line-height: 1.5rem;
 
   p {
     color: var(--color-text);
@@ -20,7 +20,7 @@
     font-size: 1.8rem;
     margin-top: 0;
     font-weight: 800;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
   }
 }
 
@@ -62,7 +62,7 @@
 .details {
   border-radius: 0.625rem;
   background-color: var(--color-background-second);
-  padding: 16px;
+  padding: 1rem;
   margin: 1.25rem 0;
   min-width: 45%;
   max-width: max-content;
@@ -74,7 +74,7 @@
   }
 
   p {
-    font-size: 15px;
-    margin: 10px 0 0 0;
+    font-size: 0.9375rem;
+    margin: 0.625rem 0 0 0;
   }
 }
