@@ -1,3 +1,9 @@
+## 1.3.4 (unreleased)
+
+### Cleanup(s)
+
+- Provide a `title` for the navigation icons to improve accessibility
+
 ## 1.3.3 (2024-04-27)
 
 ### Feature(s)

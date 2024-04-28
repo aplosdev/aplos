@@ -21,6 +21,7 @@
             target="_blank"
             :href="theme.nav.rss"
             aria-label="Link to the RSS Feed"
+            title="Link to the RSS Feed"
           >
             <RSSFeed />
           </a>
@@ -29,7 +30,8 @@
           <a
             target="_blank"
             :href="theme.nav.git"
-            aria-label="Link to the source code"
+            aria-label="Link to the source code of the website"
+            title="Link to the source code of the website"
           >
             <SourceCode />
           </a>
