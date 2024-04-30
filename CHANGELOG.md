@@ -18,6 +18,8 @@
 
 - Migrate all `pixel` values to `rem` values for better accessibility
 
+- Add two new types of links (`external` and `internal`) with different icons at the end of the link
+
 ## 1.3.3 (2024-04-27)
 
 ### Feature(s)

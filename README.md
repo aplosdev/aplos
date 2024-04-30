@@ -37,6 +37,12 @@ You can check the next steps by looking at the [Guide](https://aplos.gxbs.me/gui
 
 Now that Aplós is an NPM Package, a release cycle is required. There is a new version every Saturday at 04:00 GMT for regular small updates (if there are changes), and for more critical updates every time there is a need.
 
+### Versioning
+
+Aplós uses [Semantic Versioning](https://semver.org/), so you can understand the changes by looking at the version number (using the `major.minor.patch` format).
+
+It might be possible that the pre-release versions start as a patch version and end up becoming a minor version (e.g: `2.1.3-1` -> `2.2.0-2`).
+
 ## Thanks ❤ & Credits️
 
 - [Duckquill](https://daudix.codeberg.page/duckquill), from where I got inspired to create this project (and many ideas are from there)
