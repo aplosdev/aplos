@@ -10,37 +10,15 @@
 @import "medias.scss";
 @import "cards.scss";
 @import "color.scss";
-
-:root {
-  font-family: Inter, sans-serif;
-  font-feature-settings: "liga" 1, "calt" 1, "cv05" 1;
-  scroll-behavior: smooth;
-  /* fix for Chrome */
-}
-
-@supports (font-variation-settings: normal) {
-  :root {
-    font-family: InterVariable, sans-serif;
-  }
-
-  body {
-    font-family: InterVariable, sans-serif;
-  }
-}
+@import "fonts.scss";
 
 *, ::before, ::after {
   box-sizing: border-box;
 }
 
 body {
-  font-family: Inter, sans-serif;
   scroll-behavior: smooth;
   background-color: var(--color-background);
-  color: var(--color-text);
-  font-size: normal;
-  font-weight: 400;
-  font-synthesis: style;
-  text-rendering: optimizeLegibility;
 }
 
 main {

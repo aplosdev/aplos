@@ -1,0 +1,44 @@
+@use "~inter-ui/default" with ($inter-font-display: swap,
+    $inter-font-path: '~inter-ui/web'
+);
+
+@use "~inter-ui/variable" with ($inter-font-display: swap,
+    $inter-font-path: '~inter-ui/variable'
+);
+
+@include default.all;
+@include variable.all;
+
+
+html {
+    font-family: "Inter", sans-serif;
+
+    @supports (font-variation-settings: normal) {
+        font-family: "InterVariable", sans-serif;
+    }
+}
+
+
+:root {
+    font-family: Inter, sans-serif;
+    font-feature-settings: "liga" 1, "calt" 1, "cv05" 1;
+    scroll-behavior: smooth;
+    /* fix for Chrome */
+
+    @supports (font-variation-settings: normal) {
+        font-family: InterVariable, sans-serif;
+    }
+}
+
+body {
+    font-family: Inter, sans-serif;
+    color: var(--color-text);
+    font-size: normal;
+    font-weight: 400;
+    font-synthesis: style;
+    text-rendering: optimizeLegibility;  
+
+    @supports (font-variation-settings: normal) {
+        font-family: InterVariable, sans-serif;
+    }
+}
