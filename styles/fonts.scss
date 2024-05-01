@@ -1,8 +1,8 @@
-@use "~inter-ui/default" with ($inter-font-display: swap,
+@use "inter-ui/default" with ($inter-font-display: swap,
     $inter-font-path: '~inter-ui/web'
 );
 
-@use "~inter-ui/variable" with ($inter-font-display: swap,
+@use "inter-ui/variable" with ($inter-font-display: swap,
     $inter-font-path: '~inter-ui/variable'
 );
 
@@ -36,7 +36,7 @@ body {
     font-size: normal;
     font-weight: 400;
     font-synthesis: style;
-    text-rendering: optimizeLegibility;  
+    text-rendering: optimizeLegibility;
 
     @supports (font-variation-settings: normal) {
         font-family: InterVariable, sans-serif;
