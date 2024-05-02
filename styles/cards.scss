@@ -24,8 +24,10 @@
 
     &::before {
       filter: 0;
-      margin-right: 0.625rem;
-      
+      margin-right: 0.5rem;
+      vertical-align: middle;
+      display: inline;
+
       @media (prefers-color-scheme: dark) {
         filter: invert(100%);
       }
