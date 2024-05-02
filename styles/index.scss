@@ -2,9 +2,9 @@
  * Aplos (https://aplos.gxbs.me/)
  * Copyright 2023-2024 Gabriel Cozma/Gabs
  * Licensed under MIT (https://github.com/GabsEdits/aplos/src/branch/main/LICENSE)
- 
- * Based on VitePress (https://vitepress.dev) & inspired Duckquill (https://daudix.codeberg.page/duckquill)
-*/
+ *
+ * A VitePress theme (https://vitepress.dev) & inspired Duckquill (https://daudix.codeberg.page/duckquill)
+ */
 
 @import "common.scss";
 @import "medias.scss";
@@ -12,7 +12,9 @@
 @import "color.scss";
 @import "fonts.scss";
 
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
 }
 

@@ -21,6 +21,15 @@
     margin-bottom: 0.625rem;
     font-weight: 800;
     font-size: 1.8rem;
+
+    &::before {
+      filter: 0;
+      margin-right: 0.625rem;
+      
+      @media (prefers-color-scheme: dark) {
+        filter: invert(100%);
+      }
+    }
   }
 }
 
@@ -31,6 +40,10 @@
   @media (prefers-color-scheme: dark) {
     background-color: #39181b;
   }
+
+  .custom-block-title::before {
+    content: url("../icons/dangerous.svg");
+  }
 }
 
 .warning {
@@ -40,6 +53,10 @@
   @media (prefers-color-scheme: dark) {
     border-left: rgb(255, 217, 0) 0.4rem solid;
     background-color: #372a1a;
+  }
+
+  .custom-block-title::before {
+    content: url("../icons/warning.svg");
   }
 }
 
@@ -52,11 +69,19 @@
     background-color: #1f3f1f;
   }
 
+  .custom-block-title::before {
+    content: url("../icons/lightbulb.svg");
+  }
+
 }
 
 .info {
   border-left: var(--color-accent) 0.4rem solid;
   background-color: var(--color-background-mute);
+
+  .custom-block-title::before {
+    content: url("../icons/info.svg");
+  }
 }
 
 .details {

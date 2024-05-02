@@ -1,26 +1,28 @@
-## 1.3.4 (unreleased)
+## 1.4.0 (unreleased)
 
 ### Cleanup(s)
 
-- Remove dublicated styles that are now provided by `normalize.css`
+- Remove duplicated styles that are now provided by `normalize.css`
 
-- Provide a easier way to make the time blink in the `time` tag (now using bold instead of `span`)
+- Provide an easier way to make the time blink in the `time` tag (now using bold instead of `span`)
+
+- Migrate basic font configuration to the `fonts.scss` file (rather than the `index.scss` file)
+
+- Migrate all `pixel` values to `rem` values for better accessibility
 
 ### Fix(es)
 
-- Allow a changable dark mode background color for code snippets
+- Allow a changeable dark mode background color for code snippets
 
-- Made the navigation island have a specific minimum height
+- Made the navigation island have a specific minimum height (it could become smaller until now)
 
 ### Feature(s)
 
 - Provide a `title` for the navigation icons to improve accessibility
 
-- Migrate all `pixel` values to `rem` values for better accessibility
-
 - Add two new types of links (`external` and `internal`) with different icons at the end of the link
 
-- Migrate basic font configuration to the `fonts.scss` file (rather then the `index.scss` file)
+- Provide a build-in icon for custom cards
 
 ## 1.3.3 (2024-04-27)
 

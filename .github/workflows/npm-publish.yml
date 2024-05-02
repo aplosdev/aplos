@@ -9,6 +9,9 @@ on:
       - main
   workflow_dispatch:
   repository_dispatch:
+  issue_comment:
+    types:
+      - created
 
 permissions:
   actions: write
@@ -19,7 +22,7 @@ env:
 
 jobs:
   build:
-    if: startsWith(github.event.head_commit.message, 'release:')
+    if: contains(github.event.comment.body, 'Publish this Release') || startsWith(github.event.head_commit.message, 'release:')
     runs-on: ubuntu-latest
 
     steps:
