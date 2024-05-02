@@ -35,7 +35,7 @@ You can check the next steps by looking at the [Guide](https://aplos.gxbs.me/gui
 
 ## Release Cycle
 
-Now that Aplós is an NPM Package, a release cycle is required. There is a new version every Saturday at 04:00 GMT for regular small updates (if there are changes), and for more critical updates every time there is a need.
+Now that Aplós is an NPM Package, a release cycle is required. There is a new version every Saturday at 16:00 GMT for regular small updates (if there are changes), and for more critical updates every time there is a need.
 
 ### Versioning
 
