@@ -1,10 +1,10 @@
 .custom-block:not(.details) {
   margin: 1.25rem 0;
-  width: max-content;
-  max-width: 70%;
-  min-width: 45%;
   border-radius: 0.5rem 0.625rem 0.625rem 0.625rem;
   padding: 1.8rem 1.25rem;
+  width: max-content;
+  min-width: 45%;
+  max-width: 70%;
   line-height: 1.5rem;
 
   p {
@@ -17,16 +17,16 @@
   }
 
   .custom-block-title {
-    font-size: 1.8rem;
     margin-top: 0;
-    font-weight: 800;
     margin-bottom: 0.625rem;
+    font-weight: 800;
+    font-size: 1.8rem;
   }
 }
 
 .danger {
-  background-color: #ff001936;
   border-left: rgb(219, 25, 25) 0.4rem solid;
+  background-color: #ff001936;
 
   @media (prefers-color-scheme: dark) {
     background-color: #39181b;
@@ -34,22 +34,22 @@
 }
 
 .warning {
-  background-color: #ffcc007e;
   border-left: rgb(159, 135, 0) 0.4rem solid;
+  background-color: #ffcc007e;
 
   @media (prefers-color-scheme: dark) {
-    background-color: #372a1a;
     border-left: rgb(255, 217, 0) 0.4rem solid;
+    background-color: #372a1a;
   }
 }
 
 .tip {
-  background-color: #00ff006a;
   border-left: rgb(75, 110, 22) 0.4rem solid;
+  background-color: #00ff006a;
 
   @media (prefers-color-scheme: dark) {
-    background-color: #1f3f1f;
     border-left: rgb(153, 255, 0) 0.4rem solid;
+    background-color: #1f3f1f;
   }
 
 }
@@ -60,21 +60,21 @@
 }
 
 .details {
+  margin: 1.25rem 0;
   border-radius: 0.625rem;
   background-color: var(--color-background-second);
   padding: 1rem;
-  margin: 1.25rem 0;
   min-width: 45%;
   max-width: max-content;
 
   summary {
-    margin-top: 0;
     cursor: pointer;
+    margin-top: 0;
     font-weight: 700;
   }
 
   p {
-    font-size: 0.9375rem;
     margin: 0.625rem 0 0 0;
+    font-size: 0.9375rem;
   }
 }

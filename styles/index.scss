@@ -17,30 +17,30 @@
 }
 
 body {
-  scroll-behavior: smooth;
   background-color: var(--color-background);
+  scroll-behavior: smooth;
 }
 
 main {
-  width: 60vw;
-  scroll-behavior: smooth;
   margin-top: 7%;
+  margin-right: auto;
   margin-bottom: 4%;
+  margin-left: auto;
+  width: 60vw;
+  max-width: 60rem;
+  scroll-behavior: smooth;
   font-size: 1rem;
   line-height: 1.5;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 60rem;
 }
 
 ::selection {
-  color: var(--color-background);
   background-color: var(--color-accent);
+  color: var(--color-background);
 }
 
 :target {
-  scroll-margin-top: 15vh;
   animation: highlight-in-out 800ms 0.4s;
+  scroll-margin-top: 15vh;
   color: var(--color-accent);
   text-shadow: var(--color-background-second) 0 0 0.25rem,
     var(--color-accent) 0 0 0.75rem;
@@ -48,49 +48,49 @@ main {
   @keyframes highlight-in-out {
     50% {
       color: var(--color-accent);
+      font-style: italic;
       font-weight: bolder;
       letter-spacing: 0.25rem;
-      font-style: italic;
     }
   }
 }
 
 html {
-  accent-color: var(--color-accent);
   scroll-behavior: smooth;
+  accent-color: var(--color-accent);
 }
 
 .lang {
-  color: var(--color-text-secondary);
-  font-family: "Geist Mono", monospace;
-  font-size: 0.875rem;
   position: absolute;
   right: 1.25rem;
   margin-top: 0.625rem;
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+  font-family: "Geist Mono", monospace;
 }
 
 /* Other */
 
 .table-of-contents {
-  background-color: none;
-  backdrop-filter: blur(0.625rem);
   -webkit-backdrop-filter: blur(0.625rem);
-  overflow: hidden;
   position: fixed;
   top: 9.375rem;
   left: 10%;
-  border-radius: 1rem;
   z-index: 9999;
+  backdrop-filter: blur(0.625rem);
+  border-radius: 1rem;
+  background-color: none;
   padding: 0.625rem 1.5625rem;
+  overflow: hidden;
   text-align: left;
 
   ul {
-    list-style-type: decimal;
-    color: var(--color-text-secondary);
-    font-size: 0.875rem;
-    font-weight: 600;
     margin: 0 0 0 0.9375rem;
     padding: 0;
+    color: var(--color-text-secondary);
+    font-weight: 600;
+    font-size: 0.875rem;
+    list-style-type: decimal;
 
     li {
       text-align: left;
@@ -101,23 +101,23 @@ html {
 
       a {
         display: block;
-        text-align: left;
-        text-decoration: none;
+        transform: scale(1);
+        transition: color 0.7s ease, transform 100ms ease;
+        margin: 0 0.3125rem;
         font-weight: 600;
         font-size: 0.875rem;
-        letter-spacing: -0.045rem;
-        margin: 0 0.3125rem;
-        transform: scale(1);
         font-size: 0.875rem;
-        transition: color 0.7s ease, transform 100ms ease;
+        letter-spacing: -0.045rem;
+        text-align: left;
+        text-decoration: none;
 
         &:hover {
           color: var(--color-accent);
         }
 
         &:active {
-          color: var(--color-accent);
           transform: scale(0.9);
+          color: var(--color-accent);
         }
 
         &.active {
@@ -129,24 +129,24 @@ html {
 }
 
 button.copy {
-  direction: ltr;
-  position: absolute;
   display: none;
+  position: absolute;
   top: 0.75rem;
   right: 0.75rem;
+  opacity: 0;
   z-index: 3;
+  transition: border-color 0.25s, background-color 0.25s, opacity 0.25s;
+  cursor: pointer;
   border: 0.0625rem solid var(--vp-code-copy-code-border-color);
   border-radius: 0.25rem;
-  width: 2.5rem;
-  height: 2.5rem;
-  background-color: var(--vp-code-copy-code-bg);
-  opacity: 0;
-  cursor: pointer;
   background-image: var(--vp-icon-copy);
   background-position: 50%;
   background-size: 1.25rem;
   background-repeat: no-repeat;
-  transition: border-color 0.25s, background-color 0.25s, opacity 0.25s;
+  background-color: var(--vp-code-copy-code-bg);
+  width: 2.5rem;
+  height: 2.5rem;
+  direction: ltr;
 }
 
 .header-anchor {
@@ -162,8 +162,8 @@ label,
 select,
 summary,
 textarea {
-  touch-action: manipulation;
-  font-family: inherit;
   font-feature-settings: inherit;
+  touch-action: manipulation;
   color: var(--color-text);
+  font-family: inherit;
 }

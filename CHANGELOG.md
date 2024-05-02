@@ -20,7 +20,7 @@
 
 - Add two new types of links (`external` and `internal`) with different icons at the end of the link
 
-- Migrate Fonts imports to the `fonts.scss` file (rather then the main TypeScript file)
+- Migrate basic font configuration to the `fonts.scss` file (rather then the `index.scss` file)
 
 ## 1.3.3 (2024-04-27)
 

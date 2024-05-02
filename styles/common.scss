@@ -12,26 +12,26 @@ p {
 }
 
 h1 {
-  font-size: 3.125rem;
+  margin: 2.0938rem 0;
   font-style: normal;
   font-weight: 900;
+  font-size: 3.125rem;
   line-height: normal;
   letter-spacing: -0.075rem;
-  margin: 2.0938rem 0;
 }
 
 h2 {
-  font-size: 2.1875rem;
   font-style: normal;
   font-weight: 800;
+  font-size: 2.1875rem;
   line-height: normal;
   letter-spacing: -0.075rem;
 }
 
 h3 {
-  font-size: 1.5625rem;
   font-style: normal;
   font-weight: 700;
+  font-size: 1.5625rem;
   line-height: normal;
   letter-spacing: -0.075rem;
 }
@@ -59,22 +59,22 @@ p {
 }
 
 pre {
-  font-family: "Geist Mono", monospace;
-  font-weight: 500;
-  background-color: var(--color-background-code);
-  border-right: var(--color-accent) 0.3125rem solid;
-  padding: 0.625rem 1.25rem;
-  overflow: auto;
-  max-width: 100%;
-  border-radius: 1.25rem;
   margin: 1.25rem 0;
+  border-right: var(--color-accent) 0.3125rem solid;
+  border-radius: 1.25rem;
+  background-color: var(--color-background-code);
+  padding: 0.625rem 1.25rem;
+  max-width: 100%;
+  overflow: auto;
+  font-weight: 500;
+  font-family: "Geist Mono", monospace;
 
   code {
-    background-color: transparent;
-    color: var(--color-text);
-    border-radius: 0;
-    padding: 0;
     border: 0;
+    border-radius: 0;
+    background-color: transparent;
+    padding: 0;
+    color: var(--color-text);
 
     span {
       color: var(--shiki-light, inherit);
@@ -100,26 +100,27 @@ pre {
       background-color: rgba(101, 117, 133, 0.16);
     }
 
+    display: inline-block;
+
     transition: background-color 0.5s;
     margin: 0 -1.5rem;
     padding: 0 1.5rem;
     width: calc(99% + 2 * 1.5rem);
-    display: inline-block;
   }
 
   .has-focused-lines .line:not(.has-focus) {
-    filter: blur(0.095rem);
     opacity: 0.4;
+    filter: blur(0.095rem);
     transition: filter 0.35s, opacity 0.35s;
   }
 }
 
 blockquote {
+  margin: 0;
   border-left: var(--color-accent) 0.3125rem solid;
   border-radius: 0.5rem 1.5rem 1.5rem 0.5rem;
   background-color: var(--color-background-second);
   padding: 0.625rem 1.1875rem;
-  margin: 0;
   width: max-content;
   max-width: 97%;
 
@@ -129,29 +130,29 @@ blockquote {
   }
 
   p {
-    color: var(--color-text-secondary);
     margin: 0;
+    color: var(--color-text-secondary);
   }
 }
 
 img,
 video {
-  border-radius: 0.625rem;
-  margin: 0.625rem 0;
-  width: 100%;
   transition: transform 0.4s, border-radius 0.4s, box-shadow 1.5s ease;
+  margin: 0.625rem 0;
+  border-radius: 0.625rem;
+  width: 100%;
 
   &:hover {
     transform: scale(1.1);
+    cursor: zoom-in;
     box-shadow: var(--base-shadow);
     border-radius: 1.25rem;
-    cursor: zoom-in;
   }
 }
 
 video:hover {
-  border-radius: 0;
   transform: scale(1.06);
+  border-radius: 0;
 }
 
 img:active {
@@ -160,12 +161,12 @@ img:active {
 }
 
 figcaption {
+  display: block;
   margin-top: -0.5rem;
   margin-bottom: 2rem;
-  display: block;
-  text-align: center;
   color: var(--color-text-secondary);
   font-size: 0.8rem;
+  text-align: center;
 }
 
 small {
@@ -174,10 +175,10 @@ small {
 }
 
 main a {
-  color: var(--color-accent);
-  text-decoration: underline;
-  font-weight: 700;
   transition: text-decoration 0.3s ease transform 0.3s ease;
+  color: var(--color-accent);
+  font-weight: 700;
+  text-decoration: underline;
 
   &:hover {
     text-decoration: dotted underline;
@@ -189,55 +190,55 @@ main a {
 }
 
 hr {
-  border-radius: 1.25rem;
-  border: var(--color-border) 0.125rem solid;
   margin: 1.25rem 5%;
+  border: var(--color-border) 0.125rem solid;
+  border-radius: 1.25rem;
 }
 
 code {
-  font-family: "Geist Mono", monospace;
-  font-weight: 500;
-  background-color: var(--color-background-second);
   border-radius: 0.45rem;
-  color: var(--color-accent);
+  background-color: var(--color-background-second);
   padding: 0.125rem 0.25rem;
+  color: var(--color-accent);
+  font-weight: 500;
   font-size: 0.83rem;
+  font-family: "Geist Mono", monospace;
 }
 
 kbd {
-  background-color: var(--color-background-second);
-  border-radius: 0.3125rem;
+  cursor: pointer;
   border: 0.0625rem solid var(--color-border);
   border-bottom: 0.125rem solid var(--color-border);
-  font-family: "Geist Mono", monospace;
+  border-radius: 0.3125rem;
+  background-color: var(--color-background-second);
   padding: 0.1875rem;
   font-size: 0.875rem;
-  cursor: pointer;
+  font-family: "Geist Mono", monospace;
 
   &:active {
     border-bottom: 0.0625rem solid var(--color-border);
-    background-color: var(--color-border);
     border-left: 0.125rem solid var(--color-border);
+    background-color: var(--color-border);
     padding-bottom: 0.25rem;
     padding-left: 0.25rem;
   }
 }
 
 time {
-  background-color: var(--color-background-second);
-  color: var(--color-accent);
-  font-weight: 700;
-  border-radius: 0.3125rem;
+  cursor: pointer;
   border: 0.0625rem solid var(--color-border);
   border-bottom: 0.125rem solid var(--color-border);
+  border-radius: 0.3125rem;
+  background-color: var(--color-background-second);
   padding: 0.1875rem;
+  color: var(--color-accent);
+  font-weight: 700;
   font-size: 0.875rem;
-  cursor: pointer;
 
   strong {
     display: inline-block;
-    font-weight: 700;
     animation: blink 0.7s infinite alternate;
+    font-weight: 700;
   }
 
   @keyframes blink {
@@ -251,10 +252,10 @@ time {
   }
 
   &:active {
-    border-bottom: 0.0625rem solid var(--color-border);
     border-top: 0.125rem solid var(--color-border);
-    font-weight: 800;
+    border-bottom: 0.0625rem solid var(--color-border);
     padding-top: 0.25rem;
+    font-weight: 800;
 
     strong {
       animation: none;
@@ -267,9 +268,9 @@ time {
 
   span {
     filter: blur(0.25rem);
+    animation: glow 1.5s infinite linear alternate-reverse;
     transition: filter 0.3s ease;
     font-weight: normal;
-    animation: glow 1.5s infinite linear alternate-reverse;
 
     &:hover {
       filter: none;
@@ -309,31 +310,31 @@ time {
 }
 
 mark {
-  background-color: var(--color-background-second);
-  color: var(--color-accent);
   margin: 0;
-  padding: 0.125rem 0.375rem 0.1875rem 0.375rem;
   border-radius: 0.625rem;
+  background-color: var(--color-background-second);
+  padding: 0.125rem 0.375rem 0.1875rem 0.375rem;
+  color: var(--color-accent);
 }
 
 table {
-  border-collapse: collapse;
   border-radius: 0.625rem;
-  overflow: hidden;
-  table-layout: fixed;
+  border-collapse: collapse;
   width: 100%;
+  table-layout: fixed;
+  overflow: hidden;
 
   th {
     background-color: var(--color-background-mute);
+    padding: 0.625rem 1.25rem;
     color: var(--color-accent);
     font-weight: 700;
-    padding: 0.625rem 1.25rem;
     text-align: center;
   }
 
   td {
-    color: var(--color-text);
     padding: 0.625rem 1.25rem;
+    color: var(--color-text);
   }
 
   tr {
@@ -365,9 +366,9 @@ ol {
 }
 
 a mark {
-  text-decoration: underline;
   display: inline-block;
   transition: transform 0.3s ease;
+  text-decoration: underline;
 
   &:hover {
     transform: scale(1.2) rotate(10deg);
@@ -375,20 +376,20 @@ a mark {
 }
 
 aside {
-  background-color: var(--color-background-second);
-  border-radius: 1rem;
   float: right;
   margin-inline-start: 1rem;
+  border-radius: 1rem;
+  background-color: var(--color-background-second);
   padding: 1rem;
   width: 30%;
 }
 
 button {
-  padding: 0;
-  background-color: transparent;
-  background-image: none;
-  border: 0;
   cursor: pointer;
+  border: 0;
+  background-image: none;
+  background-color: transparent;
+  padding: 0;
 }
 
 abbr {

@@ -43,6 +43,16 @@ Aplós uses [Semantic Versioning](https://semver.org/), so you can understand th
 
 It might be possible that the pre-release versions start as a patch version and end up becoming a minor version (e.g: `2.1.3-1` -> `2.2.0-2`).
 
+### 'Next' Tag
+
+The 'next' tag is an nightly version of Aplós, used to test the next version before it is released. Use the 'next' tag if you want to test the next version of Aplós.
+
+You can install the 'next' tag with the following command:
+
+```bash
+npm i aplos@next
+```
+
 ## Thanks ❤ & Credits️
 
 - [Duckquill](https://daudix.codeberg.page/duckquill), from where I got inspired to create this project (and many ideas are from there)
