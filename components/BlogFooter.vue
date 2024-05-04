@@ -67,7 +67,7 @@ const { frontmatter } = useData();
 #blog-footer {
   margin-top: 50px;
 
-  #blog-nav {
+  .blog-nav {
     display: block;
     padding: 20px;
     color: var(--color-accent);
