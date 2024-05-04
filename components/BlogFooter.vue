@@ -4,9 +4,18 @@
     <h2>Comments</h2>
     <p>
       If you have any questions or comments about this post, please feel free to
-      leave a comment <span v-if="frontmatter.comments === 'giscus'">below</span
-      ><span v-if="frontmatter.comments === 'activitypub'"
-        >on <a :href="frontmatter.posts">this post</a></span
+      leave a comment
+      <span
+        style="display: inline-block"
+        v-if="frontmatter.comments === 'giscus'"
+        >below</span
+      ><span
+        style="display: inline-block"
+        v-if="frontmatter.comments === 'activitypub'"
+        >on
+        <a :href="frontmatter.post" style="display: inline-block"
+          >this post</a
+        ></span
       >.
     </p>
 

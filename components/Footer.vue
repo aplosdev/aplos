@@ -4,7 +4,7 @@ const { theme } = useData();
 </script>
 
 <template>
-  <footer>
+  <footer id="footer">
     <a
       style="margin: 16px; display: block"
       v-if="theme.footer.sourcecode?.show"
@@ -42,7 +42,7 @@ const { theme } = useData();
 
 <style lang="scss">
 
-footer {
+#footer {
   position: relative;
   bottom: 0;
   max-width: 100%;
