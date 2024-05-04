@@ -1,6 +1,6 @@
 {
   "name": "aplos",
-  "version": "1.4.0-2",
+  "version": "1.4.0-3",
   "type": "module",
   "description": "A sleek, contemporary, and purposefully designed VitePress theme",
   "main": "index.ts",
@@ -16,6 +16,7 @@
   "license": "MIT",
   "dependencies": {
     "@csstools/normalize.css": "^12.1.1",
+    "@oom/mastodon-comments": "^0.2.2",
     "inter-ui": "^4.0.2",
     "non.geist": "^1.0.2",
     "sass": "^1.74.1"

@@ -18,6 +18,8 @@
 
 ### Feature(s)
 
+- Add ActivityPub support for comments (now you can choose between `activitypub` and `giscus`)
+
 - Provide a `title` for the navigation icons to improve accessibility
 
 - Add two new types of links (`external` and `internal`) with different icons at the end of the link
