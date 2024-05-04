@@ -34,6 +34,7 @@
     <hr />
     <p class="dialog-buttons" v-if="frontmatter.prev || frontmatter.next">
       <a
+        class="blog-nav"
         :href="`${frontmatter.prev.toLowerCase().replace(/\s+/g, '-')}.html`"
         target="_self"
         v-if="frontmatter.prev"
@@ -42,6 +43,7 @@
         <br /><span>{{ frontmatter.prev }}</span>
       </a>
       <a
+        class="blog-nav"
         :href="`${frontmatter.next.toLowerCase().replace(/\s+/g, '-')}.html`"
         target="_self"
         v-if="frontmatter.next"
@@ -65,7 +67,7 @@ const { frontmatter } = useData();
 #blog-footer {
   margin-top: 50px;
 
-  a {
+  #blog-nav {
     display: block;
     padding: 20px;
     color: var(--color-accent);
