@@ -17,6 +17,10 @@ customElements.define("oom-comments", Comments);
 oom-comments {
   display: block;
   padding: 2em;
+
+  a:hover {
+    transform: none;
+  }
 }
 oom-comments ul {
   list-style: none;
@@ -58,10 +62,10 @@ oom-comments .comment-author {
   border-radius: 50%;
   width: 20px;
   height: 20px;
-  color: var(--color-text-secondary);
+  color: var(--color-accent);
 }
 oom-comments .comment-user:hover .comment-username {
-  text-decoration: underline;
+  text-decoration: underline var(--color-accent);
 }
 oom-comments .comment-username {
   margin-right: 0.5em;
@@ -81,7 +85,7 @@ oom-comments .comment-address {
   margin-top: 0.25em;
 }
 oom-comments .comment-address:hover {
-  text-decoration: underline;
+  text-decoration: underline var(--color-accent);
 }
 oom-comments .comment-body {
   margin-top: 0.5em;
@@ -100,6 +104,6 @@ oom-comments .comment-counts > span {
   display: flex;
   align-items: center;
   column-gap: 0.3em;
-  color: var(--color-text-secondary);
+  color: var(--color-accent);
 }
 </style>
