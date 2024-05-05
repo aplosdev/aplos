@@ -1,10 +1,14 @@
-## 1.4.1 (unreleased)
+## 1.4.1 (2024-05-05)
 
 > This release is important to fix the build process of the project, so update as soon as possible.
 
 ### Fix(es)
 
-- Not building because of `MastodonComments` component
+- Disable ActivityPub comments (for now, till I find a fix for the errors on the build process)
+
+### Work in Progress Element(s)
+
+- A full rework of how ActivityPub comments are handled (to avoid errors on build)
 
 ## 1.4.0 (2024-05-04)
 

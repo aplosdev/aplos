@@ -26,9 +26,9 @@
         JavaScript.</small
       ></noscript
     >
-    <MastodonComments
+    <!-- <MastodonComments
       v-if="frontmatter.comments === 'activitypub'"
-    ></MastodonComments>
+    ></MastodonComments> -->
     <Giscus v-if="frontmatter.comments === 'giscus'"></Giscus>
     <br />
     <hr />
@@ -58,7 +58,7 @@
 <script setup lang="ts">
 import { useData } from "vitepress";
 import Giscus from "./GiscusComments.vue";
-import MastodonComments from "./MastodonComments.vue";
+/* import MastodonComments from "./MastodonComments.vue"; */
 
 const { frontmatter } = useData();
 </script>
