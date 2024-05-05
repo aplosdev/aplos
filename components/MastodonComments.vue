@@ -12,9 +12,7 @@ import Comments from "@oom/mastodon-comments/src/comments.js";
 const { frontmatter } = useData();
 
 onMounted(() => {
-  if (typeof document !== "undefined") {
-    customElements.define("oom-comments", Comments);
-  }
+  customElements.define("oom-comments", Comments);
 });
 </script>
 
