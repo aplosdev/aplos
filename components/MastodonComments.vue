@@ -12,7 +12,9 @@ import Comments from "../scripts/activitypub.ts";
 const { frontmatter } = useData();
 
 onMounted(() => {
-  customElements.define("oom-comments", Comments);
+  if (typeof document === "undefined") {
+    customElements.define("oom-comments", Comments);
+  }
 });
 </script>
 
