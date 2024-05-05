@@ -7,7 +7,7 @@
 <script setup lang="ts">
 import { useData } from "vitepress";
 import { onMounted } from "vue";
-import Comments from "../scripts/activitypub.ts";
+import Comments from "../scripts/activitypub.mts";
 
 const { frontmatter } = useData();
 
