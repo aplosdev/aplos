@@ -4,7 +4,7 @@
   </oom-comments>
 </template>
 
-<script setup type="module">
+<script setup>
 import { useData } from "vitepress";
 import { onMounted } from "vue";
 import Comments from "@oom/mastodon-comments/src/comments.js";
