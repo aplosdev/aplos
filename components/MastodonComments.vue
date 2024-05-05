@@ -4,7 +4,7 @@
   </oom-comments>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { useData } from "vitepress";
 import { onMounted } from "vue";
 import Comments from "../scripts/activitypub.ts";
@@ -12,9 +12,7 @@ import Comments from "../scripts/activitypub.ts";
 const { frontmatter } = useData();
 
 onMounted(() => {
-  if (typeof document === "undefined") {
-    customElements.define("oom-comments", Comments);
-  }
+  customElements.define("oom-comments", Comments);
 });
 </script>
 
