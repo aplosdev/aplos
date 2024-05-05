@@ -1,3 +1,11 @@
+## 1.4.1 (unreleased)
+
+> This release is important to fix the build process of the project, so update as soon as possible.
+
+### Fix(es)
+
+- Not building because of `MastodonComments` component
+
 ## 1.4.0 (2024-05-04)
 
 ### Cleanup(s)

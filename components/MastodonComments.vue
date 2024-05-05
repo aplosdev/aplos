@@ -6,11 +6,16 @@
 
 <script setup type="module">
 import { useData } from "vitepress";
+import { onMounted } from "vue";
 import Comments from "@oom/mastodon-comments/src/comments.js";
 
 const { frontmatter } = useData();
 
-customElements.define("oom-comments", Comments);
+onMounted(() => {
+  if (typeof document !== "undefined") {
+    customElements.define("oom-comments", Comments);
+  }
+});
 </script>
 
 <style lang="scss">
