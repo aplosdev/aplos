@@ -4,10 +4,10 @@
   </oom-comments>
 </template>
 
-<script setup lang="js">
+<script setup>
 import { useData } from "vitepress";
 import { onMounted } from "vue";
-import Comments from "../scripts/activitypub";
+import Comments from "../scripts/activitypub.ts";
 
 const { frontmatter } = useData();
 

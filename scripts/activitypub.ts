@@ -38,6 +38,9 @@ export default class Mastodon extends HTMLElement {
       dateStyle: "medium",
       timeStyle: "short",
     });
+    if (typeof document === "undefined") {
+      return;
+    }
   }
 
   attributeChangedCallback(name: string, _oldValue: string, newValue: string) {
