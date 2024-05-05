@@ -4,10 +4,10 @@
   </oom-comments>
 </template>
 
-<script setup>
+<script setup lang="js">
 import { useData } from "vitepress";
 import { onMounted } from "vue";
-import Comments from "@oom/mastodon-comments/src/comments.js";
+import Comments from "../scripts/activitypub";
 
 const { frontmatter } = useData();
 
