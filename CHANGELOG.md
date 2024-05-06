@@ -1,3 +1,21 @@
+## 1.5.0 (unreleased)
+
+### Feature(s)
+
+- Replace `blog-*` with `article-*` for better naming(_Temporary Fallback is provided_)
+
+- Replace `no-blog` with `minimal` for better naming and understanding (_Temporary Fallback is provided, **but not for the layout**_)
+
+- Reinstate the ActivityPub comments _(planned, not yet implemented)_
+
+> Fallbacks are provided for the old names, but it is recommended to update the names to the new ones. In 1.6.0, the old names will be removed. The fallbacks are only here to not pump the version to 2.0.0 just for this change.
+
+### For Development
+
+- Add .development/default folder to the repository for easy development and testing (after the issue of the last release)
+
+- Add `.npmignore` file to ignore the `.development` and `.github` folders
+
 ## 1.4.1 (2024-05-05)
 
 > This release is important to fix the build process of the project, so update as soon as possible.

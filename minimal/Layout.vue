@@ -4,7 +4,7 @@ import { Content } from "vitepress";
 import NotFound from "../components/404View.vue";
 import SiteFooter from "../components/Footer.vue";
 import Navigation from "../components/Navigation.vue";
-import SimpleLayout from "../components/SimpleLayout.vue";
+import HelpfulLayout from "../components/HelpfulLayout.vue";
 
 const { site, frontmatter, page } = useData();
 </script>
@@ -19,7 +19,7 @@ const { site, frontmatter, page } = useData();
     <div v-else :class="frontmatter.pageClass">
       <Content />
     </div>
-    <SimpleLayout v-if="frontmatter.layout == 'simple'" />
+    <HelpfulLayout v-if="frontmatter.layout == 'helpful' || frontmatter.layout == 'simple'" />
   </main>
   <SiteFooter />
 </template>

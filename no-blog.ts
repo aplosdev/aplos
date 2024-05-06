@@ -1,5 +1,3 @@
-import "./no-blog/Layout.vue";
-import "./styles/index.scss";
-import "inter-ui/inter.css";
-import "inter-ui/inter-variable.css";
-import "non.geist/mono"
+// This file serves as a fallback for the breaking change of renaming "no-blog" to "minimal".
+// Will be removed in the next major version.
+import "./minimal.ts";

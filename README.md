@@ -53,6 +53,39 @@ You can install the 'next' tag with the following command:
 npm i aplos@next
 ```
 
+### Development
+
+If you want to contribute to Aplós, you can clone the repository and install the dependencies with the following commands:
+
+```bash
+git clone https://github.com/aplosdev/aplos.git
+```
+
+Before you start developing, make sure to install the dependencies:
+
+```bash
+pnpm install
+```
+
+If you want a development server, you first need to install VitePress:
+
+```bash
+pnpm add vitepress
+```
+
+Then you can run the development server with:
+
+```bash
+pnpm dev
+```
+
+You can edit the project and see your changes live.s
+
+All other standard VitePress commands are available, like `pnpm demo:build` and `pnpm demo:preview`.
+
+> [!NOTE]
+> Only the `build` and `preview` commands require the `demo` prefix.
+
 ## Thanks ❤ & Credits️
 
 - [Duckquill](https://daudix.codeberg.page/duckquill), from where I got inspired to create this project (and many ideas are from there)

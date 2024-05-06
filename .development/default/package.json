@@ -1,0 +1,8 @@
+{
+    "type": "module",
+    "dependencies": {
+        "aplos": "file:../.././",
+        "sass": "^1.74.1",
+        "vitepress": "^1.1.4"
+    }
+}

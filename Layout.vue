@@ -4,10 +4,10 @@ import { Content } from "vitepress";
 import NotFound from "./components/404View.vue";
 import SiteFooter from "./components/Footer.vue";
 import Navigation from "./components/Navigation.vue";
-import BlogHead from "./components/BlogHead.vue";
-import BlogFooter from "./components/BlogFooter.vue";
-import SimpleLayout from "./components/SimpleLayout.vue";
-import BlogList from "./components/BlogList.vue";
+import ArticleHead from "./components/ArticleHead.vue";
+import ArticleFooter from "./components/ArticleFooter.vue";
+import HelpfulLayout from "./components/HelpfulLayout.vue";
+import ArticleList from "./components/ArticleList.vue";
 
 const { site, frontmatter, page } = useData();
 </script>
@@ -18,17 +18,24 @@ const { site, frontmatter, page } = useData();
     <div v-if="frontmatter.home">
       <h1>{{ site.title }}</h1>
     </div>
-    <div v-if="frontmatter.layout == 'blog'">
-      <BlogHead />
+    <div
+      v-if="frontmatter.layout === 'article' || frontmatter.layout === 'blog'"
+    >
+      <ArticleHead />
     </div>
     <NotFound v-if="page.isNotFound" />
     <div v-else :class="frontmatter.pageClass">
       <Content />
     </div>
-    <BlogList v-if="frontmatter.layout == 'blog-list'" />
-    <SimpleLayout v-if="frontmatter.layout == 'simple'" />
-    <div v-if="frontmatter.layout == 'blog'">
-      <BlogFooter />
+    <ArticleList
+      v-if="
+        frontmatter.layout == 'article-list' ||
+        frontmatter.layout == 'blog-list'
+      "
+    />
+    <HelpfulLayout v-if="frontmatter.layout == 'helpful' || frontmatter.layout == 'simple'" />
+    <div v-if="frontmatter.layout == 'article' || frontmatter.layout == 'blog'">
+      <ArticleFooter />
     </div>
   </main>
   <SiteFooter />
