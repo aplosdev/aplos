@@ -20,7 +20,7 @@
 
 ### Dependencies
 
-- Pump SASS from 1.76.0 to 1.77.0 (#2)
+- Pump SASS from 1.76.0 to 1.77.0 (https://github.com/aplosdev/aplos/pull/2)
 
 ## 1.4.1 (2024-05-05)
 
