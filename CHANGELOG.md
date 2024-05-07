@@ -18,6 +18,10 @@
 
 - Add `.npmignore` file to ignore the `.development` and `.github` folders
 
+### Dependencies
+
+- Pump SASS from 1.76.0 to 1.77.0 (#2)
+
 ## 1.4.1 (2024-05-05)
 
 > This release is important to fix the build process of the project, so update as soon as possible.
