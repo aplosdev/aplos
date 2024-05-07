@@ -14,7 +14,7 @@ const { site, frontmatter, page } = useData();
 
 <template>
   <Navigation />
-  <main>
+  <main id="content-main">
     <div v-if="frontmatter.home">
       <h1>{{ site.title }}</h1>
     </div>

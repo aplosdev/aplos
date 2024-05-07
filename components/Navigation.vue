@@ -1,5 +1,6 @@
 <template>
   <header v-if="theme.nav.show !== false">
+    <a href="#content-main" class="skip-to-content">Skip to main content</a>
     <nav>
       <ul>
         <li id="title">
@@ -43,6 +44,32 @@
 
 <style lang="scss">
 header {
+  .skip-to-content {
+    clip: rect(1px, 1px, 1px, 1px);
+    word-wrap: normal !important;
+    border: 0;
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    z-index: 999;
+
+    &:focus {
+      clip: auto !important;
+      -webkit-clip-path: none;
+      clip-path: none;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      position: static;
+      width: auto;
+    }
+  }
+
   nav {
     background-color: none;
     backdrop-filter: blur(10px);

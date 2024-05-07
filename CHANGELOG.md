@@ -2,6 +2,8 @@
 
 ### Feature(s)
 
+- Add a "Skip to Content" link for better accessibility, and showing when `Tab` is pressed
+
 - Replace `blog-*` with `article-*` for better naming(_Temporary Fallback is provided_)
 
 - Replace `no-blog` with `minimal` for better naming and understanding (_Temporary Fallback is provided, **but not for the layout**_)
