@@ -18,8 +18,7 @@
     "@csstools/normalize.css": "^12.1.1",
     "inter-ui": "^4.0.2",
     "non.geist": "^1.0.2",
-    "sass": "^1.74.1",
-    "vitepress": "^1.1.4"
+    "sass": "^1.74.1"
   },
   "scripts": {
     "dev": "vitepress dev .development/default/pages",
