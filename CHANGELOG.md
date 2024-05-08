@@ -2,6 +2,8 @@
 
 ### Feature(s)
 
+- Provide the version of Aplós in the footer when hovering over ”Aplós” in ”Powered by”
+
 - Add a "Skip to Content" link for better accessibility, and showing when `Tab` is pressed
 
 - Replace `blog-*` with `article-*` for better naming(_Temporary Fallback is provided_)
