@@ -2,7 +2,7 @@
 
 ### Feature(s)
 
-- - Give a title for Table of Contents for better accessibility
+- Give a title for Table of Contents for better accessibility
 
 - Disable the languge detection for code snippets when hovering over them
 
