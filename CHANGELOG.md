@@ -2,7 +2,7 @@
 
 ### Feature(s)
 
-- Ability to style images via the URL (with `#` + `not-rounded`, `static`, `small`, `medium`, `full`,`left`, `right`, `shadow`, `mono` `invert`)
+- Ability to style images via the URL (with `#` + `not-rounded`, `static`, `small`, `medium`, `shadow`, `mono`, `invert` `blur`, `sepia`, `transparency`)
 
 - Give a title for Table of Contents for better accessibility
 
@@ -25,6 +25,8 @@
 - Remove the margin from `code` tags inside `pre` tags on mobile
 
 ### Cleanup(s)
+
+- Add border to link images (with the option to remove it)
 
 - Migrate the body to an grid layout
 
