@@ -6,7 +6,7 @@ A sleek, contemporary, and purposefully designed VitePress theme
 </div>
 
 > [!IMPORTANT]
-If you want to see the documentation/guide check <https://aplos.gxbs.me>.
+> If you want to see the documentation/guide check <https://aplos.gxbs.me>.
 
 ![Screenshot of Aplos](https://github.com/GabsEdits/aplos/assets/110247388/3c98f962-b560-442a-9f56-9b805156a272)
 
@@ -89,6 +89,7 @@ All other standard VitePress commands are available, like `pnpm demo:build` and 
 ## Thanks ❤ & Credits️
 
 - [Duckquill](https://daudix.codeberg.page/duckquill), from where I got inspired to create this project (and many ideas are from there)
+- [Hari Rana](https://tesk.page/) for style-related feedback and suggestions
 - [Inter](https://rsms.me/inter/), used for all Sans Serif text.
 - [Geist Mono](https://vercel.com/font/), used for code snippets.
 - [VitePress](https://vitepress.dev), which is used to power Aplós.

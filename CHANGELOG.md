@@ -2,6 +2,10 @@
 
 ### Feature(s)
 
+- - Give a title for Table of Contents for better accessibility
+
+- Disable the languge detection for code snippets when hovering over them
+
 - Provide the version of Aplós in the footer when hovering over ”Aplós” in ”Powered by”
 
 - Add a "Skip to Content" link for better accessibility, and showing when `Tab` is pressed
@@ -13,6 +17,22 @@
 - Reinstate the ActivityPub comments _(planned, not yet implemented)_
 
 > Fallbacks are provided for the old names, but it is recommended to update the names to the new ones. In 1.6.0, the old names will be removed. The fallbacks are only here to not pump the version to 2.0.0 just for this change.
+
+### Fix(es)
+
+- Remove the margin from `code` tags inside `pre` tags on mobile
+
+### Cleanup(s)
+
+- Migrate the body to an grid layout
+
+- Move Layouts to their own folder
+
+- Add underline to the links in the Table of Contents
+
+- Add margin to the links in the Table of Contents
+
+- Update the project details in `index.scss` to match the License
 
 ### For Development
 
@@ -35,6 +55,8 @@
 ### Work in Progress Element(s)
 
 - A full rework of how ActivityPub comments are handled (to avoid errors on build)
+
+- Allowing elements to go over
 
 ## 1.4.0 (2024-05-04)
 

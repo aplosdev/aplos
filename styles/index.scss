@@ -1,9 +1,9 @@
 /*
- * Aplos (https://aplos.gxbs.me/)
- * Copyright 2023-2024 Gabriel Cozma/Gabs
- * Licensed under MIT (https://github.com/GabsEdits/aplos/src/branch/main/LICENSE)
+ * Aplós (https://aplos.gxbs.me/)
+ * Copyright 2024-present Gabriel Cozma
+ * Licensed under MIT License (https://github.com/aplosdev/aplos/blob/main/LICENSE)
  *
- * A VitePress theme (https://vitepress.dev) & inspired Duckquill (https://daudix.codeberg.page/duckquill)
+ * A VitePress theme (https://vitepress.dev) & inspired by Duckquill (https://daudix.codeberg.page/duckquill/)
  */
 
 @import "common.scss";
@@ -19,20 +19,19 @@
 }
 
 body {
+  display: grid;
+  grid-template-rows: auto minmax(auto, 1fr) auto;
   background-color: var(--color-background);
-  scroll-behavior: smooth;
-}
-
-main {
-  margin-top: 7%;
-  margin-right: auto;
-  margin-bottom: 4%;
-  margin-left: auto;
-  width: 60vw;
-  max-width: 60rem;
+  min-height: 100vh;
   scroll-behavior: smooth;
   font-size: 1rem;
   line-height: 1.5;
+}
+
+main {
+  margin: 7% auto 4%;
+  width: 60vw;
+  max-width: 60rem;
 }
 
 ::selection {
@@ -64,11 +63,18 @@ html {
 
 .lang {
   position: absolute;
-  right: 1.25rem;
-  margin-top: 0.625rem;
+  right: 1.5rem;
+  margin-top: 0.825rem;
   color: var(--color-text-secondary);
   font-size: 0.875rem;
-  font-family: "Geist Mono", monospace;
+  transition: all 0.25s ease;
+}
+
+div[class*="language-"]:hover,
+.vp-code:hover {
+  .lang {
+    display: none;
+  }
 }
 
 /* Other */
@@ -81,7 +87,7 @@ html {
   z-index: 9999;
   backdrop-filter: blur(0.625rem);
   border-radius: 1rem;
-  background-color: none;
+  background-color: transparent;
   padding: 0.625rem 1.5625rem;
   overflow: hidden;
   text-align: left;
@@ -94,7 +100,18 @@ html {
     font-size: 0.875rem;
     list-style-type: decimal;
 
+    &:first-child::before {
+      display: block;
+      margin-bottom: 0.625rem;
+      content: "Table of Contents";
+      color: var(--color-text-secondary);
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-align: center;
+    }
+
     li {
+      margin: 0.3rem 0;
       text-align: left;
 
       ul li {
@@ -111,7 +128,7 @@ html {
         font-size: 0.875rem;
         letter-spacing: -0.045rem;
         text-align: left;
-        text-decoration: none;
+        text-decoration: underline solid var(--color-accent);
 
         &:hover {
           color: var(--color-accent);

@@ -57,7 +57,7 @@
 
 <script setup lang="ts">
 import { useData } from "vitepress";
-import Giscus from "./GiscusComments.vue";
+import Giscus from "../components/GiscusComments.vue";
 /* import MastodonComments from "./MastodonComments.vue"; */
 
 const { frontmatter } = useData();

@@ -4,10 +4,10 @@ import { Content } from "vitepress";
 import NotFound from "./components/404View.vue";
 import SiteFooter from "./components/Footer.vue";
 import Navigation from "./components/Navigation.vue";
-import ArticleHead from "./components/ArticleHead.vue";
-import ArticleFooter from "./components/ArticleFooter.vue";
+import ArticleHead from "./layouts/ArticleHead.vue";
+import ArticleFooter from "./layouts/ArticleFooter.vue";
 import HelpfulLayout from "./components/HelpfulLayout.vue";
-import ArticleList from "./components/ArticleList.vue";
+import ArticleList from "./layouts/ArticleList.vue";
 
 const { site, frontmatter, page } = useData();
 </script>
@@ -33,7 +33,9 @@ const { site, frontmatter, page } = useData();
         frontmatter.layout == 'blog-list'
       "
     />
-    <HelpfulLayout v-if="frontmatter.layout == 'helpful' || frontmatter.layout == 'simple'" />
+    <HelpfulLayout
+      v-if="frontmatter.layout == 'helpful' || frontmatter.layout == 'simple'"
+    />
     <div v-if="frontmatter.layout == 'article' || frontmatter.layout == 'blog'">
       <ArticleFooter />
     </div>
