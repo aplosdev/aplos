@@ -2,6 +2,8 @@
 
 ### Feature(s)
 
+- Ability to style images via the URL (with `#` + `not-rounded`, `static`, `small`, `medium`, `full`,`left`, `right`, `shadow`, `mono` `invert`)
+
 - Give a title for Table of Contents for better accessibility
 
 - Disable the languge detection for code snippets when hovering over them
