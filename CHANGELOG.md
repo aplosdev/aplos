@@ -16,8 +16,6 @@
 
 - Replace `no-blog` with `minimal` for better naming and understanding (_Temporary Fallback is provided, **but not for the layout**_)
 
-- Reinstate the ActivityPub comments _(planned, not yet implemented)_
-
 > Fallbacks are provided for the old names, but it is recommended to update the names to the new ones. In 1.6.0, the old names will be removed. The fallbacks are only here to not pump the version to 2.0.0 just for this change.
 
 ### Fix(es)
@@ -47,6 +45,10 @@
 ### Dependencies
 
 - Pump SASS from 1.76.0 to 1.77.0 (https://github.com/aplosdev/aplos/pull/2)
+
+### Work in Progress Features
+
+- Reinstate the ActivityPub comments _(not yet fully implemented)_
 
 ## 1.4.1 (2024-05-05)
 
