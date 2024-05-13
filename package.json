@@ -1,6 +1,6 @@
 {
   "name": "aplos",
-  "version": "1.5.0",
+  "version": "1.5.1-0",
   "type": "module",
   "description": "A sleek, contemporary, and purposefully designed VitePress theme",
   "main": "index.ts",
@@ -18,7 +18,8 @@
     "@csstools/normalize.css": "^12.1.1",
     "inter-ui": "^4.0.2",
     "non.geist": "^1.0.2",
-    "sass": "^1.77.0"
+    "sass": "^1.77.0",
+    "vitepress": "^1.1.4"
   },
   "scripts": {
     "dev": "vitepress dev .development/default/pages",

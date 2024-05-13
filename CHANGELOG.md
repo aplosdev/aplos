@@ -1,3 +1,9 @@
+## 1.5.1 (unreleased)
+
+### Feature(s)
+
+- Unify `color-accent-alpha` dark and light into one variable
+
 ## 1.5.0 (2024-05-11)
 
 ### Feature(s)
