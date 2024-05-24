@@ -1,16 +1,29 @@
 /*
- * Aplós (https://aplos.gxbs.me/)
+ * Aplós v1.6.0 (https://aplos.gxbs.me/)
  * Copyright 2024-present Gabriel Cozma
  * Licensed under MIT License (https://github.com/aplosdev/aplos/blob/main/LICENSE)
  *
  * A VitePress theme (https://vitepress.dev) & inspired by Duckquill (https://daudix.codeberg.page/duckquill/)
  */
 
-@import "common.scss";
-@import "medias.scss";
-@import "cards.scss";
-@import "color.scss";
-@import "fonts.scss";
+@import "common";
+@import "medias";
+@import "typography";
+@import "color";
+@import "fonts";
+
+/* Components */
+
+@import "components/cards";
+@import "components/semantics";
+@import "components/table";
+@import "components/images";
+@import "components/links";
+@import "components/list";
+
+:root {
+  --content-width: 60rem;
+}
 
 *,
 ::before,
@@ -31,29 +44,7 @@ body {
 main {
   margin: 7% auto 4%;
   width: 60vw;
-  max-width: 60rem;
-}
-
-::selection {
-  background-color: var(--color-accent);
-  color: var(--color-background);
-}
-
-:target {
-  animation: highlight-in-out 800ms 0.4s;
-  scroll-margin-top: 15vh;
-  color: var(--color-accent);
-  text-shadow: var(--color-background-second) 0 0 0.25rem,
-    var(--color-accent) 0 0 0.75rem;
-
-  @keyframes highlight-in-out {
-    50% {
-      color: var(--color-accent);
-      font-style: italic;
-      font-weight: bolder;
-      letter-spacing: 0.25rem;
-    }
-  }
+  max-width: var(--content-width);
 }
 
 html {
@@ -64,10 +55,10 @@ html {
 .lang {
   position: absolute;
   right: 1.5rem;
+  transition: all 0.25s ease;
   margin-top: 0.825rem;
   color: var(--color-text-secondary);
   font-size: 0.875rem;
-  transition: all 0.25s ease;
 }
 
 div[class*="language-"]:hover,
@@ -170,19 +161,4 @@ button.copy {
 
 .header-anchor {
   display: none; // I will hide it for now
-}
-
-a,
-area,
-button,
-[role="button"],
-input,
-label,
-select,
-summary,
-textarea {
-  font-feature-settings: inherit;
-  touch-action: manipulation;
-  color: var(--color-text);
-  font-family: inherit;
 }

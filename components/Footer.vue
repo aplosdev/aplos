@@ -41,7 +41,6 @@ const { theme } = useData();
 </template>
 
 <style lang="scss">
-
 #footer {
   position: relative;
   bottom: 0;
@@ -53,7 +52,7 @@ const { theme } = useData();
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  max-width: 963px;
+  max-width: var(--content-width);
 
   a {
     text-decoration: underline 1.4px;

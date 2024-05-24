@@ -1,9 +1,8 @@
 <template>
-  <div id="blog-head">
+  <div id="article-head">
     <h1>{{ frontmatter.title }}</h1>
     <small>
       {{
-        // Blog Post Published Date
         new Date(frontmatter.date).toLocaleDateString("en-GB", {
           day: "2-digit",
           month: "long",
@@ -36,27 +35,29 @@ const { frontmatter, theme } = useData();
 </script>
 
 <style lang="scss">
-#blog-head {
-  .tags span {
-    margin-right: 5px;
-    color: var(--color-text-secondary);
-    background-color: var(--color-background-second);
-    padding: 0.15rem 0.45rem;
-    border-radius: 20px;
-    font-size: 12px;
-    transition: all 0.3s ease;
-    cursor: default;
+#article-head {
+  .tags {
+    span {
+      margin-right: 5px;
+      color: var(--color-text-secondary);
+      background-color: var(--color-background-second);
+      padding: 0.15rem 0.45rem;
+      border-radius: 20px;
+      font-size: 12px;
+      transition: all 0.3s ease;
+      cursor: default;
 
-    &:hover {
-      background-color: var(--color-accent-alpha);
-      color: var(--color-accent);
-      transform: scale(1.05) !important;
+      &:hover {
+        background-color: var(--color-accent-alpha);
+        color: var(--color-accent);
+        transform: scale(1.05);
+      }
     }
-  }
 
-  p {
-    color: var(--color-text-secondary);
-    font-style: italic;
+    p {
+      color: var(--color-text-secondary);
+      font-style: italic;
+    }
   }
 }
 </style>

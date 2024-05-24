@@ -1,5 +1,5 @@
 <template>
-  <section id="blog-footer">
+  <section id="article-footer">
     <hr />
     <h2>Comments</h2>
     <p>
@@ -34,7 +34,7 @@
     <hr />
     <p class="dialog-buttons" v-if="frontmatter.prev || frontmatter.next">
       <a
-        class="blog-nav"
+        class="article-nav"
         :href="`${frontmatter.prev.toLowerCase().replace(/\s+/g, '-')}.html`"
         target="_self"
         v-if="frontmatter.prev"
@@ -43,7 +43,7 @@
         <br /><span>{{ frontmatter.prev }}</span>
       </a>
       <a
-        class="blog-nav"
+        class="article-nav"
         :href="`${frontmatter.next.toLowerCase().replace(/\s+/g, '-')}.html`"
         target="_self"
         v-if="frontmatter.next"
@@ -64,10 +64,10 @@ const { frontmatter } = useData();
 </script>
 
 <style lang="scss">
-#blog-footer {
+#article-footer {
   margin-top: 50px;
 
-  .blog-nav {
+  .article-nav {
     display: block;
     padding: 20px;
     color: var(--color-accent);

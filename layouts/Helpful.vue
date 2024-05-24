@@ -3,7 +3,10 @@
     <hr />
     <p class="dialog-buttons">
       <a href="#top" target="_top">↑ Go to top</a>
-      <a id="file-an-issue" v-bind:href="theme.nav.git + '/issues/new'"
+      <a
+        id="file-an-issue"
+        v-if="theme.nav.git"
+        v-bind:href="theme.nav.git + '/issues/new'"
         >File an issue</a
       >
     </p>

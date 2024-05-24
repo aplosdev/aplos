@@ -4,14 +4,20 @@
       <span class="glitch" data-text="404">404</span>
       <h1>Not Found!</h1>
       <p>
-        Oops! We couldn't find the page you're looking for. It seems like
-        something went wrong. It might not be our fault. If you believe it is,
-        please let us know by filing an issue.
+        Oops! The page you are looking for has been removed, relocated or never
+        existed. Please check the URL or go back to the homepage.
+        <span v-if="theme.nav.git"
+          >If you believe something should be here, feel free to file an issue
+          with the button below.</span
+        >
       </p>
     </section>
     <p class="dialog-buttons">
       <a onclick="window.history.go(-1)">← Go Back</a>
-      <a id="file-an-issue" v-bind:href="theme.nav.git + '/issues/new'"
+      <a
+        id="file-an-issue"
+        v-if="theme.nav.git"
+        v-bind:href="theme.nav.git + '/issues/new'"
         >File an issue</a
       >
     </p>
@@ -26,10 +32,13 @@ const { theme } = useData();
 
 <style lang="scss">
 #NotFound {
-  background-color: transparent !important;
-  box-shadow: none !important;
+  background-color: transparent;
+  box-shadow: none;
   border-radius: 10px;
   padding: 30px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(var(--content-width) - 30%);
   margin-bottom: 20px;
   color: var(--color-text-secondary);
   width: 100%;
@@ -37,10 +46,10 @@ const { theme } = useData();
 
   h1 {
     font-size: 2em;
-    margin-top: 0 !important;
+    margin-top: 0;
     color: var(--color-accent);
     font-weight: 800;
-    margin-bottom: 0 !important;
+    margin-bottom: 0;
   }
 
   span {

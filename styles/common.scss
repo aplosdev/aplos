@@ -1,41 +1,3 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 1.25rem 0;
-}
-
-p {
-  margin: 1rem 0;
-}
-
-h1 {
-  margin: 2.0938rem 0;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 3.125rem;
-  line-height: normal;
-  letter-spacing: -0.075rem;
-}
-
-h2 {
-  font-style: normal;
-  font-weight: 800;
-  font-size: 2.1875rem;
-  line-height: normal;
-  letter-spacing: -0.075rem;
-}
-
-h3 {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.5625rem;
-  line-height: normal;
-  letter-spacing: -0.075rem;
-}
-
 img,
 svg,
 video,
@@ -45,17 +7,6 @@ iframe,
 embed,
 object {
   display: block;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-li,
-p {
-  overflow-wrap: break-word;
 }
 
 pre {
@@ -149,96 +100,8 @@ video {
   }
 }
 
-img {
-  &[src*="#not-rounded"] {
-    border-radius: 0;
-
-    &:hover {
-      border-radius: 0;
-    }
-  }
-
-  &[src*="#static"] {
-    transition: none;
-    cursor: default;
-
-    &:hover {
-      transform: none;
-      box-shadow: none;
-      border-radius: 0;
-    }
-
-    &:active {
-      transform: none;
-      box-shadow: none;
-      border-radius: 0;
-    }
-  }
-
-  &[src*="#small"] {
-    width: 50%;
-    margin: 0 auto;
-  }
-
-  &[src*="#medium"] {
-    width: 75%;
-    margin: 0 auto;
-  }
-
-  &[src*="#shadow"] {
-    box-shadow: var(--base-shadow);
-  }
-
-  &[src*="#mono"] {
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-  }
-
-  &[src*="#invert"] {
-    filter: invert(100%);
-    -webkit-filter: invert(100%);
-  }
-
-  &[src*="#blur"] {
-    filter: blur(0.25rem);
-    -webkit-filter: blur(0.25rem);
-
-    &:hover {
-      filter: blur(0.5rem);
-      -webkit-filter: blur(0.5rem);
-    }
-
-    &:active {
-      filter: blur(0);
-      -webkit-filter: blur(0);
-    }
-  }
-
-  &[src*="#sepia"] {
-    filter: sepia(100%);
-    -webkit-filter: sepia(100%);
-  }
-
-  &[src*="#transparency"] {
-    opacity: 0.5;
-  }
-}
-
-a img {
-  border: 1px solid var(--color-accent);
-
-  &[src*="#no-border"] {
-    border: 0;
-  }
-}
-
 video:hover {
   transform: scale(1.06);
-  border-radius: 0;
-}
-
-img:active {
-  transform: scale(1.3);
   border-radius: 0;
 }
 
@@ -251,145 +114,12 @@ figcaption {
   text-align: center;
 }
 
-small {
-  display: inline-block;
-  color: var(--color-text-secondary);
-}
-
-main a {
-  transition: text-decoration 0.3s ease transform 0.3s ease;
-  color: var(--color-accent);
-  font-weight: 700;
-  text-decoration: underline;
-
-  &:hover {
-    text-decoration: dotted underline;
-  }
-
-  &:active {
-    transform: scale(0.9);
-  }
-}
-
 hr {
   margin: 1.25rem 5%;
   border: var(--color-border) 0.125rem solid;
   border-radius: 1.25rem;
 }
 
-code {
-  border-radius: 0.45rem;
-  background-color: var(--color-background-second);
-  padding: 0.125rem 0.25rem;
-  color: var(--color-accent);
-  font-weight: 500;
-  font-size: 0.83rem;
-  font-family: "Geist Mono", monospace;
-}
-
-kbd {
-  cursor: pointer;
-  border: 0.0625rem solid var(--color-border);
-  border-bottom: 0.125rem solid var(--color-border);
-  border-radius: 0.3125rem;
-  background-color: var(--color-background-second);
-  padding: 0.1875rem;
-  font-size: 0.875rem;
-  font-family: "Geist Mono", monospace;
-
-  &:active {
-    border-bottom: 0.0625rem solid var(--color-border);
-    border-left: 0.125rem solid var(--color-border);
-    background-color: var(--color-border);
-    padding-bottom: 0.25rem;
-    padding-left: 0.25rem;
-  }
-}
-
-time {
-  cursor: pointer;
-  border: 0.0625rem solid var(--color-border);
-  border-bottom: 0.125rem solid var(--color-border);
-  border-radius: 0.3125rem;
-  background-color: var(--color-background-second);
-  padding: 0.1875rem;
-  color: var(--color-accent);
-  font-weight: 700;
-  font-size: 0.875rem;
-
-  strong {
-    display: inline-block;
-    animation: blink 0.7s infinite alternate;
-    font-weight: 700;
-  }
-
-  @keyframes blink {
-    from {
-      opacity: 1;
-    }
-
-    to {
-      opacity: 0.5;
-    }
-  }
-
-  &:active {
-    border-top: 0.125rem solid var(--color-border);
-    border-bottom: 0.0625rem solid var(--color-border);
-    padding-top: 0.25rem;
-    font-weight: 800;
-
-    strong {
-      animation: none;
-    }
-  }
-}
-
-.spoiler {
-  font-weight: 600;
-
-  span {
-    filter: blur(0.25rem);
-    animation: glow 1.5s infinite linear alternate-reverse;
-    transition: filter 0.3s ease;
-    font-weight: normal;
-
-    &:hover {
-      filter: none;
-      animation: none;
-    }
-
-    &:active {
-      font-style: italic;
-    }
-  }
-
-  @keyframes glow {
-    0% {
-      text-shadow: 0 0 0 var(--color-accent);
-    }
-
-    20% {
-      text-shadow: 0 0 0.25rem var(--color-accent);
-    }
-
-    40% {
-      text-shadow: 0 0 0.375rem var(--color-accent);
-    }
-
-    60% {
-      text-shadow: 0 0 0.5rem var(--color-accent);
-    }
-
-    80% {
-      text-shadow: 0 0 0.625rem var(--color-accent);
-    }
-
-    100% {
-      text-shadow: 0 0 0.9375rem var(--color-accent);
-    }
-  }
-}
 
 mark {
   margin: 0;
@@ -397,39 +127,6 @@ mark {
   background-color: var(--color-background-second);
   padding: 0.125rem 0.375rem 0.1875rem 0.375rem;
   color: var(--color-accent);
-}
-
-table {
-  border-radius: 0.625rem;
-  border-collapse: collapse;
-  width: 100%;
-  table-layout: fixed;
-  overflow: hidden;
-
-  th {
-    background-color: var(--color-background-mute);
-    padding: 0.625rem 1.25rem;
-    color: var(--color-accent);
-    font-weight: 700;
-    text-align: center;
-  }
-
-  td {
-    padding: 0.625rem 1.25rem;
-    color: var(--color-text);
-  }
-
-  tr {
-    background-color: var(--color-background);
-
-    &:nth-child(2n) {
-      background-color: var(--color-background-second);
-    }
-
-    &:first-child {
-      border-bottom: 0 solid var(--color-border);
-    }
-  }
 }
 
 /* Others */
@@ -464,30 +161,4 @@ aside {
   background-color: var(--color-background-second);
   padding: 1rem;
   width: 30%;
-}
-
-button {
-  cursor: pointer;
-  border: 0;
-  background-image: none;
-  background-color: transparent;
-  padding: 0;
-}
-
-abbr {
-  cursor: help;
-}
-
-.external-link a {
-  &::after {
-    content: " ↗";
-    font-size: inherit;
-  }
-}
-
-.internal-link a {
-  &::after {
-    content: " →";
-    font-size: 0.75rem;
-  }
 }

@@ -1,3 +1,41 @@
+## 1.6.0 (unreleased)
+
+### Feature(s)
+
+- Add a `no-underline` class to remove the underline from links
+
+- Make the Content's Width adjustable
+
+- Make "Create a new Issue" button in the Helpful Layout optional
+
+- Provide Modern Font Stacks for the system font stack
+
+- Make "File an Issue" button on the not found page optional
+
+- Make the Not Found page smaller in width by 30%
+
+### Cleanup(s)
+
+- Migrate the Helpful Layout and the Not Found Layout to the `layouts` folder
+
+- Migrate styles from `index.scss` and `common.scss` to their respective files if they are big enough for better organization
+
+- General cleanup of content and code
+
+- Rebrand the `blog-*` classes to `article-*` classes (the components themselves were already rebranded in 1.5.0)
+
+- Cleanup the Not Found's View Styles
+
+- Add Aplós' version to `index.scss` for better tracking
+
+- Sort Imports
+
+### For Development
+
+- Update Dependencies inside the Development Example
+
+- Add `.editorconfig` file for better code consistency
+
 ## 1.5.1 (2024-05-18)
 
 ### Feature(s)
@@ -55,14 +93,14 @@
 ### Work in Progress Element(s)
 
 - Reinstate the ActivityPub comments _(not yet fully implemented)_
+
   - [x] Migrate script to TypeScript locally
   - [x] Make it run `onMounted`
   - [ ] Fix the build issue
 
-
 - Allow elements to go over the allocated width
   - [x] Migrate body to an grid
-  - [ ] Provide Grid Templates 
+  - [ ] Provide Grid Templates
 
 ## 1.4.1 (2024-05-05)
 
