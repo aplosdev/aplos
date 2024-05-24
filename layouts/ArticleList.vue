@@ -100,15 +100,17 @@ function filterPosts(tag: string) {
 
 		h3 {
 			margin: 0 !important;
-			text-decoration: underline var(--color-accent) 1px solid;
-			font-weight: 900;
 			font-size: 24px;
+
+			a {
+				font-weight: 900;
+			}
 		}
 
 		p {
 			margin: 0;
 			color: var(--color-text);
-      text-decoration: none;
+			text-decoration: none;
 			font-weight: 500;
 		}
 
