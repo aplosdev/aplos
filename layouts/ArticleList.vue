@@ -44,6 +44,7 @@
 
 <script setup lang="ts">
 import { ref, computed } from "vue";
+
 import { data as posts } from "../../../../../../pages/.vitepress/theme/posts.data";
 
 const selectedTag = ref(null);
@@ -89,10 +90,10 @@ function filterPosts(tag: string) {
 	}
 
 	.post {
+		transition: transform 0.3s ease;
+		border-radius: 8px;
 		background-color: var(--color-background-second);
 		padding: 20px;
-		border-radius: 8px;
-		transition: transform 0.3s ease;
 
 		&:first-child {
 			background-color: var(--color-background-mute);
@@ -110,16 +111,16 @@ function filterPosts(tag: string) {
 		p {
 			margin: 0;
 			color: var(--color-text);
-			text-decoration: none;
 			font-weight: 500;
+			text-decoration: none;
 		}
 
 		.date {
+			font-feature-settings: "zero", "tnum", "cv03", "cv02";
 			margin: 5px 0;
-			font-size: 0.9rem;
 			color: var(--color-text-secondary);
 			font-weight: 600;
-			font-feature-settings: "zero", "tnum", "cv03", "cv02";
+			font-size: 0.9rem;
 		}
 	}
 }
@@ -133,18 +134,18 @@ function filterPosts(tag: string) {
 	}
 
 	button {
+		transition: all 0.3s ease;
+		cursor: pointer;
 		margin-right: 10px;
 		margin-bottom: 3px;
-		background-color: var(--color-background-second);
 		border-radius: 20px;
+		background-color: var(--color-background-second);
 		padding: 0.25rem 0.75rem;
 		font-size: 0.8rem;
-		cursor: pointer;
-		transition: all 0.3s ease;
 
 		&:hover {
-			color: var(--color-accent);
 			background-color: var(--color-accent-alpha);
+			color: var(--color-accent);
 		}
 
 		&:active {
@@ -154,16 +155,16 @@ function filterPosts(tag: string) {
 }
 
 .tags {
-	text-align: right;
 	margin-top: 10px;
+	text-align: right;
 
 	span {
-		font-weight: 500;
 		margin-right: 5px;
-		color: var(--color-text-accent);
+		border-radius: 20px;
 		background-color: var(--color-background);
 		padding: 0.15rem 0.45rem;
-		border-radius: 20px;
+		color: var(--color-text-accent);
+		font-weight: 500;
 		font-size: 12px;
 	}
 }

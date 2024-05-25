@@ -57,6 +57,7 @@
 
 <script setup lang="ts">
 import { useData } from "vitepress";
+
 import Giscus from "../components/GiscusComments.vue";
 /* import MastodonComments from "./MastodonComments.vue"; */
 
@@ -69,13 +70,13 @@ const { frontmatter } = useData();
 
   .article-nav {
     display: block;
+    transition: all 0.3s ease;
+    margin: 0 0.2rem;
+    background-color: transparent;
     padding: 20px;
     color: var(--color-accent);
-    margin: 0 0.2rem;
     text-align: center;
     text-decoration: none;
-    background-color: transparent;
-    transition: all 0.3s ease;
 
     &:first-child {
       border-radius: 10px;
@@ -96,8 +97,8 @@ const { frontmatter } = useData();
     }
 
     span {
-      font-size: 1em;
       margin-bottom: 0 !important;
+      font-size: 1em;
     }
   }
 }

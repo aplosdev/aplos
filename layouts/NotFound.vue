@@ -32,35 +32,35 @@ const { theme } = useData();
 
 <style lang="scss">
 #NotFound {
-  background-color: transparent;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-left: auto;
   box-shadow: none;
   border-radius: 10px;
+  background-color: transparent;
   padding: 30px 20px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: calc(var(--content-width) - 30%);
-  margin-bottom: 20px;
-  color: var(--color-text-secondary);
   width: 100%;
+  max-width: calc(var(--content-width) - 30%);
+  color: var(--color-text-secondary);
   text-align: center;
 
   h1 {
-    font-size: 2em;
     margin-top: 0;
+    margin-bottom: 0;
     color: var(--color-accent);
     font-weight: 800;
-    margin-bottom: 0;
+    font-size: 2em;
   }
 
   span {
-    font-size: 7em;
-    font-weight: 800;
-    letter-spacing: -12.2px;
-    line-height: -2px;
-    color: var(--color-text);
-    position: relative;
     display: inline-block;
+    position: relative;
     animation: notfoundblink 0.8s infinite alternate;
+    color: var(--color-text);
+    font-weight: 800;
+    font-size: 7em;
+    line-height: -2px;
+    letter-spacing: -12.2px;
 
     @keyframes notfoundblink {
       from {
@@ -75,30 +75,30 @@ const { theme } = useData();
     @media (prefers-reduced-motion: no-preference) {
       &::before,
       &::after {
-        content: attr(data-text);
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
+        content: attr(data-text);
       }
 
       &::before {
         left: 2px;
-        text-shadow: -3px 0 var(--color-accent), 0 3px var(--color-accent),
-          3px 0 var(--color-accent), 0 -3px var(--color-accent);
         opacity: 0.8;
         animation: glitch 1s infinite linear alternate-reverse;
+        text-shadow: -3px 0 var(--color-accent), 0 3px var(--color-accent),
+          3px 0 var(--color-accent), 0 -3px var(--color-accent);
       }
 
       &::after {
         left: -2px;
+        opacity: 0.8;
+        animation: glitch 1.5s infinite linear alternate-reverse;
         text-shadow: 3px 0 var(--color-background-mute),
           0 -3px var(--color-background-mute),
           -3px 0 var(--color-background-mute),
           0 3px var(--color-background-mute);
-        opacity: 0.8;
-        animation: glitch 1.5s infinite linear alternate-reverse;
       }
     }
   }

@@ -47,77 +47,77 @@ header {
   .skip-to-content {
     clip: rect(1px, 1px, 1px, 1px);
     word-wrap: normal !important;
-    border: 0;
     -webkit-clip-path: inset(50%);
-    clip-path: inset(50%);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
     position: absolute;
-    width: 1px;
     z-index: 999;
+    clip-path: inset(50%);
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 
     &:focus {
       clip: auto !important;
       -webkit-clip-path: none;
-      clip-path: none;
-      height: auto;
-      margin: 0;
-      overflow: visible;
       position: static;
+      clip-path: none;
+      margin: 0;
       width: auto;
+      height: auto;
+      overflow: visible;
     }
   }
 
   nav {
-    background-color: none;
-    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    overflow: hidden;
     position: fixed;
     top: 3rem;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 2.5rem;
-    background-color: var(--color-header);
-    border: 0.4px solid var(--color-border);
     z-index: 9999;
+    backdrop-filter: blur(10px);
+    border: 0.4px solid var(--color-border);
+    border-radius: 2.5rem;
+    background-color: none;
+    background-color: var(--color-header);
     padding: 0.0625rem 1.5625rem;
+    overflow: hidden;
     text-align: center;
 
     ul {
-      list-style-type: none;
-      margin: 0;
-      min-height: 40px;
-      padding: 0;
-      overflow: hidden;
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      min-height: 40px;
+      overflow: hidden;
+      list-style-type: none;
 
       li {
         display: inline-block;
 
         a {
           display: block;
-          text-align: center;
+          transform: scale(1);
+          transition: color 0.7s ease, transform 100ms ease;
+          margin: 0 0.3125rem;
           color: var(--color-text-secondary);
-          text-decoration: none;
           font-weight: 600;
           font-size: 14px;
           letter-spacing: -0.015rem;
-          margin: 0 0.3125rem;
-          transform: scale(1);
-          transition: color 0.7s ease, transform 100ms ease;
+          text-align: center;
+          text-decoration: none;
 
           &:hover {
             color: var(--color-accent);
           }
 
           &:active {
-            color: var(--color-accent);
             transform: scale(0.9);
+            color: var(--color-accent);
           }
 
           &.active {
@@ -129,17 +129,17 @@ header {
   }
 
   #title {
-    margin-right: 2.1875rem;
     position: relative;
+    margin-right: 2.1875rem;
 
     * {
-      font-size: 16px;
-      letter-spacing: -0.0325rem;
-      font-weight: 800;
-      color: var(--color-text);
-      margin: 0.5rem 0.3125rem 0.5rem 0.3125rem;
       transform: scale(1);
       transition: transform 100ms ease text-decoration 0.4s ease;
+      margin: 0.5rem 0.3125rem 0.5rem 0.3125rem;
+      color: var(--color-text);
+      font-weight: 800;
+      font-size: 16px;
+      letter-spacing: -0.0325rem;
 
       &:hover {
         text-decoration: underline 0.075rem solid var(--color-accent);
@@ -151,14 +151,14 @@ header {
     }
 
     &::after {
-      content: "";
       position: absolute;
-      height: 50px;
-      margin: 0;
-      width: 0.0625rem;
-      background-color: var(--color-border);
       top: -0.3125rem;
       right: -1.25rem;
+      margin: 0;
+      background-color: var(--color-border);
+      width: 0.0625rem;
+      height: 50px;
+      content: "";
     }
   }
 

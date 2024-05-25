@@ -16,8 +16,8 @@
 
 <style lang="scss">
 .svg-link {
-  transition: fill 0.2s ease;
   fill: var(--color-text-secondary);
+  transition: fill 0.2s ease;
 
   &:hover {
     fill: var(--color-accent);

@@ -30,6 +30,8 @@
 
 - Sort Imports
 
+- Sort Styles in Components
+
 ### For Development
 
 - Update Dependencies inside the Development Example

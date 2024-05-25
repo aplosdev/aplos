@@ -38,19 +38,19 @@ const { frontmatter, theme } = useData();
 #article-head {
   .tags {
     span {
-      margin-right: 5px;
-      color: var(--color-text-secondary);
-      background-color: var(--color-background-second);
-      padding: 0.15rem 0.45rem;
-      border-radius: 20px;
-      font-size: 12px;
       transition: all 0.3s ease;
       cursor: default;
+      margin-right: 5px;
+      border-radius: 20px;
+      background-color: var(--color-background-second);
+      padding: 0.15rem 0.45rem;
+      color: var(--color-text-secondary);
+      font-size: 12px;
 
       &:hover {
+        transform: scale(1.05);
         background-color: var(--color-accent-alpha);
         color: var(--color-accent);
-        transform: scale(1.05);
       }
     }
 
