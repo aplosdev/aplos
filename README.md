@@ -19,6 +19,30 @@ A sleek, contemporary, and purposefully designed VitePress theme
 - Utilizes premium fonts: Inter for text and Geist Mono for code snippets.
 - Local development made easy with NPM/PNPM integration.
 
+<picture>
+  <source
+    srcset="https://github-readme-stats.vercel.app/api/pin/?username=aplosdev&repo=docs&theme=dark"
+    media="(prefers-color-scheme: dark)"
+  />
+  <source
+    srcset="https://github-readme-stats.vercel.app/api/pin/?username=aplosdev&repo=docs"
+    media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+  />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=aplosdev&repo=docs" alt="Repo Card" />
+</picture>
+
+<picture>
+  <source
+    srcset="https://github-readme-stats.vercel.app/api/pin/?username=aplosdev&repo=template&theme=dark"
+    media="(prefers-color-scheme: dark)"
+  />
+  <source
+    srcset="https://github-readme-stats.vercel.app/api/pin/?username=aplosdev&repo=template"
+    media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+  />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=aplosdev&repo=template" alt="Repo Card" />
+</picture>
+
 ## Name
 
 The name 'Aplós', pronounced as `/aplós/` is the Romanized representation of the Greek word 'Απλός,' which translates to 'Simple'. This naming choice showcases the essence of the project— it's dedication to providing users with a straightforward and modern web experience. Aplós is centered around the philosophy of simplicity, aiming to deliver an uncomplicated and contemporary solution for website creation.
