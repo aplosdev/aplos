@@ -1,3 +1,16 @@
+## 2.0.0 (upcoming)
+
+### Breaking Changes
+
+- Make the Blog List an custom component due to it's complexity
+  - This will allow for more customization and easier maintenance
+  - **Will require extra effort to implement it again** (example provided in the documentation and package file under `custom/BlogListExample.txt`)
+
+- Remove all fallbacks for the old names
+  - `blog-*` -> `article-*`
+  - `no-blog` -> `minimal`
+  - `simple` -> `minimal` (for the layout)
+
 ## 1.6.0 (2024-05-25)
 
 ### Feature(s)

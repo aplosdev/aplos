@@ -31,7 +31,7 @@ jobs:
       - name: Update CHANGELOG.md
         run: |
           today=$(date +'%Y-%m-%d')
-          sed -i "s/unreleased/$today/" CHANGELOG.md
+          sed -i "s/upcoming/$today/" CHANGELOG.md
 
       - name: Commit changes
         run: |

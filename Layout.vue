@@ -20,7 +20,7 @@ const { site, frontmatter, page } = useData();
       <h1>{{ site.title }}</h1>
     </div>
     <div
-      v-if="frontmatter.layout === 'article' || frontmatter.layout === 'blog'"
+      v-if="frontmatter.layout === 'article'"
     >
       <ArticleHead />
     </div>
@@ -28,16 +28,10 @@ const { site, frontmatter, page } = useData();
     <div v-else :class="frontmatter.pageClass">
       <Content />
     </div>
-    <ArticleList
-      v-if="
-        frontmatter.layout == 'article-list' ||
-        frontmatter.layout == 'blog-list'
-      "
-    />
     <HelpfulLayout
-      v-if="frontmatter.layout == 'helpful' || frontmatter.layout == 'simple'"
+      v-if="frontmatter.layout == 'helpful'"
     />
-    <div v-if="frontmatter.layout == 'article' || frontmatter.layout == 'blog'">
+    <div v-if="frontmatter.layout == 'article'">
       <ArticleFooter />
     </div>
   </main>

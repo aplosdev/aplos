@@ -69,11 +69,11 @@ Now that Aplós is an NPM Package, a release cycle is required. There is a new v
 
 Aplós uses [Semantic Versioning](https://semver.org/), so you can understand the changes by looking at the version number (using the `major.minor.patch` format).
 
-It might be possible that the pre-release versions start as a patch version and end up becoming a minor version (e.g: `2.1.3-1` -> `2.2.0-2`).
+It might be possible that the pre-release versions start as a patch version and end up becoming a minor/major version (e.g: `2.1.3-1` -> `2.2.0-0`) if there are significant changes or breaking changes.
 
 ### 'Next' Tag
 
-The 'next' tag is an nightly version of Aplós, used to test the next version before it is released. Use the 'next' tag if you want to test the next version of Aplós.
+The 'next' tag is version of Aplós, used to test the next version before it is released. Use the 'next' tag if you want to test the next version of Aplós.
 
 You can install the 'next' tag with the following command:
 

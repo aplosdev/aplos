@@ -22,8 +22,7 @@ const { site, frontmatter, page } = useData();
 		</div>
 		<HelpfulLayout
 			v-if="
-				frontmatter.layout == 'helpful' ||
-				frontmatter.layout == 'simple'
+				frontmatter.layout == 'helpful'
 			"
 		/>
 	</main>
