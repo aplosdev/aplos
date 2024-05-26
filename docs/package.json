@@ -1,0 +1,15 @@
+{
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "dependencies": {
+    "aplos": "workspace:*"
+  },
+  "devDependencies": {
+    "sass": "^1.77.2",
+    "vitepress": "^1.2.2"
+  }
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://aplos.gxbs.me/sitemap.xml
