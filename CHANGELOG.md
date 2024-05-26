@@ -1,5 +1,17 @@
 ## 2.0.0 (upcoming)
 
+### Breaking Changes
+
+- Make the Blog List an custom component due to it's complexity
+
+  - This will allow for more customization and easier maintenance
+  - **Will require extra effort to implement it again** (example provided in the documentation and package file under `custom/BlogListExample.txt`)
+
+- Remove all fallbacks for the old names
+  - `blog-*` -> `article-*`
+  - `no-blog` -> `minimal`
+  - `simple` -> `minimal` (for the layout)
+
 ### Features
 
 - Add support for various types of elements
@@ -11,16 +23,11 @@
   - `del` for deleted text
   - `ins` for inserted text
 
-### Breaking Changes
+### Cleanup(s)
 
-- Make the Blog List an custom component due to it's complexity
-  - This will allow for more customization and easier maintenance
-  - **Will require extra effort to implement it again** (example provided in the documentation and package file under `custom/BlogListExample.txt`)
+- Added an warning that the ActivityPub-based comments aren't currently working
 
-- Remove all fallbacks for the old names
-  - `blog-*` -> `article-*`
-  - `no-blog` -> `minimal`
-  - `simple` -> `minimal` (for the layout)
+- Add a `custom` folder for custom components
 
 ## 1.6.0 (2024-05-25)
 
