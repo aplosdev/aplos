@@ -8,6 +8,7 @@ export default defineConfig({
     "Aplós is a sleek, contemporary, and purposefully designed theme and template",
 
   lastUpdated: true,
+  ignoreDeadLinks: true,
   cleanUrls: true,
 
   themeConfig: {
