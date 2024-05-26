@@ -4,7 +4,6 @@ import { useData, Content } from "vitepress";
 import NotFound from "./layouts/NotFound.vue";
 import HelpfulLayout from "./layouts/Helpful.vue";
 import ArticleHead from "./layouts/ArticleHead.vue";
-import ArticleList from "./layouts/ArticleList.vue";
 import ArticleFooter from "./layouts/ArticleFooter.vue";
 
 import SiteFooter from "./components/Footer.vue";
