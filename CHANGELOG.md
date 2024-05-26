@@ -1,5 +1,16 @@
 ## 2.0.0 (upcoming)
 
+### Features
+
+- Add support for various types of elements
+  - `progress` for progress bars
+  - `samp` for sample output
+  - `legend` for legends
+  - `q` for inline quotes
+  - `u` for trying to replicate grammer mistakes
+  - `del` for deleted text
+  - `ins` for inserted text
+
 ### Breaking Changes
 
 - Make the Blog List an custom component due to it's complexity

@@ -203,3 +203,20 @@ You also can have an animation to the time like this one: <time>**11:00**</time>
 #### Output
 
 <time>**11:00**</time>
+
+### Progress Bar
+
+You can add a progress bar by using the `<progress>` tag:
+
+<progress max="100" value="60"></progress>
+
+<meter min="0" max="100" value="60">60 out of 100</meter>
+
+<legend>Legend</legend>
+
+And I was like <q>What?</q>
+
+<u>Wa</u>
+
+
+> There is <del>nothing</del> <ins>something</ins> here.
