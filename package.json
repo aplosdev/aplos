@@ -21,9 +21,9 @@
     "sass": "^1.77.2"
   },
   "scripts": {
-    "dev": "vitepress dev .development/default/pages",
-    "demo:build": "vitepress build .development/default/pages",
-    "demo:preview": "vitepress preview .development/default/pages"
+    "dev": "pnpm --filter=./.development/default dev",
+    "demo:build": "pnpm --filter=./.development/default build",
+    "demo:preview": "pnpm --filter=./.development/default preview"
   },
   "repository": {
     "type": "git",
