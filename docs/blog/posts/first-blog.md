@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: article
 title: First Blog
 author: Gabriel Cozma
 description: This is my first ever demo blog for Aplos!

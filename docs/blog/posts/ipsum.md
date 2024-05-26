@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: article
 title: "Ipsum"
 author: Gabriel Cozma
 description: Why Ipsum is the best.

@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: article
 title: "Lorem"
 author: Gabriel Cozma
 description: Why Lorem is the best.
