@@ -22,9 +22,6 @@
     "vue": "^3.4.27"
   },
   "scripts": {
-    "dev": "pnpm --filter=./.development/default dev",
-    "demo:build": "pnpm --filter=./.development/default build",
-    "demo:preview": "pnpm --filter=./.development/default preview",
     "docs:dev": "pnpm --filter=./docs dev",
     "docs:build": "pnpm --filter=./docs build",
     "docs:preview": "pnpm --filter=./docs preview"

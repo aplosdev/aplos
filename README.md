@@ -95,10 +95,10 @@ Before you start developing, make sure to install the dependencies:
 pnpm install
 ```
 
-If you want a development server, you can run the development server with:
+If you want a development server, you can directly run the Docs for development using the following command:
 
 ```bash
-pnpm dev
+pnpm docs:dev
 ```
 
 You can edit the project and see your changes live.

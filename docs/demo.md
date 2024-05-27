@@ -206,3 +206,5 @@ You also can have an animation to the time like this one: <time>**11:00**</time>
 #### Output
 
 <time>**11:00**</time>
+
+<cite>Cite</cite>
