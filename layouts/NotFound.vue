@@ -52,7 +52,7 @@ const { theme } = useData();
     font-size: 2em;
   }
 
-  span {
+  .glitch {
     display: inline-block;
     position: relative;
     animation: notfoundblink 0.8s infinite alternate;
