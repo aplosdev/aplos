@@ -2,6 +2,10 @@
 
 ### Breaking Changes
 
+- Rename `blog` configuration to `article`
+
+- Giscus comments configuration via `theme` -> `articles` -> `giscus` instead of `theme` -> `data`
+
 - Make the Blog List an custom component due to it's complexity
 
   - This will allow for more customization and easier maintenance
