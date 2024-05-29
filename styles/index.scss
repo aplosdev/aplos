@@ -68,6 +68,28 @@ div[class*="language-"]:hover,
   }
 }
 
+
+:focus-visible {
+	animation: focus-in 0.2s;
+	outline: 0.125rem solid var(--color-accent);
+	outline-offset: 2px;
+}
+
+@supports not selector(:focus-visible) {
+	:focus {
+		animation: focus-in 0.2s;
+		outline: 0.125rem solid var(--color-accent);
+		outline-offset: 2px;
+	}
+}
+
+@keyframes focus-in {
+	from {
+		outline: 0.5rem solid transparent;
+		outline-offset: 0.25rem;
+	}
+} 
+
 /* Other */
 
 .table-of-contents {

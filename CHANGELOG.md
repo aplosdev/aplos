@@ -18,6 +18,9 @@
 
 ### Features
 
+- Better accessibility for keyboard users
+  - With an custom focus indicator
+
 - Add support for various types of elements
   - `progress` for progress bars
   - `samp` for sample output
