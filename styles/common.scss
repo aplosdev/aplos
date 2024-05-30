@@ -17,7 +17,7 @@ pre {
   padding: 0.625rem 1.25rem;
   overflow: auto;
   font-weight: 500;
-  font-family: "Geist Mono", monospace;
+  font-family: var(--main-mono);
 
   code {
     border: 0;
@@ -186,7 +186,7 @@ progress {
 }
 
 samp {
-  font-family: "Geist Mono", monospace;
+  font-family: var(--main-mono);
   font-size: 0.9rem;
   background-color: var(--color-background-second);
   padding: 0.125rem 0.375rem;

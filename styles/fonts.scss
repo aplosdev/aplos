@@ -1,13 +1,6 @@
-html {
-    font-family: "Inter", sans-serif;
-
-    @supports (font-variation-settings: normal) {
-        font-family: "InterVariable", sans-serif;
-    }
-}
-
-
 :root {
+    --main-mono: "Geist Mono", monospace;
+
     font-feature-settings: "liga" 1, "calt" 1, "cv05" 1;
     scroll-behavior: smooth;
     font-family: Inter, sans-serif;
@@ -15,6 +8,14 @@ html {
 
     @supports (font-variation-settings: normal) {
         font-family: InterVariable, sans-serif;
+    }
+}
+
+html {
+    font-family: "Inter", sans-serif;
+
+    @supports (font-variation-settings: normal) {
+        font-family: "InterVariable", sans-serif;
     }
 }
 

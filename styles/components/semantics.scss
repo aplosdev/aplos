@@ -5,7 +5,7 @@ code {
     color: var(--color-accent);
     font-weight: 500;
     font-size: 0.83rem;
-    font-family: "Geist Mono", monospace;
+    font-family: var(--main-mono);
 }
 
 kbd {
@@ -16,7 +16,7 @@ kbd {
     background-color: var(--color-background-second);
     padding: 0.1875rem;
     font-size: 0.875rem;
-    font-family: "Geist Mono", monospace;
+    font-family: var(--main-mono);
 
     &:active {
         border-bottom: 0.0625rem solid var(--color-border);

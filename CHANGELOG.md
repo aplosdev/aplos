@@ -18,6 +18,8 @@
 
 ### Features
 
+- Provide a non-custom font version of Aplós (`aplos/plain`)
+
 - Better accessibility for keyboard users
   - With an custom focus indicator
 
@@ -35,6 +37,12 @@
 - Added an warning that the ActivityPub-based comments aren't currently working
 
 - Add a `custom` folder for custom components
+
+- Remove Layout imports from Aplós Minimal (useless imports)
+
+- Sort imports in Aplós Minimal
+
+- Make Geist Mono/Main Monospace an variable
 
 ## 1.6.0 (2024-05-25)
 
