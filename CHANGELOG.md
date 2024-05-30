@@ -22,7 +22,15 @@
 
 - Add `note` informal card
 
+- Small changes to images behavior
+  - Smaller scale when active
+  - Max width for images when active
+  - Images with a link:
+    - Add pointer cursor
+    - Make border thicker when hover
+
 - Better accessibility for keyboard users
+
   - With an custom focus indicator
 
 - Add support for various types of elements
@@ -35,10 +43,6 @@
   - `ins` for inserted text
 
 ### Cleanup(s)
-
-- Small changes to images behavior
-  - Smaller scale when active
-  - Max width for images when active
 
 - Added an warning that the ActivityPub-based comments aren't currently working
 

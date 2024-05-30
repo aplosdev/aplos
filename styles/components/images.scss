@@ -82,6 +82,11 @@ img {
 a img {
     border: 1px solid var(--color-accent);
 
+    &:hover {
+        cursor: pointer;
+        border: 2px solid var(--color-accent);
+    }
+
     &[src*="#no-border"] {
         border: 0;
     }
