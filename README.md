@@ -116,3 +116,9 @@ All other standard VitePress commands are available, like `pnpm demo:build` and 
 - [Geist Mono](https://vercel.com/font/), used for code snippets.
 - [VitePress](https://vitepress.dev), which is used to power Aplós.
 - Everyone that supported the project.
+
+---
+
+## Documentation
+
+The documentation source is in the `docs` folder, it always uses the latest code from the `main` branch, so you can see the latest changes and use it as the development environment. **If you happen to find any issues, please report them in the [Issues](https://github.com/aplosdev/aplos/issues) section.**
