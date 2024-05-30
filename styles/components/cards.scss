@@ -86,6 +86,15 @@
   }
 }
 
+.note {
+  border-left: var(--color-accent) 0.4rem solid;
+  background-color: var(--color-background-second);
+
+  .custom-block-title::before {
+    content: none;
+  }
+}
+
 .details {
   margin: 1.25rem 0;
   border-radius: 0.625rem;

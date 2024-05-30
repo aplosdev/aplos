@@ -20,6 +20,8 @@
 
 - Provide a non-custom font version of Aplós (`aplos/plain`)
 
+- Add `note` informal card
+
 - Better accessibility for keyboard users
   - With an custom focus indicator
 
@@ -33,6 +35,10 @@
   - `ins` for inserted text
 
 ### Cleanup(s)
+
+- Small changes to images behavior
+  - Smaller scale when active
+  - Max width for images when active
 
 - Added an warning that the ActivityPub-based comments aren't currently working
 

@@ -1,7 +1,8 @@
 img {
     &:active {
-        transform: scale(1.3);
+        transform: scale(1.2);
         border-radius: 0;
+        max-width: 100%;
     }
 
     &[src*="#not-rounded"] {
