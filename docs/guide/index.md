@@ -6,9 +6,6 @@ layout: simple
 
 Aplós is a user-friendly template for Vitepress that allows you to quickly set up and customize your website. In just a few simple steps, you can configure the template to match your preferences. Let's walk through the process:
 
-> [!TIP] Tip
-> Use the navigation on the left to jump to an specific section.
-
 [[toc]]
 
 ## Initialization
