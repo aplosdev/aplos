@@ -23,6 +23,7 @@
 - Add `note` informal card
 
 - Small changes to images behavior
+
   - Smaller scale when active
   - Max width for images when active
   - Images with a link:
@@ -53,6 +54,10 @@
 - Sort imports in Aplós Minimal
 
 - Make Geist Mono/Main Monospace an variable
+
+### Fix(es)
+
+- Make just the `glitch` class be animated in the Not Found page (instead of all `<span>` elements)
 
 ## 1.6.0 (2024-05-25)
 
