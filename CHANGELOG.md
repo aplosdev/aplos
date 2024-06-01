@@ -59,6 +59,12 @@
 
 - Make just the `glitch` class be animated in the Not Found page (instead of all `<span>` elements)
 
+### For Development
+
+- Add `Prettier` to the project for better code consistency
+
+- Add an [Contributing](https://aplos.gxbs.me/contributing) page for clear steps on how to contribute
+
 ## 1.6.0 (2024-05-25)
 
 ### Feature(s)

@@ -1,5 +1,5 @@
 ---
-layout: simple
+layout: helpful
 ---
 
 # Static Template
@@ -11,7 +11,7 @@ Besides Aplós being a VitePress theme, it also provides a simple HTML & CSS tem
 Getting it on your local machine by running the following command in your terminal:
 
 ```bash
-git clone --single-branch --branch html https://github.com/aplosdev/template 
+git clone --single-branch --branch html https://github.com/aplosdev/template
 ```
 
 > [!NOTE] Note

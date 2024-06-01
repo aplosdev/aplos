@@ -20,11 +20,7 @@ const { site, frontmatter, page } = useData();
 		<div v-else :class="frontmatter.pageClass">
 			<Content />
 		</div>
-		<HelpfulLayout
-			v-if="
-				frontmatter.layout == 'helpful'
-			"
-		/>
+		<HelpfulLayout v-if="frontmatter.layout == 'helpful'" />
 	</main>
 	<SiteFooter />
 </template>

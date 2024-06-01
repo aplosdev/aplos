@@ -6,235 +6,239 @@ audio,
 iframe,
 embed,
 object {
-  display: block;
+	display: block;
 }
 
 pre {
-  margin: 1.25rem 0;
-  border-right: var(--color-accent) 0.3125rem solid;
-  border-radius: 1.25rem;
-  background-color: var(--color-background-code);
-  padding: 0.625rem 1.25rem;
-  overflow: auto;
-  font-weight: 500;
-  font-family: var(--main-mono);
+	margin: 1.25rem 0;
+	border-right: var(--color-accent) 0.3125rem solid;
+	border-radius: 1.25rem;
+	background-color: var(--color-background-code);
+	padding: 0.625rem 1.25rem;
+	overflow: auto;
+	font-weight: 500;
+	font-family: var(--main-mono);
 
-  code {
-    border: 0;
-    border-radius: 0;
-    background-color: transparent;
-    padding: 0;
-    color: var(--color-text);
+	code {
+		border: 0;
+		border-radius: 0;
+		background-color: transparent;
+		padding: 0;
+		color: var(--color-text);
 
-    span {
-      color: var(--shiki-light, inherit);
+		span {
+			color: var(--shiki-light, inherit);
 
-      @media (prefers-color-scheme: dark) {
-        color: var(--shiki-dark, inherit);
-      }
+			@media (prefers-color-scheme: dark) {
+				color: var(--shiki-dark, inherit);
+			}
 
-      .line .highlighted {
-        background-color: rgba(142, 150, 170, 0.14);
+			.line .highlighted {
+				background-color: rgba(142, 150, 170, 0.14);
 
-        @media (prefers-color-scheme: dark) {
-          background-color: rgba(101, 117, 133, 0.16);
-        }
-      }
-    }
-  }
+				@media (prefers-color-scheme: dark) {
+					background-color: rgba(101, 117, 133, 0.16);
+				}
+			}
+		}
+	}
 
-  .highlighted {
-    background-color: rgba(142, 150, 170, 0.14);
+	.highlighted {
+		background-color: rgba(142, 150, 170, 0.14);
 
-    @media (prefers-color-scheme: dark) {
-      background-color: rgba(101, 117, 133, 0.16);
-    }
+		@media (prefers-color-scheme: dark) {
+			background-color: rgba(101, 117, 133, 0.16);
+		}
 
-    display: inline-block;
+		display: inline-block;
 
-    transition: background-color 0.5s;
-    margin: 0 -1.5rem;
-    padding: 0 1.5rem;
-    width: calc(99% + 2 * 1.5rem);
-  }
+		transition: background-color 0.5s;
+		margin: 0 -1.5rem;
+		padding: 0 1.5rem;
+		width: calc(99% + 2 * 1.5rem);
+	}
 
-  .has-focused-lines .line:not(.has-focus) {
-    opacity: 0.4;
-    filter: blur(0.095rem);
-    transition: filter 0.35s, opacity 0.35s;
-  }
+	.has-focused-lines .line:not(.has-focus) {
+		opacity: 0.4;
+		filter: blur(0.095rem);
+		transition:
+			filter 0.35s,
+			opacity 0.35s;
+	}
 }
 
 blockquote {
-  margin: 0;
-  border-left: var(--color-accent) 0.3125rem solid;
-  border-radius: 0.5rem 1.5rem 1.5rem 0.5rem;
-  background-color: var(--color-background-second);
-  padding: 0.625rem 1.1875rem;
-  width: max-content;
-  max-width: 97%;
+	margin: 0;
+	border-left: var(--color-accent) 0.3125rem solid;
+	border-radius: 0.5rem 1.5rem 1.5rem 0.5rem;
+	background-color: var(--color-background-second);
+	padding: 0.625rem 1.1875rem;
+	width: max-content;
+	max-width: 97%;
 
-  blockquote {
-    margin: 0.3125rem 0;
-    padding: 0.3125rem 0.625rem;
-  }
+	blockquote {
+		margin: 0.3125rem 0;
+		padding: 0.3125rem 0.625rem;
+	}
 
-  p {
-    margin: 0;
-    color: var(--color-text-secondary);
-  }
+	p {
+		margin: 0;
+		color: var(--color-text-secondary);
+	}
 }
 
 img,
 video {
-  transition: transform 0.4s, border-radius 0.4s, box-shadow 1.5s ease;
-  margin: 0.625rem 0;
-  border-radius: 0.625rem;
-  width: 100%;
+	transition:
+		transform 0.4s,
+		border-radius 0.4s,
+		box-shadow 1.5s ease;
+	margin: 0.625rem 0;
+	border-radius: 0.625rem;
+	width: 100%;
 
-  &:hover {
-    transform: scale(1.1);
-    cursor: zoom-in;
-    box-shadow: var(--base-shadow);
-    border-radius: 1.25rem;
-  }
+	&:hover {
+		transform: scale(1.1);
+		cursor: zoom-in;
+		box-shadow: var(--base-shadow);
+		border-radius: 1.25rem;
+	}
 }
 
 video:hover {
-  transform: scale(1.06);
-  border-radius: 0;
+	transform: scale(1.06);
+	border-radius: 0;
 }
 
 figcaption {
-  display: block;
-  margin-top: -0.5rem;
-  margin-bottom: 2rem;
-  color: var(--color-text-secondary);
-  font-size: 0.8rem;
-  text-align: center;
+	display: block;
+	margin-top: -0.5rem;
+	margin-bottom: 2rem;
+	color: var(--color-text-secondary);
+	font-size: 0.8rem;
+	text-align: center;
 }
 
 hr {
-  margin: 1.25rem 5%;
-  border: var(--color-border) 0.125rem solid;
-  border-radius: 1.25rem;
+	margin: 1.25rem 5%;
+	border: var(--color-border) 0.125rem solid;
+	border-radius: 1.25rem;
 }
 
-
 mark {
-  margin: 0;
-  border-radius: 0.625rem;
-  background-color: var(--color-background-second);
-  padding: 0.125rem 0.375rem 0.1875rem 0.375rem;
-  color: var(--color-accent);
+	margin: 0;
+	border-radius: 0.625rem;
+	background-color: var(--color-background-second);
+	padding: 0.125rem 0.375rem 0.1875rem 0.375rem;
+	color: var(--color-accent);
 }
 
 /* Others */
 
 ul,
 ol {
-  margin: 0;
+	margin: 0;
 }
 
 ul {
-  list-style: disc;
+	list-style: disc;
 }
 
 ol {
-  list-style: decimal;
+	list-style: decimal;
 }
 
 a mark {
-  display: inline-block;
-  transition: transform 0.3s ease;
-  text-decoration: underline;
+	display: inline-block;
+	transition: transform 0.3s ease;
+	text-decoration: underline;
 
-  &:hover {
-    transform: scale(1.2) rotate(10deg);
-  }
+	&:hover {
+		transform: scale(1.2) rotate(10deg);
+	}
 }
 
 aside {
-  float: right;
-  margin-inline-start: 1rem;
-  border-radius: 1rem;
-  background-color: var(--color-background-second);
-  padding: 1rem;
-  width: 30%;
+	float: right;
+	margin-inline-start: 1rem;
+	border-radius: 1rem;
+	background-color: var(--color-background-second);
+	padding: 1rem;
+	width: 30%;
 }
 
 progress {
-  appearance: none;
-  margin: 0.625rem 0;
-  border: none;
-  border-radius: 0.3125rem;
-  background-color: var(--color-background-second);
-  height: 0.625rem;
-  color: var(--color-accent);
+	appearance: none;
+	margin: 0.625rem 0;
+	border: none;
+	border-radius: 0.3125rem;
+	background-color: var(--color-background-second);
+	height: 0.625rem;
+	color: var(--color-accent);
 
-  &::-webkit-progress-value {
-    background-color: var(--color-accent);
-  }
+	&::-webkit-progress-value {
+		background-color: var(--color-accent);
+	}
 
-  &::-moz-progress-bar {
-    background-color: var(--color-accent);
-  }
+	&::-moz-progress-bar {
+		background-color: var(--color-accent);
+	}
 
-  &::-ms-fill {
-    background-color: var(--color-accent);
-  }
+	&::-ms-fill {
+		background-color: var(--color-accent);
+	}
 }
 
 samp {
-  border-radius: 0.625rem;
-  background-color: var(--color-background-second);
-  padding: 0.125rem 0.375rem;
-  color: var(--color-text-secondary);
-  font-size: 0.9rem;
-  font-family: var(--main-mono);
+	border-radius: 0.625rem;
+	background-color: var(--color-background-second);
+	padding: 0.125rem 0.375rem;
+	color: var(--color-text-secondary);
+	font-size: 0.9rem;
+	font-family: var(--main-mono);
 }
 
 legend {
-  display: inline-block;
-  border-radius: 0.325rem;
-  background-color: var(--color-background-second);
-  padding: 0.125rem 0.375rem;
-  color: var(--color-text);
+	display: inline-block;
+	border-radius: 0.325rem;
+	background-color: var(--color-background-second);
+	padding: 0.125rem 0.375rem;
+	color: var(--color-text);
 }
 
 q {
-  display: inline-block;
-  border-radius: 0.325rem;
-  background-color: var(--color-background-second);
-  padding: 0.125rem 0.375rem;
-  color: var(--color-text-secondary);
-  font-style: italic;
+	display: inline-block;
+	border-radius: 0.325rem;
+	background-color: var(--color-background-second);
+	padding: 0.125rem 0.375rem;
+	color: var(--color-text-secondary);
+	font-style: italic;
 }
 
 u {
-  text-decoration: underline wavy var(--color-accent);
+	text-decoration: underline wavy var(--color-accent);
 }
 
 del {
-  background-color: #ffcccc;
-  color: inherit;
-  text-decoration: line-through;
+	background-color: #ffcccc;
+	color: inherit;
+	text-decoration: line-through;
 
-  @media (prefers-color-scheme: dark) {
-    background-color: #ff66665a;
-  }
+	@media (prefers-color-scheme: dark) {
+		background-color: #ff66665a;
+	}
 }
 
 ins {
-  background-color: #ccffcc;
-  color: inherit;
-  text-decoration: underline;
+	background-color: #ccffcc;
+	color: inherit;
+	text-decoration: underline;
 
-  @media (prefers-color-scheme: dark) {
-    background-color: #3795379e;
-  }
+	@media (prefers-color-scheme: dark) {
+		background-color: #3795379e;
+	}
 }
 
 cite {
-  font-style: italic;
+	font-style: italic;
 }

@@ -1,7 +1,7 @@
 <div align="center">
 <h1>Aplós</h1>
 
- A sleek, contemporary, and purposefully designed VitePress theme & Static Template. It provides a straightforward solution for creating a quick web page, offering essential features for comfortable writing while maintaining a sense of simplicity.
+A sleek, contemporary, and purposefully designed VitePress theme & Static Template. It provides a straightforward solution for creating a quick web page, offering essential features for comfortable writing while maintaining a sense of simplicity.
 
 </div>
 

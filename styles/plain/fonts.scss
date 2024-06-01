@@ -4,7 +4,10 @@
 		sans-serif, sans-serif;
 	--main-mono: monospace;
 
-	font-feature-settings: "liga" 1, "calt" 1, "cv05" 1;
+	font-feature-settings:
+		"liga" 1,
+		"calt" 1,
+		"cv05" 1;
 	scroll-behavior: smooth;
 	font-family: var(--system-font);
 	/* fix for Chrome */

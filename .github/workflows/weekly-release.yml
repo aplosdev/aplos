@@ -1,42 +1,42 @@
 name: Weekly Release
 
 on:
-  workflow_dispatch:
-  schedule:
-    - cron: "0 16 * * 6"
+    workflow_dispatch:
+    schedule:
+        - cron: "0 16 * * 6"
 
 env:
-  token: ${{ secrets.GITHUB_TOKEN }}
+    token: ${{ secrets.GITHUB_TOKEN }}
 
 permissions:
-  contents: write
+    contents: write
 
 jobs:
-  release:
-    runs-on: ubuntu-latest
+    release:
+        runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: latest
+            - name: Set up Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: latest
 
-      - name: Remove version suffix
-        run: |
-          sed -i 's/"version": "\([0-9]\+\.[0-9]\+\.[0-9]\+\)-[0-9]\+",/"version": "\1",/g' package.json
+            - name: Remove version suffix
+              run: |
+                  sed -i 's/"version": "\([0-9]\+\.[0-9]\+\.[0-9]\+\)-[0-9]\+",/"version": "\1",/g' package.json
 
-      - name: Update CHANGELOG.md
-        run: |
-          today=$(date +'%Y-%m-%d')
-          sed -i "s/upcoming/$today/" CHANGELOG.md
+            - name: Update CHANGELOG.md
+              run: |
+                  today=$(date +'%Y-%m-%d')
+                  sed -i "s/upcoming/$today/" CHANGELOG.md
 
-      - name: Commit changes
-        run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-          git add .
-          git commit -am "release: $(jq -r '.version' package.json)"
-          git push
+            - name: Commit changes
+              run: |
+                  git config --global user.name "GitHub Actions"
+                  git config --global user.email "actions@github.com"
+                  git add .
+                  git commit -am "release: $(jq -r '.version' package.json)"
+                  git push

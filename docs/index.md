@@ -26,7 +26,8 @@ A sleek, contemporary, and purposefully designed VitePress theme & template. It 
 
 ## Name
 
-'*Aplós*', pronounced as `/aplós/` <button class="mono-emoji" @click="playSound">🔊</button> is the Romanized representation of the Greek word 'Απλός,' which translates to 'Simple'. This naming choice showcases the essence of the project— it's dedication to providing users with a straightforward and modern web experience. Aplós is centered around the philosophy of simplicity, aiming to deliver an uncomplicated and contemporary solution for website creation.
+'_Aplós_', pronounced as `/aplós/` <button class="mono-emoji" @click="playSound">🔊</button> is the Romanized representation of the Greek word 'Απλός,' which translates to 'Simple'. This naming choice showcases the essence of the project— it's dedication to providing users with a straightforward and modern web experience. Aplós is centered around the philosophy of simplicity, aiming to deliver an uncomplicated and contemporary solution for website creation.
+
 </aside>
 
 ## Installation
@@ -39,6 +40,10 @@ npm install aplos
 
 Once you've installed the package, you will need to follow the [Guide](/guide/#package) to set up the theme. {.local-link}
 
+## Contributing
+
+If you want to contribute to Aplós, you can check the [Contributing](/contributing) page in the documentation. {.local-link}
+
 ## Credits & Thanks to
 
 Aplós whouldn't be possible without the following projects:
@@ -49,7 +54,6 @@ Aplós whouldn't be possible without the following projects:
 - [Geist Mono](https://vercel.com/font), used for code snippets.
 - [VitePress](https://vitepress.dev), which is used to power Aplós.
 - Everyone that supported the project.
-
 
 ::: details Intrested in the journey behind it?
 Check out the blog I made about the journey in developing this project here at https://gabs.eu.org/blog/posts/behind-aplós

@@ -1,33 +1,36 @@
 :root {
-    --main-mono: "Geist Mono", monospace;
+	--main-mono: "Geist Mono", monospace;
 
-    font-feature-settings: "liga" 1, "calt" 1, "cv05" 1;
-    scroll-behavior: smooth;
-    font-family: Inter, sans-serif;
-    /* fix for Chrome */
+	font-feature-settings:
+		"liga" 1,
+		"calt" 1,
+		"cv05" 1;
+	scroll-behavior: smooth;
+	font-family: Inter, sans-serif;
+	/* fix for Chrome */
 
-    @supports (font-variation-settings: normal) {
-        font-family: InterVariable, sans-serif;
-    }
+	@supports (font-variation-settings: normal) {
+		font-family: InterVariable, sans-serif;
+	}
 }
 
 html {
-    font-family: "Inter", sans-serif;
+	font-family: "Inter", sans-serif;
 
-    @supports (font-variation-settings: normal) {
-        font-family: "InterVariable", sans-serif;
-    }
+	@supports (font-variation-settings: normal) {
+		font-family: "InterVariable", sans-serif;
+	}
 }
 
 body {
-    color: var(--color-text);
-    font-weight: 400;
-    font-size: normal;
-    font-family: Inter, sans-serif;
-    font-synthesis: style;
-    text-rendering: optimizeLegibility;
+	color: var(--color-text);
+	font-weight: 400;
+	font-size: normal;
+	font-family: Inter, sans-serif;
+	font-synthesis: style;
+	text-rendering: optimizeLegibility;
 
-    @supports (font-variation-settings: normal) {
-        font-family: InterVariable, sans-serif;
-    }
+	@supports (font-variation-settings: normal) {
+		font-family: InterVariable, sans-serif;
+	}
 }

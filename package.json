@@ -24,7 +24,8 @@
   "scripts": {
     "docs:dev": "pnpm --filter=./docs dev",
     "docs:build": "pnpm --filter=./docs build",
-    "docs:preview": "pnpm --filter=./docs preview"
+    "docs:preview": "pnpm --filter=./docs preview",
+    "format": "prettier --write ."
   },
   "repository": {
     "type": "git",
@@ -33,5 +34,8 @@
   "bugs": {
     "url": "https://github.com/aplosdev/aplos/issues"
   },
-  "homepage": "https://aplos.gxbs.me"
+  "homepage": "https://aplos.gxbs.me",
+  "devDependencies": {
+    "prettier": "3.2.5"
+  }
 }

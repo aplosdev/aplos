@@ -8,9 +8,9 @@ post: https://fosstodon.org/@gregorni/112379470950032296
 date: 2024-03-10T21:32:00+02:00
 next: Ipsum
 tags:
- - demo
- - first-blog
- - example
+  - demo
+  - first-blog
+  - example
 ---
 
 > [!INFO] Info

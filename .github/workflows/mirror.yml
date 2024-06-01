@@ -1,22 +1,22 @@
 name: Mirror to Codeberg
 
 on:
-  push:
-    branches: ['main']
+    push:
+        branches: ["main"]
 
-    workflow_dispatch:
+        workflow_dispatch:
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+    build:
+        runs-on: ubuntu-latest
 
-    steps:
-    - uses: actions/checkout@v4
-      with:
-        fetch-depth: 0
-    - name: mirror-repository
-      uses: spyoungtech/mirror-action@v0.5.1
-      with:
-        REMOTE: 'https://codeberg.org/aplos/aplos.git'
-        GIT_USERNAME: gxbs
-        GIT_PASSWORD: ${{ secrets.GIT_PASSWORD }}
+        steps:
+            - uses: actions/checkout@v4
+              with:
+                  fetch-depth: 0
+            - name: mirror-repository
+              uses: spyoungtech/mirror-action@v0.5.1
+              with:
+                  REMOTE: "https://codeberg.org/aplos/aplos.git"
+                  GIT_USERNAME: gxbs
+                  GIT_PASSWORD: ${{ secrets.GIT_PASSWORD }}

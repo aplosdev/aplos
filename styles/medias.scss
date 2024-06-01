@@ -1,91 +1,89 @@
 @media screen and (max-width: 88.375rem) {
-  main {
-    margin-top: 9.375rem !important;
-    margin-bottom: 9.375rem !important;
-    width: 90vw !important;
-  }
+	main {
+		margin-top: 9.375rem !important;
+		margin-bottom: 9.375rem !important;
+		width: 90vw !important;
+	}
 
-  nav {
-    padding: 0.3125rem 1.25rem !important;
+	nav {
+		padding: 0.3125rem 1.25rem !important;
 
-    h1,
-    ul li a {
-      font-size: 1rem !important;
-    }
+		h1,
+		ul li a {
+			font-size: 1rem !important;
+		}
 
-    .fa-brands {
-      font-size: 1rem !important;
-    }
-  }
+		.fa-brands {
+			font-size: 1rem !important;
+		}
+	}
 
-  code {
-    margin-top: 0.9375rem;
-    padding: 0.1875rem 0.625rem;
-    line-height: 1.2;
-  }
+	code {
+		margin-top: 0.9375rem;
+		padding: 0.1875rem 0.625rem;
+		line-height: 1.2;
+	}
 
-  .danger,
-  .warning,
-  .tip,
-  .details,
-  .info {
-    width: 100% !important;
-  }
+	.danger,
+	.warning,
+	.tip,
+	.details,
+	.info {
+		width: 100% !important;
+	}
 
-  .lang {
-    display: none;
-  }
+	.lang {
+		display: none;
+	}
 
-  .table-of-contents {
-    left: 6% !important;
-  }
+	.table-of-contents {
+		left: 6% !important;
+	}
 }
 
 @media screen and (max-width: 114.25rem) {
-  .table-of-contents {
-    display: none;
-  }
+	.table-of-contents {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 37.5rem) {
+	ul,
+	ol {
+		margin: 0 0 0 0.625rem;
+	}
 
-  ul,
-  ol {
-    margin: 0 0 0 0.625rem;
-  }
-
-  aside {
-    float: none;
-    margin-inline-start: 0;
-    width: 100%;
-  }
+	aside {
+		float: none;
+		margin-inline-start: 0;
+		width: 100%;
+	}
 }
 
-
 @media screen and (min-width: 88.375rem) and (max-width: 118.875rem) {
-  main {
-    margin: 7% 20%;
-  }
+	main {
+		margin: 7% 20%;
+	}
 }
 
 /* For printing */
 
 @media print {
-  main {
-    margin: 0 !important;
-    padding: 0 !important;
-    width: 100% !important;
-  }
+	main {
+		margin: 0 !important;
+		padding: 0 !important;
+		width: 100% !important;
+	}
 
-  nav {
-    display: none !important;
-  }
+	nav {
+		display: none !important;
+	}
 
-  footer {
-    display: none !important;
-  }
+	footer {
+		display: none !important;
+	}
 
-  .lang {
-    display: none !important;
-  }
+	.lang {
+		display: none !important;
+	}
 }

@@ -1,3 +1,7 @@
+---
+layout: helpful
+---
+
 # Editing Configuration
 
 If you want to customize the configuration of the project, you can follow the long list of what can you customize below. All of these are located in the `config.mts` file.
@@ -67,7 +71,7 @@ Customizing the Blog in your Aplós template is a straightforward process, speci
 
 The `data` object contains the variables to make the [Giscus](https://giscus.app/) comments show, for more information check the [Giscus documentation](https://giscus.app/).
 
->[!WARNING] Warning
+> [!WARNING] Warning
 > The variables above are only needed if you use Giscus as the comment provider in your blog post. If you use ActivityPub, you can ignore these variables.
 
 ## Customizing Colors
