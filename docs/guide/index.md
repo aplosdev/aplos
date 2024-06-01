@@ -15,7 +15,7 @@ Aplós is a user-friendly template for Vitepress that allows you to quickly set 
 2. After initializing, you have two options:
 
    - Clone the repository to edit the project locally: `git clone https://github.com/*your_username*/aplos`
-   - Use GitHub Codespaces to edit the project online: [GitHub Codespaces](https://codespace.new) { .external-link }
+   - Use GitHub Codespaces to edit the project online: [GitHub Codespaces](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=737827959) { .external-link }
 
    Make sure to replace _your_username_ with your GitHub username.
 
@@ -201,7 +201,7 @@ Make sure to edit the `post` link with your own post link. Once that, you don't 
 
 ### General Styling
 
-Using Aplós, you can customise the appearance of your content with various styling options. The `.vitepress/theme/index.ts` file allows importing additional files, including CSS or SCSS files, to apply custom styles to your project. 
+Using Aplós, you can customise the appearance of your content with various styling options. The `.vitepress/theme/index.ts` file allows importing additional files, including CSS or SCSS files, to apply custom styles to your project.
 
 For example, to import a CSS file, add the following line to the `index.ts` file:
 
@@ -241,11 +241,13 @@ You can style images in your content using various options provided by Aplós. H
 - **Transparency**: Make an image transparent.
 
 To apply any of these options, use the following syntax:
+
 ```md
 ![My image](./image.png#option)
 ```
 
 For example, to make an image small, use the following syntax:
+
 ```md
 ![My image](./image.png#small)
 ```
