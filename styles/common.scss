@@ -164,13 +164,13 @@ aside {
 }
 
 progress {
-  margin: 0.625rem 0;
-  height: 0.625rem;
-  border-radius: 0.3125rem;
-  color: var(--color-accent);
   appearance: none;
-  background-color: var(--color-background-second);
+  margin: 0.625rem 0;
   border: none;
+  border-radius: 0.3125rem;
+  background-color: var(--color-background-second);
+  height: 0.625rem;
+  color: var(--color-accent);
 
   &::-webkit-progress-value {
     background-color: var(--color-accent);
@@ -186,29 +186,29 @@ progress {
 }
 
 samp {
-  font-family: var(--main-mono);
-  font-size: 0.9rem;
+  border-radius: 0.625rem;
   background-color: var(--color-background-second);
   padding: 0.125rem 0.375rem;
-  border-radius: 0.625rem;
   color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  font-family: var(--main-mono);
 }
 
 legend {
-  background-color: var(--color-background-second);
-  color: var(--color-text);
-  border-radius: 0.325rem;
   display: inline-block;
+  border-radius: 0.325rem;
+  background-color: var(--color-background-second);
   padding: 0.125rem 0.375rem;
+  color: var(--color-text);
 }
 
 q {
   display: inline-block;
-  padding: 0.125rem 0.375rem;
-  font-style: italic;
   border-radius: 0.325rem;
   background-color: var(--color-background-second);
+  padding: 0.125rem 0.375rem;
   color: var(--color-text-secondary);
+  font-style: italic;
 }
 
 u {
@@ -216,9 +216,9 @@ u {
 }
 
 del {
-  text-decoration: line-through;
   background-color: #ffcccc;
   color: inherit;
+  text-decoration: line-through;
 
   @media (prefers-color-scheme: dark) {
     background-color: #ff66665a;
@@ -226,9 +226,9 @@ del {
 }
 
 ins {
-  text-decoration: underline;
   background-color: #ccffcc;
   color: inherit;
+  text-decoration: underline;
 
   @media (prefers-color-scheme: dark) {
     background-color: #3795379e;
