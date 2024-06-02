@@ -14,7 +14,7 @@
 - Remove all fallbacks for the old names
   - `blog-*` -> `article-*`
   - `no-blog` -> `minimal`
-  - `simple` -> `minimal` (for the layout)
+  - `simple` -> `helpful` (for the layout)
 
 ### Features
 
