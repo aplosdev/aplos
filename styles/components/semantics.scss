@@ -1,113 +1,113 @@
 code {
-	border-radius: 0.45rem;
-	background-color: var(--color-background-second);
-	padding: 0.125rem 0.25rem;
-	color: var(--color-accent);
-	font-weight: 500;
-	font-size: 0.83rem;
-	font-family: var(--main-mono);
+  border-radius: 0.45rem;
+  background-color: var(--color-background-second);
+  padding: 0.125rem 0.25rem;
+  color: var(--color-accent);
+  font-weight: 500;
+  font-size: 0.83rem;
+  font-family: var(--main-mono);
 }
 
 kbd {
-	cursor: pointer;
-	border: 0.0625rem solid var(--color-border);
-	border-bottom: 0.125rem solid var(--color-border);
-	border-radius: 0.3125rem;
-	background-color: var(--color-background-second);
-	padding: 0.1875rem;
-	font-size: 0.875rem;
-	font-family: var(--main-mono);
+  cursor: pointer;
+  border: 0.0625rem solid var(--color-border);
+  border-bottom: 0.125rem solid var(--color-border);
+  border-radius: 0.3125rem;
+  background-color: var(--color-background-second);
+  padding: 0.1875rem;
+  font-size: 0.875rem;
+  font-family: var(--main-mono);
 
-	&:active {
-		border-bottom: 0.0625rem solid var(--color-border);
-		border-left: 0.125rem solid var(--color-border);
-		background-color: var(--color-border);
-		padding-bottom: 0.25rem;
-		padding-left: 0.25rem;
-	}
+  &:active {
+    border-bottom: 0.0625rem solid var(--color-border);
+    border-left: 0.125rem solid var(--color-border);
+    background-color: var(--color-border);
+    padding-bottom: 0.25rem;
+    padding-left: 0.25rem;
+  }
 }
 
 time {
-	cursor: pointer;
-	border: 0.0625rem solid var(--color-border);
-	border-bottom: 0.125rem solid var(--color-border);
-	border-radius: 0.3125rem;
-	background-color: var(--color-background-second);
-	padding: 0.1875rem;
-	color: var(--color-accent);
-	font-weight: 700;
-	font-size: 0.875rem;
+  cursor: pointer;
+  border: 0.0625rem solid var(--color-border);
+  border-bottom: 0.125rem solid var(--color-border);
+  border-radius: 0.3125rem;
+  background-color: var(--color-background-second);
+  padding: 0.1875rem;
+  color: var(--color-accent);
+  font-weight: 700;
+  font-size: 0.875rem;
 
-	strong {
-		display: inline-block;
-		animation: blink 0.7s infinite alternate;
-		font-weight: 700;
-	}
+  strong {
+    display: inline-block;
+    animation: blink 0.7s infinite alternate;
+    font-weight: 700;
+  }
 
-	@keyframes blink {
-		from {
-			opacity: 1;
-		}
+  @keyframes blink {
+    from {
+      opacity: 1;
+    }
 
-		to {
-			opacity: 0.5;
-		}
-	}
+    to {
+      opacity: 0.5;
+    }
+  }
 
-	&:active {
-		border-top: 0.125rem solid var(--color-border);
-		border-bottom: 0.0625rem solid var(--color-border);
-		padding-top: 0.25rem;
-		font-weight: 800;
+  &:active {
+    border-top: 0.125rem solid var(--color-border);
+    border-bottom: 0.0625rem solid var(--color-border);
+    padding-top: 0.25rem;
+    font-weight: 800;
 
-		strong {
-			animation: none;
-		}
-	}
+    strong {
+      animation: none;
+    }
+  }
 }
 
 .spoiler {
-	font-weight: 600;
+  font-weight: 600;
 
-	span {
-		filter: blur(0.25rem);
-		animation: glow 1.5s infinite linear alternate-reverse;
-		transition: filter 0.3s ease;
-		font-weight: normal;
+  span {
+    filter: blur(0.25rem);
+    animation: glow 1.5s infinite linear alternate-reverse;
+    transition: filter 0.3s ease;
+    font-weight: normal;
 
-		&:hover {
-			filter: none;
-			animation: none;
-		}
+    &:hover {
+      filter: none;
+      animation: none;
+    }
 
-		&:active {
-			font-style: italic;
-		}
-	}
+    &:active {
+      font-style: italic;
+    }
+  }
 
-	@keyframes glow {
-		0% {
-			text-shadow: 0 0 0 var(--color-accent);
-		}
+  @keyframes glow {
+    0% {
+      text-shadow: 0 0 0 var(--color-accent);
+    }
 
-		20% {
-			text-shadow: 0 0 0.25rem var(--color-accent);
-		}
+    20% {
+      text-shadow: 0 0 0.25rem var(--color-accent);
+    }
 
-		40% {
-			text-shadow: 0 0 0.375rem var(--color-accent);
-		}
+    40% {
+      text-shadow: 0 0 0.375rem var(--color-accent);
+    }
 
-		60% {
-			text-shadow: 0 0 0.5rem var(--color-accent);
-		}
+    60% {
+      text-shadow: 0 0 0.5rem var(--color-accent);
+    }
 
-		80% {
-			text-shadow: 0 0 0.625rem var(--color-accent);
-		}
+    80% {
+      text-shadow: 0 0 0.625rem var(--color-accent);
+    }
 
-		100% {
-			text-shadow: 0 0 0.9375rem var(--color-accent);
-		}
-	}
+    100% {
+      text-shadow: 0 0 0.9375rem var(--color-accent);
+    }
+  }
 }

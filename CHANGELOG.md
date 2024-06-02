@@ -61,7 +61,7 @@
 
 ### For Development
 
-- Add `Prettier` to the project for better code consistency
+- Add `Prettier` to the project for better code consistency (replaceing `EditorConfig`)
 
 - Add an [Contributing](https://aplos.gxbs.me/contributing) page for clear steps on how to contribute
 

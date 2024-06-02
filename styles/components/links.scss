@@ -1,13 +1,13 @@
 .external-link a {
-	&::after {
-		content: " ↗";
-		font-size: inherit;
-	}
+  &::after {
+    content: " ↗";
+    font-size: inherit;
+  }
 }
 
 .internal-link a {
-	&::after {
-		content: " →";
-		font-size: 0.75rem;
-	}
+  &::after {
+    content: " →";
+    font-size: 0.75rem;
+  }
 }

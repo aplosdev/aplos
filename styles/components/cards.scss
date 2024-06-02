@@ -1,115 +1,115 @@
 .custom-block:not(.details) {
-	margin: 1.25rem 0;
-	border-radius: 0.5rem 0.625rem 0.625rem 0.625rem;
-	padding: 1.8rem 1.25rem;
-	width: max-content;
-	min-width: 45%;
-	max-width: 70%;
-	line-height: 1.5rem;
+  margin: 1.25rem 0;
+  border-radius: 0.5rem 0.625rem 0.625rem 0.625rem;
+  padding: 1.8rem 1.25rem;
+  width: max-content;
+  min-width: 45%;
+  max-width: 70%;
+  line-height: 1.5rem;
 
-	p {
-		color: var(--color-text);
-	}
+  p {
+    color: var(--color-text);
+  }
 
-	p:not(.custom-block-title) {
-		margin: 0;
-		font-size: 0.9rem;
-	}
+  p:not(.custom-block-title) {
+    margin: 0;
+    font-size: 0.9rem;
+  }
 
-	.custom-block-title {
-		margin-top: 0;
-		margin-bottom: 0.625rem;
-		font-weight: 800;
-		font-size: 1.8rem;
+  .custom-block-title {
+    margin-top: 0;
+    margin-bottom: 0.625rem;
+    font-weight: 800;
+    font-size: 1.8rem;
 
-		&::before {
-			display: inline;
-			vertical-align: middle;
-			filter: 0;
-			margin-right: 0.5rem;
+    &::before {
+      display: inline;
+      vertical-align: middle;
+      filter: 0;
+      margin-right: 0.5rem;
 
-			@media (prefers-color-scheme: dark) {
-				filter: invert(100%);
-			}
-		}
-	}
+      @media (prefers-color-scheme: dark) {
+        filter: invert(100%);
+      }
+    }
+  }
 }
 
 .danger {
-	border-left: rgb(219, 25, 25) 0.4rem solid;
-	background-color: #ff001936;
+  border-left: rgb(219, 25, 25) 0.4rem solid;
+  background-color: #ff001936;
 
-	@media (prefers-color-scheme: dark) {
-		background-color: #39181b;
-	}
+  @media (prefers-color-scheme: dark) {
+    background-color: #39181b;
+  }
 
-	.custom-block-title::before {
-		content: url("../icons/dangerous.svg");
-	}
+  .custom-block-title::before {
+    content: url("../icons/dangerous.svg");
+  }
 }
 
 .warning {
-	border-left: rgb(159, 135, 0) 0.4rem solid;
-	background-color: #ffcc007e;
+  border-left: rgb(159, 135, 0) 0.4rem solid;
+  background-color: #ffcc007e;
 
-	@media (prefers-color-scheme: dark) {
-		border-left: rgb(255, 217, 0) 0.4rem solid;
-		background-color: #372a1a;
-	}
+  @media (prefers-color-scheme: dark) {
+    border-left: rgb(255, 217, 0) 0.4rem solid;
+    background-color: #372a1a;
+  }
 
-	.custom-block-title::before {
-		content: url("../icons/warning.svg");
-	}
+  .custom-block-title::before {
+    content: url("../icons/warning.svg");
+  }
 }
 
 .tip {
-	border-left: rgb(75, 110, 22) 0.4rem solid;
-	background-color: #00ff006a;
+  border-left: rgb(75, 110, 22) 0.4rem solid;
+  background-color: #00ff006a;
 
-	@media (prefers-color-scheme: dark) {
-		border-left: rgb(153, 255, 0) 0.4rem solid;
-		background-color: #1f3f1f;
-	}
+  @media (prefers-color-scheme: dark) {
+    border-left: rgb(153, 255, 0) 0.4rem solid;
+    background-color: #1f3f1f;
+  }
 
-	.custom-block-title::before {
-		content: url("../icons/lightbulb.svg");
-	}
+  .custom-block-title::before {
+    content: url("../icons/lightbulb.svg");
+  }
 }
 
 .info {
-	border-left: var(--color-accent) 0.4rem solid;
-	background-color: var(--color-background-mute);
+  border-left: var(--color-accent) 0.4rem solid;
+  background-color: var(--color-background-mute);
 
-	.custom-block-title::before {
-		content: url("../icons/info.svg");
-	}
+  .custom-block-title::before {
+    content: url("../icons/info.svg");
+  }
 }
 
 .note {
-	border-left: var(--color-accent) 0.4rem solid;
-	background-color: var(--color-background-second);
+  border-left: var(--color-accent) 0.4rem solid;
+  background-color: var(--color-background-second);
 
-	.custom-block-title::before {
-		content: none;
-	}
+  .custom-block-title::before {
+    content: none;
+  }
 }
 
 .details {
-	margin: 1.25rem 0;
-	border-radius: 0.625rem;
-	background-color: var(--color-background-second);
-	padding: 1rem;
-	min-width: 45%;
-	max-width: max-content;
+  margin: 1.25rem 0;
+  border-radius: 0.625rem;
+  background-color: var(--color-background-second);
+  padding: 1rem;
+  min-width: 45%;
+  max-width: max-content;
 
-	summary {
-		cursor: pointer;
-		margin-top: 0;
-		font-weight: 700;
-	}
+  summary {
+    cursor: pointer;
+    margin-top: 0;
+    font-weight: 700;
+  }
 
-	p {
-		margin: 0.625rem 0 0 0;
-		font-size: 0.9375rem;
-	}
+  p {
+    margin: 0.625rem 0 0 0;
+    font-size: 0.9375rem;
+  }
 }

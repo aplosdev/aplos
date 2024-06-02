@@ -4,5 +4,5 @@ import "./custom.scss";
 import "aplos";
 
 export default {
-	Layout: Aplos,
+  Layout: Aplos,
 } satisfies Theme;

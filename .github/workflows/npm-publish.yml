@@ -1,46 +1,46 @@
 name: Release Package
 
 on:
-    push:
-        branches:
-            - main
-    workflow_dispatch:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
 
 permissions:
-    actions: write
-    contents: read
+  actions: write
+  contents: read
 
 env:
-    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
-    build:
-        if: contains(github.event.comment.body, 'Publish this Release') || startsWith(github.event.head_commit.message, 'release:') || github.event_name == 'workflow_dispatch'
-        runs-on: ubuntu-latest
+  build:
+    if: contains(github.event.comment.body, 'Publish this Release') || startsWith(github.event.head_commit.message, 'release:') || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
 
-        steps:
-            - uses: actions/checkout@v4
-            - uses: actions/setup-node@v4
-              with:
-                  node-version: latest
-            - uses: pnpm/action-setup@v3
-              with:
-                  version: latest
-            - run: pnpm install
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: latest
+      - uses: pnpm/action-setup@v3
+        with:
+          version: latest
+      - run: pnpm install
 
-    publish-npm:
-        needs: build
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v4
-            - uses: actions/setup-node@v4
-              with:
-                  node-version: latest
-                  registry-url: https://registry.npmjs.org/
-            - uses: pnpm/action-setup@v3
-              with:
-                  version: latest
-            - run: pnpm install
-            - run: pnpm publish --no-git-checks
-              env:
-                  NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+  publish-npm:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: latest
+          registry-url: https://registry.npmjs.org/
+      - uses: pnpm/action-setup@v3
+        with:
+          version: latest
+      - run: pnpm install
+      - run: pnpm publish --no-git-checks
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
