@@ -12,7 +12,7 @@
 				})
 			}}
 			&middot;
-			<span v-if="theme.blog.author">
+			<span v-if="theme.articles.author">
 				Author:
 				{{ frontmatter.author }}
 				&middot;

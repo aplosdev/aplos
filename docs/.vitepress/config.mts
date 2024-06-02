@@ -13,11 +13,14 @@ export default defineConfig({
 
 	themeConfig: {
 		author: "Gabriel Cozma",
-		blog: {
-			data: {
+		articles: {
+			giscus: {
 				repo: "GabsEdits/aplos",
 				repoid: "R_kgDOK-fCGg",
 				categoryid: "DIC_kwDOK-fCGs4Cd3kS",
+				category: "Posts Comments",
+				mapping: "title",
+				theme: "preferred_color_scheme",
 			},
 		},
 		nav: {
