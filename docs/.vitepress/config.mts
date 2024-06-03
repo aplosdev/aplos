@@ -12,6 +12,7 @@ export default defineConfig({
   cleanUrls: true,
 
   themeConfig: {
+    links: "icons",
     author: "Gabriel Cozma",
     articles: {
       giscus: {

@@ -9,12 +9,12 @@ import ArticleFooter from "./layouts/ArticleFooter.vue";
 import SiteFooter from "./components/Footer.vue";
 import Navigation from "./components/Navigation.vue";
 
-const { site, frontmatter, page } = useData();
+const { site, frontmatter, page, theme } = useData();
 </script>
 
 <template>
   <Navigation />
-  <main id="content-main" :class="{ numeric: frontmatter.style === 'numeric' }">
+  <main id="content-main" :class="{ numeric: frontmatter.style === 'numeric' || theme.style === 'numeric', 'icon-links': theme.links === 'icons' }">
     <div v-if="frontmatter.home">
       <h1>{{ site.title }}</h1>
     </div>

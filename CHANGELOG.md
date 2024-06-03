@@ -24,6 +24,8 @@
 
   - `numeric` for numeric style headings
 
+- Make Icon Links a toggleable option in Configuration
+
 - Add `note` informal card
 
 - Small changes to images behavior
