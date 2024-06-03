@@ -14,7 +14,7 @@ const { site, frontmatter, page } = useData();
 
 <template>
   <Navigation />
-  <main id="content-main">
+  <main id="content-main" :class="{ numeric: frontmatter.style === 'numeric' }">
     <div v-if="frontmatter.home">
       <h1>{{ site.title }}</h1>
     </div>

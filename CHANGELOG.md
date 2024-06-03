@@ -20,6 +20,10 @@
 
 - Provide a non-custom font version of Aplós (`aplos/plain`)
 
+- Provide `style` frontmatter configuration for any page
+
+  - `numeric` for numeric style headings
+
 - Add `note` informal card
 
 - Small changes to images behavior
