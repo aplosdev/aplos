@@ -1,3 +1,27 @@
+@mixin code-styles {
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+  padding: 0;
+  color: var(--color-text);
+
+  span {
+    color: var(--shiki-light, inherit);
+
+    @media (prefers-color-scheme: dark) {
+      color: var(--shiki-dark, inherit);
+    }
+
+    .line .highlighted {
+      background-color: rgba(142, 150, 170, 0.14);
+
+      @media (prefers-color-scheme: dark) {
+        background-color: rgba(101, 117, 133, 0.16);
+      }
+    }
+  }
+}
+
 img,
 svg,
 video,
@@ -20,27 +44,7 @@ pre {
   font-family: var(--main-mono);
 
   code {
-    border: 0;
-    border-radius: 0;
-    background-color: transparent;
-    padding: 0;
-    color: var(--color-text);
-
-    span {
-      color: var(--shiki-light, inherit);
-
-      @media (prefers-color-scheme: dark) {
-        color: var(--shiki-dark, inherit);
-      }
-
-      .line .highlighted {
-        background-color: rgba(142, 150, 170, 0.14);
-
-        @media (prefers-color-scheme: dark) {
-          background-color: rgba(101, 117, 133, 0.16);
-        }
-      }
-    }
+    @include code-styles;
   }
 
   .highlighted {
@@ -219,10 +223,14 @@ u {
   text-decoration: underline wavy var(--color-accent);
 }
 
-del {
-  background-color: #ffcccc;
+@mixin diff {
   color: inherit;
-  text-decoration: line-through;
+  font-family: var(--main-mono);
+}
+
+del {
+  @include diff;
+  background-color: #ffcccc;
 
   @media (prefers-color-scheme: dark) {
     background-color: #ff66665a;
@@ -230,9 +238,8 @@ del {
 }
 
 ins {
+  @include diff;
   background-color: #ccffcc;
-  color: inherit;
-  text-decoration: underline;
 
   @media (prefers-color-scheme: dark) {
     background-color: #3795379e;

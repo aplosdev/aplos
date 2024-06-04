@@ -30,14 +30,29 @@
   box-sizing: border-box;
 }
 
+@mixin grid-template-rows($rows) {
+  grid-template-rows: $rows;
+}
+
+@mixin background-color($color) {
+  background-color: $color;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+}
+
+@mixin line-height($height) {
+  line-height: $height;
+}
+
 body {
-  display: grid;
-  grid-template-rows: auto minmax(auto, 1fr) auto;
-  background-color: var(--color-background);
+  @include grid-template-rows(auto minmax(auto, 1fr) auto);
+  @include background-color(var(--color-background));
   min-height: 100vh;
   scroll-behavior: smooth;
-  font-size: 1rem;
-  line-height: 1.5;
+  @include font-size(1rem);
+  @include line-height(1.5);
 }
 
 main {
@@ -57,7 +72,7 @@ html {
   transition: all 0.25s ease;
   margin-top: 0.825rem;
   color: var(--color-text-secondary);
-  font-size: 0.875rem;
+  @include font-size(0.875rem);
 }
 
 div[class*="language-"]:hover,
@@ -108,7 +123,7 @@ div[class*="language-"]:hover,
     padding: 0;
     color: var(--color-text-secondary);
     font-weight: 600;
-    font-size: 0.875rem;
+    @include font-size(0.875rem);
     list-style-type: decimal;
 
     &:first-child::before {
@@ -117,7 +132,7 @@ div[class*="language-"]:hover,
       content: "Table of Contents";
       color: var(--color-text-secondary);
       font-weight: 700;
-      font-size: 0.95rem;
+      @include font-size(0.95rem);
       text-align: center;
     }
 
@@ -137,8 +152,7 @@ div[class*="language-"]:hover,
           transform 100ms ease;
         margin: 0 0.3125rem;
         font-weight: 600;
-        font-size: 0.875rem;
-        font-size: 0.875rem;
+        @include font-size(0.875rem);
         letter-spacing: -0.045rem;
         text-align: left;
         text-decoration: underline solid var(--color-accent);
@@ -191,6 +205,14 @@ button.copy {
 .numeric {
   counter-reset: h2;
 
+  @mixin numeric($counter, $content, $reset) {
+    counter-reset: $reset;
+    &:before {
+      counter-increment: $counter;
+      content: $content;
+    }
+  }
+
   h1,
   h2,
   h3,
@@ -206,38 +228,22 @@ button.copy {
   }
 
   h2 {
-    counter-reset: h3;
-
-    &:before {
-      counter-increment: h2;
-      content: counter(h2) ". ";
-    }
+    @include numeric(h2, ". ", h3);
   }
 
   h3 {
-    counter-reset: h4;
-
-    &:before {
-      counter-increment: h3;
-      content: counter(h2) "." counter(h3) ". ";
-    }
+    @include numeric(h3, counter(h2) "." counter(h3) ". ", h4);
   }
 
   h4 {
-    counter-reset: h5;
-
-    &:before {
-      counter-increment: h4;
-      content: counter(h2) "." counter(h3) "." counter(h4) ". ";
-    }
+    @include numeric(h4, counter(h2) "." counter(h3) "." counter(h4) ". ", h5);
   }
 
   h5 {
-    counter-reset: h6;
-
-    &:before {
-      counter-increment: h5;
-      content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". ";
-    }
+    @include numeric(
+      h5,
+      counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". ",
+      h6
+    );
   }
 }

@@ -1,7 +1,14 @@
+@mixin hidden {
+  display: none !important;
+}
+
 @media screen and (max-width: 88.375rem) {
+  @mixin remFont {
+    font-size: 1rem !important;
+  }
+
   main {
-    margin-top: 9.375rem !important;
-    margin-bottom: 9.375rem !important;
+    margin: 9.375rem 0 !important;
     width: 90vw !important;
   }
 
@@ -9,12 +16,9 @@
     padding: 0.3125rem 1.25rem !important;
 
     h1,
-    ul li a {
-      font-size: 1rem !important;
-    }
-
+    ul li a,
     .fa-brands {
-      font-size: 1rem !important;
+      @include remFont;
     }
   }
 
@@ -33,7 +37,7 @@
   }
 
   .lang {
-    display: none;
+    @include hidden;
   }
 
   .table-of-contents {
@@ -43,7 +47,7 @@
 
 @media screen and (max-width: 114.25rem) {
   .table-of-contents {
-    display: none;
+    @include hidden;
   }
 }
 
@@ -69,21 +73,20 @@
 /* For printing */
 
 @media print {
-  main {
+  @mixin noSpace {
     margin: 0 !important;
     padding: 0 !important;
     width: 100% !important;
   }
 
-  nav {
-    display: none !important;
+  main {
+    @include noSpace;
   }
 
-  footer {
-    display: none !important;
-  }
-
-  .lang {
-    display: none !important;
+  nav,
+  footer,
+  .lang,
+  .table-of-contents {
+    @include hidden;
   }
 }

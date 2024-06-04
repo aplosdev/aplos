@@ -6,6 +6,8 @@
 
 - Giscus comments configuration via `theme` -> `articles` -> `giscus` instead of `theme` -> `data`
 
+- Make `minimal` layout an option in the configuration, rather then an import
+
 - Make the Blog List an custom component due to it's complexity
 
   - This will allow for more customization and easier maintenance
@@ -18,7 +20,7 @@
 
 ### Features
 
-- Make `minimal` layout an option in the configuration, rather then an import
+- Rework the informational cards colors
 
 - Provide a non-custom font version of Aplós (`aplos/plain`)
 
@@ -72,6 +74,8 @@
 - Add `Prettier` to the project for better code consistency (replaceing `EditorConfig`)
 
 - Add an [Contributing](https://aplos.gxbs.me/contributing) page for clear steps on how to contribute
+
+- Make everything more <abbr title="Don't Repeat Yourself">DRY</abbr> by using `mixin` in repeated styles
 
 ## 1.6.0 (2024-05-25)
 

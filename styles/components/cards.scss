@@ -35,63 +35,37 @@
   }
 }
 
-.danger {
-  border-left: rgb(219, 25, 25) 0.4rem solid;
-  background-color: #ff001936;
+@mixin customBlock($color, $icon) {
+  border-left: $color 0.4rem solid;
+  background-color: #{$color}4a;
 
   @media (prefers-color-scheme: dark) {
-    background-color: #39181b;
+    background-color: #{$color}4a;
   }
 
   .custom-block-title::before {
-    content: url("../icons/dangerous.svg");
+    content: url("../icons/" + $icon + ".svg");
   }
+}
+
+.danger {
+  @include customBlock(#cc0000, "warning");
 }
 
 .warning {
-  border-left: rgb(159, 135, 0) 0.4rem solid;
-  background-color: #ffcc007e;
-
-  @media (prefers-color-scheme: dark) {
-    border-left: rgb(255, 217, 0) 0.4rem solid;
-    background-color: #372a1a;
-  }
-
-  .custom-block-title::before {
-    content: url("../icons/warning.svg");
-  }
+  @include customBlock(#ff9900, "warning");
 }
 
 .tip {
-  border-left: rgb(75, 110, 22) 0.4rem solid;
-  background-color: #00ff006a;
-
-  @media (prefers-color-scheme: dark) {
-    border-left: rgb(153, 255, 0) 0.4rem solid;
-    background-color: #1f3f1f;
-  }
-
-  .custom-block-title::before {
-    content: url("../icons/lightbulb.svg");
-  }
+  @include customBlock(#009900, "lightbulb");
 }
 
 .info {
-  border-left: var(--color-accent) 0.4rem solid;
-  background-color: var(--color-background-mute);
-
-  .custom-block-title::before {
-    content: url("../icons/info.svg");
-  }
+  @include customBlock(#0066cc, "info");
 }
 
 .note {
-  border-left: var(--color-accent) 0.4rem solid;
-  background-color: var(--color-background-second);
-
-  .custom-block-title::before {
-    content: none;
-  }
+  @include customBlock(#0066cc, "info");
 }
 
 .details {

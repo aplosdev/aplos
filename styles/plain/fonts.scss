@@ -4,20 +4,17 @@
     sans-serif;
   --main-mono: monospace;
 
-  font-feature-settings:
-    "liga" 1,
-    "calt" 1,
-    "cv05" 1;
+  font-feature-settings: normal;
   scroll-behavior: smooth;
   font-family: var(--system-font);
-  /* fix for Chrome */
 
   @supports (font-variation-settings: normal) {
     font-family: var(--system-font);
   }
 }
 
-html {
+html,
+body {
   font-family: var(--system-font);
 
   @supports (font-variation-settings: normal) {
@@ -28,12 +25,7 @@ html {
 body {
   color: var(--color-text);
   font-weight: 400;
-  font-size: normal;
-  font-family: var(--system-font);
+  font-size: medium;
   font-synthesis: style;
   text-rendering: optimizeLegibility;
-
-  @supports (font-variation-settings: normal) {
-    font-family: var(--system-font);
-  }
 }

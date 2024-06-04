@@ -32,6 +32,29 @@
     casual, cursive;
 }
 
+@mixin heading-style($font-size, $font-weight) {
+  font-style: normal;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: normal;
+  letter-spacing: -0.075rem;
+}
+
+@mixin link-style {
+  transition: text-decoration 0.3s ease transform 0.3s ease;
+  color: var(--color-accent);
+  font-weight: 700;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: dotted underline;
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
 h1,
 h2,
 h3,
@@ -47,27 +70,27 @@ p {
 
 h1 {
   margin: 2.0938rem 0;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 3.125rem;
-  line-height: normal;
-  letter-spacing: -0.075rem;
+  @include heading-style(3.125rem, 900);
 }
 
 h2 {
-  font-style: normal;
-  font-weight: 800;
-  font-size: 2.1875rem;
-  line-height: normal;
-  letter-spacing: -0.075rem;
+  @include heading-style(2.1875rem, 800);
 }
 
 h3 {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.5625rem;
-  line-height: normal;
-  letter-spacing: -0.075rem;
+  @include heading-style(1.5625rem, 700);
+}
+
+h4 {
+  @include heading-style(1.25rem, 600);
+}
+
+h5 {
+  @include heading-style(1.125rem, 600);
+}
+
+h6 {
+  @include heading-style(1rem, 600);
 }
 
 small {
@@ -103,18 +126,7 @@ textarea {
 
 main {
   a {
-    transition: text-decoration 0.3s ease transform 0.3s ease;
-    color: var(--color-accent);
-    font-weight: 700;
-    text-decoration: underline;
-
-    &:hover {
-      text-decoration: dotted underline;
-    }
-
-    &:active {
-      transform: scale(0.9);
-    }
+    @include link-style;
   }
 }
 
