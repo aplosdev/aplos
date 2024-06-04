@@ -18,6 +18,8 @@
 
 ### Features
 
+- Make `minimal` layout an option in the configuration, rather then an import
+
 - Provide a non-custom font version of Aplós (`aplos/plain`)
 
 - Provide `style` frontmatter configuration for any page
