@@ -1,3 +1,9 @@
+## 2.0.2 (2024-06-06)
+
+### Fix(es)
+
+- Make minimal ignore the `article` configuration
+
 ## 2.0.1 (2024-06-05)
 
 ### Fix(es)

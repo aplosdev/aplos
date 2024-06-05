@@ -14,22 +14,17 @@ const { site, frontmatter, page, theme } = useData();
 
 <template>
   <Navigation />
-  <main
-    id="content-main"
-    :class="{
-      numeric: frontmatter.style === 'numeric' || theme.style === 'numeric',
-      'icon-links': theme.links === 'icons',
-    }"
-  >
+  <main id="content-main" :class="{
+    numeric: frontmatter.style === 'numeric' || theme.style === 'numeric',
+    'icon-links': theme.links === 'icons',
+  }">
     <div v-if="frontmatter.home">
       <h1>{{ site.title }}</h1>
     </div>
-    <div
-      v-if="
-        frontmatter.layout === 'article' ||
-        (theme.minimal === true && frontmatter.layout !== 'article')
-      "
-    >
+    <div v-if="
+      frontmatter.layout === 'article' &&
+      (!theme.minimal || frontmatter.layout !== 'article')
+    ">
       <ArticleHead />
     </div>
     <NotFound v-if="page.isNotFound" />
@@ -37,12 +32,10 @@ const { site, frontmatter, page, theme } = useData();
       <Content />
     </div>
     <HelpfulLayout v-if="frontmatter.layout == 'helpful'" />
-    <div
-      v-if="
-        frontmatter.layout === 'article' ||
-        (theme.minimal === true && frontmatter.layout !== 'article')
-      "
-    >
+    <div v-if="
+      frontmatter.layout === 'article' &&
+      (!theme.minimal || frontmatter.layout !== 'article')
+    ">
       <ArticleFooter />
     </div>
   </main>
