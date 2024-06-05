@@ -11,7 +11,7 @@
 - Make the Blog List an custom component due to it's complexity
 
   - This will allow for more customization and easier maintenance
-  - **Will require extra effort to implement it again** (example provided in the documentation and package file under `custom/BlogListExample.txt`)
+  - **Will require extra effort to implement it again** (example provided in the [documentation](https://aplos.gxbs.me/guide/articles-list) and package file under `custom/BlogListExample.txt`)
 
 - Remove all fallbacks for the old names
   - `blog-*` -> `article-*`
