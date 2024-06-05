@@ -137,6 +137,10 @@
         text-decoration: none;
       }
 
+      &::after {
+        display: none;
+      }
+
       strong {
         margin: 0 !important;
         text-decoration: underline 0.125rem solid var(--color-accent);
