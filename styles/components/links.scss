@@ -1,14 +1,13 @@
 .icon-links {
-  a[href*="https://"],
-  a[href*="http://"]
-  {
+  a[href*="https:"]:not(:has(img)),
+  a[href*="http:"]:not(:has(img)) {
     &::after {
       content: " ↗";
       font-size: 0.75rem;
     }
   }
 
-  a {
+  a:not(:has(img)) {
     &::after {
       content: " →";
       font-size: 0.75rem;
