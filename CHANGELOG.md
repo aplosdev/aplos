@@ -1,4 +1,4 @@
-## 2.0.0 (upcoming)
+## 2.0.0 (2024-06-05)
 
 ### Breaking Changes
 
