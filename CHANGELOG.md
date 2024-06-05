@@ -1,3 +1,9 @@
+## 2.0.1 (2024-06-05)
+
+### Fix(es)
+
+- Fix the `main` on smaller screens
+
 ## 2.0.0 (2024-06-05)
 
 ### Breaking Changes
