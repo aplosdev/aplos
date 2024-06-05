@@ -53,13 +53,13 @@ Customizing the Footer in your Aplós template is a straightforward process, spe
   },
 ```
 
-### Blog
+### Articles
 
-Customizing the Blog in your Aplós template is a straightforward process, specifically in the `blog` section:
+Customizing the Articles in your Aplós template is a straightforward process, specifically in the `articles` section, for example configuring the Giscus comments:
 
 ```ts
-    blog: {
-      data: {
+    articles: {
+      giscus: {
         repo: "Foo/Bar",
         repoid: "ExaMpLe",
         categoryid: "Exa_MPle",
@@ -69,10 +69,44 @@ Customizing the Blog in your Aplós template is a straightforward process, speci
 
 > Make sure to replace the `repo`, `repoid`, and `categoryid` with your own values.
 
-The `data` object contains the variables to make the [Giscus](https://giscus.app/) comments show, for more information check the [Giscus documentation](https://giscus.app/).
+The `giscus` object contains the variables to make the [Giscus](https://giscus.app/) comments show, for more information check the [Giscus documentation](https://giscus.app/).
 
 > [!WARNING] Warning
 > The variables above are only needed if you use Giscus as the comment provider in your blog post. If you use ActivityPub, you can ignore these variables.
+
+### Changing theme settings
+
+With version `2.0.0`, you can now configure more settings for the theme. For example, if you want headings to have numbers, you can change the following variables inside the `theme` object:
+
+```ts
+    theme: {
+      style: "numeric", // The style of the headings
+    },
+```
+
+Or if you want to have a simple page, without articles and a minimal theme, you can change the following variables inside the `theme` object:
+
+```ts
+    theme: {
+      minimal: true, // The layout of the page
+    },
+```
+
+### Plain Theme
+
+If you want the theme to have no custom fonts, you can change the import if the theme to `aplos/plain`:
+
+```ts
+import type { Theme } from "vitepress";
+import Aplos from "aplos/Layout.vue";
+import "./custom.scss";
+import "aplos/plain";
+
+export default {
+  Layout: Aplos,
+} satisfies Theme;
+```
+
 
 ## Customizing Colors
 

@@ -206,3 +206,101 @@ You also can have an animation to the time like this one: <time>**11:00**</time>
 #### Output
 
 <time>**11:00**</time>
+
+## Other Elements
+
+### Progress Bar
+
+You can add a progress bar by using the `<progress>` tag:
+
+#### Input
+
+```html
+<progress value="50" max="100"></progress>
+```
+
+#### Output
+
+<progress value="50" max="100"></progress>
+
+### Samp
+
+You can add a sample output by using the `<samp>` tag:
+
+#### Input
+
+```html
+<samp>Sample Output</samp>
+```
+
+#### Output
+
+<samp>Sample Output</samp>
+
+### Legend
+
+You can add a legend by using the `<legend>` tag:
+
+#### Input
+
+```html
+<legend>Legend</legend>
+```
+
+#### Output
+
+<legend>Legend</legend>
+
+### Q
+
+You can add an inline quote by using the `<q>` tag:
+
+#### Input
+
+```html
+<q>Inline Quote</q>
+```
+
+#### Output
+
+<q>Inline Quote</q>
+
+### U
+
+You can add a text that tries to replicate grammar mistakes by using the `<u>` tag:
+
+#### Input
+
+```html
+<u>Trying to replicate grammar mistakes</u>
+```
+
+#### Output
+
+<u>Trying to replicate grammar mistakes</u>
+
+### Del & Ins
+
+You can add deleted text by using the `<del>` tag:
+
+#### Input
+
+```html
+<del>Deleted Text</del>
+```
+
+#### Output
+
+<del>Deleted Text</del>
+
+You can add inserted text by using the `<ins>` tag:
+
+#### Input
+
+```html
+<ins>Inserted Text</ins>
+```
+
+#### Output
+
+<ins>Inserted Text</ins>

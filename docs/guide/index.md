@@ -19,7 +19,7 @@ Aplós is a user-friendly template for Vitepress that allows you to quickly set 
 
    Make sure to replace _your_username_ with your GitHub username.
 
-3. Navigate to the `/pages/` and `/.vitepress/` folders. Locate the config.mts file for further customization.
+3. Navigate to the `/content/` and `/.vitepress/` folders. Locate the config.mts file for further customization.
 
 ## Package
 
@@ -45,9 +45,6 @@ export default {
 
 > If you also want to add aditional styles, you can create a CSS/SCSS file inside the `theme` folder and import it in the `index.ts` file.
 
-> [!WARNING] Heads Up!
-> Currently, I recommend to use PNPM if you want to make use of the Article List Layout, as it's not working with NPM.
-
 ### With Articles or Without Articles
 
 Aplós offers two versions: one with configuration for articles (blogs) and one without. To choose the version that suits your needs, follow these steps:
@@ -58,59 +55,13 @@ That will disable all the article (blog) related layouts.
 
 #### With Articles
 
-If you want to use the article configuration, you can follow the steps below:
+If you want to use the article configuration, you can check the provided guide below:
 
-1. Create a file named `posts.data.ts` inside the `/.vitepress/theme/` folder.
-2. Add the following code to the `posts.data.ts` file:
+<section class="more-links">
 
-```ts{12}
-import { createContentLoader } from "vitepress";
+- [**Article List** If you want to create a list of articles, you can follow the guide by clicking here](./articles-list.md)
 
-interface Post {
-  title: string;
-  description: string;
-  tags: string[];
-}
-
-declare const data: Post[];
-export { data };
-
-export default createContentLoader("articles/posts/*.md", { // Change the path to your posts
-  excerpt: true,
-  transform(raw): Post[] {
-    return raw
-      .map(({ frontmatter }) => ({
-        title: frontmatter.title,
-        description: frontmatter.description,
-        tags: frontmatter.tags,
-        date: formatDate(frontmatter.date),
-      }))
-      .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-  },
-});
-
-function formatDate(raw: string): string {
-  const date = new Date(raw);
-  date.setUTCHours(12);
-  return date.toLocaleDateString("en-GB", {
-    year: "numeric",
-    month: "long",
-    day: "2-digit",
-  });
-}
-```
-
-2. After adding the script, you can change where your posts are located by changing the path in the `posts.data.ts` file on the highlighted line.
-
-3. If you want a page with a list of all your articles, you can create a file named however you want and add the following at the start of the file:
-
-```yaml
----
-layout: article-list
----
-```
-
-4. Enjoy your articles/blog! (Make sure you read more about setting up the article configuration in the [Articles](#articles-blog) section)
+</section>
 
 Replace `!!YOUR_COLOR_HEX!!` with your desired color hex code.
 
