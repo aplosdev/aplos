@@ -4,11 +4,9 @@ updates:
   - package-ecosystem: npm
     schedule:
       interval: "daily"
-    directory:
-      path: "/"
+    directory: "/"
 
   - package-ecosystem: npm
     schedule:
       interval: "daily"
-    directory:
-      path: "docs/"
+    directory: "docs/"
