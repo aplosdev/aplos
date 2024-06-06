@@ -107,7 +107,6 @@ export default {
 } satisfies Theme;
 ```
 
-
 ## Customizing Colors
 
 To customize the accent color, you can change the following variables inside the `vite` -> `css` -> `preprocessorOptions` -> `scss` -> `additionalData`:
