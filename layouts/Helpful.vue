@@ -43,6 +43,10 @@ const { theme } = useData();
     &:hover {
       background-color: var(--color-background-mute);
     }
+
+    &::after {
+      display: none;
+    }
   }
 }
 

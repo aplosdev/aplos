@@ -4,6 +4,10 @@
 
 - Add a configurable message after each article
 
+### Fix(es)
+
+- Remove link decoration to the articles' footer
+
 ## 2.0.2 (2024-06-05)
 
 ### Fix(es)
