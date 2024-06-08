@@ -13,7 +13,7 @@ permissions:
   contents: write
 
 jobs:
-  release:
+  format:
     runs-on: ubuntu-latest
 
     steps:

@@ -1,6 +1,9 @@
 <template>
   <section id="article-footer">
     <hr />
+    <p v-if="frontmatter.message || theme.article.message">
+      {{ frontmatter.message || theme.article.message }}
+    </p>
     <h2>Comments</h2>
     <p>
       If you have any questions or comments about this post, please feel free to

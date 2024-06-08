@@ -1,3 +1,9 @@
+## 2.0.3 (upcoming)
+
+### Feature(s)
+
+- Add a configurable message after each article
+
 ## 2.0.2 (2024-06-05)
 
 ### Fix(es)
@@ -10,7 +16,7 @@
 
 - Fix the `main` on smaller screens
 
-## 2.0.0 (2024-06-05)
+## 2.0.0 (2024-06-05)m
 
 ### Breaking Changes
 
