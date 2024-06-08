@@ -1,8 +1,8 @@
 <template>
   <section id="article-footer">
     <hr />
-    <p v-if="frontmatter.message || theme.article.message">
-      {{ frontmatter.message || theme.article.message }}
+    <p v-if="frontmatter.message || theme.articles.message">
+      {{ frontmatter.message || theme.articles.message }}
     </p>
     <h2>Comments</h2>
     <p>
