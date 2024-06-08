@@ -16,7 +16,7 @@
 
 - Fix the `main` on smaller screens
 
-## 2.0.0 (2024-06-05)m
+## 2.0.0 (2024-06-05)
 
 ### Breaking Changes
 
