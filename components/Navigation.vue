@@ -43,6 +43,11 @@
 </template>
 
 <style lang="scss">
+@mixin blurredBackground {
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  backdrop-filter: saturate(180%) blur(10px);
+}
+
 header {
   .skip-to-content {
     clip: rect(1px, 1px, 1px, 1px);
@@ -71,13 +76,12 @@ header {
   }
 
   nav {
-    -webkit-backdrop-filter: blur(10px);
+    @include blurredBackground;
     position: fixed;
     top: 3rem;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 9999;
-    backdrop-filter: blur(10px);
     border: 0.4px solid var(--color-border);
     border-radius: 2.5rem;
     background-color: none;

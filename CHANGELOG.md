@@ -1,4 +1,4 @@
-## 2.0.3 (2024-06-08)
+## 2.1.0 (upcoming)
 
 ### Feature(s)
 
@@ -7,6 +7,19 @@
 ### Fix(es)
 
 - Remove link decoration to the articles' footer
+
+### Cleanup(s)
+
+- Restyle informal cards
+  - Make their title be the accent color of the card
+  - Make the background color of the cards be slightly more transparent
+
+### Development Changes
+
+- Make all components styles file begin with an underscore
+
+- Add variables for general styles
+  - A huge styles cleanup
 
 ## 2.0.2 (2024-06-05)
 

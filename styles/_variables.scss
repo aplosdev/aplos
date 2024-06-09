@@ -1,0 +1,26 @@
+:root {
+  --active: 0.9;
+  --rounded: 1.25rem;
+  --rounded-sm: 0.625rem;
+  --rounded-xs: 0.325rem;
+  --transition-long: 0.8s;
+  --transition-longer: 0.4s;
+  --transition: 0.2s;
+}
+
+@mixin borderBasic($width) {
+  border: $width solid var(--color-border);
+}
+
+@mixin roundedNone {
+  border-radius: 0;
+}
+
+@mixin noBasicStyles {
+  margin: 0;
+  padding: 0;
+  background-image: none;
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+}

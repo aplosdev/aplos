@@ -7,10 +7,6 @@
   max-width: 70%;
   line-height: 1.5rem;
 
-  p {
-    color: var(--color-text);
-  }
-
   p:not(.custom-block-title) {
     margin: 0;
     font-size: 0.9rem;
@@ -37,10 +33,14 @@
 
 @mixin customBlock($color, $icon) {
   border-left: $color 0.4rem solid;
-  background-color: #{$color}4a;
+  background-color: #{$color}1e;
+
+  .custom-block-title {
+    color: $color;
+  }
 
   @media (prefers-color-scheme: dark) {
-    background-color: #{$color}4a;
+    background-color: #{$color}2a;
   }
 
   .custom-block-title::before {
@@ -70,7 +70,7 @@
 
 .details {
   margin: 1.25rem 0;
-  border-radius: 0.625rem;
+  border-radius: var(--rounded-sm);
   background-color: var(--color-background-second);
   padding: 1rem;
   min-width: 45%;

@@ -155,10 +155,7 @@ main {
 
 button {
   cursor: pointer;
-  border: 0;
-  background-image: none;
-  background-color: transparent;
-  padding: 0;
+  @include noBasicStyles;
 }
 
 abbr {
@@ -167,4 +164,8 @@ abbr {
 
 .no-underline a {
   text-decoration: none;
+}
+
+svg {
+  fill: inherit;
 }

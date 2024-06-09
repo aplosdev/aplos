@@ -1,5 +1,5 @@
 code {
-  border-radius: 0.45rem;
+  border-radius: var(--rounded-xs);
   background-color: var(--color-background-second);
   padding: 0.125rem 0.25rem;
   color: var(--color-accent);
@@ -12,7 +12,7 @@ kbd {
   cursor: pointer;
   border: 0.0625rem solid var(--color-border);
   border-bottom: 0.125rem solid var(--color-border);
-  border-radius: 0.3125rem;
+  border-radius: var(--rounded-xs);
   background-color: var(--color-background-second);
   padding: 0.1875rem;
   font-size: 0.875rem;
@@ -110,4 +110,92 @@ time {
       text-shadow: 0 0 0.9375rem var(--color-accent);
     }
   }
+}
+
+aside {
+  float: right;
+  margin-inline-start: 1rem;
+  border-radius: var(--rounded-sm);
+  background-color: var(--color-background-second);
+  padding: 1rem;
+  width: 30%;
+}
+
+progress {
+  appearance: none;
+  margin: 0.625rem 0;
+  border: none;
+  border-radius: 0.3125rem;
+  background-color: var(--color-background-second);
+  height: 0.625rem;
+  color: var(--color-accent);
+
+  &::-webkit-progress-value {
+    background-color: var(--color-accent);
+  }
+
+  &::-moz-progress-bar {
+    background-color: var(--color-accent);
+  }
+
+  &::-ms-fill {
+    background-color: var(--color-accent);
+  }
+}
+
+samp {
+  border-radius: var(--rounded-sm);
+  background-color: var(--color-background-second);
+  padding: 0.125rem 0.375rem;
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  font-family: var(--main-mono);
+}
+
+legend {
+  display: inline-block;
+  border-radius: var(--rounded-xs);
+  background-color: var(--color-background-second);
+  padding: 0.125rem 0.375rem;
+  color: var(--color-text);
+}
+
+q {
+  display: inline-block;
+  border-radius: var(--rounded-xs);
+  background-color: var(--color-background-second);
+  padding: 0.125rem 0.375rem;
+  color: var(--color-text-secondary);
+  font-style: italic;
+}
+
+u {
+  text-decoration: underline wavy var(--color-accent);
+}
+
+@mixin diff {
+  color: inherit;
+  font-family: var(--main-mono);
+}
+
+del {
+  @include diff;
+  background-color: #ffcccc;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: #ff66665a;
+  }
+}
+
+ins {
+  @include diff;
+  background-color: #ccffcc;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: #3795379e;
+  }
+}
+
+cite {
+  font-style: italic;
 }

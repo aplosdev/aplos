@@ -1,15 +1,17 @@
+@import "../variables";
+
 img {
   &:active {
     transform: scale(1.2);
-    border-radius: 0;
+    @include roundedNone;
     max-width: 100%;
   }
 
   &[src*="#not-rounded"] {
-    border-radius: 0;
+    @include roundedNone;
 
     &:hover {
-      border-radius: 0;
+      @include roundedNone;
     }
   }
 
@@ -20,13 +22,13 @@ img {
     &:hover {
       transform: none;
       box-shadow: none;
-      border-radius: 0;
+      @include roundedNone;
     }
 
     &:active {
       transform: none;
       box-shadow: none;
-      border-radius: 0;
+      @include roundedNone;
     }
   }
 
@@ -80,11 +82,11 @@ img {
 }
 
 a img {
-  border: 1px solid var(--color-accent);
+  @include borderBasic(1px);
 
   &:hover {
     cursor: pointer;
-    border: 2px solid var(--color-accent);
+    @include borderBasic(2px);
   }
 
   &[src*="#no-border"] {
