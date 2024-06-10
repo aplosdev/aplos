@@ -10,21 +10,13 @@ O temă și șablon VitePress elegant, contemporan și conceput cu un scop. Ofer
 <br>
 
 - <span class="emoji">🚀</span> Ușor, minimalistic și prietenos cu utilizatorul, construit pentru VitePress.
-
 - <span class="emoji">🎨</span> Stilizat elegant cu un temă de culoare primară pentru o experiență plăcută vizual.
-
 - <span class="emoji">📱</span> Design prietenos cu dispozitivele mobile cu suport pentru modul întunecat.
-
 - <span class="emoji">🖋️</span> Folosește fonturi premium: Inter pentru text și Geist Mono pentru fragmente de cod.
-
 - <span class="emoji">💻</span> Dezvoltarea locală ușoară cu integrare NPM/PNPM.
-
 - <span class="emoji">📦</span> Fiecare activ este local, nimic nu este extras de pe internet.
-
 - <span class="emoji">🔧</span> Configurație personalizabilă pentru o atingere personală.
-
 - <span class="emoji">✍️</span> Integrare perfectă pentru bloguri, documentație și site-uri personale.
-
 - <span class="emoji">💬</span> Comentarii alimentate de Giscus și Activitypub/Mastodon, pentru articolele de blog.
 
 </section>
@@ -57,13 +49,9 @@ Dacă doriți să contribuiți la Aplós, puteți verifica pagina [Contributing]
 Aplós nu ar fi posibil fără proiectele următoare:
 
 - [Duckquill](https://daudix.codeberg.page/duckquill), de unde am fost inspirat să creez acest proiect (și multe idei sunt de acolo)
-
 - [Hari Rana](https://tesk.page/) pentru feedback și sugestii legate de stil
-
 - [Inter](https://rsms.me/inter/), care este fontul folosit în **toate** aplicațiile _Aeolus_.
-
 - [Geist Mono](https://vercel.com/font), folosit pentru fragmentele de cod.
-
 - [VitePress](https://vitepress.dev), care este folosit pentru a alimenta Aplós.
 
 - Toți cei care au susținut proiectul.
