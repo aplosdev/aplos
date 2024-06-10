@@ -31,7 +31,7 @@ time {
   cursor: pointer;
   border: 0.0625rem solid var(--color-border);
   border-bottom: 0.125rem solid var(--color-border);
-  border-radius: 0.3125rem;
+  border-radius: calc(var(--rounded-xs) - 0.0125rem);
   background-color: var(--color-background-second);
   padding: 0.1875rem;
   color: var(--color-accent);
@@ -125,7 +125,7 @@ progress {
   appearance: none;
   margin: 0.625rem 0;
   border: none;
-  border-radius: 0.3125rem;
+  border-radius: calc(var(--rounded-xs) - 0.0125rem);
   background-color: var(--color-background-second);
   height: 0.625rem;
   color: var(--color-accent);

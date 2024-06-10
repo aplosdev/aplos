@@ -1,6 +1,8 @@
+@use "sass:color";
+
 .custom-block:not(.details) {
   margin: 1.25rem 0;
-  border-radius: 0.5rem 0.625rem 0.625rem 0.625rem;
+  border-radius: var(--rounded-sm);
   padding: 1.8rem 1.25rem;
   width: max-content;
   min-width: 45%;
@@ -36,7 +38,11 @@
   background-color: #{$color}1e;
 
   .custom-block-title {
-    color: $color;
+    color: color.scale($color, $lightness: -70%);
+
+    @media (prefers-color-scheme: dark) {
+      color: color.scale($color, $lightness: 50%);
+    }
   }
 
   @media (prefers-color-scheme: dark) {

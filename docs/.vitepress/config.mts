@@ -26,11 +26,11 @@ export default defineConfig({
     },
     nav: {
       links: [
-        { text: "Guide", link: "/guide/" },
-        { text: "Static", link: "/static" },
-        { text: "Demo", link: "/demo" },
+      { link: "/demo", text: "Demo" },
+      { link: "/guide/", text: "Guide" },
+      { link: "/static", text: "Static" },
       ],
-      git: "https://github.com/aplosdev/docs",
+      git: "https://github.com/aplosdev/aplos",
     },
     footer: {
       copyright: true,
@@ -39,7 +39,7 @@ export default defineConfig({
       madeby: {
         show: true,
         name: "Gabs",
-        link: "https://gxbs.me",
+        link: "https://gxbs.me/",
       },
 
       copyleft: {
