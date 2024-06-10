@@ -260,4 +260,10 @@ const changeLanguage = () => {
     }
   }
 };
+
+onMounted(() => {
+  if (typeof window !== "undefined") {
+    currentPath.value = window.location.pathname;
+  }
+});
 </script>

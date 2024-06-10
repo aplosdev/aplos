@@ -53,7 +53,6 @@ Aplós nu ar fi posibil fără proiectele următoare:
 - [Inter](https://rsms.me/inter/), care este fontul folosit în **toate** aplicațiile _Aeolus_.
 - [Geist Mono](https://vercel.com/font), folosit pentru fragmentele de cod.
 - [VitePress](https://vitepress.dev), care este folosit pentru a alimenta Aplós.
-
 - Toți cei care au susținut proiectul.
 
 ::: details Interesat de călătoria din spatele acestuia?
