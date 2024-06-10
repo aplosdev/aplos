@@ -210,8 +210,8 @@ header {
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
 import { useData } from "vitepress";
-import SourceCode from "../icons/SourceCode.vue";
-import RSSFeed from "../icons/RSSFeed.vue";
+import SourceCode from ".././icons/SourceCode.vue";
+import RSSFeed from ".././icons/RSSFeed.vue";
 
 const { site, theme } = useData();
 

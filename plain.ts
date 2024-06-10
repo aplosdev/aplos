@@ -1,4 +1,4 @@
 import "sass";
 import "@csstools/normalize.css";
-import "./styles/index.scss";
-import "./styles/plain/fonts.scss";
+import "./src/styles/index.scss";
+import "./src/styles/plain/fonts.scss";
