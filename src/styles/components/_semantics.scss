@@ -184,7 +184,7 @@ u {
 
 del {
   @include diff;
-  text-decoration: line-through solid var(--color-accent) 0.080rem;
+  text-decoration: line-through solid var(--color-accent) 0.08rem;
   background-color: #febebe;
 
   @media (prefers-color-scheme: dark) {
@@ -194,7 +194,7 @@ del {
 
 ins {
   @include diff;
-  text-decoration: underline solid var(--color-accent) 0.080rem;
+  text-decoration: underline solid var(--color-accent) 0.08rem;
   background-color: #8bff8b;
 
   @media (prefers-color-scheme: dark) {
