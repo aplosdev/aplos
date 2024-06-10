@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import { useData, Content } from "vitepress";
 
-import NotFound from "./layouts/NotFound.vue";
-import HelpfulLayout from "./layouts/Helpful.vue";
-import ArticleHead from "./layouts/ArticleHead.vue";
-import ArticleFooter from "./layouts/ArticleFooter.vue";
+import NotFound from "./src/layouts/NotFound.vue";
+import HelpfulLayout from "./src/layouts/Helpful.vue";
+import ArticleHead from "./src/layouts/ArticleHead.vue";
+import ArticleFooter from "./src/layouts/ArticleFooter.vue";
 
-import SiteFooter from "./components/Footer.vue";
-import Navigation from "./components/Navigation.vue";
+import SiteFooter from "./src/components/Footer.vue";
+import Navigation from "./src/components/Navigation.vue";
 
 const { site, frontmatter, page, theme } = useData();
 </script>

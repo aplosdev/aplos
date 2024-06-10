@@ -16,6 +16,8 @@
 
 ### Development Changes
 
+- Migrate what's possible to the `src` folder
+
 - Make all components styles file begin with an underscore
 
 - Add variables for general styles
