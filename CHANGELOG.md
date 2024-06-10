@@ -4,6 +4,14 @@
 
 - Add a configurable message after each article
 
+- Add a configurable message after the footer
+
+- Better styling for `ins` and `del` elements
+
+- Styling for `code` tags inside headings
+
+- Add a `style` frontmatter configuration for the `article` layout
+
 ### Fix(es)
 
 - Remove link decoration to the articles' footer

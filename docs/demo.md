@@ -223,7 +223,7 @@ You can add a progress bar by using the `<progress>` tag:
 
 <progress value="50" max="100"></progress>
 
-### Samp
+### Sample Output (`<samp>`)
 
 You can add a sample output by using the `<samp>` tag:
 
@@ -251,7 +251,7 @@ You can add a legend by using the `<legend>` tag:
 
 <legend>Legend</legend>
 
-### Q
+### Inline Quote (`<q>`)
 
 You can add an inline quote by using the `<q>` tag:
 
@@ -265,7 +265,7 @@ You can add an inline quote by using the `<q>` tag:
 
 <q>Inline Quote</q>
 
-### U
+### Grammar Mistakes (`<u>`)
 
 You can add a text that tries to replicate grammar mistakes by using the `<u>` tag:
 
@@ -279,28 +279,16 @@ You can add a text that tries to replicate grammar mistakes by using the `<u>` t
 
 <u>Trying to replicate grammar mistakes</u>
 
-### Del & Ins
+### Deleted Text (`<del>`) & Inserted Text (`<ins>`)
 
 You can add deleted text by using the `<del>` tag:
 
 #### Input
 
 ```html
-<del>Deleted Text</del>
+<del>Deleted Text</del> <ins>Inserted Text</ins>
 ```
 
 #### Output
 
-<del>Deleted Text</del>
-
-You can add inserted text by using the `<ins>` tag:
-
-#### Input
-
-```html
-<ins>Inserted Text</ins>
-```
-
-#### Output
-
-<ins>Inserted Text</ins>
+<del>Deleted Text</del> <ins>Inserted Text</ins>

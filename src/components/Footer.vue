@@ -37,6 +37,7 @@ const { theme } = useData();
       Powered by <a href="https://vitepress.dev/">VitePress</a> and
       <a href="https://aplos.gxbs.me" title="v1.5.0 (prerelease)">Aplós</a>
     </small>
+    <small v-if="theme.footer.message">{{ theme.footer.message }}</small>
   </footer>
 </template>
 
