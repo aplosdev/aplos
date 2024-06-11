@@ -55,8 +55,8 @@ Aplós whouldn't be possible without the following projects:
 - [VitePress](https://vitepress.dev), which is used to power Aplós.
 - Everyone that supported the project.
 
-::: details Intrested in the journey behind it?
-Check out the blog I made about the journey in developing this project here at https://gabs.eu.org/blog/posts/behind-aplós
+::: details Intrested in the next steps?
+Aplós is currently building a new project under it's umbrella, called Sáfi. Read more about it [here](/safi).
 :::
 
 <script setup lang="ts">
