@@ -1,6 +1,6 @@
 {
   "name": "aplos",
-  "version": "2.1.0-wip",
+  "version": "2.1.0-0",
   "type": "module",
   "description": "A sleek, contemporary, and purposefully designed VitePress theme",
   "main": "index.ts",

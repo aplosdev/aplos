@@ -2,9 +2,11 @@
 
 ### Feature(s)
 
-- Add a configurable message after each article
+- Make the RSS feed link the navigation to download the file linked to the link
 
-- Add a configurable message after the footer
+- Configurable message
+  - After each article
+  - After the footer
 
 - Better styling for `ins` and `del` elements
 

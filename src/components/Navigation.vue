@@ -23,6 +23,7 @@
             :href="theme.nav.rss"
             aria-label="Link to the RSS Feed"
             title="Link to the RSS Feed"
+            download
           >
             <RSSFeed />
           </a>
