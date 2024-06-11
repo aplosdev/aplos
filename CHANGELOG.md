@@ -5,6 +5,7 @@
 - Make the RSS feed link the navigation to download the file linked to the link
 
 - Configurable message
+
   - After each article
   - After the footer
 
