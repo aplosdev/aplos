@@ -50,7 +50,7 @@ Aplós whouldn't be possible without the following projects:
 
 - [Duckquill](https://daudix.codeberg.page/duckquill), from where I got inspired to create this project (and many ideas are from there)
 - [Hari Rana](https://tesk.page/) for style-related feedback and suggestions
-- [Inter](https://rsms.me/inter/), which is the font used in **all** _Aeolus_ apps.
+- [Inter](https://rsms.me/inter/), used as the main body font.
 - [Geist Mono](https://vercel.com/font), used for code snippets.
 - [VitePress](https://vitepress.dev), which is used to power Aplós.
 - Everyone that supported the project.
