@@ -31,12 +31,16 @@
 
 ### Development Changes
 
+- Add `ESLint` to the project for better code consistency
+
 - Migrate what's possible to the `src` folder
 
 - Make all components styles file begin with an underscore
 
 - Add variables for general styles
   - A huge styles cleanup
+
+- Minor changes to the formatter and the linter
 
 ## 2.0.2 (2024-06-05)
 

@@ -1,5 +1,8 @@
 <template>
-  <oom-comments cache="20" :src="frontmatter.post">
+  <oom-comments
+    cache="20"
+    :src="frontmatter.post"
+  >
     No comments found.
   </oom-comments>
 </template>

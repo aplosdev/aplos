@@ -18,14 +18,15 @@
         &middot;
       </span>
       <span class="tags">
-        <span v-for="(tag, index) in frontmatter.tags" :key="index"
-          >#{{ tag }}</span
-        >
+        <span
+          v-for="(tag, index) in frontmatter.tags"
+          :key="index"
+        >#{{ tag }}</span>
       </span>
     </small>
-    <br />
+    <br>
     <p>{{ frontmatter.description }}</p>
-    <hr />
+    <hr>
   </div>
 </template>
 

@@ -1,14 +1,16 @@
 <template>
   <section id="simple-layout">
-    <hr />
+    <hr>
     <p class="dialog-buttons">
-      <a href="#top" target="_top">↑ Go to top</a>
       <a
-        id="file-an-issue"
+        href="#top"
+        target="_top"
+      >↑ Go to top</a>
+      <a
         v-if="theme.nav.git"
-        v-bind:href="theme.nav.git + '/issues/new'"
-        >File an issue</a
-      >
+        id="file-an-issue"
+        :href="theme.nav.git + '/issues/new'"
+      >File an issue</a>
     </p>
   </section>
 </template>

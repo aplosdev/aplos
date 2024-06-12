@@ -1,6 +1,8 @@
-.development
 .github
-scripts
+.prettierrc
+.prettierignore
+.gitattributes
+.gitignore
 CODE_OF_CONDUCT.md
 LEARN.md
 docs

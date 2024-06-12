@@ -1,6 +1,6 @@
 <template>
   <section id="article-footer">
-    <hr />
+    <hr>
     <p v-if="frontmatter.message || theme.articles.message">
       {{ frontmatter.message || theme.articles.message }}
     </p>
@@ -9,57 +9,58 @@
       If you have any questions or comments about this post, please feel free to
       leave a comment
       <span
-        style="display: inline-block"
         v-if="frontmatter.comments === 'giscus'"
-        >below</span
-      ><span
         style="display: inline-block"
+      >below</span><span
         v-if="frontmatter.comments === 'activitypub'"
-        >on
-        <a :href="frontmatter.post" style="display: inline-block"
-          >this post</a
-        ></span
-      >.
+        style="display: inline-block"
+      >on
+        <a
+          :href="frontmatter.post"
+          style="display: inline-block"
+        >this post</a></span>.
     </p>
 
-    <p v-if="frontmatter.comments === 'activitypub'" style="text-align: center">
-      <small
-        >Due to some issues with the ActivityPub comments, they are currently
-        disabled. Sorry for the inconvenience.</small
-      >
-    </p>
-
-    <noscript
-      ><small
-        >Heads Up! You <i>need</i> JavaScript to view/write comments or to react
-        to the post. So you can't do anything unless you turn on
-        JavaScript.</small
-      ></noscript
+    <p
+      v-if="frontmatter.comments === 'activitypub'"
+      style="text-align: center"
     >
+      <small>Due to some issues with the ActivityPub comments, they are currently
+        disabled. Sorry for the inconvenience.</small>
+    </p>
+
+    <noscript><small
+      >Heads Up! You <i>need</i> JavaScript to view/write comments or to react
+      to the post. So you can't do anything unless you turn on
+      JavaScript.</small
+      ></noscript>
     <!-- <MastodonComments
       v-if="frontmatter.comments === 'activitypub'"
     ></MastodonComments> -->
-    <Giscus v-if="frontmatter.comments === 'giscus'"></Giscus>
-    <br />
-    <hr />
-    <p class="dialog-buttons" v-if="frontmatter.prev || frontmatter.next">
+    <Giscus v-if="frontmatter.comments === 'giscus'" />
+    <br>
+    <hr>
+    <p
+      v-if="frontmatter.prev || frontmatter.next"
+      class="dialog-buttons"
+    >
       <a
+        v-if="frontmatter.prev"
         class="article-nav"
         :href="`${frontmatter.prev.toLowerCase().replace(/\s+/g, '-')}.html`"
         target="_self"
-        v-if="frontmatter.prev"
       >
         <span><small>← Previous</small></span>
-        <br /><span>{{ frontmatter.prev }}</span>
+        <br><span>{{ frontmatter.prev }}</span>
       </a>
       <a
+        v-if="frontmatter.next"
         class="article-nav"
         :href="`${frontmatter.next.toLowerCase().replace(/\s+/g, '-')}.html`"
         target="_self"
-        v-if="frontmatter.next"
       >
         <span><small>Next →</small></span>
-        <br /><span>{{ frontmatter.next }}</span>
+        <br><span>{{ frontmatter.next }}</span>
       </a>
     </p>
   </section>

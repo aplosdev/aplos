@@ -1,5 +1,5 @@
 <template>
-  <div id="giscusContainer"></div>
+  <div id="giscusContainer" />
 </template>
 
 <script setup lang="ts">
