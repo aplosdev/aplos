@@ -9,6 +9,7 @@ $variable-font: "InterVariable", sans-serif;
     "calt" 1,
     "cv05" 1;
   scroll-behavior: smooth;
+  text-wrap: pretty;
   font-family: $main-font;
 
   @supports (font-variation-settings: normal) {

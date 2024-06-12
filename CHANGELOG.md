@@ -2,6 +2,8 @@
 
 ### Feature(s)
 
+- Make images pixelated via the URL (with `#` + `pixel`)
+
 - Make the RSS feed link the navigation to download the file linked to the link
 
 - Configurable message
@@ -20,6 +22,8 @@
 - Remove link decoration to the articles' footer
 
 ### Cleanup(s)
+
+- Warp text pretty
 
 - Restyle informal cards
   - Make their title be the accent color of the card

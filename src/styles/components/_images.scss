@@ -79,6 +79,10 @@ img {
   &[src*="#transparency"] {
     opacity: 0.5;
   }
+
+  &[src*="#pixel"] {
+    image-rendering: pixelated;
+  }
 }
 
 a img {
