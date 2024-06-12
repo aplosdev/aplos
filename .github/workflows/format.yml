@@ -8,10 +8,10 @@ on:
 
 env:
   token: ${{ secrets.GITHUB_TOKEN }}
+  workflow: ${{ secrets.WORKFLOW_TOKEN }}
 
 permissions:
   contents: write
-  workflows: write
 
 jobs:
   format:
