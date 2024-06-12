@@ -27,23 +27,20 @@ const { site, frontmatter, page, theme } = useData();
     <div
       v-if="
         frontmatter.layout === 'article' &&
-          (!theme.minimal || frontmatter.layout !== 'article')
+        (!theme.minimal || frontmatter.layout !== 'article')
       "
     >
       <ArticleHead />
     </div>
     <NotFound v-if="page.isNotFound" />
-    <div
-      v-else
-      :class="frontmatter.pageClass"
-    >
+    <div v-else :class="frontmatter.pageClass">
       <Content />
     </div>
     <HelpfulLayout v-if="frontmatter.layout == 'helpful'" />
     <div
       v-if="
         frontmatter.layout === 'article' &&
-          (!theme.minimal || frontmatter.layout !== 'article')
+        (!theme.minimal || frontmatter.layout !== 'article')
       "
     >
       <ArticleFooter />

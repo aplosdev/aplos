@@ -1,16 +1,15 @@
 <template>
   <main>
     <section id="NotFound">
-      <span
-        class="glitch"
-        data-text="404"
-      >404</span>
+      <span class="glitch" data-text="404">404</span>
       <h1>Not Found!</h1>
       <p>
         Oops! The page you are looking for has been removed, relocated or never
         existed. Please check the URL or go back to the homepage.
-        <span v-if="theme.nav.git">If you believe something should be here, feel free to file an issue
-          with the button below.</span>
+        <span v-if="theme.nav.git"
+          >If you believe something should be here, feel free to file an issue
+          with the button below.</span
+        >
       </p>
     </section>
     <p class="dialog-buttons">
@@ -19,7 +18,8 @@
         v-if="theme.nav.git"
         id="file-an-issue"
         :href="theme.nav.git + '/issues/new'"
-      >File an issue</a>
+        >File an issue</a
+      >
     </p>
   </main>
 </template>

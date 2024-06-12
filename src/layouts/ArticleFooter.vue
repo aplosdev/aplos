@@ -1,6 +1,6 @@
 <template>
   <section id="article-footer">
-    <hr>
+    <hr />
     <p v-if="frontmatter.message || theme.articles.message">
       {{ frontmatter.message || theme.articles.message }}
     </p>
@@ -11,39 +11,38 @@
       <span
         v-if="frontmatter.comments === 'giscus'"
         style="display: inline-block"
-      >below</span><span
+        >below</span
+      ><span
         v-if="frontmatter.comments === 'activitypub'"
         style="display: inline-block"
-      >on
-        <a
-          :href="frontmatter.post"
-          style="display: inline-block"
-        >this post</a></span>.
+        >on
+        <a :href="frontmatter.post" style="display: inline-block"
+          >this post</a
+        ></span
+      >.
     </p>
 
-    <p
-      v-if="frontmatter.comments === 'activitypub'"
-      style="text-align: center"
+    <p v-if="frontmatter.comments === 'activitypub'" style="text-align: center">
+      <small
+        >Due to some issues with the ActivityPub comments, they are currently
+        disabled. Sorry for the inconvenience.</small
+      >
+    </p>
+
+    <noscript
+      ><small
+        >Heads Up! You <i>need</i> JavaScript to view/write comments or to react
+        to the post. So you can't do anything unless you turn on
+        JavaScript.</small
+      ></noscript
     >
-      <small>Due to some issues with the ActivityPub comments, they are currently
-        disabled. Sorry for the inconvenience.</small>
-    </p>
-
-    <noscript><small
-      >Heads Up! You <i>need</i> JavaScript to view/write comments or to react
-      to the post. So you can't do anything unless you turn on
-      JavaScript.</small
-      ></noscript>
     <!-- <MastodonComments
       v-if="frontmatter.comments === 'activitypub'"
     ></MastodonComments> -->
     <Giscus v-if="frontmatter.comments === 'giscus'" />
-    <br>
-    <hr>
-    <p
-      v-if="frontmatter.prev || frontmatter.next"
-      class="dialog-buttons"
-    >
+    <br />
+    <hr />
+    <p v-if="frontmatter.prev || frontmatter.next" class="dialog-buttons">
       <a
         v-if="frontmatter.prev"
         class="article-nav"
@@ -51,7 +50,7 @@
         target="_self"
       >
         <span><small>← Previous</small></span>
-        <br><span>{{ frontmatter.prev }}</span>
+        <br /><span>{{ frontmatter.prev }}</span>
       </a>
       <a
         v-if="frontmatter.next"
@@ -60,7 +59,7 @@
         target="_self"
       >
         <span><small>Next →</small></span>
-        <br><span>{{ frontmatter.next }}</span>
+        <br /><span>{{ frontmatter.next }}</span>
       </a>
     </p>
   </section>

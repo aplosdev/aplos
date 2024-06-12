@@ -38,6 +38,7 @@
 - Make all components styles file begin with an underscore
 
 - Add variables for general styles
+
   - A huge styles cleanup
 
 - Minor changes to the formatter and the linter

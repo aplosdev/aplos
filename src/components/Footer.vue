@@ -9,39 +9,33 @@ const { theme } = useData();
       v-if="theme.footer.sourcecode?.show"
       style="margin: 16px; display: block"
       :href="theme.footer.sourcecode.link"
-    ><mark>Source Code</mark></a>
+      ><mark>Source Code</mark></a
+    >
     <p v-if="theme.footer.madeby.show">
       Made with ❤️ by
-      <a
-        id="author"
-        :href="theme.footer.madeby.link"
-      ><mark>{{ theme.footer.madeby.name }}</mark></a>
+      <a id="author" :href="theme.footer.madeby.link"
+        ><mark>{{ theme.footer.madeby.name }}</mark></a
+      >
     </p>
     <p
       v-if="theme.footer.copyright"
       id="copyright"
       :title="'Last Updated At: ' + new Date().toLocaleString()"
     >
-      &copy; <b>{{ theme.author }}</b>, <span v-if="theme.footer.startYear">{{ theme.footer.startYear }}-</span>{{ new Date().getFullYear() }}.
+      &copy; <b>{{ theme.author }}</b
+      >, <span v-if="theme.footer.startYear">{{ theme.footer.startYear }}-</span
+      >{{ new Date().getFullYear() }}.
     </p>
-    <p
-      v-if="theme.footer.copyleft?.show"
-      id="copyleft"
-    >
+    <p v-if="theme.footer.copyleft?.show" id="copyleft">
       &#127279; Licensed under the
       <a :href="theme.footer.copyleft.info">{{
         theme.footer.copyleft.license
-      }}</a>.
+      }}</a
+      >.
     </p>
-    <small
-      v-if="theme.footer.poweredBy"
-      id="powered"
-    >
+    <small v-if="theme.footer.poweredBy" id="powered">
       Powered by <a href="https://vitepress.dev/">VitePress</a> and
-      <a
-        href="https://aplos.gxbs.me"
-        title="v1.5.0 (prerelease)"
-      >Aplós</a>
+      <a href="https://aplos.gxbs.me" title="v1.5.0 (prerelease)">Aplós</a>
     </small>
     <small v-if="theme.footer.message">{{ theme.footer.message }}</small>
   </footer>
