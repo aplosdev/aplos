@@ -32,6 +32,7 @@ jobs:
       - name: Format Code
         run: |
           pnpm format
+          pnpm lint
 
       - name: Commit changes
         run: |
