@@ -44,7 +44,7 @@ Once you've installed the package, you will need to follow the [Guide](/guide/#p
 
 If you want to contribute to Aplós, you can check the [Contributing](/contributing) page in the documentation. {.local-link}
 
-## Credits & Thanks to
+## Credits & Thanks To
 
 Aplós whouldn't be possible without the following projects:
 

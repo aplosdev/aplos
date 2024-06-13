@@ -120,7 +120,7 @@ function formatDate(raw: string): string {
 }
 ```
 
-## Setting up the page
+## Setting up the Page
 
 Inside the page you want to use the article list, you can use the following code:
 

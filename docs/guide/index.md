@@ -45,7 +45,7 @@ export default {
 
 > If you also want to add aditional styles, you can create a CSS/SCSS file inside the `theme` folder and import it in the `index.ts` file.
 
-### With Articles or Without Articles
+### With Articles or without Articles
 
 Aplós offers two versions: one with configuration for articles (blogs) and one without. To choose the version that suits your needs, follow these steps:
 
@@ -282,7 +282,7 @@ To seamlessly integrate with your CI process, simply configure two essential sec
 1. `mail`: This secret should contain the email associated with your account.
 2. `codeberg_token`: This secret should store a token from your account, equipped with read and write access for your repositories.
 
-#### **Installing the needed package**
+#### **Installing the Needed Package**
 
 If you want to optout from using a workflow or don't want to make a request: There is actually a really simple and nice NPM package that helps you deploy your project to Codeberg. The package is called `codeberg-pages` you can install by running:
 

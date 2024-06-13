@@ -20,7 +20,7 @@ If you're new to contributing to open-source projects, you can start by checking
 
 The project is still in its early stages, so these guidelines aren't that strict. However, it's recommended to follow them to make the contribution process smoother, and the Developer Experience better.
 
-## Contributing to the main repository (aplosdev/aplos)
+## Contributing to the Main Repository (`aplosdev/aplos`)
 
 If you want to contribute to Aplós, you can clone the repository with the following command:
 

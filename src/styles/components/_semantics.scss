@@ -9,21 +9,24 @@ code {
 }
 
 kbd {
+  display: inline-block;
+  transition-duration: var(--transition);
+  transition-property: transform, box-shadow, background-color;
   cursor: pointer;
-  border: 0.0625rem solid var(--color-border);
-  border-bottom: 0.125rem solid var(--color-border);
+  box-shadow:
+    inset 0 -2px 0 var(--color-border),
+    0 -1px 0 var(--color-border);
   border-radius: var(--rounded-xs);
   background-color: var(--color-background-second);
-  padding: 0.1875rem;
-  font-size: 0.875rem;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.8rem;
+  line-height: normal;
   font-family: var(--main-mono);
 
   &:active {
-    border-bottom: 0.0625rem solid var(--color-border);
-    border-left: 0.125rem solid var(--color-border);
-    background-color: var(--color-border);
-    padding-bottom: 0.25rem;
-    padding-left: 0.25rem;
+    transform: translateY(2px);
+    box-shadow: inset 0 1px 0 var(--color-border);
+    background-color: var(--color-background-mute);
   }
 }
 
@@ -174,18 +177,18 @@ u {
 }
 
 @mixin diff {
+  border-radius: var(--rounded-xs);
+  padding: 0.125rem 0.375rem;
   color: inherit;
   font-weight: 500;
   font-size: 0.83rem;
-  padding: 0.125rem 0.375rem;
-  border-radius: var(--rounded-xs);
   font-family: var(--main-mono);
 }
 
 del {
   @include diff;
-  text-decoration: line-through solid var(--color-accent) 0.08rem;
   background-color: #febebe;
+  text-decoration: line-through solid var(--color-accent) 0.08rem;
 
   @media (prefers-color-scheme: dark) {
     background-color: #ff66665a;
@@ -194,8 +197,8 @@ del {
 
 ins {
   @include diff;
-  text-decoration: underline solid var(--color-accent) 0.08rem;
   background-color: #8bff8b;
+  text-decoration: underline solid var(--color-accent) 0.08rem;
 
   @media (prefers-color-scheme: dark) {
     background-color: #3795379e;

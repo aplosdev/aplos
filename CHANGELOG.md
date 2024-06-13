@@ -2,6 +2,8 @@
 
 ### Feature(s)
 
+- Restyle the `kbd` element
+
 - Make images pixelated via the URL (with `#` + `pixel`)
 
 - Make the RSS feed link the navigation to download the file linked to the link

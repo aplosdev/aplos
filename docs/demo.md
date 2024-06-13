@@ -88,7 +88,7 @@ We also have lines.
 
 ---
 
-## Information boxes
+## Information Boxes
 
 Aplus has various types of information boxes.
 
@@ -151,10 +151,6 @@ This is a dangerous warning.
 ::: details
 This is a details block.
 :::
-
-<kbd>⌘ Super</kbd> + <kbd>Space</kbd>
-
-Use this when something is <mark>really important</mark>
 
 ## Table
 
@@ -292,3 +288,31 @@ You can add deleted text by using the `<del>` tag:
 #### Output
 
 <del>Deleted Text</del> <ins>Inserted Text</ins>
+
+### Keyboard Input (`<kbd>`)
+
+You can add keyboard input by using the `<kbd>` tag:
+
+#### Input
+
+```html
+<kbd>⌘ Super</kbd> + <kbd>Space</kbd>
+```
+
+#### Output
+
+<kbd>⌘ Super</kbd> + <kbd>Space</kbd>
+
+### Marked Text (`<mark>`)
+
+You can add marked text by using the `<mark>` tag:
+
+#### Input
+
+```html
+<mark>Marked Text</mark>
+```
+
+#### Output
+
+<mark>Marked Text</mark>
