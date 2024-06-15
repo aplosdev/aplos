@@ -43,6 +43,7 @@ export default {
 } satisfies Theme;
 ```
 
+> [!TIP] Tip
 > If you also want to add aditional styles, you can create a CSS/SCSS file inside the `theme` folder and import it in the `index.ts` file.
 
 ### With Articles or without Articles
@@ -148,6 +149,7 @@ For example, to import a CSS file, add the following line to the `index.ts` file
 import "./styles.css";
 ```
 
+> [!TIP] Tip
 > It's recommended to have the `styles.css` file in the same directory as the `index.ts` file, the `.vitepress/theme/` folder.
 
 Inside the `styles.css` file, you can add custom styles to modify the appearance of your content, or even adding custom components.
@@ -166,17 +168,18 @@ You can modify the width of the content in Aplós by changing the `--content-wid
 
 You can style images in your content using various options provided by Aplós. Here's how to apply each styling option:
 
-- **Not Rounded**: Remove the border radius from an image.
-- **Static**: Prevent an image from being resized when hovered or active.
+- **not-rounded**: Remove the border radius from an image.
+- **static**: Prevent an image from being resized when hovered or active.
 - **Size Options**:
-  - **Small**: Make an image smaller.
-  - **Medium**: Make an image medium-sized.
+  - **small**: Make an image smaller.
+  - **medium**: Make an image medium-sized.
 - **Visual Effects**:
-  - **Shadow**: Add a shadow to an image.
-  - **Monochrome**: Make an image monochrome.
-  - **Invert**: Invert the colors of an image.
-  - **Blur**: Blur an image.
-  - **Sepia**: Add a sepia effect to an image.
+  - **shadow**: Add a shadow to an image.
+  - **mono**: Make an image monochrome.
+  - **invert**: Invert the colors of an image.
+  - **blur**: Blur an image.
+  - **sepia**: Add a sepia effect to an image.
+  - **pixel**: Pixelate an image.
 - **Transparency**: Make an image transparent.
 
 To apply any of these options, use the following syntax:
@@ -191,7 +194,7 @@ For example, to make an image small, use the following syntax:
 ![My image](./image.png#small)
 ```
 
-> [!TIP]
+> [!TIP] Tip
 > You can combine multiple options by separating them with a comma. For example, to make an image small and add a shadow, use the following syntax:
 >
 > ```md

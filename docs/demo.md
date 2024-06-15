@@ -109,21 +109,20 @@ The message you want to share
 ### Input
 
 ```md
-::: info
-This is an info box.
-:::
+> [!INFO]
+> This is an info box.
 
-::: tip
-This is a tip.
-:::
+> [!TIP]
+> This is a tip.
 
-::: warning
-This is a warning.
-:::
+> [!WARNING]
+> This is a warning.
 
-::: danger
-This is a dangerous warning.
-:::
+> [!DANGER]
+> This is a dangerous warning.
+
+> [!NOTE]
+> This is a note.
 
 ::: details
 This is a details block.
@@ -132,21 +131,20 @@ This is a details block.
 
 ### Output
 
-::: info
-This is an info box.
-:::
+> [!INFO] Info
+> This is an info box.
 
-::: tip
-This is a tip.
-:::
+> [!TIP] Tip
+> This is a tip.
 
-::: warning
-This is a warning.
-:::
+> [!WARNING] Warning
+> This is a warning.
 
-::: danger
-This is a dangerous warning.
-:::
+> [!DANGER] Danger
+> This is a dangerous warning.
+
+> [!NOTE] Note
+> This is a note.
 
 ::: details
 This is a details block.

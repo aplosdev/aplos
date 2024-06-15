@@ -59,6 +59,7 @@ Customizing the Articles in your Aplós template is a straightforward process, s
 
 ```ts
     articles: {
+      message: "Thanks for reading this article",
       giscus: {
         repo: "Foo/Bar",
         repoid: "ExaMpLe",
@@ -67,12 +68,23 @@ Customizing the Articles in your Aplós template is a straightforward process, s
     },
 ```
 
+> [!WARNING] Warning
 > Make sure to replace the `repo`, `repoid`, and `categoryid` with your own values.
 
 The `giscus` object contains the variables to make the [Giscus](https://giscus.app/) comments show, for more information check the [Giscus documentation](https://giscus.app/).
 
-> [!WARNING] Warning
+> [!INFO] Info
 > The variables above are only needed if you use Giscus as the comment provider in your articles. If you use ActivityPub, you can ignore these variables.
+
+#### Message after the article
+
+You can change the message that appears after the article by changing the `message` variable inside the `articles` object:
+
+```ts
+    articles: {
+      message: "Thanks for reading this article",
+    },
+```
 
 ### Changing theme settings
 
