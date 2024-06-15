@@ -64,10 +64,6 @@ If you want to use the article configuration, you can check the provided guide b
 
 </section>
 
-Replace `!!YOUR_COLOR_HEX!!` with your desired color hex code.
-
-You can also customize any other style of the project under the `$color-accent` variable.
-
 ## Customizing Configuration
 
 You can edit the `config.mts` file to tailor the template to your needs. **I've made an page that explains how to do that.**
