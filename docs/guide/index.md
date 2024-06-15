@@ -193,9 +193,10 @@ For example, to make an image small, use the following syntax:
 
 > [!TIP]
 > You can combine multiple options by separating them with a comma. For example, to make an image small and add a shadow, use the following syntax:
+>
 > ```md
 > ![My image](./image.png#small#shadow)
->```
+> ```
 
 ### Automatically Update Aplós
 

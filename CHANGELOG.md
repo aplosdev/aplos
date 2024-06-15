@@ -24,9 +24,9 @@
 ### Cleanup(s)
 
 - Project rebranding
-  
-    - New accent color
-    - New icon
+
+  - New accent color
+  - New icon
 
 - Remove link decoration to the articles' footer
 
