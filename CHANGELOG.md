@@ -2,6 +2,8 @@
 
 ### Feature(s)
 
+- More improvements to the `kbd` element
+
 - Restyle the `kbd` element
 
 - Make images pixelated via the URL (with `#` + `pixel`)
@@ -19,21 +21,23 @@
 
 - Add a `style` frontmatter configuration for the `article` layout
 
-### Fix(es)
+### Cleanup(s)
+
+- Project rebranding
+  
+    - New accent color
+    - New icon
 
 - Remove link decoration to the articles' footer
 
-### Cleanup(s)
+- Make the Content Width smaller by default
 
 - Warp text pretty
 
 - Restyle informal cards
+
   - Make their title be the accent color of the card
   - Make the background color of the cards be slightly more transparent
-
-### Development Changes
-
-- Add `ESLint` to the project for better code consistency
 
 - Migrate what's possible to the `src` folder
 
@@ -42,6 +46,12 @@
 - Add variables for general styles
 
   - A huge styles cleanup
+
+- Minor changes to the formatter and the linter
+
+### Development Changes
+
+- Add `ESLint` to the project for better code consistency
 
 - Minor changes to the formatter and the linter
 

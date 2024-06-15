@@ -4,7 +4,7 @@ layout: helpful
 
 # Articles List Configuration
 
-In version 2.0.0, the article list has been removed from the main layout, and became a custom layout due to issues with the build process. To use the article list, you can follow these steps:
+In version `2.0.0`, the article list has been removed from the main layout, and became a custom layout due to internal issues. To use the article list, you can follow these steps:
 
 ## Initial Setup
 
@@ -122,7 +122,7 @@ function formatDate(raw: string): string {
 
 ## Setting up the Page
 
-Inside the page you want to use the article list, you can use the following code:
+Inside the page you want to use the article list, you can use the following example code:
 
 ```md
 # My Page

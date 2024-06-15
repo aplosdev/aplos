@@ -69,7 +69,7 @@ export default defineConfig({
   },
   head: [
     ["meta", { name: "author", content: "Gabriel Cozma/Gabs" }],
-    ["link", { rel: "icon", href: "/favicon.ico" }],
+    ["link", { rel: "icon", href: "/icon.svg" }],
     ["meta", { name: "theme-color", content: "#ff3e00" }],
     ["meta", { name: "og:type", content: "website" }],
     ["meta", { name: "og:locale", content: "en" }],
@@ -78,7 +78,7 @@ export default defineConfig({
       "meta",
       {
         name: "og:image",
-        content: "https://aplos.gxbs.me/images/aplos-banner.png",
+        content: "https://aplos.gxbs.me/images/banner.png",
       },
     ],
     ["meta", { name: "twitter:card", content: "summary_large_image" }],
@@ -86,7 +86,7 @@ export default defineConfig({
       "meta",
       {
         name: "twitter:image",
-        content: "https://aplos.gxbs.me/images/aplos-banner.png",
+        content: "https://aplos.gxbs.me/images/banner.png",
       },
     ],
     ["meta", { name: "twitter:title", content: "Aplós" }],
@@ -110,7 +110,7 @@ export default defineConfig({
       preprocessorOptions: {
         scss: {
           additionalData: `
-            $color-accent: #d16014;
+            $color-accent: #55B458;
             $bg-color-code-l: #ffffff;
             `,
         },

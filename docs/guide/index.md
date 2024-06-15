@@ -79,7 +79,7 @@ You can edit the `config.mts` file to tailor the template to your needs. **I've 
 
 ## Start Writing
 
-With the configuration set up, you can now start creating and editing your files. Utilize the `pages` folder to add new pages and [customize the project](./edit-configuration.md) to suit your preferences.
+With the configuration set up, you can now start creating and editing your files. Utilize the `content` folder to add new pages. (if you used the template, you already have a `content` folder with some example pages)
 
 ---
 
@@ -125,19 +125,7 @@ Aplós supports two comment systems: [Giscus](https://giscus.app) and ActivityPu
 comments: giscus
 ```
 
-You also need to add the following inside the `config.mts` file, in the `theme` object:
-
-```ts
-    blog: {
-      data: {
-        repo: "yourusername/yourrepo",
-        repoid: "your-repo-id",
-        categoryid: "your-category-id",
-      },
-    },
-```
-
-Make sure to edit the `repo`, `repoid`, and `categoryid` with your own values. Once that, you don't need to do anything else, the comments will right there!
+You also need to configure Giscus in the `config.mts` file. You can refer to the [Edit Configuration](./edit-configuration.md#articles) page for more information.
 
 ---
 
@@ -160,7 +148,7 @@ For example, to import a CSS file, add the following line to the `index.ts` file
 import "./styles.css";
 ```
 
-> Predicting that you have a `styles.css` file in the same directory as the `index.ts` file (`theme` folder).
+> It's recommended to have the `styles.css` file in the same directory as the `index.ts` file, the `.vitepress/theme/` folder.
 
 Inside the `styles.css` file, you can add custom styles to modify the appearance of your content, or even adding custom components.
 
@@ -203,35 +191,19 @@ For example, to make an image small, use the following syntax:
 ![My image](./image.png#small)
 ```
 
+> [!TIP]
+> You can combine multiple options by separating them with a comma. For example, to make an image small and add a shadow, use the following syntax:
+> ```md
+> ![My image](./image.png#small#shadow)
+>```
+
 ### Automatically Update Aplós
 
-To automatically update Aplós, which is an NPM Package hosted on GitHub, you can use Dependabot. Follow these steps to set it up:
-
-1. Inside your project repository that uses Aplós, create a file called `dependabot.yml` within the `.github/` folder.
-
-2. Add the following configuration to `dependabot.yml`:
-
-```yml
-version: 2
-
-updates:
-  - package-ecosystem: npm
-    schedule:
-      interval: "daily"
-    directory: /
-```
-
-This configuration tells Dependabot to check for updates to the NPM Package (npm) daily and apply them to the root directory (directory: /).
-
-By setting up Dependabot with this configuration, you ensure that Aplós stays up-to-date automatically, saving you the hassle of manually managing NPM updates.
-
-::: tip
-You can even use this on other projects that use NPM packages, as it saves alot of time
-:::
+If it happens that you host your website on GitHub, you can use Dependabot to automatically update Aplós. To set it up, refer to [Dependabot Configuration](https://docs.github.com/en/code-security/supply-chain-security/keeping-your-dependencies-updated-automatically/configuration-options-for-dependency-updates) made by GitHub. For a quick example, you can see the [Dependabot Configuration used by Aplos Template](https://github.com/aplosdev/template/blob/main/.github/dependabot.yml).
 
 ### Deployment
 
-To deploy your website, follow the deployment guide provided by Vitepress: [Deploy Your VitePress Site](https://vitepress.dev/guide/deploy)
+To deploy your website, you can refer to the [Guide made by VitePress](https://vitepress.dev/guide/deploy). In the case that there isn't an examaple for your hosting provider, you can follow the steps below:
 
 #### Codeberg
 
@@ -282,7 +254,7 @@ To seamlessly integrate with your CI process, simply configure two essential sec
 1. `mail`: This secret should contain the email associated with your account.
 2. `codeberg_token`: This secret should store a token from your account, equipped with read and write access for your repositories.
 
-#### **Installing the Needed Package**
+#### **Using an package**
 
 If you want to optout from using a workflow or don't want to make a request: There is actually a really simple and nice NPM package that helps you deploy your project to Codeberg. The package is called `codeberg-pages` you can install by running:
 
@@ -296,7 +268,7 @@ Then, make a script to run the script:
 (...)
   "scripts": {
     (...)
-    "pages:deploy": "codeberg-pages pages/.vitepress/dist"
+    "content:deploy": "codeberg-pages content/.vitepress/dist"
   },
 (...)
 ```
@@ -304,7 +276,7 @@ Then, make a script to run the script:
 With that added you can run:
 
 ```bash
-npm run pages:deploy
+npm run content:deploy
 ```
 
 That will create a new branch called "pages" where the build output will stay.

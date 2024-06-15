@@ -72,7 +72,7 @@ Customizing the Articles in your Aplós template is a straightforward process, s
 The `giscus` object contains the variables to make the [Giscus](https://giscus.app/) comments show, for more information check the [Giscus documentation](https://giscus.app/).
 
 > [!WARNING] Warning
-> The variables above are only needed if you use Giscus as the comment provider in your blog post. If you use ActivityPub, you can ignore these variables.
+> The variables above are only needed if you use Giscus as the comment provider in your articles. If you use ActivityPub, you can ignore these variables.
 
 ### Changing theme settings
 

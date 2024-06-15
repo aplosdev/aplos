@@ -17,7 +17,7 @@ A sleek, contemporary, and purposefully designed VitePress theme & template. It 
 - <span class="emoji">📦</span> Every asset is local, nothing is pulled from the internet.
 - <span class="emoji">🔧</span> Customizable configuration for a personalized touch.
 - <span class="emoji">✍️</span> Perfect integration for blogs, documentation, and personal websites.
-- <span class="emoji">💬</span> Giscus and Activitypub/Mastodon powered comments, for blog posts
+- <span class="emoji">💬</span> Giscus and Activitypub/Mastodon powered comments, for blog posts.
 
 </section>
 
@@ -46,7 +46,7 @@ If you want to contribute to Aplós, you can check the [Contributing](/contribut
 
 ## Credits & Thanks To
 
-Aplós whouldn't be possible without the following projects:
+Aplós whouldn't be possible without the following projects/people:
 
 - [Duckquill](https://daudix.codeberg.page/duckquill), from where I got inspired to create this project (and many ideas are from there)
 - [Hari Rana](https://tesk.page/) for style-related feedback and suggestions
