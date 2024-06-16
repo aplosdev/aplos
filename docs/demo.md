@@ -324,4 +324,4 @@ You can add a check box by using the `[ ]` tag:
 
 - [x] Checked Box
 
-- [  ] Unchecked Box
+- [ ] Unchecked Box
