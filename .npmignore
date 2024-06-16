@@ -1,8 +1,8 @@
-.github
-.prettierrc
-.prettierignore
 .gitattributes
+.github
 .gitignore
+.prettierignore
+.prettierrc
 CODE_OF_CONDUCT.md
-LEARN.md
 docs
+LEARN.md
