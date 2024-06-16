@@ -14,6 +14,12 @@ importers:
       '@eslint/js':
         specifier: ^9.4.0
         version: 9.4.0
+      '@mdit/plugin-figure':
+        specifier: ^0.12.0
+        version: 0.12.0
+      '@mdit/plugin-tasklist':
+        specifier: ^0.12.0
+        version: 0.12.0
       eslint:
         specifier: 9.x
         version: 9.4.0
@@ -51,7 +57,7 @@ importers:
         version: 1.77.5
       vitepress:
         specifier: ^1.2.3
-        version: 1.2.3(@algolia/client-search@4.23.3)(sass@1.77.5)(search-insights@2.14.0)
+        version: 1.2.3(@algolia/client-search@4.23.3)(postcss@8.4.38)(sass@1.77.5)(search-insights@2.14.0)
 
 packages:
 
@@ -337,6 +343,24 @@ packages:
 
   '@jridgewell/sourcemap-codec@1.4.15':
     resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==}
+
+  '@mdit/plugin-figure@0.12.0':
+    resolution: {integrity: sha512-3nfcGI+uM0f6AqHZrEr8kSMBI6T2+fKKQXtCbvWQqQ+P3iGgf34Ay2eAtuMDcDGqyfNuR6e8aLoOeY2QWuEynA==}
+    engines: {node: '>= 18'}
+    peerDependencies:
+      markdown-it: ^14.1.0
+    peerDependenciesMeta:
+      markdown-it:
+        optional: true
+
+  '@mdit/plugin-tasklist@0.12.0':
+    resolution: {integrity: sha512-MPmuLJrqHYR2xI7ST9Xtw/xj+6Xoq7kUvcGuXWdMMNT11DcU1KppkR8QBHov437NFYh6aGyjrHUVeM4T5Ls8yg==}
+    engines: {node: '>= 18'}
+    peerDependencies:
+      markdown-it: ^14.1.0
+    peerDependenciesMeta:
+      markdown-it:
+        optional: true
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -1262,6 +1286,7 @@ snapshots:
       '@algolia/autocomplete-preset-algolia': 1.9.3(@algolia/client-search@4.23.3)(algoliasearch@4.23.3)
       '@docsearch/css': 3.6.0
       algoliasearch: 4.23.3
+    optionalDependencies:
       search-insights: 2.14.0
     transitivePeerDependencies:
       - '@algolia/client-search'
@@ -1374,6 +1399,14 @@ snapshots:
 
   '@jridgewell/sourcemap-codec@1.4.15': {}
 
+  '@mdit/plugin-figure@0.12.0':
+    dependencies:
+      '@types/markdown-it': 14.1.1
+
+  '@mdit/plugin-tasklist@0.12.0':
+    dependencies:
+      '@types/markdown-it': 14.1.1
+
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
       '@nodelib/fs.stat': 2.0.5
@@ -1453,7 +1486,7 @@ snapshots:
 
   '@types/web-bluetooth@0.0.20': {}
 
-  '@vitejs/plugin-vue@5.0.5(vite@5.2.13)(vue@3.4.27)':
+  '@vitejs/plugin-vue@5.0.5(vite@5.2.13(sass@1.77.5))(vue@3.4.27)':
     dependencies:
       vite: 5.2.13(sass@1.77.5)
       vue: 3.4.27
@@ -1544,8 +1577,9 @@ snapshots:
     dependencies:
       '@vueuse/core': 10.11.0(vue@3.4.27)
       '@vueuse/shared': 10.11.0(vue@3.4.27)
-      focus-trap: 7.5.4
       vue-demi: 0.14.8(vue@3.4.27)
+    optionalDependencies:
+      focus-trap: 7.5.4
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
@@ -2074,18 +2108,18 @@ snapshots:
       esbuild: 0.20.2
       postcss: 8.4.38
       rollup: 4.18.0
-      sass: 1.77.5
     optionalDependencies:
       fsevents: 2.3.3
+      sass: 1.77.5
 
-  vitepress@1.2.3(@algolia/client-search@4.23.3)(sass@1.77.5)(search-insights@2.14.0):
+  vitepress@1.2.3(@algolia/client-search@4.23.3)(postcss@8.4.38)(sass@1.77.5)(search-insights@2.14.0):
     dependencies:
       '@docsearch/css': 3.6.0
       '@docsearch/js': 3.6.0(@algolia/client-search@4.23.3)(search-insights@2.14.0)
       '@shikijs/core': 1.6.4
       '@shikijs/transformers': 1.6.4
       '@types/markdown-it': 14.1.1
-      '@vitejs/plugin-vue': 5.0.5(vite@5.2.13)(vue@3.4.27)
+      '@vitejs/plugin-vue': 5.0.5(vite@5.2.13(sass@1.77.5))(vue@3.4.27)
       '@vue/devtools-api': 7.2.1(vue@3.4.27)
       '@vue/shared': 3.4.27
       '@vueuse/core': 10.11.0(vue@3.4.27)
@@ -2096,6 +2130,8 @@ snapshots:
       shiki: 1.6.4
       vite: 5.2.13(sass@1.77.5)
       vue: 3.4.27
+    optionalDependencies:
+      postcss: 8.4.38
     transitivePeerDependencies:
       - '@algolia/client-search'
       - '@types/node'

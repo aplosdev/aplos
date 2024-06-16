@@ -68,8 +68,6 @@ export default {
 
 [![A herd of sheep grazing on a lush green field](https://images.unsplash.com/photo-1713098564541-3e11d9898721?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)](https://unsplash.com/photos/a-herd-of-sheep-grazing-on-a-lush-green-field-yB3YWgyQIk0)
 
-<figcaption>A herd of sheep grazing on a lush green field</figcaption>
-
 To write a caption to a photo use the `figcaption` tag:
 
 ```html
@@ -314,3 +312,16 @@ You can add marked text by using the `<mark>` tag:
 #### Output
 
 <mark>Marked Text</mark>
+
+### Check Box (`[ ]`)
+
+> [!NOTE] Note
+> This will only work if you have the markdown-it-checkbox plugin enabled. It will come by deafult with Aplós in `v2.2.0`.
+
+You can add a check box by using the `[ ]` tag:
+
+- [ ] Check Box
+
+- [x] Checked Box
+
+- [  ] Unchecked Box

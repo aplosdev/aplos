@@ -1,4 +1,6 @@
 import { defineConfig } from "vitepress";
+import { figure } from "@mdit/plugin-figure";
+import { tasklist } from "@mdit/plugin-tasklist";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -65,6 +67,17 @@ export default defineConfig({
     theme: {
       light: "light-plus",
       dark: "vitesse-dark",
+    },
+
+    config: (md) => {
+      md.use(figure);
+      md.use(tasklist, {
+        disabled: false,
+        label: true,
+        containerClass: "task-list-container",
+        itemClass: "task-list-item",
+        labelClass: "task-list",
+      });
     },
   },
   head: [

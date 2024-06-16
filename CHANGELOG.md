@@ -1,3 +1,11 @@
+## 2.2.0 (upcoming)
+
+### Feature(s)
+
+- Add styles for check boxes
+
+- Add `markdown-it` plugins support for better markdown parsing
+
 ## 2.1.0 (2024-06-15)
 
 ### Feature(s)
