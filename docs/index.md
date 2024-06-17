@@ -57,7 +57,7 @@ Aplós whouldn't be possible without the following projects/people:
 - Everyone that supported the project.
 
 ::: details Intrested in the next steps?
-Aplós is currently building a new project under it's umbrella, called Sáfi. Read more about it [here](/safi.html).
+Aplós is currently building a new project under it's umbrella, called Sáfi. Read more about it [here](https://gabs.eu.org/blog/posts/next-steps-for-aplós).
 :::
 
 <script setup lang="ts">
