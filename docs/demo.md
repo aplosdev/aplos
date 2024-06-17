@@ -86,6 +86,17 @@ We also have lines.
 
 ---
 
+And we can have tables:
+
+| Syntax       | Description |
+| ------------ | ----------- |
+| Header       | Title       |
+| Paragraph    | Text        |
+| Something    | And wow     |
+| I don't know | And huh     |
+
+---
+
 ## Information Boxes
 
 Aplus has various types of information boxes.
@@ -148,28 +159,7 @@ This is a details block.
 This is a details block.
 :::
 
-## Table
-
-| Syntax       | Description |
-| ------------ | ----------- |
-| Header       | Title       |
-| Paragraph    | Text        |
-| Something    | And wow     |
-| I don't know | And huh     |
-
-## Small Text
-
-You can add small text by using the `<small>` tag.
-
-### Input
-
-```html
-<small>Something Small</small>
-```
-
-### Output
-
-<small>Something Small</small>
+## Other Elements
 
 ## Time
 
@@ -199,7 +189,19 @@ You also can have an animation to the time like this one: <time>**11:00**</time>
 
 <time>**11:00**</time>
 
-## Other Elements
+## Small Text
+
+You can add small text by using the `<small>` tag.
+
+### Input
+
+```html
+<small>Something Small</small>
+```
+
+### Output
+
+<small>Something Small</small>
 
 ### Progress Bar
 

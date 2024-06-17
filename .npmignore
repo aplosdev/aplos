@@ -1,8 +1,10 @@
 .gitattributes
 .github
 .gitignore
+.gitattributes
 .prettierignore
 .prettierrc
 CODE_OF_CONDUCT.md
 docs
+eslint.config.js
 LEARN.md
