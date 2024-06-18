@@ -24,7 +24,9 @@
       </span>
     </small>
     <br />
-    <p id="description">{{ frontmatter.description }}</p>
+    <p id="description">
+      {{ frontmatter.description }}
+    </p>
     <hr />
   </div>
 </template>
