@@ -95,6 +95,10 @@ const { theme } = useData();
             background-color: var(--color-accent);
             color: var(--color-background);
           }
+
+          &:active {
+            transform: scale(0.95);
+          }
         }
       }
     }
