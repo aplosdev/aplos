@@ -42,7 +42,7 @@
     <Giscus v-if="frontmatter.comments === 'giscus'" />
     <br />
     <hr />
-    <p v-if="frontmatter.prev || frontmatter.next" class="dialog-buttons">
+    <div v-if="frontmatter.prev || frontmatter.next" class="dialog-buttons">
       <a
         v-if="frontmatter.prev"
         class="article-nav"
@@ -61,7 +61,7 @@
         <span><small>Next →</small></span>
         <br /><span>{{ frontmatter.next }}</span>
       </a>
-    </p>
+    </div>
   </section>
 </template>
 

@@ -8,6 +8,12 @@
 
 - Add `markdown-it` plugins support for better markdown parsing
 
+### Cleanup(s)
+
+- Make a more destinctive style for descriptions in the article's header
+
+- Other minor changes to elements
+
 ## 2.1.0 (2024-06-15)
 
 ### Feature(s)

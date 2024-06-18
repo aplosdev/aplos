@@ -24,7 +24,7 @@
       </span>
     </small>
     <br />
-    <p>{{ frontmatter.description }}</p>
+    <p id="description">{{ frontmatter.description }}</p>
     <hr />
   </div>
 </template>
@@ -57,11 +57,11 @@ const { frontmatter, theme } = useData();
         color: var(--color-accent);
       }
     }
+  }
 
-    p {
-      color: var(--color-text-secondary);
-      font-style: italic;
-    }
+  #description {
+    color: var(--color-text-secondary);
+    font-style: italic;
   }
 }
 </style>
