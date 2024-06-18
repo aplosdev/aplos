@@ -35,11 +35,16 @@ export default defineConfig({
       git: "https://github.com/aplosdev/aplos",
     },
     footer: {
+      links: [
+        { link: "https://github.com/aplosdev/aplos", text: "Source Code" },
+        { link: "https://gxbs.me/", text: "Made with ❤️ by Gabs" },
+      ],
+
       copyright: true,
       poweredBy: true,
 
       madeby: {
-        show: true,
+        show: false,
         name: "Gabs",
         link: "https://gxbs.me/",
       },
@@ -51,7 +56,7 @@ export default defineConfig({
       },
 
       sourcecode: {
-        show: true,
+        show: false,
         link: "https://github.com/aplosdev/aplos",
       },
     },

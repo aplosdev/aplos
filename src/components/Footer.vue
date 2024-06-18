@@ -5,6 +5,13 @@ const { theme } = useData();
 
 <template>
   <footer id="footer">
+    <nav v-if="theme.footer.links">
+      <ul>
+        <li v-for="link in theme.footer.links" :key="link.link">
+          <a :href="link.link">{{ link.text }}</a>
+        </li>
+      </ul>
+    </nav>
     <a
       v-if="theme.footer.sourcecode?.show"
       style="margin: 16px; display: block"
@@ -54,6 +61,44 @@ const { theme } = useData();
   max-width: 100%;
   max-width: var(--content-width);
   text-align: center;
+
+  nav {
+    margin: 0 auto 1rem auto;
+    border-radius: 22px;
+    background-color: var(--color-background-second);
+    padding: 0.25rem;
+    width: fit-content;
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 0.25rem;
+      margin: 0;
+      padding: 0;
+      width: min(var(--content-width) / 1.5, 100%);
+
+      li {
+        display: flex;
+        line-height: normal;
+        list-style: none;
+
+        a {
+          transition: var(--transition);
+          border-radius: 999rem;
+          padding: 0.5rem 0.75rem;
+          color: var(--color-accent);
+          text-decoration: none;
+
+          &:hover {
+            background-color: var(--color-accent);
+            color: var(--color-background);
+          }
+        }
+      }
+    }
+  }
 
   a {
     color: var(--color-accent);

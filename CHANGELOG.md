@@ -2,6 +2,8 @@
 
 ### Feature(s)
 
+- Add footer links
+
 - Add styles for check boxes
 
 - Add `markdown-it` plugins support for better markdown parsing
