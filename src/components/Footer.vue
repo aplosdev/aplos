@@ -14,7 +14,7 @@ const { theme } = useData();
     </nav>
     <a
       v-if="theme.footer.sourcecode?.show"
-      style="margin: 16px; display: block"
+      style="margin: 1rem; display: block"
       :href="theme.footer.sourcecode.link"
       ><mark>Source Code</mark></a
     >
@@ -53,18 +53,18 @@ const { theme } = useData();
   position: relative;
   right: 0;
   bottom: 0;
-  margin: 0 10px 10px 10px;
+  margin: 0 0.625rem 0.625rem 0.625rem;
   margin-right: auto;
   margin-left: auto;
-  border-top: 1px solid var(--color-border);
-  padding: 20px;
+  border-top: 0.0625rem solid var(--color-border);
+  padding: 1.25rem;
   max-width: 100%;
   max-width: var(--content-width);
   text-align: center;
 
   nav {
     margin: 0 auto 1rem auto;
-    border-radius: 22px;
+    border-radius: 1.375rem;
     background-color: var(--color-background-second);
     padding: 0.25rem;
     width: fit-content;
@@ -107,14 +107,14 @@ const { theme } = useData();
   a {
     color: var(--color-accent);
     font-weight: 700;
-    text-decoration: underline 1.4px;
+    text-decoration: underline 0.0875rem;
   }
 
   p {
     margin: 0;
 
     &:first-child {
-      margin-top: 10px;
+      margin-top: 0.625rem;
     }
   }
 

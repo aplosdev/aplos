@@ -31,25 +31,25 @@ oom-comments {
     list-style: none;
 
     ul {
-      margin-left: 64px;
+      margin-left: 4rem;
     }
   }
 
   li {
-    margin: 32px 0;
+    margin: 2rem 0;
   }
 
   article {
-    max-width: 600px;
+    max-width: 37.5rem;
   }
 
   .comment-avatar {
     float: left;
-    width: 50px;
-    height: 50px;
+    width: 3.125rem;
+    height: 3.125rem;
     margin: 0;
-    margin-right: 14px;
-    border-radius: 6px;
+    margin-right: 0.875rem;
+    border-radius: 0.375rem;
 
     &:hover {
       transform: rotate(10deg) scale(1.1);
@@ -71,10 +71,10 @@ oom-comments {
 
   .comment-author {
     position: absolute;
-    top: 35px;
-    left: 35px;
-    width: 20px;
-    height: 20px;
+    top: 2.1875rem;
+    left: 2.1875rem;
+    width: 1.25rem;
+    height: 1.25rem;
     color: var(--color-accent);
     background: var(--color-background);
     border-radius: 50%;
@@ -107,7 +107,7 @@ oom-comments {
 
   .comment-body {
     margin-top: 0.5em;
-    margin-left: 64px;
+    margin-left: 4rem;
     line-height: 1.5;
 
     p {
