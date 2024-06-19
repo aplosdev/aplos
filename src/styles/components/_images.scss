@@ -76,8 +76,21 @@ img {
     filter: sepia(100%);
   }
 
-  &[src*="#transparency"] {
+  &[src*="screenshot"] {
     opacity: 0.5;
+
+    &:hover {
+      box-shadow: none;
+    }
+  }
+
+  &[src*="#screenshot"] {
+    border: none;
+    @include roundedNone;
+
+    &:hover {
+      box-shadow: none;
+    }
   }
 
   &[src*="#pixel"] {

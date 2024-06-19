@@ -63,11 +63,12 @@ const { theme } = useData();
   text-align: center;
 
   nav {
-    margin: 0 auto 1rem auto;
+    margin: 0 auto 1rem;
     border-radius: 1.375rem;
     background-color: var(--color-background-second);
     padding: 0.25rem;
     width: fit-content;
+    max-width: min(var(--content-width) / 1.5, 100%);
 
     ul {
       display: flex;

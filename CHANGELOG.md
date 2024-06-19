@@ -2,6 +2,8 @@
 
 ### Feature(s)
 
+- Add screenshot support for images via the URL (if the image's URL has an "screenshot" in it, it will be displayed as a screenshot)
+
 - Add footer links
 
 - Add styles for check boxes
