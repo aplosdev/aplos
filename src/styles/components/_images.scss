@@ -76,7 +76,7 @@ img {
     filter: sepia(100%);
   }
 
-  &[src*="screenshot"] {
+  &[src*="#transparency"] {
     opacity: 0.5;
 
     &:hover {
@@ -84,12 +84,14 @@ img {
     }
   }
 
-  &[src*="#screenshot"] {
+  &[src*="screenshot"] {
     border: none;
     @include roundedNone;
 
     &:hover {
       box-shadow: none;
+      border: 0;
+      @include roundedNone;
     }
   }
 
