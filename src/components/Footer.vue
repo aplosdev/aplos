@@ -36,7 +36,9 @@ const { theme } = useData();
       >, <span v-if="theme.footer.startYear">{{ theme.footer.startYear }}-</span
       >{{ new Date().getFullYear() }}.
     </p>
-    <p v-else>{{ theme.footer.custom?.copyright }}</p>
+    <p v-else>
+      {{ theme.footer.custom?.copyright }}
+    </p>
     <p v-if="theme.footer.copyleft?.show" id="copyleft">
       &#127279; Licensed under the
       <a :href="theme.footer.copyleft.info">{{
