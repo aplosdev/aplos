@@ -10,3 +10,8 @@ updates:
     schedule:
       interval: "daily"
     directory: "docs/"
+
+  - package-ecosystem: github-actions
+    schedule:
+      interval: "daily"
+    directory: "/"
