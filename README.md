@@ -19,7 +19,6 @@ A sleek, contemporary, and purposefully designed VitePress theme
 - Utilizes premium fonts: Inter for text and Geist Mono for code snippets.
 - Local development made easy with NPM/PNPM integration.
 
-
 <a href="https://github.com/aplosdev/template">
 <picture>
   <source
