@@ -12,6 +12,8 @@
 
 - Add `markdown-it` plugins support for better markdown parsing
 
+- Add support for custom copyright text
+
 ### Cleanup(s)
 
 - Slighly darker background color for dark mode

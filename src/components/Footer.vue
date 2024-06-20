@@ -28,7 +28,7 @@ const { theme } = useData();
       </ul>
     </nav>
     <p
-      v-if="theme.footer.copyright"
+      v-if="!theme.footer.custom?.copyright"
       id="copyright"
       :title="'Last Updated At: ' + new Date().toLocaleString()"
     >
@@ -36,6 +36,7 @@ const { theme } = useData();
       >, <span v-if="theme.footer.startYear">{{ theme.footer.startYear }}-</span
       >{{ new Date().getFullYear() }}.
     </p>
+    <p v-else>{{ theme.footer.custom?.copyright }}</p>
     <p v-if="theme.footer.copyleft?.show" id="copyleft">
       &#127279; Licensed under the
       <a :href="theme.footer.copyleft.info">{{
