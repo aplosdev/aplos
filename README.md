@@ -19,19 +19,6 @@ A sleek, contemporary, and purposefully designed VitePress theme
 - Utilizes premium fonts: Inter for text and Geist Mono for code snippets.
 - Local development made easy with NPM/PNPM integration.
 
-<a href="https://github.com/aplosdev/docs">
-<picture>
-  <source
-    srcset="https://github-readme-stats.vercel.app/api/pin/?username=aplosdev&repo=docs&theme=dark"
-    media="(prefers-color-scheme: dark)"
-  />
-  <source
-    srcset="https://github-readme-stats.vercel.app/api/pin/?username=aplosdev&repo=docs"
-    media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-  />
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=aplosdev&repo=docs" alt="Repo Card" />
-</picture>
-</a>
 
 <a href="https://github.com/aplosdev/template">
 <picture>
