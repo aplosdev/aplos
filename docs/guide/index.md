@@ -209,7 +209,7 @@ To deploy your website, you can refer to the [Guide made by VitePress](https://v
 
 In the case of you wanting to host your website on Codeberg, it's actually not that hard:
 
-##### **Workflow**
+##### Workflow
 
 If you have access to [Codeberg CI](https://codeberg.org/Codeberg-e.V./requests/#woodpecker-ci) take advantage of the straightforward workflow I've created. This workflow automates the process of building your website whenever you make a push, deploying the deployment of your changes:
 
@@ -254,7 +254,7 @@ To seamlessly integrate with your CI process, simply configure two essential sec
 1. `mail`: This secret should contain the email associated with your account.
 2. `codeberg_token`: This secret should store a token from your account, equipped with read and write access for your repositories.
 
-#### **Using an package**
+#### Using an package
 
 If you want to optout from using a workflow or don't want to make a request: There is actually a really simple and nice NPM package that helps you deploy your project to Codeberg. The package is called `codeberg-pages` you can install by running:
 

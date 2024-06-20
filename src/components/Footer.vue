@@ -5,25 +5,22 @@ const { theme } = useData();
 
 <template>
   <footer id="footer">
-    <nav v-if="theme.footer.links">
+    <nav v-if="theme.footer.links || theme.footer.madeby.show || theme.footer.sourcecode?.show">
       <ul>
         <li v-for="link in theme.footer.links" :key="link.link">
           <a :href="link.link">{{ link.text }}</a>
         </li>
+        <li v-if="theme.footer.sourcecode?.show">
+          <a :href="theme.footer.sourcecode.link">Source Code</a>
+        </li>
+        <li v-if="theme.footer.madeby.show">
+          <a :href="theme.footer.madeby.link"
+            >Made with ❤️ by
+            <b id="author">{{ theme.footer.madeby.name }}</b></a
+          >
+        </li>
       </ul>
     </nav>
-    <a
-      v-if="theme.footer.sourcecode?.show"
-      style="margin: 1rem; display: block"
-      :href="theme.footer.sourcecode.link"
-      ><mark>Source Code</mark></a
-    >
-    <p v-if="theme.footer.madeby.show">
-      Made with ❤️ by
-      <a id="author" :href="theme.footer.madeby.link"
-        ><mark>{{ theme.footer.madeby.name }}</mark></a
-      >
-    </p>
     <p
       v-if="theme.footer.copyright"
       id="copyright"
