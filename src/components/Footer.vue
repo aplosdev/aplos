@@ -5,7 +5,13 @@ const { theme } = useData();
 
 <template>
   <footer id="footer">
-    <nav v-if="theme.footer.links || theme.footer.madeby.show || theme.footer.sourcecode?.show">
+    <nav
+      v-if="
+        theme.footer.links ||
+        theme.footer.madeby.show ||
+        theme.footer.sourcecode?.show
+      "
+    >
       <ul>
         <li v-for="link in theme.footer.links" :key="link.link">
           <a :href="link.link">{{ link.text }}</a>
