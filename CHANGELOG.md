@@ -1,4 +1,4 @@
-## 2.2.0 (upcoming)
+## 2.2.0 (2024-06-22)
 
 ![Bento Grid of version 2.2.0](https://aplos.gxbs.me/images/v2-2-0.png)
 
