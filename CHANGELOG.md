@@ -1,5 +1,7 @@
 ## 2.2.0 (upcoming)
 
+![Bento Grid of version 2.2.0](https://aplos.gxbs.me/images/v2-2-0.png)
+
 ### Feature(s)
 
 - Add screenshot support for images via the URL (if the image's URL has an "screenshot" in it, it will be displayed as a screenshot)
