@@ -31,29 +31,13 @@
   box-sizing: border-box;
 }
 
-@mixin grid-template-rows($rows) {
-  grid-template-rows: $rows;
-}
-
-@mixin background-color($color) {
-  background-color: $color;
-}
-
-@mixin font-size($size) {
-  font-size: $size;
-}
-
-@mixin line-height($height) {
-  line-height: $height;
-}
-
 body {
-  @include grid-template-rows(auto minmax(auto, 1fr) auto);
-  @include background-color(var(--color-background));
+  grid-template-rows: auto minmax(auto, 1fr) auto;
+  background-color: var(--color-background);
   min-height: 100vh;
   scroll-behavior: smooth;
-  @include font-size(1rem);
-  @include line-height(1.5);
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 main {
@@ -73,14 +57,12 @@ html {
   transition: all 0.25s ease;
   margin-top: 0.825rem;
   color: var(--color-text-secondary);
-  @include font-size(0.875rem);
+  font-size: 0.875rem;
 }
 
 div[class*="language-"]:hover,
-.vp-code:hover {
-  .lang {
-    display: none;
-  }
+.vp-code:hover .lang {
+  display: none;
 }
 
 :focus-visible {
@@ -94,13 +76,13 @@ div[class*="language-"]:hover,
     animation: focus-in 0.2s;
     outline: 0.125rem solid var(--color-accent);
     outline-offset: 2px;
-  }
-}
 
-@keyframes focus-in {
-  from {
-    outline: 0.5rem solid transparent;
-    outline-offset: 0.25rem;
+    @keyframes focus-in {
+      from {
+        outline: 0.5rem solid transparent;
+        outline-offset: 0.25rem;
+      }
+    }
   }
 }
 
@@ -124,7 +106,7 @@ div[class*="language-"]:hover,
     padding: 0;
     color: var(--color-text-secondary);
     font-weight: 600;
-    @include font-size(0.875rem);
+    font-size: 0.875rem;
     list-style-type: decimal;
 
     &:first-child::before {
@@ -133,7 +115,7 @@ div[class*="language-"]:hover,
       content: "Table of Contents";
       color: var(--color-text-secondary);
       font-weight: 700;
-      @include font-size(0.95rem);
+      font-size: 0.95rem;
       text-align: center;
     }
 
@@ -153,7 +135,7 @@ div[class*="language-"]:hover,
           transform 100ms ease;
         margin: 0 0.3125rem;
         font-weight: 600;
-        @include font-size(0.875rem);
+        font-size: 0.875rem;
         letter-spacing: -0.045rem;
         text-align: left;
         text-decoration: underline solid var(--color-accent);
@@ -175,32 +157,10 @@ div[class*="language-"]:hover,
   }
 }
 
-button.copy {
-  display: none;
-  position: absolute;
-  top: 0.75rem;
-  right: 0.75rem;
-  opacity: 0;
-  z-index: 3;
-  transition:
-    border-color 0.25s,
-    background-color 0.25s,
-    opacity 0.25s;
-  cursor: pointer;
-  border: 0.0625rem solid var(--vp-code-copy-code-border-color);
-  border-radius: 0.25rem;
-  background-image: var(--vp-icon-copy);
-  background-position: 50%;
-  background-size: 1.25rem;
-  background-repeat: no-repeat;
-  background-color: var(--vp-code-copy-code-bg);
-  width: 2.5rem;
-  height: 2.5rem;
-  direction: ltr;
-}
-
+button.copy,
 .header-anchor {
-  display: none; // I will hide it for now
+  display: none;
+  /* Needs to be written */
 }
 
 .numeric {

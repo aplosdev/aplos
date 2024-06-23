@@ -1,29 +1,5 @@
 @import "variables";
 
-@mixin code-styles {
-  border: 0;
-  @include roundedNone;
-  background-color: transparent;
-  padding: 0;
-  color: var(--color-text);
-
-  span {
-    color: var(--shiki-light, inherit);
-
-    @media (prefers-color-scheme: dark) {
-      color: var(--shiki-dark, inherit);
-    }
-
-    .line .highlighted {
-      background-color: rgba(142, 150, 170, 0.14);
-
-      @media (prefers-color-scheme: dark) {
-        background-color: rgba(101, 117, 133, 0.16);
-      }
-    }
-  }
-}
-
 img,
 svg,
 video,
@@ -46,7 +22,27 @@ pre {
   font-family: var(--main-mono);
 
   code {
-    @include code-styles;
+    border: 0;
+    @include roundedNone;
+    background-color: transparent;
+    padding: 0;
+    color: var(--color-text);
+
+    span {
+      color: var(--shiki-light, inherit);
+
+      @media (prefers-color-scheme: dark) {
+        color: var(--shiki-dark, inherit);
+      }
+
+      .line .highlighted {
+        background-color: rgba(142, 150, 170, 0.14);
+
+        @media (prefers-color-scheme: dark) {
+          background-color: rgba(101, 117, 133, 0.16);
+        }
+      }
+    }
   }
 
   .highlighted {
@@ -139,7 +135,7 @@ mark {
   color: var(--color-accent);
 }
 
-/* Others */
+/* Miscellaneous */
 
 ul,
 ol {
@@ -152,14 +148,4 @@ ul {
 
 ol {
   list-style: decimal;
-}
-
-a mark {
-  display: inline-block;
-  transition: transform 0.3s ease;
-  text-decoration: underline;
-
-  &:hover {
-    transform: scale(1.2) rotate(10deg);
-  }
 }

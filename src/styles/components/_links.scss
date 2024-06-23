@@ -1,16 +1,29 @@
 .icon-links {
-  a[href*="https:"]:not(:has(img)),
-  a[href*="http:"]:not(:has(img)) {
-    &::after {
-      content: " ↗";
-      font-size: 0.75rem;
-    }
-  }
+  a {
+    &:not(:has(img)) {
+      &::after {
+        content: " →";
+        font-size: 0.75rem;
+      }
 
-  a:not(:has(img)) {
-    &::after {
-      content: " →";
-      font-size: 0.75rem;
+      &[href*="https://"],
+    &[href*="http://"]
+      {
+        &::after {
+          content: " ↗";
+          font-size: 0.75rem;
+        }
+      }
+    }
+
+    mark {
+      display: inline-block;
+      transition: transform 0.3s ease;
+      text-decoration: underline;
+
+      &:hover {
+        transform: scale(1.2) rotate(10deg);
+      }
     }
   }
 }

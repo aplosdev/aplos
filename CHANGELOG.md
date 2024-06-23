@@ -1,3 +1,9 @@
+## 2.2.1 (upcoming)
+
+### Cleanup(s)
+
+- Remove uses mixins that aren't needed and other small changes
+
 ## 2.2.0 (2024-06-22)
 
 ![Bento Grid of version 2.2.0](https://aplos.gxbs.me/images/v2-2-0.png)
