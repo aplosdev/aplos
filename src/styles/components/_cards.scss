@@ -37,16 +37,17 @@
   border-left: $color 0.4rem solid;
   background-color: #{$color}1e;
 
-  .custom-block-title {
+  @media (prefers-color-scheme: dark) {
+    background-color: #{$color}2a;
+  }
+
+  .custom-block-title,
+  a {
     color: color.scale($color, $lightness: -70%);
 
     @media (prefers-color-scheme: dark) {
       color: color.scale($color, $lightness: 50%);
     }
-  }
-
-  @media (prefers-color-scheme: dark) {
-    background-color: #{$color}2a;
   }
 
   .custom-block-title::before {

@@ -2,6 +2,8 @@
 
 ### Cleanup(s)
 
+- Make Informal Cards' links use the accent color of the card
+
 - Remove uses mixins that aren't needed and other small changes
 
 ## 2.2.0 (2024-06-22)
