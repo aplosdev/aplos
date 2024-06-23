@@ -40,21 +40,6 @@
   letter-spacing: -0.075rem;
 }
 
-@mixin link-style {
-  transition: text-decoration 0.3s ease transform 0.3s ease;
-  color: var(--color-accent);
-  font-weight: 700;
-  text-decoration: underline;
-
-  &:hover {
-    text-decoration: dotted underline;
-  }
-
-  &:active {
-    transform: scale(0.9);
-  }
-}
-
 h1,
 h2,
 h3,
@@ -131,7 +116,18 @@ textarea {
 
 main {
   a {
-    @include link-style;
+    transition: text-decoration 0.3s ease transform 0.3s ease;
+    color: var(--color-accent);
+    font-weight: 700;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: dotted underline;
+    }
+
+    &:active {
+      transform: scale(0.9);
+    }
   }
 }
 
@@ -171,8 +167,4 @@ abbr {
 
 .no-underline a {
   text-decoration: none;
-}
-
-svg {
-  fill: inherit;
 }
