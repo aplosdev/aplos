@@ -5,7 +5,8 @@ table {
   table-layout: fixed;
   overflow: hidden;
 
-  th {
+  th,
+  tfoot {
     background-color: var(--color-background-mute);
     padding: 0.625rem 1.25rem;
     color: var(--color-accent);

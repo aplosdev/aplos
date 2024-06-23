@@ -1,5 +1,9 @@
 ## 2.2.1 (upcoming)
 
+### Feature(s)
+
+- Add styles for `var` and `tfoot` elements
+
 ### Cleanup(s)
 
 - Make Informal Cards' links use the accent color of the card

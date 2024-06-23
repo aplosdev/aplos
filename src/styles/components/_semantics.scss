@@ -208,3 +208,8 @@ ins {
 cite {
   font-style: italic;
 }
+
+var {
+  font-style: italic;
+  font-family: var(--font-old-style);
+}
