@@ -2,6 +2,8 @@
 
 ### Feature(s)
 
+- Add last updated to articles
+
 - Add styles for `var` and `tfoot` elements
 
 ### Cleanup(s)
