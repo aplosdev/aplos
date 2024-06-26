@@ -1,14 +1,17 @@
 <template>
   <div id="article-head">
-    <small v-if="frontmatter.update">Last updated on {{
-      new Date(frontmatter.update).toLocaleDateString("en-GB", {
-        day: "2-digit",
-        month: "long",
-        year: "numeric",
-        hour: "2-digit",
-        minute: "2-digit",
-      })
-    }}</small>
+    <small v-if="frontmatter.update"
+      >Last updated on
+      {{
+        new Date(frontmatter.update).toLocaleDateString("en-GB", {
+          day: "2-digit",
+          month: "long",
+          year: "numeric",
+          hour: "2-digit",
+          minute: "2-digit",
+        })
+      }}</small
+    >
     <h1>{{ frontmatter.title }}</h1>
     <small>
       {{
@@ -27,7 +30,9 @@
         &middot;
       </span>
       <span class="tags">
-        <span v-for="(tag, index) in frontmatter.tags" :key="index">#{{ tag }}</span>
+        <span v-for="(tag, index) in frontmatter.tags" :key="index"
+          >#{{ tag }}</span
+        >
       </span>
     </small>
     <br />
