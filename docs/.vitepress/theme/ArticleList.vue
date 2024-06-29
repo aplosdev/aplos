@@ -10,7 +10,12 @@
       </button>
     </div>
     <div class="post-container">
-      <article v-for="post in filteredPosts" :key="post.title" class="post" :class="post.type">
+      <article
+        v-for="post in filteredPosts"
+        :key="post.title"
+        class="post"
+        :class="post.type"
+      >
         <h3>
           <a
             :href="`posts/${post.title
@@ -19,9 +24,15 @@
             >{{ post.title }}</a
           >
         </h3>
-        <p class="date" v-if="post.type === 'archive'">{{ post.date }} &middot; Archived</p>
-        <p class="date" v-else-if="post.type === 'draft'">{{ post.date }} &middot; Draft</p>
-        <p class="date" v-else-if="post.type === 'featured'">{{ post.date }} &middot; Featured</p>
+        <p class="date" v-if="post.type === 'archive'">
+          {{ post.date }} &middot; Archived
+        </p>
+        <p class="date" v-else-if="post.type === 'draft'">
+          {{ post.date }} &middot; Draft
+        </p>
+        <p class="date" v-else-if="post.type === 'featured'">
+          {{ post.date }} &middot; Featured
+        </p>
         <p class="date" v-else>{{ post.date }}</p>
         <p>{{ post.description }}</p>
         <div class="tags">
