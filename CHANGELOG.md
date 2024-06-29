@@ -2,6 +2,12 @@
 
 ### Feature(s)
 
+- Add multuple types of articles
+  - Featured
+  - Draft
+  - Archived
+  - And the normal one
+
 - Add last updated to articles
 
 - Add styles for `var` and `tfoot` elements

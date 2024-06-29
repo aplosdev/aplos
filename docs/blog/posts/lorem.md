@@ -4,6 +4,7 @@ title: "Lorem"
 author: Gabriel Cozma
 description: I example about why lorem ipsum is used. It's great, simple, clean nice. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri tamen permagna accessio potest, si aliquod aeternum et infinitum impendere malum.
 date: 2024-03-10T21:34:00+02:00
+type: featured
 comments: giscus
 prev: Ipsum
 tags:

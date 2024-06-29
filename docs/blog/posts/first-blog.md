@@ -3,6 +3,7 @@ layout: article
 title: First Blog
 author: Gabriel Cozma
 description: This is my first ever demo blog for Aplos! Or is it? I took a random post as demo, credits to the post. ActivityPub comments have been disabled for version 1.4.0 as it was causing issues with the build process. It will be re-enabled in a future release.
+type: archive
 comments: activitypub
 post: https://fosstodon.org/@gregorni/112379470950032296
 date: 2024-03-10T21:32:00+02:00
