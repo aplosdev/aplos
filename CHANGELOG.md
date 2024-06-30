@@ -17,6 +17,8 @@
 
 ### Cleanup(s)
 
+- New deafult color accent
+
 - Better styles for normal links in the footer
 
 - Make Informal Cards' links use the accent color of the card
