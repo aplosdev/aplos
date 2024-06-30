@@ -45,6 +45,8 @@
 
 - Add support for custom copyright text
 
+- Bring the helpful layout to the Article's Footer
+
 ### Cleanup(s)
 
 - Slighly darker background color for dark mode

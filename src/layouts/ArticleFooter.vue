@@ -62,6 +62,7 @@
         <br /><span>{{ frontmatter.next }}</span>
       </a>
     </div>
+    <Helpful />
   </section>
 </template>
 
@@ -69,6 +70,7 @@
 import { useData } from "vitepress";
 
 import Giscus from "../components/GiscusComments.vue";
+import Helpful from "./Helpful.vue";
 /* import MastodonComments from "./MastodonComments.vue"; */
 
 const { frontmatter, theme } = useData();
