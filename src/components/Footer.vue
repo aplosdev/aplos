@@ -116,12 +116,12 @@ const { theme } = useData();
     text-decoration: underline 0.0875rem;
 
     &:not(li) {
+      transition: var(--transition);
       margin: 0;
       border-radius: var(--rounded-xs);
       background-color: var(--color-background-second);
       padding: 0.18rem 0.3rem 0.1875rem 0.3rem;
       color: var(--color-accent);
-      transition: var(--transition);
 
       &:hover {
         background-color: var(--color-accent);
@@ -154,8 +154,8 @@ const { theme } = useData();
   }
 
   small {
-    margin-top: 0.625rem;
     display: block;
+    margin-top: 0.625rem;
   }
 
   #author {

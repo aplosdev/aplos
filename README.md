@@ -100,7 +100,7 @@ All other standard VitePress commands are available, like `pnpm demo:build` and 
 
 ## Thanks ❤ & Credits️
 
-- [Duckquill](https://daudix.codeberg.page/duckquill), from where I got inspired to create this project (and many ideas are from there)
+- [Duckquill](https://duckquill.daudix.one), from where I got inspired to create this project (and many ideas are from there)
 - [Hari Rana](https://tesk.page/) for style-related feedback and suggestions
 - [Inter](https://rsms.me/inter/), used for all Sans Serif text.
 - [Geist Mono](https://vercel.com/font/), used for code snippets.

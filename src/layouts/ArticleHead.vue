@@ -53,8 +53,8 @@ const { frontmatter, theme } = useData();
   padding-top: 2.0938rem;
 
   h1 {
-    margin-bottom: 0;
     margin-top: 0;
+    margin-bottom: 0;
   }
 
   .tags {

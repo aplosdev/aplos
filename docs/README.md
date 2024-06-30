@@ -54,7 +54,7 @@ You can learn more about this project on the [LEARN.md](/LEARN.md) file.
 
 ## Thanks ❤ & Credits️:
 
-- [Duckquill](https://daudix.codeberg.page/duckquill), from where I got inspired to create this project (and many ideas are from there)
+- [Duckquill](https://duckquill.daudix.one), from where I got inspired to create this project (and many ideas are from there)
 - [Inter](https://rsms.me/inter/), used for all Sans Serif text.
 - [Source Code Pro](https://adobe-fonts.github.io/source-code-pro/), used for code snippets.
 - [VitePress](https://vitepress.dev), which is used to power Aplós.

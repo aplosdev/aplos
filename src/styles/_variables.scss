@@ -18,9 +18,9 @@
 
 @mixin noBasicStyles {
   margin: 0;
-  padding: 0;
-  background-image: none;
-  border: none;
-  background-color: transparent;
   box-shadow: none;
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  padding: 0;
 }
