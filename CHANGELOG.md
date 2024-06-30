@@ -23,6 +23,8 @@
 
 - Remove uses mixins that aren't needed and other small changes
 
+- Remove dots from the footer copyright text and Powered by text
+
 ## 2.2.0 (2024-06-22)
 
 ![Bento Grid of version 2.2.0](https://aplos.gxbs.me/images/v2-2-0.png)
