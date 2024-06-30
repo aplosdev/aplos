@@ -155,6 +155,7 @@ const { theme } = useData();
 
   small {
     margin-top: 0.625rem;
+    display: block;
   }
 
   #author {

@@ -37,11 +37,24 @@
 
     &.archive {
       background-color: #ff00dd11;
+
+      @media (prefers-color-scheme: dark) {
+        background-color: #ff00ff22;
+      }
+      
       a {
         color: #5b004f;
 
         @media (prefers-color-scheme: dark) {
-          color: #ff00ff;
+          color: #ff41ff;
+        }
+      }
+
+      .tags span {
+        background-color: #5b004f1d;
+
+        @media (prefers-color-scheme: dark) {
+          background-color: #ff41ff1d;
         }
       }
     }
@@ -60,7 +73,7 @@
         color: #5b4f00;
 
         @media (prefers-color-scheme: dark) {
-          color: #ffff00;
+          color: #ffff77;
         }
       }
 
@@ -68,7 +81,7 @@
         background-color: #5b4f001d;
 
         @media (prefers-color-scheme: dark) {
-          background-color: #ffff00;
+          background-color: #ffff0037;
         }
       }
     }
