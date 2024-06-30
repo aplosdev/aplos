@@ -17,6 +17,8 @@
 
 ### Cleanup(s)
 
+- Better styles for normal links in the footer
+
 - Make Informal Cards' links use the accent color of the card
 
 - Remove uses mixins that aren't needed and other small changes

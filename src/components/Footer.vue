@@ -5,13 +5,11 @@ const { theme } = useData();
 
 <template>
   <footer id="footer">
-    <nav
-      v-if="
-        theme.footer.links ||
-        theme.footer.madeby.show ||
-        theme.footer.sourcecode?.show
-      "
-    >
+    <nav v-if="
+      theme.footer.links ||
+      theme.footer.madeby.show ||
+      theme.footer.sourcecode?.show
+    ">
       <ul>
         <li v-for="link in theme.footer.links" :key="link.link">
           <a :href="link.link">{{ link.text }}</a>
@@ -20,21 +18,14 @@ const { theme } = useData();
           <a :href="theme.footer.sourcecode.link">Source Code</a>
         </li>
         <li v-if="theme.footer.madeby.show">
-          <a :href="theme.footer.madeby.link"
-            >Made with ❤️ by
-            <b id="author">{{ theme.footer.madeby.name }}</b></a
-          >
+          <a :href="theme.footer.madeby.link">Made with ❤️ by
+            <b id="author">{{ theme.footer.madeby.name }}</b></a>
         </li>
       </ul>
     </nav>
-    <p
-      v-if="!theme.footer.custom?.copyright"
-      id="copyright"
-      :title="'Last Updated At: ' + new Date().toLocaleString()"
-    >
-      &copy; <b>{{ theme.author }}</b
-      >, <span v-if="theme.footer.startYear">{{ theme.footer.startYear }}-</span
-      >{{ new Date().getFullYear() }}.
+    <p v-if="!theme.footer.custom?.copyright" id="copyright" :title="'Last Updated At: ' + new Date().toLocaleString()">
+      &copy; <b>{{ theme.author }}</b>, <span v-if="theme.footer.startYear">{{ theme.footer.startYear }}-</span>{{ new
+        Date().getFullYear() }}.
     </p>
     <p v-else>
       {{ theme.footer.custom?.copyright }}
@@ -43,8 +34,7 @@ const { theme } = useData();
       &#127279; Licensed under the
       <a :href="theme.footer.copyleft.info">{{
         theme.footer.copyleft.license
-      }}</a
-      >.
+        }}</a>.
     </p>
     <small v-if="theme.footer.poweredBy" id="powered">
       Powered by <a href="https://vitepress.dev/">VitePress</a> and
@@ -115,6 +105,20 @@ const { theme } = useData();
     color: var(--color-accent);
     font-weight: 700;
     text-decoration: underline 0.0875rem;
+  }
+
+  a:not(li) {
+    margin: 0;
+    border-radius: var(--rounded-xs);
+    background-color: var(--color-background-second);
+    padding: 0.125rem 0.375rem 0.1875rem 0.375rem;
+    color: var(--color-accent);
+    transition: var(--transition);
+
+    &:hover {
+      background-color: var(--color-accent);
+      color: var(--color-background);
+    }
   }
 
   p {
