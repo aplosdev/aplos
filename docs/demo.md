@@ -315,6 +315,8 @@ You can add marked text by using the `<mark>` tag:
 
 <mark>Marked Text</mark>
 
+![Photo of mountain range under clear sky](https://images.unsplash.com/photo-1501082183835-b7b33db89c3f?q=80&w=2920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D#full)
+
 ### Check Box (`[ ]`)
 
 > [!NOTE] Note

@@ -1,6 +1,8 @@
-## 2.3.0 (2024-06-29)
+## 2.3.0 (upcoming)
 
 ### Feature(s)
+
+- Add support for a full width image via the URL (with `#` + `full`)
 
 - Add multuple types of articles
 
