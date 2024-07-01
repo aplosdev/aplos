@@ -1,5 +1,7 @@
 ## 2.3.0 (upcoming)
 
+![Bento Grid of version 2.3.0](https://aplos.gxbs.me/images/v2-3-0.png)
+
 ### Feature(s)
 
 - Add support for a full width image via the URL (with `#` + `full`)
