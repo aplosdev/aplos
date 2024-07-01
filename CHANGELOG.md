@@ -1,4 +1,6 @@
-## 2.3.1 (upcoming)
+## 2.3.1 (2024-07-01)
+
+Small dependency updates that were missed in the last release.
 
 ### Dependencies
 
