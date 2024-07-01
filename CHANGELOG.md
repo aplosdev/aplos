@@ -2,6 +2,8 @@
 
 ### Dependencies
 
+- Bump globals from 15.6.0 to 15.7.0 (https://github.com/aplosdev/aplos/pull/26)
+
 - Bump @eslint/js from 9.5.0 to 9.6.0 (https://github.com/aplosdev/aplos/pull/25)
 
 ## 2.3.0 (2024-07-01)
