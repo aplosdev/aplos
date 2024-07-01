@@ -1,3 +1,9 @@
+## 2.3.1 (upcoming)
+
+### Dependencies
+
+- Bump @eslint/js from 9.5.0 to 9.6.0 (https://github.com/aplosdev/aplos/pull/25)
+
 ## 2.3.0 (upcoming)
 
 ### Feature(s)
