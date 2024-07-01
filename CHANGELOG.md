@@ -1,3 +1,9 @@
+## 2.3.1 (upcoming)
+
+### Dependencies
+
+- Bump @eslint/js from 9.5.0 to 9.6.0 (https://github.com/aplosdev/aplos/pull/25)
+
 ## 2.3.0 (2024-07-01)
 
 ![Bento Grid of version 2.3.0](https://aplos.gxbs.me/images/v2-3-0.png)
