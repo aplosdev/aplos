@@ -1,21 +1,24 @@
 <template>
   <div id="article-head">
-    <small v-if="frontmatter.update"
-      >Last updated on
+    <small v-if="frontmatter.update">
+      Last updated on
       {{
-        new Date(frontmatter.update).toLocaleDateString("en-GB", {
-          day: "2-digit",
-          month: "long",
-          year: "numeric",
-          hour: "2-digit",
-          minute: "2-digit",
-        })
-      }}</small
-    >
+        new Date(frontmatter.update).toLocaleDateString(
+          theme.locale || "en-US",
+          {
+            day: "2-digit",
+            month: "long",
+            year: "numeric",
+            hour: "2-digit",
+            minute: "2-digit",
+          },
+        )
+      }}
+    </small>
     <h1>{{ frontmatter.title }}</h1>
     <small>
       {{
-        new Date(frontmatter.date).toLocaleDateString("en-GB", {
+        new Date(frontmatter.date).toLocaleDateString(theme.locale || "en-US", {
           day: "2-digit",
           month: "long",
           year: "numeric",

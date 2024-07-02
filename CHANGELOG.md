@@ -1,3 +1,9 @@
+## 2.3.2 (upcoming)
+
+### Features
+
+- Allow user to customize the date locale (default is `en-US`, rather then `en-GB` as before)
+
 ## 2.3.1 (2024-07-01)
 
 Small dependency updates that were missed in the last release.

@@ -15,6 +15,7 @@ export default defineConfig({
 
   themeConfig: {
     links: "icons",
+    locale: "en-GB",
     author: "Gabriel Cozma",
     articles: {
       giscus: {
