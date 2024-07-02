@@ -38,19 +38,38 @@ Customizing the Footer in your Aplós template is a straightforward process, spe
       copyright: true, // Show the copyright
       poweredBy: true, // Show the "Powered by Aplós & VitePress" text
 
-      madeby: { // The "Made by" section, like " Made with ❤️ by Mr Example"
+      madeby: { // The "Made by" section, like " Made with ❤️ by Mr Example" (Inside Footer Links)
         show: false, // Show the "Made by" section
         name: "Mr Example", // Your name
-        link: "https://gabs.eu.org", // Your website
+        link: "https://example.org", // Your website
       },
 
       copyleft: { // The "Copyleft" section
         show: true, // Show the "Copyleft" section
         license: "MIT License", // The license you are using
-        info: "https://github.com/GabsEdits/gabs.eu.org/blob/main/LICENSE", // The link to the license
+        info: "https://github.com/You/YourRepo/blob/main/LICENSE", // The link to the license
       },
+
+      sourcecode: { // The "Source Code" section
+        show: true, // Show the "Source Code" section
+        link: "https://github.com/You/YourRepo", // The link to your source code
     },
   },
+```
+
+#### Footer Links
+
+You can change the footer links by changing the `footer` -> `links` array:
+
+```ts
+    footer: {
+      links: [
+        { text: "Link 1", link: "/1" },
+        { text: "Link 2", link: "/2" },
+        { text: "Link 3", link: "/3" },
+        // ...
+      ],
+    },
 ```
 
 ### Articles
