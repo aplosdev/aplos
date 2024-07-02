@@ -19,10 +19,10 @@ export default defineConfig({
     author: "Gabriel Cozma",
     articles: {
       giscus: {
-        repo: "GabsEdits/aplos",
-        repoid: "R_kgDOK-fCGg",
-        categoryid: "DIC_kwDOK-fCGs4Cd3kS",
-        category: "Posts Comments",
+        repo: "aplosdev/aplos",
+        repoid: "R_kgDOLYNrKA",
+        categoryid: "DIC_kwDOLYNrKM4Cghru",
+        category: "Article Comments Demo",
         mapping: "title",
         theme: "preferred_color_scheme",
       },
