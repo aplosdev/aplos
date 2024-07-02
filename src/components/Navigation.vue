@@ -5,7 +5,7 @@
       <ul>
         <li id="title">
           <a href="/" @click="setActive('/')">
-            {{ site.title }}
+            {{ theme.nav.title || site.title }}
           </a>
         </li>
         <li v-for="link in theme.nav.links" :key="link.url || link.link">

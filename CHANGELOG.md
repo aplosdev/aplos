@@ -2,6 +2,8 @@
 
 ### Features
 
+- Allow a custom title for the navigation
+
 - Make navigation links' URL be provided with `url` not `link` (fallback provided)
 
 - Allow user to customize the date locale (default is `en-US`, rather then `en-GB` as before)
