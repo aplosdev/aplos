@@ -8,13 +8,13 @@
             {{ site.title }}
           </a>
         </li>
-        <li v-for="(navItem, index) in navigation" :key="index">
+        <li v-for="link in theme.nav.links" :key="link.url || link.link">
           <a
-            :href="navItem.link"
-            :class="{ active: isActive(navItem.link) }"
-            @click="setActive(navItem.link)"
+            :href="link.url || link.link"
+            :class="{ active: isActive(link.url || link.link) }"
+            @click="setActive(link.url || link.link)"
           >
-            {{ navItem.text }}
+            {{ link.text }}
           </a>
         </li>
         <li v-if="theme.nav.rss">
@@ -23,7 +23,7 @@
             :href="theme.nav.rss"
             aria-label="Link to the RSS Feed"
             title="Link to the RSS Feed"
-            download
+            downlåoad
           >
             <RSSFeed />
           </a>
@@ -194,6 +194,4 @@ onMounted(() => {
     currentPath.value = window.location.pathname;
   }
 });
-
-const navigation = theme.value.nav.links;
 </script>

@@ -29,9 +29,9 @@ export default defineConfig({
     },
     nav: {
       links: [
-        { link: "/demo", text: "Demo" },
-        { link: "/guide/", text: "Guide" },
-        { link: "/static", text: "Static" },
+        { url: "/demo", text: "Demo" },
+        { url: "/guide/", text: "Guide" },
+        { url: "/static", text: "Static" },
       ],
       git: "https://github.com/aplosdev/aplos",
     },

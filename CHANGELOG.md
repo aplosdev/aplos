@@ -1,6 +1,8 @@
-## 2.3.2 (upcoming)
+## 2.4.0 (upcoming)
 
 ### Features
+
+- Make navigation links' URL be provided with `url` not `link` (fallback provided)
 
 - Allow user to customize the date locale (default is `en-US`, rather then `en-GB` as before)
 
