@@ -18,5 +18,5 @@ jobs:
         uses: spyoungtech/mirror-action@v0.7.0
         with:
           REMOTE: "https://codeberg.org/aplos/aplos.git"
-          GIT_USERNAME: gxbs
+          GIT_USERNAME: gabs
           GIT_PASSWORD: ${{ secrets.GIT_PASSWORD }}
