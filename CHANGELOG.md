@@ -20,6 +20,10 @@
 
 - Better support for articles without tags, an author, or a date
 
+### Fix(es)
+
+- Fix dark mode for all the types of articles in the Article List component
+
 ## 2.3.1 (2024-07-01)
 
 Small dependency updates that were missed in the last release.

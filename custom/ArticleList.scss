@@ -39,14 +39,14 @@
       background-color: #ff00dd11;
 
       @media (prefers-color-scheme: dark) {
-        background-color: #ff00ff22;
+        background-color: #ff00ff14;
       }
 
       a {
         color: #5b004f;
 
         @media (prefers-color-scheme: dark) {
-          color: #ff41ff;
+          color: #ff69ff;
         }
       }
 
@@ -64,7 +64,7 @@
       border: 2.4px dashed #5b4f00;
 
       @media (prefers-color-scheme: dark) {
-        border-color: #ffff00;
+        border-color: #ffff7d5a;
       }
 
       border-radius: 1.2rem;
@@ -105,7 +105,7 @@
         color: #5b4f00;
 
         @media (prefers-color-scheme: dark) {
-          color: #ffff00;
+          color: #f0f077;
         }
       }
 
@@ -113,7 +113,7 @@
         background-color: #5b4f001d;
 
         @media (prefers-color-scheme: dark) {
-          background-color: #ffff00;
+          background-color: #ffff001c;
         }
       }
     }
