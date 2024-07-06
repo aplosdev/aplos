@@ -99,7 +99,7 @@ Setting up articles/a blog in Aplos is a breeze. Just follow these simple steps:
 ---
 layout: article
 title: Ipsum
-author: 
+author:
   - Gabriel Cozma
 description: Why Ipsum is the best.
 date: 2024-03-10T21:33:00+02:00
@@ -112,10 +112,11 @@ tags:
 ---
 ```
 
->[!NOTE] Notes
->1. Description, Author and Date Are Optional.
->2. The `prev` and `next` fields are used to link articles together. They should contain the titles of the previous and next articles, respectively.
->3. The `tags` field is used to categorize articles, it's not necessary to include it. But still, it's recommended.
+> [!NOTE] Notes
+>
+> 1.  Description, Author and Date Are Optional.
+> 2.  The `prev` and `next` fields are used to link articles together. They should contain the titles of the previous and next articles, respectively.
+> 3.  The `tags` field is used to categorize articles, it's not necessary to include it. But still, it's recommended.
 
 #### Comments
 
