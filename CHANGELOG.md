@@ -3,6 +3,7 @@
 ### Features
 
 - Support for multuple authors
+
   - Including in the article list
 
 - Make blog descriptions optional

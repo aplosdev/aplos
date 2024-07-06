@@ -1,7 +1,7 @@
 ---
 layout: article
 title: First Blog
-author: 
+author:
   - Gabriel Cozma
   - Aplos
 description: This is my first ever demo blog for Aplos! Or is it? I took a random post as demo, credits to the post. ActivityPub comments have been disabled for version 1.4.0 as it was causing issues with the build process. It will be re-enabled in a future release.

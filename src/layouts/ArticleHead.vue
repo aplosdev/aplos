@@ -41,7 +41,7 @@
       </span>
     </small>
     <br />
-    <p id="description" v-if="frontmatter.description">
+    <p v-if="frontmatter.description" id="description">
       {{ frontmatter.description }}
     </p>
     <hr />
