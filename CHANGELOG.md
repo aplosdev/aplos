@@ -1,8 +1,10 @@
 ## 2.4.0 (upcoming)
 
+![Bento Grid of version 2.4.0](https://aplos.gxbs.me/images/v2-4-0.png)
+
 ### Features
 
-- Support for multuple authors
+- Support for multiple authors
 
   - Including in the article list
 
