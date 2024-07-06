@@ -22,6 +22,8 @@
 
 ### Fix(es)
 
+- Code Blocks disappearing on hover
+
 - Fix dark mode for all the types of articles in the Article List component
 
 ## 2.3.1 (2024-07-01)
