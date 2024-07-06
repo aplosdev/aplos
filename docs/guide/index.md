@@ -98,10 +98,10 @@ Setting up articles/a blog in Aplos is a breeze. Just follow these simple steps:
 ```yaml
 ---
 layout: article
-title: "Ipsum"
-author: Gabriel Cozma
+title: Ipsum
+author: 
+  - Gabriel Cozma
 description: Why Ipsum is the best.
-shortDescription: Why Ipsum is the best.
 date: 2024-03-10T21:33:00+02:00
 prev: First Blog
 next: Lorem
@@ -111,6 +111,11 @@ tags:
   - example
 ---
 ```
+
+>[!NOTE] Notes
+>1. Description, Author and Date Are Optional.
+>2. The `prev` and `next` fields are used to link articles together. They should contain the titles of the previous and next articles, respectively.
+>3. The `tags` field is used to categorize articles, it's not necessary to include it. But still, it's recommended.
 
 #### Comments
 
@@ -126,14 +131,20 @@ You also need to configure Giscus in the `config.mts` file. You can refer to the
 
 ---
 
-- If you want **ActivityPub**: inside your article/post, add the following inside frontmatter:
+> [!WARNING] Warning
+> Currently, ActivityPub based comments aren't working. Will be fixed in the future. Sorry for the inconvenience.
+
+#### Multiple Authors
+
+If you have multiple authors for your articles, you can add them in the frontmatter like this:
 
 ```yaml
-comments: activitypub
-post: https://mastodon.example/@yourusername/1234567890
+author:
+  - Gabriel Cozma
+  - John Doe
 ```
 
-Make sure to edit the `post` link with your own post link. Once that, you don't need to do anything else, the comments will right there!
+It's as simple as that! You can add as many authors as you want.
 
 ### General Styling
 
@@ -164,19 +175,19 @@ You can modify the width of the content in Aplós by changing the `--content-wid
 
 You can style images in your content using various options provided by Aplós. Here's how to apply each styling option:
 
-- **not-rounded**: Remove the border radius from an image.
-- **static**: Prevent an image from being resized when hovered or active.
+- `not-rounded`: Remove the border radius from an image.
+- `static`: Prevent an image from being resized when hovered or active.
 - **Size Options**:
-  - **small**: Make an image smaller.
-  - **medium**: Make an image medium-sized.
+  - `small`: Make an image smaller.
+  - `medium`: Make an image medium-sized.
 - **Visual Effects**:
-  - **shadow**: Add a shadow to an image.
-  - **mono**: Make an image monochrome.
-  - **invert**: Invert the colors of an image.
-  - **blur**: Blur an image.
-  - **sepia**: Add a sepia effect to an image.
-  - **pixel**: Pixelate an image.
-- **Transparency**: Make an image transparent.
+  - `shadow`: Add a shadow to an image.
+  - `mono`: Make an image monochrome.
+  - `invert`: Invert the colors of an image.
+  - `blur`: Blur an image.
+  - `sepia`: Add a sepia effect to an image.
+  - `pixel`: Pixelate an image.
+- `transparent`: Make an image transparent.
 
 To apply any of these options, use the following syntax:
 
@@ -197,9 +208,10 @@ For example, to make an image small, use the following syntax:
 > ![My image](./image.png#small#shadow)
 > ```
 
-### Automatically Update Aplós
+---
 
-If it happens that you host your website on GitHub, you can use Dependabot to automatically update Aplós. To set it up, refer to [Dependabot Configuration](https://docs.github.com/en/code-security/supply-chain-security/keeping-your-dependencies-updated-automatically/configuration-options-for-dependency-updates) made by GitHub. For a quick example, you can see the [Dependabot Configuration used by Aplos Template](https://github.com/aplosdev/template/blob/main/.github/dependabot.yml).
+> [!TIP] Tip
+> If it happens that you host your website on GitHub, you can use Dependabot to automatically update Aplós. To set it up, refer to [Dependabot Configuration](https://docs.github.com/en/code-security/supply-chain-security/keeping-your-dependencies-updated-automatically/configuration-options-for-dependency-updates) made by GitHub. For a quick example, you can see the [Dependabot Configuration used by Aplos Template](https://github.com/aplosdev/template/blob/main/.github/dependabot.yml).
 
 ### Deployment
 

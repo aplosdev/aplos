@@ -22,6 +22,8 @@
 
 - Better support for articles without tags, an author, or a date
 
+- Hide language detection for code snippets inside informal cards
+
 ### Fix(es)
 
 - Code Blocks disappearing on hover

@@ -19,13 +19,23 @@ Customizing the navigation links in your Aplós template is a straightforward pr
 ```ts
 nav: {
     links: [
-        { text: "Link 1", link: "/1" },
-        { text: "Link 2", link: "/2" },
-        { text: "Link 3", link: "/3" },
+        { text: "Link 1", url: "/1" },
+        { text: "Link 2", url: "/2" },
+        { text: "Link 3", url: "/3" },
         // ...
       ],
-      git: "https://gitsomething.example/GabsEdits/gabs.eu.org", // The Link to your Git repo
+      git: "https://gitsomething.example/You/YourRepo", // The Link to your Git repo
       rss: "/atom.xml", // The Link to your RSS feed
+    },
+```
+
+#### Title
+
+With version `2.4.0`, it's possible to have a custom title in the navigation island, rather then site's title. To change the title, you can change the following variables inside the `nav` object:
+
+```ts
+    nav: {
+      title: "My Custom Title",
     },
 ```
 
@@ -64,9 +74,9 @@ You can change the footer links by changing the `footer` -> `links` array:
 ```ts
     footer: {
       links: [
-        { text: "Link 1", link: "/1" },
-        { text: "Link 2", link: "/2" },
-        { text: "Link 3", link: "/3" },
+        { text: "Link 1", url: "/1" },
+        { text: "Link 2", url: "/2" },
+        { text: "Link 3", url: "/3" },
         // ...
       ],
     },
