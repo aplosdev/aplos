@@ -3,7 +3,7 @@ import { createContentLoader } from "vitepress";
 interface Post {
   title: string;
   description: string;
-  update: string;
+  author: string;
   type: string;
   tags: string[];
 }
@@ -19,7 +19,7 @@ export default createContentLoader("blog/posts/*.md", {
         title: frontmatter.title,
         description: frontmatter.description,
         tags: frontmatter.tags,
-        update: frontmatter.update,
+        author: frontmatter.author,
         type: frontmatter.type,
         date: formatDate(frontmatter.date),
       }))

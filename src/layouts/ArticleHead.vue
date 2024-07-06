@@ -26,20 +26,22 @@
           minute: "2-digit",
         })
       }}
-      &middot;
-      <span v-if="theme.articles.author">
-        Author:
-        {{ frontmatter.author }}
-        &middot;
+      <span v-if="frontmatter.author">
+        &middot; {{ frontmatter.author.length > 1 ? "Authors:" : "Author:" }}
+        <template v-for="(author, index) in frontmatter.author" :key="index">
+          {{ author
+          }}<span v-if="index !== frontmatter.author.length - 1">, </span>
+        </template>
       </span>
       <span class="tags">
+        &middot;
         <span v-for="(tag, index) in frontmatter.tags" :key="index"
           >#{{ tag }}</span
         >
       </span>
     </small>
     <br />
-    <p id="description">
+    <p id="description" v-if="frontmatter.description">
       {{ frontmatter.description }}
     </p>
     <hr />

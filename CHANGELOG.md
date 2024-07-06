@@ -2,11 +2,22 @@
 
 ### Features
 
+- Support for multuple authors
+  - Including in the article list
+
+- Make blog descriptions optional
+
 - Allow a custom title for the navigation
 
 - Make navigation links' URL be provided with `url` not `link` (fallback provided)
 
 - Allow user to customize the date locale (default is `en-US`, rather then `en-GB` as before)
+
+### Cleanup(s)
+
+- Modernize the Article List type logic
+
+- Better support for articles without tags, an author, or a date
 
 ## 2.3.1 (2024-07-01)
 
