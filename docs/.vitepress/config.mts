@@ -4,7 +4,8 @@ import { tasklist } from "@mdit/plugin-tasklist";
 
 const info = {
   title: "Aplós",
-  description: "A sleek, contemporary, and purposefully designed theme and template",
+  description:
+    "A sleek, contemporary, and purposefully designed theme and template",
   accentColor: "#55B458",
 };
 
@@ -12,8 +13,7 @@ const info = {
 export default defineConfig({
   lang: "en-US",
   title: info.title,
-  description:
-    info.description,
+  description: info.description,
   lastUpdated: true,
   ignoreDeadLinks: true,
   cleanUrls: true,
