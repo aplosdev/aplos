@@ -9,6 +9,11 @@
   max-width: 70%;
   line-height: 1.5rem;
 
+  @media (max-width: 768px) {
+    width: 100%;
+    max-width: 100%;
+  }
+
   p:not(.custom-block-title) {
     margin: 0;
     font-size: 0.9rem;

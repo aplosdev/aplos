@@ -2,6 +2,8 @@
 
 ### Cleanup(s)
 
+- Make informal cards use all the available space on mobile
+
 - Remove the line from the helpful layout if used on articles
 
 - Small style changes to the article navigation

@@ -320,7 +320,7 @@ You can add marked text by using the `<mark>` tag:
 ### Check Box (`[ ]`)
 
 > [!NOTE] Note
-> This will only work if you have the markdown-it-checkbox plugin enabled. It will come by deafult with Aplós in `v2.2.0`.
+> This will only work if you have the markdown-it-checkbox plugin installed.
 
 You can add a check box by using the `[ ]` tag:
 

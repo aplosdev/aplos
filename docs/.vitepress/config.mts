@@ -2,13 +2,18 @@ import { defineConfig } from "vitepress";
 import { figure } from "@mdit/plugin-figure";
 import { tasklist } from "@mdit/plugin-tasklist";
 
+const info = {
+  title: "Aplós",
+  description: "A sleek, contemporary, and purposefully designed theme and template",
+  accentColor: "#55B458",
+};
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: "en-US",
-  title: "Aplós",
+  title: info.title,
   description:
-    "Aplós is a sleek, contemporary, and purposefully designed theme and template",
-
+    info.description,
   lastUpdated: true,
   ignoreDeadLinks: true,
   cleanUrls: true,
@@ -82,12 +87,12 @@ export default defineConfig({
     },
   },
   head: [
-    ["meta", { name: "author", content: "Gabriel Cozma/Gabs" }],
+    ["meta", { name: "author", content: "Gabriel Cozma" }],
     ["link", { rel: "icon", href: "/icon.svg" }],
-    ["meta", { name: "theme-color", content: "#ff3e00" }],
+    ["meta", { name: "theme-color", content: info.accentColor }],
     ["meta", { name: "og:type", content: "website" }],
     ["meta", { name: "og:locale", content: "en" }],
-    ["meta", { name: "og:site_name", content: "Aplós" }],
+    ["meta", { name: "og:site_name", content: info.title }],
     [
       "meta",
       {
@@ -103,12 +108,12 @@ export default defineConfig({
         content: "https://aplos.gxbs.me/images/banner.png",
       },
     ],
-    ["meta", { name: "twitter:title", content: "Aplós" }],
+    ["meta", { name: "twitter:title", content: info.title }],
     [
       "meta",
       {
         name: "twitter:description",
-        content: "Build an website fast, and easy",
+        content: info.description,
       },
     ],
     ["meta", { name: "twitter:url", content: "https://aplos.gxbs.me" }],
@@ -124,7 +129,7 @@ export default defineConfig({
       preprocessorOptions: {
         scss: {
           additionalData: `
-            $color-accent: #55B458;
+            $color-accent: ${info.accentColor};
             $bg-color-code-l: #ffffff;
             `,
         },
