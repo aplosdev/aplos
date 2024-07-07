@@ -1,3 +1,11 @@
+## 2.5.0 (upcoming)
+
+### Cleanup(s)
+
+- Remove the line from the helpful layout if used on articles
+
+- Small style changes to the article navigation
+
 ## 2.4.0 (2024-07-06)
 
 ![Bento Grid of version 2.4.0](https://aplos.gxbs.me/images/v2-4-0.png)

@@ -36,7 +36,10 @@ const { site, frontmatter, page, theme } = useData();
     <div v-else :class="frontmatter.pageClass">
       <Content />
     </div>
-    <HelpfulLayout v-if="frontmatter.layout == 'helpful'" />
+    <template v-if="frontmatter.layout === 'helpful'">
+      <hr />
+      <HelpfulLayout />
+    </template>
     <div
       v-if="
         frontmatter.layout === 'article' &&

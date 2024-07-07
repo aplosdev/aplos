@@ -81,6 +81,7 @@ const { frontmatter, theme } = useData();
   margin-top: 50px;
 
   .article-nav {
+    flex: 1 1 0;
     display: block;
     transition: all 0.3s ease;
     margin: 0 0.2rem;
@@ -102,10 +103,13 @@ const { frontmatter, theme } = useData();
 
     &:hover {
       transform: translateY(-5px);
+      background-color: var(--color-background-second);
+      border-bottom: 3px solid var(--color-accent);
     }
 
     &:active {
-      transform: scale(0.95);
+      transform: translateY(5px);
+      border-bottom: 0;
     }
 
     span {

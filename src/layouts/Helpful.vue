@@ -1,6 +1,5 @@
 <template>
   <section id="simple-layout">
-    <hr />
     <p class="dialog-buttons">
       <a href="#top" target="_top">↑ Go to top</a>
       <a
