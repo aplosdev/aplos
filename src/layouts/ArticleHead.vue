@@ -35,9 +35,9 @@
       </span>
       <span class="tags">
         &middot;
-        <span v-for="(tag, index) in frontmatter.tags" :key="index"
-          >{{ tag }}</span
-        >
+        <span v-for="(tag, index) in frontmatter.tags" :key="index">{{
+          tag
+        }}</span>
       </span>
     </small>
     <br />
