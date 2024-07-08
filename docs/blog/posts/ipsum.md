@@ -10,9 +10,9 @@ comments: giscus
 prev: First Blog
 next: Lorem
 tags:
-  - demo
-  - ipsum
-  - example
+  - Demo
+  - Ipsum
+  - Example
 ---
 
 Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri tamen permagna accessio potest, si aliquod aeternum et infinitum impendere malum nobis opinemur. Quod idem licet transferre in voluptatem, ut postea variari voluptas distinguique possit, augeri amplificarique non possit. At.

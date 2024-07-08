@@ -36,7 +36,7 @@
       <span class="tags">
         &middot;
         <span v-for="(tag, index) in frontmatter.tags" :key="index"
-          >#{{ tag }}</span
+          >{{ tag }}</span
         >
       </span>
     </small>

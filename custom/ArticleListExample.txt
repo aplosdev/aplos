@@ -6,7 +6,7 @@
     <div class="filter-tags">
       <button @click="filterPosts('')" id="all-tags">All</button>
       <button v-for="tag in uniqueTags" :key="tag" @click="filterPosts(tag)">
-        <span class="hashtag">#</span>{{ tag }}
+        {{ tag }}
       </button>
     </div>
     <div class="post-container">
@@ -44,10 +44,10 @@
         </p>
         <p v-if="post.description">{{ post.description }}</p>
         <div class="tags" v-if="post.tags">
-          <span v-if="typeof post.tags === 'string'" :key="post.tags"
-            >#{{ post.tags }}</span
-          >
-          <span v-else v-for="tag in post.tags" :key="tag">#{{ tag }}</span>
+          <span v-if="typeof post.tags === 'string'" :key="post.tags">{{
+            post.tags
+          }}</span>
+          <span v-else v-for="tag in post.tags" :key="tag">{{ tag }}</span>
         </div>
       </article>
     </div>
