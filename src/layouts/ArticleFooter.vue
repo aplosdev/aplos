@@ -81,12 +81,13 @@ const { frontmatter, theme } = useData();
   margin-top: 50px;
 
   .article-nav {
-    flex: 1 1 0;
     display: block;
+    flex: 1 1 0;
     transition: all 0.3s ease;
     margin: 0 0.2rem;
     background-color: transparent;
     padding: 20px;
+    max-width: calc(50% - 0.125rem);
     color: var(--color-accent);
     text-align: center;
     text-decoration: none;
@@ -103,8 +104,9 @@ const { frontmatter, theme } = useData();
 
     &:hover {
       transform: translateY(-5px);
-      background-color: var(--color-background-second);
       border-bottom: 3px solid var(--color-accent);
+      background-color: var(--color-background-second);
+      max-width: 100%;
     }
 
     &:active {
