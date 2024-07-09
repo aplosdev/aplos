@@ -15,7 +15,7 @@ git clone --single-branch --branch html https://github.com/aplosdev/template
 ```
 
 > [!NOTE] Note
-> Make sure you have Git installed on your machine. Otherwise, you can download the repository as a ZIP file from the [GitHub Repository](https://aplosdev/template).
+> Make sure you have Git installed on your machine. Otherwise, you can download the repository as a ZIP file from the [GitHub Repository](https://github.com/aplosdev/template/tree/html).
 
 Once you've got it cloned, dive into the index.html file, make your tweaks, and done!
 

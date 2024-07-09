@@ -34,7 +34,7 @@ export default defineConfig({
     },
     nav: {
       links: [
-        { url: "/demo", text: "Demo" },
+        { url: "/demo/", text: "Demo" },
         { url: "/guide/", text: "Guide" },
         { url: "/static", text: "Static" },
       ],

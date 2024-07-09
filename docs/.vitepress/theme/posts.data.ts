@@ -11,7 +11,7 @@ interface Post {
 declare const data: Post[];
 export { data };
 
-export default createContentLoader("blog/posts/*.md", {
+export default createContentLoader("demo/blog/posts/*.md", {
   excerpt: true,
   transform(raw): Post[] {
     return raw

@@ -7,7 +7,7 @@ layout: helpful
 [[toc]]
 
 > [!WARNING] Heads Up!
-> If you want to see the blog demo, you can see it [here](/blog/)
+> If you want to see the blog demo, you can see it [here](./blog/)
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo labore aperiam, asperiores doloribus earum qui id harum neque modi nostrum similique. Rerum consequatur ab eaque velit consequuntur blanditiis praesentium commodi.
 
