@@ -1,3 +1,5 @@
+@use "sass:color";
+
 code {
   border-radius: var(--rounded-xs);
   background-color: var(--color-background-second);
@@ -176,33 +178,28 @@ u {
   text-decoration: underline wavy var(--color-accent);
 }
 
-@mixin diff {
+@mixin diff($color, $background-color, $decoration) {
   border-radius: var(--rounded-xs);
-  padding: 0.125rem 0.375rem;
-  color: inherit;
+  padding: .125rem .375rem;
+  color: $color;
+  background-color: $background-color;
+  text-decoration: $decoration solid $color 0.08rem;
   font-weight: 500;
   font-size: 0.83rem;
-  font-family: var(--main-mono);
+
+  @media (prefers-color-scheme: dark) {
+    background-color: color.scale($color, $lightness: -40%);
+    color: $background-color;
+    text-decoration: $decoration solid $background-color 0.08rem;
+  }
 }
 
 del {
-  @include diff;
-  background-color: #febebe;
-  text-decoration: line-through solid var(--color-accent) 0.08rem;
-
-  @media (prefers-color-scheme: dark) {
-    background-color: #ff66665a;
-  }
+  @include diff(#ff0000, #febebe, line-through);
 }
 
 ins {
-  @include diff;
-  background-color: #8bff8b;
-  text-decoration: underline solid var(--color-accent) 0.08rem;
-
-  @media (prefers-color-scheme: dark) {
-    background-color: #3795379e;
-  }
+  @include diff(#007400, #c6ffc6, underline);
 }
 
 cite {

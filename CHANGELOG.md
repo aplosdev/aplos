@@ -1,5 +1,9 @@
 ## 2.5.0 (upcoming)
 
+### Feature(s)
+
+- Redesign `ins` and `del` elements
+
 ### Cleanup(s)
 
 - Make Hashtags to be simply tags (no `#`)
