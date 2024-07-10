@@ -31,9 +31,8 @@
 
     <noscript
       ><small
-        >You <i>need</i> JavaScript to view/write comments or to react
-        to the post. So you can't do anything unless you turn on
-        JavaScript.</small
+        >You <i>need</i> JavaScript to view/write comments or to react to the
+        post. So you can't do anything unless you turn on JavaScript.</small
       ></noscript
     >
     <!-- <MastodonComments
