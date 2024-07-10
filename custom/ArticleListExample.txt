@@ -1,7 +1,10 @@
 <template>
   <div class="article-list">
     <noscript>
-      <small>To use the filter you need JavaScript to be enabled.</small>
+      <small
+        >JavaScript is required to filter posts by tags, enable it to use the
+        tags filter.</small
+      >
     </noscript>
     <div class="filter-tags">
       <button @click="filterPosts('')" id="all-tags">All</button>

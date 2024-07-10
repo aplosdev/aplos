@@ -31,7 +31,7 @@
 
     <noscript
       ><small
-        >Heads Up! You <i>need</i> JavaScript to view/write comments or to react
+        >You <i>need</i> JavaScript to view/write comments or to react
         to the post. So you can't do anything unless you turn on
         JavaScript.</small
       ></noscript
