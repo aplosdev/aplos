@@ -16,7 +16,7 @@
 
 ### Dependencies
 
-- Bump sass from 1.77.6 to 1.77.7 (https://github.com/aplosdev/aplos/pull/31)
+- Bump sass from 1.77.6 to 1.77.8 (https://github.com/aplosdev/aplos/pull/32)
 
 ## 2.4.0 (2024-07-06)
 
