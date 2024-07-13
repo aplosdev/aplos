@@ -4,6 +4,10 @@
 
 - Redesign `ins` and `del` elements
 
+### Fix(es)
+
+- Remove SASS deprecation warnings
+
 ### Cleanup(s)
 
 - Make Hashtags to be simply tags (no `#`)

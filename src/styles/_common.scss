@@ -52,12 +52,13 @@ pre {
       background-color: rgba(101, 117, 133, 0.16);
     }
 
-    display: inline-block;
-
-    transition: background-color 0.5s;
-    margin: 0 -1.5rem;
-    padding: 0 1.5rem;
-    width: calc(99% + 2 * 1.5rem);
+    & {
+      display: inline-block;
+      transition: background-color 0.5s;
+      margin: 0 -1.5rem;
+      padding: 0 1.5rem;
+      width: calc(99% + 2 * 1.5rem);
+    }
   }
 
   .has-focused-lines .line:not(.has-focus) {
