@@ -1,8 +1,8 @@
 <template>
   <div id="article-head">
     <img
-      id="banner"
       v-if="frontmatter.banner"
+      id="banner"
       :src="frontmatter.banner + '#full'"
       alt="Banner"
     />
