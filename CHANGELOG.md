@@ -2,6 +2,8 @@
 
 ### Feature(s)
 
+- Add Banners for articles
+
 - Redesign `ins` and `del` elements
 
 ### Fix(es)
