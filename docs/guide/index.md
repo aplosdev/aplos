@@ -23,7 +23,7 @@ Aplós is a user-friendly template for Vitepress that allows you to quickly set 
 
 ## Package
 
-Aplós is now available as an NPM package, making it easier to install and use. To get started, follow these steps:
+To get started, follow these steps:
 
 1. Install the Aplós package by running the following command in your terminal:
 
@@ -151,16 +151,16 @@ It's as simple as that! You can add as many authors as you want.
 
 Using Aplós, you can customise the appearance of your content with various styling options. The `.vitepress/theme/index.ts` file allows importing additional files, including CSS or SCSS files, to apply custom styles to your project.
 
-For example, to import a CSS file, add the following line to the `index.ts` file:
+For example, to import a CSS file, you can add such a line to the `index.ts` file:
 
 ```ts
-import "./styles.css";
+import "./overwrite.css";
 ```
 
 > [!TIP] Tip
-> It's recommended to have the `styles.css` file in the same directory as the `index.ts` file, the `.vitepress/theme/` folder.
+> It's recommended to have the `overwrite.css` file in the same directory as the `index.ts` file, the `.vitepress/theme/` folder.
 
-Inside the `styles.css` file, you can add custom styles to modify the appearance of your content, or even adding custom components.
+Inside the `overwrite.css` file, you can add custom styles to modify the appearance of your content, or even adding custom components.
 
 ### Chaning the Content Width
 
@@ -239,7 +239,7 @@ steps:
     commands:
       - apk add --no-cache -X http://dl-cdn.alpinelinux.org/alpine/edge/testing pnpm git
       - pnpm install
-      - pnpm run pages:build
+      - pnpm run content:build
     when:
       event: [pull_request, push]
 
@@ -252,7 +252,7 @@ steps:
       - git config --global user.name "Woodpecker CI"
       - git clone -b pages https://$CODEBERG_TOKEN@codeberg.org/$CI_REPO.git source-code
       - rm -r source-code/*
-      - cp -ar ./pages/.vitepress/dist/* source-code/
+      - cp -ar ./content/.vitepress/dist/* source-code/
       - cd source-code
       - git add --all
       - git commit -m "Woodpecker CI ${CI_COMMIT_SHA} [SKIP CI]"
