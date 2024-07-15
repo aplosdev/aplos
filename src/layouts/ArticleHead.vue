@@ -1,11 +1,13 @@
 <template>
   <div id="article-head">
-    <img
-      v-if="frontmatter.banner"
-      id="banner"
-      :src="frontmatter.banner + '#full'"
-      alt="Banner"
-    />
+    <div id="banner-container">
+      <img
+        v-if="frontmatter.banner"
+        id="banner"
+        :src="frontmatter.banner + '#full'"
+        alt="Banner"
+      />
+    </div>
     <div :id="frontmatter.banner ? 'banner-margin' : ''">
       <small v-if="frontmatter.update">
         Last updated on
@@ -68,20 +70,28 @@ const { frontmatter, theme } = useData();
 #article-head {
   padding-top: 2.0938rem;
 
-  #banner {
+  #banner-container {
+    $mask: linear-gradient(black, transparent);
+    -webkit-mask-image: $mask;
+    -webkit-user-select: none;
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
-    mask-image: linear-gradient(#000, rgba(0, 0, 0, 0));
-    -webkit-mask-image: linear-gradient(#000, rgba(0, 0, 0, 0));
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    transition: none;
-    max-height: 50vh;
-    margin: 0;
+    mask-image: $mask;
+    width: 100vw;
+    height: 50vw;
+    max-height: 45vh;
     user-select: none;
-    object-fit: cover;
+
+    #banner {
+      position: fixed;
+      object-fit: cover;
+      top: 0;
+      left: 0;
+      transition: none;
+      margin: 0;
+    }
   }
 
   #banner-margin {
