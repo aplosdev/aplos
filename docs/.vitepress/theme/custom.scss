@@ -32,9 +32,11 @@
       grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
     }
 
-    min-width: 100%;
-    padding: 0;
-    gap: 0.625rem;
+    & {
+      min-width: 100%;
+      padding: 0;
+      gap: 0.625rem;
+    }
 
     li {
       list-style: none;

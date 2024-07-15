@@ -8,6 +8,8 @@
 
 ### Fix(es)
 
+- Support for `progress` elements style on webkit browsers
+
 - Remove SASS deprecation warnings
 
 ### Cleanup(s)
