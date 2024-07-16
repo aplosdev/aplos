@@ -43,7 +43,7 @@
 }
 
 @mixin customBlock($color, $icon) {
-  border-left: $color 0.4rem solid;
+  border-inline-start: $color 0.4rem solid;
   background-color: #{$color}1e;
 
   @media (prefers-color-scheme: dark) {

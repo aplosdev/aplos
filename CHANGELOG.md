@@ -24,6 +24,8 @@
 
 - Small style changes to the article navigation
 
+- Make the border left for blockquotes to be `inline-start` (for better RTL support)
+
 ### Dependencies
 
 - Bump sass from 1.77.6 to 1.77.8 (https://github.com/aplosdev/aplos/pull/32)
