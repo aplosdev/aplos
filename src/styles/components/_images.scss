@@ -112,6 +112,20 @@ img {
     @include static;
     @include roundedNone;
   }
+
+  @mixin startEnd($where) {
+    float: $where;
+    transform-origin: $where;
+    margin-inline-end: 1rem;
+  }
+
+  &[src*="#start"] {
+    @include startEnd(start);
+  }
+
+  &[src*="#end"] {
+    @include startEnd(end);
+  }
 }
 
 a img {

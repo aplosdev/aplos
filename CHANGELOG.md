@@ -4,6 +4,8 @@
 
 - Add Banners for articles
 
+- Add `start` and `end` attributes for images 
+
 - Redesign `ins` and `del` elements
 
 ### Fix(es)
