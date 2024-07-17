@@ -18,6 +18,8 @@
 
 - Make Hashtags to be simply tags (no `#`)
 
+- Add `alt` attribute to icons links
+
 - Make informal cards use all the available space on mobile
 
 - Remove the line from the helpful layout if used on articles
