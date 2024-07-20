@@ -7,28 +7,41 @@
   &:hover {
     transform: none;
     box-shadow: none;
-    @include roundedNone;
+
+    & {
+      @include roundedNone;
+    }
   }
 
   &:active {
     transform: none;
     box-shadow: none;
-    @include roundedNone;
+
+    & {
+      @include roundedNone;
+    }
   }
 }
 
 img {
   &:active {
     transform: scale(1.2);
-    @include roundedNone;
     max-width: 100%;
+
+    & {
+      @include roundedNone;
+    }
   }
 
   &[src*="#not-rounded"] {
-    @include roundedNone;
+    & {
+      @include roundedNone;
+    }
 
     &:hover {
-      @include roundedNone;
+      & {
+        @include roundedNone;
+      }
     }
   }
 
@@ -90,12 +103,17 @@ img {
 
   &[src*="screenshot"] {
     border: none;
-    @include roundedNone;
+
+    & {
+      @include roundedNone;
+    }
 
     &:hover {
       box-shadow: none;
       border: 0;
-      @include roundedNone;
+      & {
+        @include roundedNone;
+      }
     }
   }
 
@@ -109,8 +127,13 @@ img {
     margin-bottom: 1rem;
     width: 100vw;
     max-width: 100vw;
-    @include static;
-    @include roundedNone;
+    & {
+      @include roundedNone;
+    }
+
+    & {
+      @include static;
+    }
   }
 
   @mixin startEnd($where) {

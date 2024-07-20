@@ -52,6 +52,9 @@
 }
 
 header {
+  display: flex;
+  justify-content: center;
+
   .skip-to-content {
     clip: rect(1px, 1px, 1px, 1px);
     word-wrap: normal !important;
@@ -81,30 +84,62 @@ header {
   nav {
     @include blurredBackground;
     position: fixed;
-    top: 3rem;
-    left: 50%;
-    transform: translate(-50%, -50%);
     z-index: 9999;
+    margin-top: 1rem;
     border: 0.4px solid var(--color-border);
     border-radius: 2.5rem;
     background-color: none;
     background-color: var(--color-header);
     padding: 0.0625rem 1.5625rem;
-    overflow: hidden;
+    max-width: 90%;
     text-align: center;
 
     ul {
       display: flex;
-      justify-content: space-between;
+      flex-wrap: wrap;
+      justify-content: center;
       align-items: center;
+      gap: 0.7rem;
       margin: 0;
       padding: 0;
-      min-height: 40px;
-      overflow: hidden;
-      list-style-type: none;
+      list-style: none;
 
       li {
         display: inline-block;
+
+        &#title {
+          position: relative;
+          margin-inline-end: 1.8rem;
+
+          * {
+            transform: scale(1);
+            transition: transform 100ms ease text-decoration 0.4s ease;
+            margin: 0.5rem 0.3125rem 0.5rem 0.3125rem;
+            color: var(--color-text);
+            font-weight: 800;
+            font-size: 16px;
+            letter-spacing: -0.0325rem;
+
+            &:hover {
+              text-decoration: underline 0.075rem solid var(--color-accent);
+            }
+
+            &:active {
+              transform: scale(0.9);
+            }
+          }
+
+          &::after {
+            position: absolute;
+            top: 0;
+            right: -1.25rem;
+            margin: 0;
+            background-color: var(--color-border);
+            width: 0.0625rem;
+            height: 100%;
+            content: "";
+          }
+        }
 
         a {
           display: block;
@@ -112,7 +147,6 @@ header {
           transition:
             color 0.7s ease,
             transform 100ms ease;
-          margin: 0 0.3125rem;
           color: var(--color-text-secondary);
           font-weight: 600;
           font-size: 14px;
@@ -135,44 +169,6 @@ header {
         }
       }
     }
-  }
-
-  #title {
-    position: relative;
-    margin-right: 2.1875rem;
-
-    * {
-      transform: scale(1);
-      transition: transform 100ms ease text-decoration 0.4s ease;
-      margin: 0.5rem 0.3125rem 0.5rem 0.3125rem;
-      color: var(--color-text);
-      font-weight: 800;
-      font-size: 16px;
-      letter-spacing: -0.0325rem;
-
-      &:hover {
-        text-decoration: underline 0.075rem solid var(--color-accent);
-      }
-
-      &:active {
-        transform: scale(0.9);
-      }
-    }
-
-    &::after {
-      position: absolute;
-      top: -0.3125rem;
-      right: -1.25rem;
-      margin: 0;
-      background-color: var(--color-border);
-      width: 0.0625rem;
-      height: 50px;
-      content: "";
-    }
-  }
-
-  .fa-brands {
-    font-size: 15px;
   }
 }
 </style>

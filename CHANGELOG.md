@@ -4,15 +4,20 @@
 
 - Add Banners for articles
 
+- Partel rewrite the navigation island
+  - New way of centering it
+  - Make it allow more items without overflowing
+  - Reorganize styles and remove unnecessary ones
+
 - Add `start` and `end` attributes for images
 
 - Redesign `ins` and `del` elements
 
 ### Fix(es)
 
-- Support for `progress` elements style on webkit browsers
-
 - Remove SASS deprecation warnings
+
+- Support for `progress` elements style on webkit browsers
 
 ### Cleanup(s)
 
