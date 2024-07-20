@@ -127,19 +127,19 @@ aside {
 }
 
 progress {
+  -webkit-appearance: none;
+  appearance: none;
   appearance: none;
   margin: 0.625rem 0;
   border: none;
   border-radius: calc(var(--rounded-xs) - 0.0125rem);
   background-color: var(--color-background-second);
   height: 0.625rem;
-  -webkit-appearance: none;
-  appearance: none;
   color: var(--color-accent);
 
   &::-webkit-progress-value {
-    background-color: var(--color-accent);
     border-radius: calc(var(--rounded-xs) - 0.0125rem);
+    background-color: var(--color-accent);
   }
 
   &:indeterminate {
@@ -155,13 +155,13 @@ progress {
   }
 
   &::-moz-progress-bar {
-    background-color: var(--color-accent);
     border-radius: calc(var(--rounded-xs) - 0.0125rem);
+    background-color: var(--color-accent);
   }
 
   &::-ms-fill {
-    background-color: var(--color-accent);
     border-radius: calc(var(--rounded-xs) - 0.0125rem);
+    background-color: var(--color-accent);
   }
 }
 
@@ -197,12 +197,12 @@ u {
 
 @mixin diff($color, $background-color, $decoration) {
   border-radius: var(--rounded-xs);
+  background-color: $background-color;
   padding: 0.125rem 0.375rem;
   color: $color;
-  background-color: $background-color;
-  text-decoration: $decoration solid $color 0.08rem;
   font-weight: 500;
   font-size: 0.83rem;
+  text-decoration: $decoration solid $color 0.08rem;
 
   @media (prefers-color-scheme: dark) {
     background-color: color.scale($color, $lightness: -40%);

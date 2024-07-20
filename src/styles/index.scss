@@ -180,10 +180,10 @@ button.copy,
   h5,
   h6 {
     &::before {
-      font-size: 70%;
+      margin-right: 0.5rem;
       color: var(--color-text-secondary);
       font-weight: 800;
-      margin-right: 0.5rem;
+      font-size: 70%;
     }
   }
 

@@ -38,6 +38,8 @@
 
 - Make the border left for blockquotes to be `inline-start` (for better RTL support)
 
+- Sort CSS
+
 ### Dependencies
 
 - Bump vue from 3.4.31 to 3.4.32 (https://github.com/aplosdev/aplos/pull/33)

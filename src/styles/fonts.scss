@@ -8,8 +8,8 @@ $variable-font: "InterVariable", sans-serif;
     "liga" 1,
     "calt" 1,
     "cv05" 1;
-  scroll-behavior: smooth;
   text-wrap: pretty;
+  scroll-behavior: smooth;
   font-family: $main-font;
 
   @supports (font-variation-settings: normal) {

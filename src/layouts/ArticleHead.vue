@@ -86,11 +86,11 @@ const { frontmatter, theme } = useData();
 
     #banner {
       position: fixed;
-      object-fit: cover;
       top: 0;
       left: 0;
       transition: none;
       margin: 0;
+      object-fit: cover;
     }
   }
 

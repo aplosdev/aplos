@@ -10,7 +10,8 @@
     "Theme",
     "Vite",
     "Modern",
-    "Vue"
+    "Vue",
+    "VitePress Theme"
   ],
   "author": "Gabriel Cozma",
   "license": "MIT",
