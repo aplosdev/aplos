@@ -172,43 +172,6 @@ You can modify the width of the content in Aplós by changing the `--content-wid
 }
 ```
 
-### Styling Images
-
-You can style images in your content using various options provided by Aplós. Here's how to apply each styling option:
-
-- `not-rounded`: Remove the border radius from an image.
-- `static`: Prevent an image from being resized when hovered or active.
-- **Size Options**:
-  - `small`: Make an image smaller.
-  - `medium`: Make an image medium-sized.
-- **Visual Effects**:
-  - `shadow`: Add a shadow to an image.
-  - `mono`: Make an image monochrome.
-  - `invert`: Invert the colors of an image.
-  - `blur`: Blur an image.
-  - `sepia`: Add a sepia effect to an image.
-  - `pixel`: Pixelate an image.
-- `transparent`: Make an image transparent.
-
-To apply any of these options, use the following syntax:
-
-```md
-![My image](./image.png#option)
-```
-
-For example, to make an image small, use the following syntax:
-
-```md
-![My image](./image.png#small)
-```
-
-> [!TIP] Tip
-> You can combine multiple options by separating them with a comma. For example, to make an image small and add a shadow, use the following syntax:
->
-> ```md
-> ![My image](./image.png#small#shadow)
-> ```
-
 ---
 
 > [!TIP] Tip

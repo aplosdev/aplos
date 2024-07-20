@@ -16,6 +16,10 @@
 
 ### Cleanup(s)
 
+- Add margins to tables and blockquotes
+
+- Make the blockquotes less rounded
+
 - Make Hashtags to be simply tags (no `#`)
 
 - Add `alt` attribute to icons links
@@ -33,6 +37,10 @@
 - Bump vue from 3.4.31 to 3.4.32 (https://github.com/aplosdev/aplos/pull/33)
 
 - Bump sass from 1.77.6 to 1.77.8 (https://github.com/aplosdev/aplos/pull/32)
+
+### Documentation
+
+- Rewrite the demo page
 
 ## 2.4.0 (2024-07-06)
 

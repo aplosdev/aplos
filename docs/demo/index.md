@@ -6,23 +6,18 @@ layout: helpful
 
 [[toc]]
 
-> [!WARNING] Heads Up!
-> If you want to see the blog demo, you can see it [here](./blog/)
+> [!NOTE] Note
+> This is a demo of most of the components. If you want to see the blog demo, you can see it [here](./blog/)
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo labore aperiam, asperiores doloribus earum qui id harum neque modi nostrum similique. Rerum consequatur ab eaque velit consequuntur blanditiis praesentium commodi.
 
 Ullus investigandi veri, nisi inveneris, et quaerendi defatigatio turpis est, cum esset accusata et vituperata ab Hortensio. Qui liber cum et mortem contemnit, qua qui est imbutus quietus esse numquam potest. Praeterea bona praeterita.
 
-Ullus investigandi veri, nisi inveneris, et quaerendi defatigatio turpis est, cum esset accusata et vituperata ab Hortensio. Qui liber cum et mortem contemnit, qua qui est imbutus quietus esse numquam potest. Praeterea bona praeterita grata recordatione renovata delectant. Est autem situm in nobis ut et voluptates et dolores nasci fatemur e corporis voluptatibus et doloribus -- itaque concedo, quod modo dicebas, cadere causa, si qui incurrunt, numquam vim tantam.
+Text can be **bold**, _italic_, ~~strikethrough~~ and even ~~**_combined_**~~.
 
 ## Header 2
 
 ### Header 3
-
-- Item 1
-- Item 2
-- Item 3
-- `Item 4`
 
 #### Header 4
 
@@ -34,11 +29,21 @@ Ullus investigandi veri, nisi inveneris, et quaerendi defatigatio turpis est, cu
 >
 > > — Leonardo da Vinci
 
+- Item 1
+- Item 2
+- Item 3
+- `Item 4`
+
+| Syntax       | Description |
+| ------------ | ----------- |
+| Header       | Title       |
+| Paragraph    | Text        |
+| Something    | And wow     |
+| I don't know | And huh     |
+
 ## Syntax Highlighting
 
 VitePress provides Syntax Highlighting powered by [Shiki](https://github.com/shikijs/shiki), with additional features like line-highlighting:
-
-### Input
 
 ````md
 ```js{4}
@@ -51,8 +56,6 @@ export default {
 }
 ```
 ````
-
-### Output
 
 ```js{4}
 export default {
@@ -74,26 +77,53 @@ To write a caption to a photo use the `figcaption` tag:
 <figcaption>Wow</figcaption>
 ```
 
+### Styling Images
+
+You can style images in your content using various options provided by Aplós. Here's how to apply each styling option:
+
+- `not-rounded`: Remove the border radius from an image.
+- `static`: Prevent an image from being resized when hovered or active.
+- **Size Options**:
+  - `small`: Make an image smaller.
+  - `medium`: Make an image medium-sized.
+  - `full`: Make an image use 100% of the page's width.s
+- **Visual Effects**:
+  - `shadow`: Add a shadow to an image.
+  - `mono`: Make an image monochrome.
+  - `invert`: Invert the colors of an image.
+  - `blur`: Blur an image.
+  - `sepia`: Add a sepia effect to an image.
+  - `pixel`: Pixelate an image.
+- `transparent`: Make an image transparent.
+
+To apply any of these options, use the following syntax:
+
+```md
+![My image](./image.png#option)
+```
+
+For example, to make an image small, use the following syntax:
+
+```md
+![My image](./image.png#small)
+```
+
+> [!TIP] Tip
+> You can combine multiple options by separating them with a comma. For example, to make an image small and add a shadow, use the following syntax:
+>
+> ```md
+> ![My image](./image.png#small#shadow)
+> ```
+
 <video alt="Red flower wakes up" controls="" src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"></video>
 
 <figcaption>An "interactive example" of a video called flower.webm from the MDN Docs</figcaption>
 
-Text can be **bold**, _italic_, or strikethrough.
+```md
+![Photo of mountain range under clear sky](https://images.unsplash.com/photo-1501082183835-b7b33db89c3f?q=80&w=2920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D#full)
+```
 
-Also we have [Links](/)
-
-We also have lines.
-
----
-
-And we can have tables:
-
-| Syntax       | Description |
-| ------------ | ----------- |
-| Header       | Title       |
-| Paragraph    | Text        |
-| Something    | And wow     |
-| I don't know | And huh     |
+![Photo of mountain range under clear sky](https://images.unsplash.com/photo-1501082183835-b7b33db89c3f?q=80&w=2920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D#full)
 
 ---
 
@@ -114,8 +144,6 @@ All of them can be applied using the following formula:
 The message you want to share
 :::
 ```
-
-### Input
 
 ```md
 > [!INFO]
@@ -138,8 +166,6 @@ This is a details block.
 :::
 ```
 
-### Output
-
 > [!INFO] Info
 > This is an info box.
 
@@ -159,19 +185,15 @@ This is a details block.
 This is a details block.
 :::
 
-## Other Elements
+## Miscellaneous
 
-## Time
+## Time (`<time>`)
 
 You can show a specific time by using the `<time>` tag:
-
-#### Input
 
 ```html
 <time>10:00</time>
 ```
-
-#### Output
 
 <time>10:00</time>
 
@@ -179,41 +201,29 @@ You can show a specific time by using the `<time>` tag:
 
 You also can have an animation to the time like this one: <time>**11:00**</time>
 
-#### Input
-
 ```md
 <time>**11:00**</time>
 ```
 
-#### Output
-
 <time>**11:00**</time>
 
-## Small Text
+## Small Text (`<small>`)
 
 You can add small text by using the `<small>` tag.
-
-### Input
 
 ```html
 <small>Something Small</small>
 ```
 
-### Output
-
 <small>Something Small</small>
 
-### Progress Bar
+### Progress Bar (`<progress>`)
 
 You can add a progress bar by using the `<progress>` tag:
-
-#### Input
 
 ```html
 <progress value="50" max="100"></progress>
 ```
-
-#### Output
 
 <progress value="50" max="100"></progress>
 
@@ -221,13 +231,9 @@ You can add a progress bar by using the `<progress>` tag:
 
 You can add a sample output by using the `<samp>` tag:
 
-#### Input
-
 ```html
 <samp>Sample Output</samp>
 ```
-
-#### Output
 
 <samp>Sample Output</samp>
 
@@ -235,13 +241,10 @@ You can add a sample output by using the `<samp>` tag:
 
 You can add a legend by using the `<legend>` tag:
 
-#### Input
 
 ```html
 <legend>Legend</legend>
 ```
-
-#### Output
 
 <legend>Legend</legend>
 
@@ -249,13 +252,9 @@ You can add a legend by using the `<legend>` tag:
 
 You can add an inline quote by using the `<q>` tag:
 
-#### Input
-
 ```html
 <q>Inline Quote</q>
 ```
-
-#### Output
 
 <q>Inline Quote</q>
 
@@ -263,13 +262,9 @@ You can add an inline quote by using the `<q>` tag:
 
 You can add a text that tries to replicate grammar mistakes by using the `<u>` tag:
 
-#### Input
-
 ```html
 <u>Trying to replicate grammar mistakes</u>
 ```
-
-#### Output
 
 <u>Trying to replicate grammar mistakes</u>
 
@@ -277,13 +272,9 @@ You can add a text that tries to replicate grammar mistakes by using the `<u>` t
 
 You can add deleted text by using the `<del>` tag:
 
-#### Input
-
 ```html
 <del>Deleted Text</del> <ins>Inserted Text</ins>
 ```
-
-#### Output
 
 <del>Deleted Text</del> <ins>Inserted Text</ins>
 
@@ -291,13 +282,9 @@ You can add deleted text by using the `<del>` tag:
 
 You can add keyboard input by using the `<kbd>` tag:
 
-#### Input
-
 ```html
 <kbd>⌘ Super</kbd> + <kbd>Space</kbd>
 ```
-
-#### Output
 
 <kbd>⌘ Super</kbd> + <kbd>Space</kbd>
 
@@ -305,24 +292,26 @@ You can add keyboard input by using the `<kbd>` tag:
 
 You can add marked text by using the `<mark>` tag:
 
-#### Input
-
 ```html
 <mark>Marked Text</mark>
 ```
 
-#### Output
-
 <mark>Marked Text</mark>
 
-![Photo of mountain range under clear sky](https://images.unsplash.com/photo-1501082183835-b7b33db89c3f?q=80&w=2920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D#full)
-
-### Check Box (`[ ]`)
+### Check Boxes
 
 > [!NOTE] Note
 > This will only work if you have the markdown-it-checkbox plugin installed.
 
 You can add a check box by using the `[ ]` tag:
+
+```md
+- [ ] Check Box
+
+- [x] Checked Box
+
+- [ ] Unchecked Bo
+```
 
 - [ ] Check Box
 

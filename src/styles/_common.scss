@@ -14,7 +14,7 @@ object {
 pre {
   margin: 1.25rem 0;
   border-right: var(--color-accent) 0.3125rem solid;
-  border-radius: var(--rounded);
+  border-radius: var(--rounded-sm);
   background-color: var(--color-background-code);
   padding: 0.625rem 1.25rem;
   overflow: auto;
@@ -71,9 +71,9 @@ pre {
 }
 
 blockquote {
-  margin: 0;
+  margin: 1.25rem 0;
   border-inline-start: var(--color-accent) 0.3125rem solid;
-  border-radius: 0.5rem 1.5rem 1.5rem 0.5rem;
+  border-radius: 0.5rem 0.8rem 0.8rem 0.5rem;
   background-color: var(--color-background-second);
   padding: 0.625rem 1.1875rem;
   width: max-content;
