@@ -241,7 +241,6 @@ You can add a sample output by using the `<samp>` tag:
 
 You can add a legend by using the `<legend>` tag:
 
-
 ```html
 <legend>Legend</legend>
 ```
