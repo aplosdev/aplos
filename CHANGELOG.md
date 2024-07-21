@@ -1,5 +1,7 @@
 ## 2.5.0 (upcoming)
 
+![Bento Grid of version 2.5.0](https://aplos.gxbs.me/images/v2-5-0.png)
+
 ### Feature(s)
 
 - Add Banners for articles
