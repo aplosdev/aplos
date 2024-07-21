@@ -44,9 +44,7 @@ export default defineConfig({
       copyright: true,
       poweredBy: true,
 
-      links: [
-        { url: "/static", text: "Static" },
-      ],
+      links: [{ url: "/static", text: "Static" }],
 
       madeby: {
         show: true,
