@@ -35,14 +35,18 @@ export default defineConfig({
     nav: {
       links: [
         { url: "/demo/", text: "Demo" },
+        { url: "/plugins/", text: "Plugins" },
         { url: "/guide/", text: "Guide" },
-        { url: "/static", text: "Static" },
       ],
       git: "https://github.com/aplosdev/aplos",
     },
     footer: {
       copyright: true,
       poweredBy: true,
+
+      links: [
+        { url: "/static", text: "Static" },
+      ],
 
       madeby: {
         show: true,
