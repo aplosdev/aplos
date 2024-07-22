@@ -4,43 +4,48 @@
     <p v-if="frontmatter.message || theme.articles.message">
       {{ frontmatter.message || theme.articles.message }}
     </p>
-    <h2>Comments</h2>
-    <p>
-      If you have any questions or comments about this post, please feel free to
-      leave a comment
-      <span
-        v-if="frontmatter.comments === 'giscus'"
-        style="display: inline-block"
-        >below</span
-      ><span
+    <div v-if="frontmatter.comments">
+      <h2>Comments</h2>
+      <p>
+        If you have any questions or comments about this post, please feel free
+        to leave a comment
+        <span
+          v-if="frontmatter.comments === 'giscus'"
+          style="display: inline-block"
+          >below</span
+        ><span
+          v-if="frontmatter.comments === 'activitypub'"
+          style="display: inline-block"
+          >on
+          <a :href="frontmatter.post" style="display: inline-block"
+            >this post</a
+          ></span
+        >.
+      </p>
+
+      <p
         v-if="frontmatter.comments === 'activitypub'"
-        style="display: inline-block"
-        >on
-        <a :href="frontmatter.post" style="display: inline-block"
-          >this post</a
-        ></span
-      >.
-    </p>
-
-    <p v-if="frontmatter.comments === 'activitypub'" style="text-align: center">
-      <small
-        >Due to some issues with the ActivityPub comments, they are currently
-        disabled. Sorry for the inconvenience.</small
+        style="text-align: center"
       >
-    </p>
+        <small
+          >Due to some issues with the ActivityPub comments, they are currently
+          disabled. Sorry for the inconvenience.</small
+        >
+      </p>
 
-    <noscript
-      ><small
-        >You <i>need</i> JavaScript to view/write comments or to react to the
-        post. So you can't do anything unless you turn on JavaScript.</small
-      ></noscript
-    >
-    <!-- <MastodonComments
+      <noscript
+        ><small
+          >You <i>need</i> JavaScript to view/write comments or to react to the
+          post. So you can't do anything unless you turn on JavaScript.</small
+        ></noscript
+      >
+      <!-- <MastodonComments
       v-if="frontmatter.comments === 'activitypub'"
     ></MastodonComments> -->
-    <Giscus v-if="frontmatter.comments === 'giscus'" />
-    <br />
-    <hr />
+      <Giscus v-if="frontmatter.comments === 'giscus'" />
+      <br />
+      <hr />
+    </div>
     <div v-if="frontmatter.prev || frontmatter.next" class="dialog-buttons">
       <a
         v-if="frontmatter.prev"

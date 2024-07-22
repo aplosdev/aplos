@@ -1,3 +1,13 @@
+## 2.6.0 (upcoming)
+
+### Feature(s)
+
+- Introducing, Plugins for Aplós
+
+  - Customize your website with plugins that enhance its functionality and appearance. Aplós offers a variety of plugins that you can easily integrate into your project. Let's explore the available plugins and how you can use them to improve your website.
+
+- Make comments in articles optional
+
 ## 2.5.0 (2024-07-21)
 
 ![Bento Grid of version 2.5.0](https://aplos.gxbs.me/images/v2-5-0.png)

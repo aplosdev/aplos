@@ -21,6 +21,10 @@
 @import "components/links";
 @import "components/list";
 
+/* Plugins */
+
+@import "plugins/index";
+
 :root {
   --content-width: 58rem;
 }

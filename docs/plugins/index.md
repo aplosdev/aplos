@@ -4,6 +4,12 @@ layout: helpful
 
 # Plugins
 
-Plugins will be a new feature in Aplós that will allow you to extend the functionality of Aplós. It will be small style changes to make Aplós more customizable, and easier to use.
+Customize your website with plugins that enhance its functionality and appearance. Aplós offers a variety of plugins that you can easily integrate into your project. Let's explore the available plugins and how you can use them to improve your website.
 
-More information will be available soon. Stay tuned! 🚀
+Plugins will be available in the next release, currently you can browse them right here and see how they will look like. Stay tuned! 🚀
+
+<PluginsList />
+
+<script setup lang="ts">
+import PluginsList from './../.vitepress/theme/PluginsList.vue';
+</script>

@@ -22,6 +22,7 @@ export default defineConfig({
     links: "icons",
     locale: "en-GB",
     author: "Gabriel Cozma",
+
     articles: {
       giscus: {
         repo: "aplosdev/aplos",
