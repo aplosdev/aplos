@@ -8,6 +8,8 @@
 
 - Make comments in articles optional
 
+- Reading time for articles
+
 - Make Numeric Headings a plugin (slightly breaking change)
 
 ## 2.5.0 (2024-07-21)
