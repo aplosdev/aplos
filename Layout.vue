@@ -34,7 +34,7 @@ const { site, frontmatter, page, theme } = useData();
         <ArticleHead />
       </div>
       <NotFound v-if="page.isNotFound" />
-      <div v-else :class="frontmatter.pageClass" id="content">
+      <div v-else id="content" :class="frontmatter.pageClass">
         <Content />
       </div>
       <template v-if="frontmatter.layout === 'helpful'">

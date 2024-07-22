@@ -45,9 +45,7 @@
             }}<span v-if="index !== frontmatter.author.length - 1">, </span>
           </template>
         </span>
-        <span>
-            &middot; {{ readingTime }} minutes to read
-        </span>
+        <span> &middot; {{ readingTime }} minutes to read </span>
         <span class="tags">
           &middot;
           <span v-for="(tag, index) in frontmatter.tags" :key="index">{{
@@ -71,10 +69,10 @@ import { computed, onMounted, ref } from "vue";
 const { frontmatter, theme } = useData();
 
 const contentRef = ref<HTMLElement | null>(null);
-const readingTime = ref<string>('');
+const readingTime = ref<string>("");
 
 onMounted(() => {
-  contentRef.value = document.getElementById('content');
+  contentRef.value = document.getElementById("content");
   if (contentRef.value) {
     const words = contentRef.value.innerText.trim().split(/\s+/).length;
     const wordsPerMinute = 200; // Average reading speed
@@ -82,9 +80,7 @@ onMounted(() => {
     readingTime.value = time.toString();
   }
 });
-
 </script>
-
 
 <style lang="scss">
 #article-head {
