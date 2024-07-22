@@ -6,7 +6,7 @@
     <div class="filter-tags">
       <button @click="filterplugins('')" id="all-tags">All</button>
       <button v-for="tag in uniqueTags" :key="tag" @click="filterplugins(tag)">
-       {{ tag }}
+        {{ tag }}
       </button>
     </div>
     <div class="plugin-container">
@@ -55,7 +55,9 @@ const selectedTag = ref(null);
 
 const allTags = computed(() => {
   return plugins.reduce((tags, plugin) => {
-    return tags.concat(Array.isArray(plugin.tags) ? plugin.tags : [plugin.tags]);
+    return tags.concat(
+      Array.isArray(plugin.tags) ? plugin.tags : [plugin.tags],
+    );
   }, []);
 });
 
