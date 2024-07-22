@@ -96,6 +96,10 @@ function filterplugins(tag: string) {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
 
+  @media screen and (max-width: 650px) {
+      margin: 0;
+  }
+
   article {
     transition: transform 0.3s ease;
     border-radius: 1.3rem;
