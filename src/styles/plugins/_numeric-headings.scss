@@ -1,0 +1,45 @@
+.numeric {
+  counter-reset: h2;
+
+  @mixin numeric($counter, $content, $reset) {
+    counter-reset: $reset;
+    &:before {
+      counter-increment: $counter;
+      content: $content;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    &::before {
+      margin-right: 0.5rem;
+      color: var(--color-text-secondary);
+      font-weight: 800;
+      font-size: 70%;
+    }
+  }
+
+  h2 {
+    @include numeric(h2, ". ", h3);
+  }
+
+  h3 {
+    @include numeric(h3, counter(h2) "." counter(h3) ". ", h4);
+  }
+
+  h4 {
+    @include numeric(h4, counter(h2) "." counter(h3) "." counter(h4) ". ", h5);
+  }
+
+  h5 {
+    @include numeric(
+      h5,
+      counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". ",
+      h6
+    );
+  }
+}

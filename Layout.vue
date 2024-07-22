@@ -18,7 +18,7 @@ const { site, frontmatter, page, theme } = useData();
     <main
       id="content-main"
       :class="{
-        numeric: frontmatter.style === 'numeric' || theme.style === 'numeric',
+        numeric: frontmatter.style === 'numeric',
         'icon-links': theme.links === 'icons',
       }"
     >

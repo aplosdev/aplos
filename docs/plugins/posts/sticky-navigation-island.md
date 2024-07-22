@@ -2,7 +2,7 @@
 layout: article
 title: Sticky Navigation Island
 description: Make your navigation be connected to the top of the page at all times.
-date: 2024-07-22T10:27:00+02:00
+date: 2024-07-22T10:27:00+04:00
 author:
   - Gabriel Cozma
 tags:

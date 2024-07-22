@@ -2,7 +2,7 @@
 layout: article
 title: Full Width Navigation
 description: Make your navigation full-width.
-date: 2024-07-22T10:28:00+02:00
+date: 2024-07-22T10:28:00+03:00
 author:
   - Gabriel Cozma
 tags:

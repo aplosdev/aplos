@@ -8,6 +8,8 @@
 
 - Make comments in articles optional
 
+- Make Numeric Headings a plugin (slightly breaking change)
+
 ## 2.5.0 (2024-07-21)
 
 ![Bento Grid of version 2.5.0](https://aplos.gxbs.me/images/v2-5-0.png)
