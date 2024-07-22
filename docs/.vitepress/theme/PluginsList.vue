@@ -97,7 +97,7 @@ function filterplugins(tag: string) {
   }
 
   @media screen and (max-width: 650px) {
-      margin: 0;
+    margin: 0;
   }
 
   article {
