@@ -3,6 +3,7 @@
     <noscript>
       <small>To use the filter you need JavaScript to be enabled.</small>
     </noscript>
+    <small>From newest to oldest ↓</small>
     <div class="filter-tags">
       <button @click="filterplugins('')" id="all-tags">All</button>
       <button v-for="tag in uniqueTags" :key="tag" @click="filterplugins(tag)">

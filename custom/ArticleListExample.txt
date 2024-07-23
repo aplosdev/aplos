@@ -6,6 +6,7 @@
         tags filter.</small
       >
     </noscript>
+    <small>From newest to oldest ↓</small>
     <div class="filter-tags">
       <button @click="filterPosts('')" id="all-tags">All</button>
       <button v-for="tag in uniqueTags" :key="tag" @click="filterPosts(tag)">
