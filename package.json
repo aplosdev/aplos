@@ -45,6 +45,6 @@
   "devDependencies": {
     "prettier": "^3.3.3",
     "sass": "^1.77.8",
-    "vue": "^3.4.31"
+    "vue": "^3.4.34"
   }
 }
