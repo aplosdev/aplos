@@ -38,7 +38,7 @@
             },
           )
         }}
-        <span v-if="frontmatter.author">
+        <span v-if="!theme.articles.authors === false && frontmatter.author">
           &middot; {{ frontmatter.author.length > 1 ? "Authors:" : "Author:" }}
           <template v-for="(author, index) in frontmatter.author" :key="index">
             {{ author

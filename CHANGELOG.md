@@ -12,6 +12,8 @@
 
 - Make Numeric Headings a plugin (slightly breaking change)
 
+- Add an option to make authors not be displayed
+
 ## Cleanup(s)
 
 - Add a ordering note for all lists (articles & plugins)
