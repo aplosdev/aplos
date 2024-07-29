@@ -15,7 +15,6 @@ If you want your navigation island to not be fixed to the screen when scrolling,
 
 ![Screenshot of how such an navigation would look (looks the same as deafult)](/images/plugins/static-nav.png#shadow)
 
-
 Plugin Name:
 
 ```txt

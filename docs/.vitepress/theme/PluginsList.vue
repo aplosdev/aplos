@@ -1,5 +1,5 @@
 <template>
-<small>From newest to oldest ↓</small>
+  <small>From newest to oldest ↓</small>
   <div class="plguins-list">
     <noscript>
       <small>To use the filter you need JavaScript to be enabled.</small>
