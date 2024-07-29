@@ -8,7 +8,8 @@ author:
 tags:
   - Headings
 banner: /images/plugins/numeric-headings.png
-prev: Full Width Navigation
+prev: Sticky Navigation Island
+next: Full Width Navigation
 ---
 
 If you want to make your headings have numbers, you can apply this plugin. To add the plugin, simply add the plugin's name to the `plugins` array in the `config.mts` file. The plugin will be automatically added to the headings.

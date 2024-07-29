@@ -8,7 +8,8 @@ author:
 tags:
   - Navigation
 banner: /images/plugins/full-width-nav.png
-prev: Sticky Navigation Island
+prev: Numeric Headings
+next: Static Navigation Island
 ---
 
 If you want a more classic navigation style, you can make it full-width. To add the plugin, simply add the plugin's name to the `plugins` array in the `config.mts` file. The plugin will be automatically added to the navigation.

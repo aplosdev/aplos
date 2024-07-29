@@ -8,7 +8,7 @@ author:
 tags:
   - Navigation
 banner: /images/plugins/sticky-nav.png
-next: Full Width Navigation
+next: Numeric Headings
 ---
 
 If you want your navigation to be always be connected to the top of the page, you can apply this plugin. To add the plugin, simply add the plugin's name to the `plugins` array in the `config.mts` file. The plugin will be automatically added to the navigation.
