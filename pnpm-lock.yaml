@@ -10,13 +10,13 @@ importers:
     dependencies:
       '@aplosdev/boosts':
         specifier: github:aplosdev/boosts
-        version: https://codeload.github.com/aplosdev/boosts/tar.gz/6b4d1f6e94d509a2f378f40e66448fff283055b7
+        version: git+https://git@github.com:aplosdev/boosts.git#6b4d1f6e94d509a2f378f40e66448fff283055b7
       '@csstools/normalize.css':
         specifier: ^12.1.1
         version: 12.1.1
       '@eslint/js':
         specifier: ^9.7.0
-        version: 9.7.0
+        version: 9.8.0
       '@mdit/plugin-figure':
         specifier: ^0.12.0
         version: 0.12.0
@@ -129,8 +129,8 @@ packages:
   '@algolia/transporter@4.24.0':
     resolution: {integrity: sha512-86nI7w6NzWxd1Zp9q3413dRshDqAzSbsQjhcDhPIatEFiZrL1/TjnHL8S7jVKFePlIMzDsZWXAXwXzcok9c5oA==}
 
-  '@aplosdev/boosts@https://codeload.github.com/aplosdev/boosts/tar.gz/6b4d1f6e94d509a2f378f40e66448fff283055b7':
-    resolution: {tarball: https://codeload.github.com/aplosdev/boosts/tar.gz/6b4d1f6e94d509a2f378f40e66448fff283055b7}
+  '@aplosdev/boosts@git+https://git@github.com:aplosdev/boosts.git#6b4d1f6e94d509a2f378f40e66448fff283055b7':
+    resolution: {commit: 6b4d1f6e94d509a2f378f40e66448fff283055b7, repo: git@github.com:aplosdev/boosts.git, type: git}
     version: 0.0.5
 
   '@babel/helper-string-parser@7.24.8':
@@ -330,10 +330,6 @@ packages:
 
   '@eslint/eslintrc@3.1.0':
     resolution: {integrity: sha512-4Bfj15dVJdoy3RfZmmo86RK1Fwzn6SstsvK9JS+BaVKqC6QQQQyXekNaC+g+LKNgkQ+2VhGAzm6hO40AhMR3zQ==}
-    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
-
-  '@eslint/js@9.7.0':
-    resolution: {integrity: sha512-ChuWDQenef8OSFnvuxv0TCVxEwmu3+hPNKvM9B34qpM0rDRbjL8t5QkQeHHeAfsKQjuH9wS82WeCi1J/owatng==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@eslint/js@9.8.0':
@@ -1284,7 +1280,7 @@ snapshots:
       '@algolia/logger-common': 4.24.0
       '@algolia/requester-common': 4.24.0
 
-  '@aplosdev/boosts@https://codeload.github.com/aplosdev/boosts/tar.gz/6b4d1f6e94d509a2f378f40e66448fff283055b7':
+  '@aplosdev/boosts@git+https://git@github.com:aplosdev/boosts.git#6b4d1f6e94d509a2f378f40e66448fff283055b7':
     dependencies:
       sass: 1.77.8
 
@@ -1425,8 +1421,6 @@ snapshots:
       strip-json-comments: 3.1.1
     transitivePeerDependencies:
       - supports-color
-
-  '@eslint/js@9.7.0': {}
 
   '@eslint/js@9.8.0': {}
 
