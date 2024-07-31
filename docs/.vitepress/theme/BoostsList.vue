@@ -49,7 +49,7 @@
 </template>
 
 <script setup lang="ts">
-import { data as plugins } from "./plugins.data";
+import { data as plugins } from "./boosts.data";
 import { computed, ref } from "vue";
 
 const selectedTag = ref(null);

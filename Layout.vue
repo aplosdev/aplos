@@ -13,7 +13,7 @@ const { site, frontmatter, page, theme } = useData();
 </script>
 
 <template>
-  <div :class="theme.plugins">
+  <div :class="theme.boosts">
     <Navigation />
     <main
       id="content-main"

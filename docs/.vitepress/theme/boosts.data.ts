@@ -11,7 +11,7 @@ interface Plugin {
 declare const data: Plugin[];
 export { data };
 
-export default createContentLoader("plugins/posts/*.md", {
+export default createContentLoader("boosts/posts/*.md", {
   excerpt: true,
   transform(raw): Plugin[] {
     return raw

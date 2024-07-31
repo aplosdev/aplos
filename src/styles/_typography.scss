@@ -56,6 +56,10 @@ h6 {
 
 p {
   margin: 1rem 0;
+
+  &:last-of-type {
+      margin: 1rem 0 0 0;
+  }
 }
 
 h1 {

@@ -1,6 +1,6 @@
 {
   "name": "aplos",
-  "version": "2.6.0",
+  "version": "2.6.0-1",
   "type": "module",
   "description": "A sleek, contemporary, and purposefully designed VitePress theme",
   "main": "index.ts",
@@ -16,7 +16,7 @@
   "author": "Gabriel Cozma",
   "license": "MIT",
   "dependencies": {
-    "@aplosdev/plugins": "https://github.com/aplosdev/plugins",
+    "@aplosdev/plugins": "github:aplosdev/plugins",
     "@csstools/normalize.css": "^12.1.1",
     "@eslint/js": "^9.7.0",
     "@mdit/plugin-figure": "^0.12.0",

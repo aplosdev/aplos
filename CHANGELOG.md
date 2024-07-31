@@ -1,8 +1,8 @@
-## 2.6.0 (2024-07-27)
+## 2.6.0 (upcoming)
 
 ### Feature(s)
 
-- Introducing, Plugins for Aplós
+- **Introducing, Boosters for Aplós**
 
   - Customize your website with plugins that enhance its functionality and appearance. Aplós offers a variety of plugins that you can easily integrate into your project. Let's explore the available plugins and how you can use them to improve your website.
 
@@ -17,6 +17,18 @@
 ## Cleanup(s)
 
 - Add a ordering note for all lists (articles & plugins)
+
+- Remove margin from the last paragraph
+
+## Development
+
+- Syntax fixes across elements
+
+- Migrate every `px` to `rem` for better scaling (I did that once already, but they appeared again)
+
+## Documentation
+
+- Add plugins list (Using the upcoming Sencilla plugin)
 
 ## 2.5.0 (2024-07-21)
 

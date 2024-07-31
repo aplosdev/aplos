@@ -63,7 +63,7 @@
         target="_self"
       >
         <span><small>Next →</small></span>
-        <br /><span>{{ frontmatter.next }}</span>
+        <br><span>{{ frontmatter.next }}</span>
       </a>
     </div>
     <Helpful />
@@ -82,7 +82,7 @@ const { frontmatter, theme } = useData();
 
 <style lang="scss">
 #article-footer {
-  margin-top: 50px;
+  margin-top: 3rem;
 
   .article-nav {
     display: block;
@@ -90,31 +90,31 @@ const { frontmatter, theme } = useData();
     transition: all 0.3s ease;
     margin: 0 0.2rem;
     background-color: transparent;
-    padding: 20px;
+    padding: 1.25rem;
     max-width: calc(50% - 0.125rem);
     color: var(--color-accent);
     text-align: center;
     text-decoration: none;
 
     &:first-child {
-      border-radius: 10px;
+      border-radius: 0.625rem;
       text-align: left;
     }
 
     &:last-child {
-      border-radius: 10px;
+      border-radius: 0.625rem;
       text-align: right;
     }
 
     &:hover {
-      transform: translateY(-5px);
+      transform: translateY(-0.3125rem);
       border-bottom: 3px solid var(--color-accent);
       background-color: var(--color-background-second);
       max-width: 100%;
     }
 
     &:active {
-      transform: translateY(5px);
+      transform: translateY(0.3125rem);
       border-bottom: 0;
     }
 

@@ -36,7 +36,7 @@ export default defineConfig({
     nav: {
       links: [
         { url: "/demo/", text: "Demo" },
-        { url: "/plugins/", text: "Plugins" },
+        { url: "/boosts/", text: "Boosts" },
         { url: "/guide/", text: "Guide" },
       ],
       git: "https://github.com/aplosdev/aplos",
