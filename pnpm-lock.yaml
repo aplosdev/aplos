@@ -8,9 +8,9 @@ importers:
 
   .:
     dependencies:
-      '@aplosdev/plugins':
-        specifier: github:aplosdev/plugins
-        version: https://codeload.github.com/aplosdev/plugins/tar.gz/1a219f3358724fd41407242405471c5ba56971d3
+      '@aplosdev/boosts':
+        specifier: github:aplosdev/boosts
+        version: https://codeload.github.com/aplosdev/boosts/tar.gz/6b4d1f6e94d509a2f378f40e66448fff283055b7
       '@csstools/normalize.css':
         specifier: ^12.1.1
         version: 12.1.1
@@ -129,8 +129,8 @@ packages:
   '@algolia/transporter@4.24.0':
     resolution: {integrity: sha512-86nI7w6NzWxd1Zp9q3413dRshDqAzSbsQjhcDhPIatEFiZrL1/TjnHL8S7jVKFePlIMzDsZWXAXwXzcok9c5oA==}
 
-  '@aplosdev/plugins@https://codeload.github.com/aplosdev/plugins/tar.gz/1a219f3358724fd41407242405471c5ba56971d3':
-    resolution: {tarball: https://codeload.github.com/aplosdev/plugins/tar.gz/1a219f3358724fd41407242405471c5ba56971d3}
+  '@aplosdev/boosts@https://codeload.github.com/aplosdev/boosts/tar.gz/6b4d1f6e94d509a2f378f40e66448fff283055b7':
+    resolution: {tarball: https://codeload.github.com/aplosdev/boosts/tar.gz/6b4d1f6e94d509a2f378f40e66448fff283055b7}
     version: 0.0.5
 
   '@babel/helper-string-parser@7.24.8':
@@ -1284,7 +1284,7 @@ snapshots:
       '@algolia/logger-common': 4.24.0
       '@algolia/requester-common': 4.24.0
 
-  '@aplosdev/plugins@https://codeload.github.com/aplosdev/plugins/tar.gz/1a219f3358724fd41407242405471c5ba56971d3':
+  '@aplosdev/boosts@https://codeload.github.com/aplosdev/boosts/tar.gz/6b4d1f6e94d509a2f378f40e66448fff283055b7':
     dependencies:
       sass: 1.77.8
 
