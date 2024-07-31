@@ -63,7 +63,7 @@
         target="_self"
       >
         <span><small>Next →</small></span>
-        <br><span>{{ frontmatter.next }}</span>
+        <br /><span>{{ frontmatter.next }}</span>
       </a>
     </div>
     <Helpful />
