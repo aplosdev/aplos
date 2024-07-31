@@ -18,7 +18,7 @@
   "dependencies": {
     "@aplosdev/boosts": "github:aplosdev/boosts",
     "@csstools/normalize.css": "^12.1.1",
-    "@eslint/js": "^9.7.0",
+    "@eslint/js": "^9.8.0",
     "@mdit/plugin-figure": "^0.12.0",
     "@mdit/plugin-tasklist": "^0.12.0",
     "eslint": "~9.8.0",
@@ -45,6 +45,6 @@
   "devDependencies": {
     "prettier": "^3.3.3",
     "sass": "^1.77.8",
-    "vue": "^3.4.34"
+    "vue": "^3.4.35"
   }
 }
