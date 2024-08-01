@@ -1,6 +1,6 @@
 <div align="center">
 <h1>Aplós</h1>
-  
+
 A sleek, contemporary, and purposefully designed VitePress theme
 
 </div>

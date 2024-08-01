@@ -2,12 +2,17 @@
   <section id="simple-layout">
     <p class="dialog-buttons">
       <a href="#top" target="_top">↑ Go to top</a>
-      <a
-        v-if="theme.nav.git"
-        id="file-an-issue"
-        :href="theme.nav.git + '/issues/new'"
-        >File an issue</a
-      >
+      <template v-if="theme.nav.git || frontmatter.footlink">
+        <a
+          class="extra-link"
+          :href="theme.nav.git + '/issues/new'"
+          v-if="theme.nav.git && !frontmatter.footlink"
+          >File an issue</a
+        >
+        <a id="extra-link" :href="frontmatter.footlink.url" v-else>{{
+          frontmatter.footlink.text
+        }}</a>
+      </template>
     </p>
   </section>
 </template>
@@ -15,7 +20,7 @@
 <script setup lang="ts">
 import { useData } from "vitepress";
 
-const { theme } = useData();
+const { theme, frontmatter } = useData();
 </script>
 
 <style lang="scss">
@@ -49,7 +54,7 @@ const { theme } = useData();
   }
 }
 
-#file-an-issue {
+#extra-link {
   background-color: transparent;
   color: var(--color-accent);
 
