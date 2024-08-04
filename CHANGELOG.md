@@ -23,6 +23,8 @@
 
 - Remove margin from the last paragraph
 
+- Remove margin from the first paragraph inside blockquotes
+
 ## Development
 
 - Syntax fixes across elements

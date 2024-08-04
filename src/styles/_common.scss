@@ -84,8 +84,8 @@ blockquote {
     padding: 0.3125rem 0.625rem;
   }
 
-  p {
-    margin: 0;
+  p:first-of-type {
+    margin: 0 !important;
     color: var(--color-text-secondary);
   }
 }
