@@ -14,7 +14,7 @@ prev: Static Navigation Island
 
 If you don't like the default table style, you can customize it with this plugin. To add the plugin, simply add the plugin's name to the `boosts` array in the `config.mts` file. The plugin will be automatically added to the tables.
 
-![Screenshot of how such an alternative table would look](/images/boosts/alt-tables.png#shadow)
+![Screenshot of how such an alternative table would look](/images/boosts/alt-table.png#shadow)
 
 Plugin Name:
 
