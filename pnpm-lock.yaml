@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@aplosdev/boosts':
         specifier: github:aplosdev/boosts
-        version: git+https://git@github.com:aplosdev/boosts.git#e1586c2a7238e121d41561eadd8a51237256fe3a
+        version: git+https://git@github.com:aplosdev/boosts.git#84d738e297f81775af6b9898dd4012f647148f89
       '@csstools/normalize.css':
         specifier: ^12.1.1
         version: 12.1.1
@@ -18,8 +18,8 @@ importers:
         specifier: ^9.8.0
         version: 9.8.0
       '@mdit/plugin-figure':
-        specifier: ^0.12.0
-        version: 0.12.0
+        specifier: ^0.13.0
+        version: 0.13.0
       '@mdit/plugin-tasklist':
         specifier: ^0.12.0
         version: 0.12.0
@@ -129,9 +129,9 @@ packages:
   '@algolia/transporter@4.24.0':
     resolution: {integrity: sha512-86nI7w6NzWxd1Zp9q3413dRshDqAzSbsQjhcDhPIatEFiZrL1/TjnHL8S7jVKFePlIMzDsZWXAXwXzcok9c5oA==}
 
-  '@aplosdev/boosts@git+https://git@github.com:aplosdev/boosts.git#e1586c2a7238e121d41561eadd8a51237256fe3a':
-    resolution: {commit: e1586c2a7238e121d41561eadd8a51237256fe3a, repo: git@github.com:aplosdev/boosts.git, type: git}
-    version: 0.0.6
+  '@aplosdev/boosts@git+https://git@github.com:aplosdev/boosts.git#84d738e297f81775af6b9898dd4012f647148f89':
+    resolution: {commit: 84d738e297f81775af6b9898dd4012f647148f89, repo: git@github.com:aplosdev/boosts.git, type: git}
+    version: 0.0.7
 
   '@babel/helper-string-parser@7.24.8':
     resolution: {integrity: sha512-pO9KhhRcuUyGnJWwyEgnRJTSIZHiT+vMD0kPeD+so0l7mxkMT19g3pjY9GTnHySck/hDzq+dtW/4VgnMkippsQ==}
@@ -351,8 +351,8 @@ packages:
   '@jridgewell/sourcemap-codec@1.5.0':
     resolution: {integrity: sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==}
 
-  '@mdit/plugin-figure@0.12.0':
-    resolution: {integrity: sha512-3nfcGI+uM0f6AqHZrEr8kSMBI6T2+fKKQXtCbvWQqQ+P3iGgf34Ay2eAtuMDcDGqyfNuR6e8aLoOeY2QWuEynA==}
+  '@mdit/plugin-figure@0.13.0':
+    resolution: {integrity: sha512-jjMwRCztQgTOWpX1z37JJXJqNe2bmNefvYk9Ck+CHAiurzVjwIY+o8igz1GDz/yKwZKJlLedRbMUK7vnP0oVmA==}
     engines: {node: '>= 18'}
     peerDependencies:
       markdown-it: ^14.1.0
@@ -1277,7 +1277,7 @@ snapshots:
       '@algolia/logger-common': 4.24.0
       '@algolia/requester-common': 4.24.0
 
-  '@aplosdev/boosts@git+https://git@github.com:aplosdev/boosts.git#e1586c2a7238e121d41561eadd8a51237256fe3a':
+  '@aplosdev/boosts@git+https://git@github.com:aplosdev/boosts.git#84d738e297f81775af6b9898dd4012f647148f89':
     dependencies:
       sass: 1.77.8
 
@@ -1429,7 +1429,7 @@ snapshots:
 
   '@jridgewell/sourcemap-codec@1.5.0': {}
 
-  '@mdit/plugin-figure@0.12.0':
+  '@mdit/plugin-figure@0.13.0':
     dependencies:
       '@types/markdown-it': 14.1.2
 
