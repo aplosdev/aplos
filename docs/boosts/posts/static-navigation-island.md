@@ -9,6 +9,7 @@ tags:
   - Navigation
 banner: /images/boosts/static-nav.png
 prev: Numeric Headings
+next: Alternate Tables
 ---
 
 If you want your navigation island to not be fixed to the screen when scrolling, you can apply this plugin. To add the plugin, simply add the plugin's name to the `boosts` array in the `config.mts` file. The plugin will be automatically added to the navigation.
