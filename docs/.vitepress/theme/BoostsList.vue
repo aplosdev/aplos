@@ -90,8 +90,8 @@ function filterplugins(tag: string) {
 .plugin-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
-  margin: 0 2.5rem;
   gap: 15px;
+  margin: 0 2.5rem;
 
   @media screen and (max-width: 600px) {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -102,24 +102,24 @@ function filterplugins(tag: string) {
   }
 
   article {
+    position: relative;
     transition: transform 0.3s ease;
     border-radius: 1.3rem;
-    padding: 12.5rem 2.5rem 2rem 2.5rem;
-    background-color: var(--color-background-second);
-    color: white !important;
     background-size: cover;
-    position: relative;
+    background-color: var(--color-background-second);
+    padding: 12.5rem 2.5rem 2rem 2.5rem;
+    color: white !important;
 
     &::before {
-      content: "";
       position: absolute;
       bottom: 0;
       left: 0;
-      width: 100%;
-      height: 85%;
       border-radius: 0 0 1.3rem 1.3rem;
       background: linear-gradient(transparent, rgba(29, 27, 27, 0.7));
+      width: 100%;
+      height: 85%;
       pointer-events: none;
+      content: "";
     }
 
     h3,
@@ -134,15 +134,15 @@ function filterplugins(tag: string) {
 
     h3 {
       margin: 0;
-      font-size: 24px;
       margin-bottom: 0.625rem;
       color: white;
+      font-size: 24px;
 
       a {
+        color: white;
         font-weight: 700;
         letter-spacing: normal;
         text-decoration: none;
-        color: white;
 
         &::after {
           font-size: large;
@@ -175,32 +175,32 @@ function filterplugins(tag: string) {
     }
 
     .tags {
-      margin-top: 10px;
+      display: flex;
+      position: absolute;
       top: 1rem;
       right: 2rem;
-      text-align: right;
-      position: absolute;
-      display: flex;
       flex-wrap: wrap;
       gap: 0.3125rem;
+      margin-top: 10px;
+      text-align: right;
 
       span {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
         margin-bottom: 5px;
+        box-shadow: var(--base-shadow);
+        border: 1px solid var(--color-accent);
         border-radius: 20px;
         background-color: var(--color-background-second);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
         padding: 0.15rem 0.45rem;
         color: var(--color-accent);
         font-weight: 500;
-        box-shadow: var(--base-shadow);
-        border: 1px solid var(--color-accent);
         font-size: 12px;
       }
 
       .archive {
-        background-color: #e1cadf;
         border: 0;
+        background-color: #e1cadf;
         color: #6a0dad;
 
         @media (prefers-color-scheme: dark) {
@@ -210,8 +210,8 @@ function filterplugins(tag: string) {
       }
 
       .draft {
-        background-color: #f0e68c;
         border: 0;
+        background-color: #f0e68c;
         color: #8b7500;
 
         @media (prefers-color-scheme: dark) {
@@ -221,8 +221,8 @@ function filterplugins(tag: string) {
       }
 
       .featured {
-        background-color: #ffcccb;
         border: 0;
+        background-color: #ffcccb;
         color: #8b0000;
 
         @media (prefers-color-scheme: dark) {

@@ -9,8 +9,8 @@
 .home {
   #title {
     margin: 0;
-    font-size: 2.5rem;
     color: var(--color-accent);
+    font-size: 2.5rem;
 
     @media (prefers-color-scheme: dark) {
       background: linear-gradient(95deg, #55b458 32.27%, #a7ffaa 68.51%);
@@ -24,72 +24,72 @@
   }
 
   #features ul {
-    margin: 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    margin: 0;
 
     @media screen and (max-width: 37.5rem) {
       grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
     }
 
     & {
-      min-width: 100%;
-      padding: 0;
       gap: 0.625rem;
+      padding: 0;
+      min-width: 100%;
     }
 
     li {
-      list-style: none;
-      text-align: center;
-      display: flex;
       text-wrap: balance;
+      display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
-      padding: 1.25rem;
-      text-align: center;
-      background-color: var(--color-background-second);
-      border-radius: 0.5rem;
+      align-items: center;
       transition:
         transform 0.3s ease 0s,
         background-color 0.3s ease 0s;
+      border-radius: 0.5rem;
+      background-color: var(--color-background-second);
+      padding: 1.25rem;
+      list-style: none;
+      text-align: center;
+      text-align: center;
 
       .emoji {
-        font-size: 1.875rem;
-        background-color: var(--color-background-mute);
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 1.25rem;
-        border-radius: 0.375rem;
-        width: 3rem;
-        height: 3rem;
-        font-size: 1.5rem;
         transition: background-color 0.25s;
         cursor: default;
+        margin-bottom: 1.25rem;
+        border-radius: 0.375rem;
+        background-color: var(--color-background-mute);
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.875rem;
+        font-size: 1.5rem;
       }
     }
   }
 
   #aeolus,
   #quote {
-    text-align: center;
-    font-style: italic;
     color: var(--color-text-secondary);
+    font-style: italic;
     font-weight: 500;
+    text-align: center;
   }
 
   #desc {
-    font-weight: 500;
     color: var(--color-text-secondary);
+    font-weight: 500;
   }
 
   aside {
     width: 40%;
 
     h2 {
-      font-size: 2rem;
       margin: 0.3125rem 0;
+      font-size: 2rem;
     }
 
     @media screen and (max-width: 37.5rem) {
@@ -113,25 +113,25 @@
       display: flex;
       flex-direction: column;
       gap: 0;
-      height: 100%;
-      width: 100%;
-      background-color: var(--color-background-second);
-      color: var(--color-text);
-      text-decoration: none;
-      text-align: left;
-      padding: 1.125rem 1.25rem;
-      border-radius: 0.5rem;
-      font-weight: 500;
       transition:
         transform 0.3s ease,
         background-color 0.3s ease,
         text-decoration 0.3s ease,
         color 0.3s ease;
+      border-radius: 0.5rem;
+      background-color: var(--color-background-second);
+      padding: 1.125rem 1.25rem;
+      width: 100%;
+      height: 100%;
+      color: var(--color-text);
+      font-weight: 500;
+      text-align: left;
+      text-decoration: none;
 
       &:hover {
         transform: scale(1.0125);
-        text-decoration: none;
         background-color: var(--color-background-mute);
+        text-decoration: none;
       }
 
       &:active {
@@ -145,11 +145,11 @@
 
       strong {
         margin: 0 !important;
-        text-decoration: underline 0.125rem solid var(--color-accent);
-        font-weight: 800;
-        letter-spacing: 0 !important;
-        font-size: 1.25rem;
         color: var(--color-accent);
+        font-weight: 800;
+        font-size: 1.25rem;
+        letter-spacing: 0 !important;
+        text-decoration: underline 0.125rem solid var(--color-accent);
       }
     }
   }

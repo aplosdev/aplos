@@ -60,8 +60,8 @@
     }
 
     &.draft {
-      background-color: transparent;
       border: 2.4px dashed #5b4f00;
+      background-color: transparent;
 
       @media (prefers-color-scheme: dark) {
         border-color: #ffff7d5a;
@@ -87,9 +87,9 @@
     }
 
     &.featured {
+      transition: all 0.3s ease;
       border-color: #5b4f00;
       background-color: #5b4f0011;
-      transition: all 0.3s ease;
 
       @media (prefers-color-scheme: dark) {
         border-color: #ffff00;

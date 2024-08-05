@@ -31,18 +31,18 @@ const { theme, frontmatter } = useData();
 .dialog-buttons {
   display: flex;
   flex-direction: row;
-  align-items: baseline;
   justify-content: space-between;
+  align-items: baseline;
   margin-top: 2rem;
 
   a {
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    text-decoration: none;
-    color: var(--color-accent);
-    cursor: pointer;
-    background-color: var(--color-background-second);
     transition: all 0.3s ease;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    background-color: var(--color-background-second);
+    padding: 0.5rem 1rem;
+    color: var(--color-accent);
+    text-decoration: none;
 
     &:hover {
       background-color: var(--color-background-mute);
