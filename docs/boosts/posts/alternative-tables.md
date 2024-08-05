@@ -8,7 +8,7 @@ author:
 tags:
   - Alternative
   - Tables
-banner: /images/boosts/alt-tables.png
+banner: /images/boosts/alt-table.png
 prev: Static Navigation Island
 ---
 
