@@ -7,6 +7,8 @@
   - Customize your website with plugins that enhance its functionality and appearance. Aplós offers a variety of plugins that you can easily integrate into your project. Let's explore the available plugins and how you can use them to improve your website.
 
 
+- New background color for the navigation island
+
 - Add option to have a custom button for the helpful layout
 
 - Make comments in articles optional
