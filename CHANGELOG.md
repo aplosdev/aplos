@@ -20,6 +20,10 @@
 
 ## Cleanup(s)
 
+- Hovering the navigation island will make it slightly bigger
+
+- Hovering the navigation title will make it turn into the color accent rather then adding an underline
+
 - Add a ordering note for all lists (articles & plugins)
 
 - Remove margin from the last paragraph

@@ -4,7 +4,10 @@
     <nav>
       <ul>
         <li id="title">
-          <a href="/" @click="setActive('/')">
+          <a
+            href="/"
+            @click="setActive('/')"
+          >
             {{ theme.nav.title || site.title }}
           </a>
         </li>
@@ -93,6 +96,11 @@ header {
     padding: 0.0625rem 1.5625rem;
     max-width: 90%;
     text-align: center;
+    transition: background-color 0.4s ease;
+
+    &:hover {
+      background-color: var(--color-header-hover);
+    }
 
     ul {
       display: flex;
@@ -121,7 +129,7 @@ header {
             letter-spacing: -0.0325rem;
 
             &:hover {
-              text-decoration: underline 0.075rem solid var(--color-accent);
+              color: var(--color-accent);
             }
 
             &:active {
@@ -138,6 +146,10 @@ header {
             width: 0.0625rem;
             height: 100%;
             content: "";
+          }
+
+          .active {
+            color: var(--color-accent) !important;
           }
         }
 
@@ -183,6 +195,7 @@ const { site, theme } = useData();
 
 const currentPath = ref("/");
 const isActive = (route: string) => currentPath.value === route;
+
 const setActive = (route: string) => {
   currentPath.value = route;
 };

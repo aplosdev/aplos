@@ -74,8 +74,8 @@ export default defineConfig({
       infoLabel: "Info",
     },
     theme: {
-      light: "light-plus",
-      dark: "vitesse-dark",
+      light: "everforest-light",
+      dark: "everforest-dark",
     },
 
     config: (md) => {
