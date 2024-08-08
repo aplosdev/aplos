@@ -16,7 +16,7 @@
   "author": "Gabriel Cozma",
   "license": "MIT",
   "dependencies": {
-    "@aplosdev/boosts": "^0.0.7",
+    "@aplosdev/boosts": "github:aplosdev/boosts",
     "@csstools/normalize.css": "^12.1.1",
     "@eslint/js": "^9.8.0",
     "eslint": "~9.8.0",

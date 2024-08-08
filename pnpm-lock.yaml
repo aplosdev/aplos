@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@aplosdev/boosts':
-        specifier: ^0.0.7
-        version: 0.0.7
+        specifier: github:aplosdev/boosts
+        version: https://codeload.github.com/aplosdev/boosts/tar.gz/f77c75cc31dc24bce554dcb9b035e68c27c31928
       '@csstools/normalize.css':
         specifier: ^12.1.1
         version: 12.1.1
@@ -129,8 +129,9 @@ packages:
   '@algolia/transporter@4.24.0':
     resolution: {integrity: sha512-86nI7w6NzWxd1Zp9q3413dRshDqAzSbsQjhcDhPIatEFiZrL1/TjnHL8S7jVKFePlIMzDsZWXAXwXzcok9c5oA==}
 
-  '@aplosdev/boosts@0.0.7':
-    resolution: {integrity: sha512-mwXtgVcwGRTh01Fb394crewfX9KhEcPcreZBNbRNd+v9+mmBp63iIkJDHjB99iMbLaDkbPddnHyduvhlWr3MHQ==, tarball: https://npm.pkg.github.com/download/@aplosdev/boosts/0.0.7/812d8e3b395a9ca201ce63e479541182273df73c}
+  '@aplosdev/boosts@https://codeload.github.com/aplosdev/boosts/tar.gz/f77c75cc31dc24bce554dcb9b035e68c27c31928':
+    resolution: {tarball: https://codeload.github.com/aplosdev/boosts/tar.gz/f77c75cc31dc24bce554dcb9b035e68c27c31928}
+    version: 0.0.7
 
   '@babel/helper-string-parser@7.24.8':
     resolution: {integrity: sha512-pO9KhhRcuUyGnJWwyEgnRJTSIZHiT+vMD0kPeD+so0l7mxkMT19g3pjY9GTnHySck/hDzq+dtW/4VgnMkippsQ==}
@@ -1276,7 +1277,7 @@ snapshots:
       '@algolia/logger-common': 4.24.0
       '@algolia/requester-common': 4.24.0
 
-  '@aplosdev/boosts@0.0.7':
+  '@aplosdev/boosts@https://codeload.github.com/aplosdev/boosts/tar.gz/f77c75cc31dc24bce554dcb9b035e68c27c31928':
     dependencies:
       sass: 1.77.8
 
