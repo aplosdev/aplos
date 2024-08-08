@@ -4,10 +4,7 @@
     <nav>
       <ul>
         <li id="title">
-          <a
-            href="/"
-            @click="setActive('/')"
-          >
+          <a href="/" @click="setActive('/')">
             {{ theme.nav.title || site.title }}
           </a>
         </li>
