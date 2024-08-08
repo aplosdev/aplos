@@ -4,12 +4,12 @@
       <a href="#top" target="_top">↑ Go to top</a>
       <template v-if="theme.nav.git || frontmatter.footlink">
         <a
+          v-if="theme.nav.git && !frontmatter.footlink"
           class="extra-link"
           :href="theme.nav.git + '/issues/new'"
-          v-if="theme.nav.git && !frontmatter.footlink"
           >File an issue</a
         >
-        <a id="extra-link" :href="frontmatter.footlink.url" v-else>{{
+        <a v-else id="extra-link" :href="frontmatter.footlink.url">{{
           frontmatter.footlink.text
         }}</a>
       </template>
