@@ -55,6 +55,8 @@ If you want to contribute to Aplós, you can check the [Contributing](https://ap
 
 Now that Aplós is an NPM Package, a release cycle is required. There is a new version every Saturday at 16:00 GMT for regular small updates (if there are changes), and for more critical updates every time there is a need.
 
+Sometimes this schedule isn't followed, but it is the general rule.
+
 ### Versioning
 
 Aplós uses [Semantic Versioning](https://semver.org/), so you can understand the changes by looking at the version number (using the `major.minor.patch` format).
