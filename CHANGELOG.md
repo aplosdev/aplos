@@ -36,6 +36,10 @@
 
 - Migrate every `px` to `rem` for better scaling (I did that once already, but they appeared again)
 
+### Fix(es)
+
+- The class name for the extra link in the helpful layout
+
 ### Dependency(ies)
 
 - Bump globals from 15.8.0 to 15.9.0 (https://github.com/aplosdev/aplos/pull/39)

@@ -9,7 +9,7 @@
           :href="theme.nav.git + '/issues/new'"
           >File an issue</a
         >
-        <a v-else id="extra-link" :href="frontmatter.footlink.url">{{
+        <a v-else class="extra-link" :href="frontmatter.footlink.url">{{
           frontmatter.footlink.text
         }}</a>
       </template>
@@ -54,7 +54,7 @@ const { theme, frontmatter } = useData();
   }
 }
 
-#extra-link {
+.extra-link {
   background-color: transparent;
   color: var(--color-accent);
 
