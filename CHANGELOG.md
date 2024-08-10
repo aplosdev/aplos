@@ -20,6 +20,8 @@
 
 ## Cleanup(s)
 
+- Make grammer mistakes to have red underline
+
 - Hovering the navigation island will make it slightly bigger
 
 - Hovering the navigation title will make it turn into the color accent rather then adding an underline
