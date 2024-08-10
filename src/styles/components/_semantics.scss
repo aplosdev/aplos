@@ -194,9 +194,9 @@ q {
 u {
   text-decoration: underline wavy #ff0000;
 
-    @media (prefers-color-scheme: dark) {
-        text-decoration-color: #febebe;
-    }
+  @media (prefers-color-scheme: dark) {
+    text-decoration-color: #febebe;
+  }
 }
 
 @mixin diff($color, $background-color, $decoration) {
