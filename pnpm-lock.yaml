@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@aplosdev/boosts':
         specifier: github:aplosdev/boosts
-        version: git+https://git@github.com:aplosdev/boosts.git#8186d3ef35f1ac4f4d77b9d857a2cc63d0d7dde1
+        version: https://codeload.github.com/aplosdev/boosts/tar.gz/8186d3ef35f1ac4f4d77b9d857a2cc63d0d7dde1
       '@csstools/normalize.css':
         specifier: ^12.1.1
         version: 12.1.1
