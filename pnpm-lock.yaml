@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@aplosdev/boosts':
         specifier: github:aplosdev/boosts
-        version: git+https://git@github.com:aplosdev/boosts.git#8186d3ef35f1ac4f4d77b9d857a2cc63d0d7dde1
+        version: https://codeload.github.com/aplosdev/boosts/tar.gz/8186d3ef35f1ac4f4d77b9d857a2cc63d0d7dde1
       '@csstools/normalize.css':
         specifier: ^12.1.1
         version: 12.1.1
@@ -129,8 +129,8 @@ packages:
   '@algolia/transporter@4.24.0':
     resolution: {integrity: sha512-86nI7w6NzWxd1Zp9q3413dRshDqAzSbsQjhcDhPIatEFiZrL1/TjnHL8S7jVKFePlIMzDsZWXAXwXzcok9c5oA==}
 
-  '@aplosdev/boosts@git+https://git@github.com:aplosdev/boosts.git#8186d3ef35f1ac4f4d77b9d857a2cc63d0d7dde1':
-    resolution: {commit: 8186d3ef35f1ac4f4d77b9d857a2cc63d0d7dde1, repo: git@github.com:aplosdev/boosts.git, type: git}
+  '@aplosdev/boosts@https://codeload.github.com/aplosdev/boosts/tar.gz/8186d3ef35f1ac4f4d77b9d857a2cc63d0d7dde1':
+    resolution: {tarball: https://codeload.github.com/aplosdev/boosts/tar.gz/8186d3ef35f1ac4f4d77b9d857a2cc63d0d7dde1}
     version: 0.0.7
 
   '@babel/helper-string-parser@7.24.8':
@@ -1289,7 +1289,7 @@ snapshots:
       '@algolia/logger-common': 4.24.0
       '@algolia/requester-common': 4.24.0
 
-  '@aplosdev/boosts@git+https://git@github.com:aplosdev/boosts.git#8186d3ef35f1ac4f4d77b9d857a2cc63d0d7dde1':
+  '@aplosdev/boosts@https://codeload.github.com/aplosdev/boosts/tar.gz/8186d3ef35f1ac4f4d77b9d857a2cc63d0d7dde1':
     dependencies:
       sass: 1.77.8
 
