@@ -19,7 +19,7 @@
     "@aplosdev/boosts": "github:aplosdev/boosts",
     "@csstools/normalize.css": "^12.1.1",
     "@eslint/js": "^9.8.0",
-    "eslint": "~9.8.0",
+    "eslint": "~9.9.0",
     "eslint-plugin-vue": "^9.27.0",
     "globals": "^15.8.0",
     "inter-ui": "^4.0.2",
