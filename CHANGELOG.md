@@ -40,6 +40,8 @@
 
 - Bump globals from 15.8.0 to 15.9.0 (https://github.com/aplosdev/aplos/pull/39)
 
+- Bump vitepress from 1.3.1 to 1.3.2 for docs (https://github.com/aplosdev/aplos/pull/42)
+
 ## Documentation
 
 - Add plugins list (Using the upcoming Sencilla plugin)
