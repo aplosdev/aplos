@@ -22,6 +22,8 @@
 
 - Add an option to make authors not be displayed
 
+- Support for the range type of inputs
+
 - New Accent Color
 
 ## Cleanup(s)

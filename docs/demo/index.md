@@ -227,6 +227,16 @@ You can add a progress bar by using the `<progress>` tag:
 
 <progress value="50" max="100"></progress>
 
+### Range (`<input type="range">`)
+
+You can add a range by using the `<input type="range">` tag:
+
+```html
+<input type="range" max="100" value="33">
+```
+
+<input type="range" max="100" value="33">
+
 ### Sample Output (`<samp>`)
 
 You can add a sample output by using the `<samp>` tag:
