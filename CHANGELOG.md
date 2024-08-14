@@ -1,4 +1,8 @@
-## 2.6.0 (upcoming)
+## 3.0.0 (upcoming)
+
+### Breaking Changes
+
+- Remove fallback for "Make navigation links' URL be provided with `url` not `link`"
 
 ### Feature(s)
 
@@ -17,6 +21,8 @@
 - Make Numeric Headings a plugin (slightly breaking change)
 
 - Add an option to make authors not be displayed
+
+- New Accent Color
 
 ## Cleanup(s)
 

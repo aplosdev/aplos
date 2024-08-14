@@ -6,7 +6,7 @@ const info = {
   title: "Aplós",
   description:
     "A sleek, contemporary, and purposefully designed theme and template",
-  accentColor: "#55B458",
+  accentColor: "#FF686B",
 };
 
 // https://vitepress.dev/reference/site-config
