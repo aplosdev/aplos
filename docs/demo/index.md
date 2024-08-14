@@ -232,7 +232,7 @@ You can add a progress bar by using the `<progress>` tag:
 You can add a range by using the `<input type="range">` tag:
 
 ```html
-<input type="range" max="100" value="33">
+<input type="range" max="100" value="33" />
 ```
 
 <input type="range" max="100" value="33">
