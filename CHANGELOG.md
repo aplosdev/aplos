@@ -30,6 +30,10 @@
 
 - New Accent Color
 
+## Fix(es)
+
+- The skip to content button not being on sites without the navigation island
+
 ## Cleanup(s)
 
 - Make grammer mistakes to have red underline
