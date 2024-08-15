@@ -12,6 +12,10 @@
 
 - New background color for the navigation island
 
+- Adaptive navigation island
+
+  - The navigation bar first appears when you enter the page, as you scroll down it will disappear, and when you scroll up it will appear again (that way it won't take up space when you're reading, so you can focus on the content)
+
 - Add option to have a custom button for the helpful layout
 
 - Make comments in articles optional

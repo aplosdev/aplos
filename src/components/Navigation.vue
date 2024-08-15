@@ -1,7 +1,7 @@
 <template>
-  <header v-if="theme.nav.show !== false">
+  <header>
     <a href="#content-main" class="skip-to-content">Skip to main content</a>
-    <nav>
+    <nav v-if="theme.nav.show !== false" :class="{ hidden: !showNavbar }">
       <ul>
         <li id="title">
           <a href="/" @click="setActive('/')">
@@ -54,6 +54,10 @@
 header {
   display: flex;
   justify-content: center;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
 
   .skip-to-content {
     clip: rect(1px, 1px, 1px, 1px);
@@ -82,10 +86,11 @@ header {
   }
 
   nav {
+    --margin-top: 1.5rem;
     @include blurredBackground;
     position: fixed;
     z-index: 9999;
-    margin-top: 1rem;
+    margin-top: var(--margin-top);
     border: 0.4px solid var(--color-border);
     border-radius: 2.5rem;
     background-color: none;
@@ -93,7 +98,13 @@ header {
     padding: 0.0625rem 1.5625rem;
     max-width: 90%;
     text-align: center;
-    transition: background-color 0.4s ease;
+    transition:
+      background-color 0.4s ease,
+      transform 0.5s ease;
+
+    &.hidden {
+      transform: translate3d(0, calc((100% + var(--margin-top)) * -1), 0);
+    }
 
     &:hover {
       background-color: var(--color-header-hover);
@@ -183,7 +194,7 @@ header {
 </style>
 
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
+import { onMounted, onUnmounted, ref } from "vue";
 import { useData } from "vitepress";
 import SourceCode from ".././icons/SourceCode.vue";
 import RSSFeed from ".././icons/RSSFeed.vue";
@@ -191,15 +202,39 @@ import RSSFeed from ".././icons/RSSFeed.vue";
 const { site, theme } = useData();
 
 const currentPath = ref("/");
+const showNavbar = ref(true);
+const lastScrollY = ref(0);
+
 const isActive = (route: string) => currentPath.value === route;
 
 const setActive = (route: string) => {
   currentPath.value = route;
 };
 
+const handleScroll = () => {
+  const currentScrollY = window.scrollY;
+
+  if (currentScrollY > lastScrollY.value) {
+    setTimeout(() => {
+      showNavbar.value = false;
+    }, 300);
+  } else {
+    setTimeout(() => {
+      showNavbar.value = true;
+    }, 200);
+  }
+
+  lastScrollY.value = currentScrollY;
+};
+
 onMounted(() => {
   if (typeof window !== "undefined") {
     currentPath.value = window.location.pathname;
+    window.addEventListener("scroll", handleScroll);
   }
+});
+
+onUnmounted(() => {
+  window.removeEventListener("scroll", handleScroll);
 });
 </script>
