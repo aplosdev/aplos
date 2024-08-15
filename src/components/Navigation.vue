@@ -221,7 +221,7 @@ const handleScroll = () => {
   } else {
     setTimeout(() => {
       showNavbar.value = true;
-    }, 200);
+    }, 400);
   }
 
   lastScrollY.value = currentScrollY;
