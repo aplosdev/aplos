@@ -60,7 +60,7 @@
 
 ### Dependency(ies)
 
-- Bump `vue` from 3.4.35 to 3.4.37
+- Bump `vue` from 3.4.35 to 3.4.38 (https://github.com/aplosdev/aplos/pull/47)
 
 - Bump globals from 15.8.0 to 15.9.0 (https://github.com/aplosdev/aplos/pull/39)
 
