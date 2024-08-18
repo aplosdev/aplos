@@ -28,8 +28,6 @@
 
 - Support for the range type of inputs
 
-- New Accent Color
-
 ## Fix(es)
 
 - The skip to content button not being on sites without the navigation island
