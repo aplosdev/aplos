@@ -2,11 +2,11 @@
 
 ### Breaking Changes
 
-- Remove fallback for "Make navigation links' URL be provided with `url` not `link`"
+- Remove fallback for "Make navigation links' URL be provided with `url` not `link`
 
 ### Feature(s)
 
-- **Introducing, Boosters for Aplós**
+- **Introducing, Boosts for Aplós**
 
   - Customize your website with plugins that enhance its functionality and appearance. Aplós offers a variety of plugins that you can easily integrate into your project. Let's explore the available plugins and how you can use them to improve your website.
 
