@@ -16,7 +16,7 @@
       <a onclick="window.history.go(-1)">← Go Back</a>
       <a
         v-if="theme.nav.git"
-        id="file-an-issue"
+        class="extra-link"
         :href="theme.nav.git + '/issues/new'"
         >File an issue</a
       >

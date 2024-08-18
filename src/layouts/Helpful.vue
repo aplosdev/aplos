@@ -55,12 +55,12 @@ const { theme, frontmatter } = useData();
 }
 
 .extra-link {
-  background-color: transparent;
-  color: var(--color-accent);
+  background-color: transparent !important;
+  color: var(--color-accent) !important;
 
   &:hover {
-    background-color: var(--color-accent);
-    color: var(--color-background-second);
+    background-color: var(--color-accent) !important;
+    color: var(--color-background) !important;
   }
 }
 </style>
