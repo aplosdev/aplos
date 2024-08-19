@@ -75,13 +75,9 @@ npm i aplos@next
 
 ### Development
 
-If you want to contribute to Aplós, you can clone the repository and install the dependencies with the following commands:
+If you want to contribute to Aplós, make sure to fork the repository and cloned it with `git clone` or `gh repo clone`.
 
-```bash
-git clone https://github.com/aplosdev/aplos.git
-```
-
-Before you start developing, make sure to install the dependencies:
+After cloning the repository, you can install the dependencies with the following command:
 
 ```bash
 pnpm install

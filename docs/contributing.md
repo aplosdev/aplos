@@ -22,13 +22,9 @@ The project is still in its early stages, so these guidelines aren't that strict
 
 ## Contributing to the Main Repository (`aplosdev/aplos`)
 
-If you want to contribute to Aplós, you can clone the repository with the following command:
+If you want to contribute to Aplós, make sure to fork the repository and cloned it with `git clone` or `gh repo clone`.
 
-```bash
-git clone https://github.com/aplosdev/aplos.git
-```
-
-Before you start developing, make sure to install the dependencies:
+After cloning the repository, you can install the dependencies with the following command:
 
 ```bash
 pnpm install
