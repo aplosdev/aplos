@@ -14,8 +14,18 @@ importers:
       '@csstools/normalize.css':
         specifier: ^12.1.1
         version: 12.1.1
+      inter-ui:
+        specifier: ^4.0.2
+        version: 4.0.2
+      non.geist:
+        specifier: ^1.0.3
+        version: 1.0.3
+      sass:
+        specifier: ^1.77.8
+        version: 1.77.8
+    devDependencies:
       '@eslint/js':
-        specifier: ^9.8.0
+        specifier: ^9.9.0
         version: 9.9.0
       eslint:
         specifier: ~9.9.0
@@ -24,21 +34,11 @@ importers:
         specifier: ^9.27.0
         version: 9.27.0(eslint@9.9.0)
       globals:
-        specifier: ^15.8.0
+        specifier: ^15.9.0
         version: 15.9.0
-      inter-ui:
-        specifier: ^4.0.2
-        version: 4.0.2
-      non.geist:
-        specifier: ^1.0.3
-        version: 1.0.3
-    devDependencies:
       prettier:
         specifier: ^3.3.3
         version: 3.3.3
-      sass:
-        specifier: ^1.77.8
-        version: 1.77.8
       vue:
         specifier: ^3.4.35
         version: 3.4.38

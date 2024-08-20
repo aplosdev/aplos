@@ -18,12 +18,9 @@
   "dependencies": {
     "@aplosdev/boosts": "github:aplosdev/boosts",
     "@csstools/normalize.css": "^12.1.1",
-    "@eslint/js": "^9.8.0",
-    "eslint": "~9.9.0",
-    "eslint-plugin-vue": "^9.27.0",
-    "globals": "^15.8.0",
     "inter-ui": "^4.0.2",
-    "non.geist": "^1.0.3"
+    "non.geist": "^1.0.3",
+    "sass": "^1.77.8"
   },
   "scripts": {
     "docs:dev": "pnpm --filter=./docs dev",
@@ -41,8 +38,11 @@
   },
   "homepage": "https://aplos.gxbs.me",
   "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "eslint": "~9.9.0",
+    "eslint-plugin-vue": "^9.27.0",
+    "globals": "^15.9.0",
     "prettier": "^3.3.3",
-    "sass": "^1.77.8",
     "vue": "^3.4.35"
   }
 }
