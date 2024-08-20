@@ -64,7 +64,8 @@
 
 - Bump `eslint` from 9.8.0 to 9.9.0
 
-- Bump vitepress from 1.3.1 to 1.3.2 for docs (https://github.com/aplosdev/aplos/pull/42)
+- Bump vitepress from 1.3.1 to 1.3.3 for docs (https://github.com/aplosdev/aplos/pull/42, https://github.com/aplosdev/aplos/pull/49)
+
 
 ## Documentation
 
