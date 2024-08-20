@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@aplosdev/boosts':
         specifier: github:aplosdev/boosts
-        version: https://codeload.github.com/aplosdev/boosts/tar.gz/8854cbcd4d607c8a3750867adb79873060659fb2
+        version: git+https://git@github.com:aplosdev/boosts.git#8854cbcd4d607c8a3750867adb79873060659fb2
       '@csstools/normalize.css':
         specifier: ^12.1.1
         version: 12.1.1
@@ -129,8 +129,8 @@ packages:
   '@algolia/transporter@4.24.0':
     resolution: {integrity: sha512-86nI7w6NzWxd1Zp9q3413dRshDqAzSbsQjhcDhPIatEFiZrL1/TjnHL8S7jVKFePlIMzDsZWXAXwXzcok9c5oA==}
 
-  '@aplosdev/boosts@https://codeload.github.com/aplosdev/boosts/tar.gz/8854cbcd4d607c8a3750867adb79873060659fb2':
-    resolution: {tarball: https://codeload.github.com/aplosdev/boosts/tar.gz/8854cbcd4d607c8a3750867adb79873060659fb2}
+  '@aplosdev/boosts@git+https://git@github.com:aplosdev/boosts.git#8854cbcd4d607c8a3750867adb79873060659fb2':
+    resolution: {commit: 8854cbcd4d607c8a3750867adb79873060659fb2, repo: git@github.com:aplosdev/boosts.git, type: git}
     version: 1.0.0-rc.0
 
   '@babel/helper-string-parser@7.24.8':
@@ -1330,7 +1330,7 @@ snapshots:
       '@algolia/logger-common': 4.24.0
       '@algolia/requester-common': 4.24.0
 
-  '@aplosdev/boosts@https://codeload.github.com/aplosdev/boosts/tar.gz/8854cbcd4d607c8a3750867adb79873060659fb2':
+  '@aplosdev/boosts@git+https://git@github.com:aplosdev/boosts.git#8854cbcd4d607c8a3750867adb79873060659fb2':
     dependencies:
       sass: 1.77.8
 
@@ -1617,7 +1617,7 @@ snapshots:
       '@vue/shared': 3.4.37
       estree-walker: 2.0.2
       magic-string: 0.30.11
-      postcss: 8.4.40
+      postcss: 8.4.41
       source-map-js: 1.2.0
 
   '@vue/compiler-sfc@3.4.38':
@@ -2163,7 +2163,6 @@ snapshots:
       nanoid: 3.3.7
       picocolors: 1.0.1
       source-map-js: 1.2.0
-    optional: true
 
   preact@10.23.1: {}
 
