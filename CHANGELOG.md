@@ -46,6 +46,8 @@
 
 - Remove margin from the first paragraph inside blockquotes
 
+- Better id for the helpful layout
+
 ## Development
 
 - Syntax fixes across elements

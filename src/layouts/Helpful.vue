@@ -1,5 +1,5 @@
 <template>
-  <section id="simple-layout">
+  <section id="helpful-layout">
     <p class="dialog-buttons">
       <a href="#top" target="_top">↑ Go to top</a>
       <template v-if="theme.nav.git || frontmatter.footlink">
@@ -24,7 +24,7 @@ const { theme, frontmatter } = useData();
 </script>
 
 <style lang="scss">
-#simple-layout {
+#helpful-layout {
   margin-top: 3rem;
 }
 
