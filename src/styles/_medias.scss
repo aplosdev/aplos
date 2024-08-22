@@ -87,7 +87,8 @@
   nav,
   footer,
   .lang,
-  .table-of-contents {
+  .table-of-contents,
+  #helpful-layout {
     @include hidden;
   }
 }

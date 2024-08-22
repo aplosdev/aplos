@@ -48,6 +48,8 @@
 
 - Better id for the helpful layout
 
+- Hide the helpful layout on print
+
 ## Development
 
 - Syntax fixes across elements
