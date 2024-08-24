@@ -4,7 +4,7 @@ pageClass: home
 
 # Aplós {.center #title}
 
-A Sleek, Contemporary, and Purposefully Designed Vitepress Theme & Template.\
+A Sleek, Contemporary, and Purposefully Designed Vitepress Theme.\
 It provides a straightforward solution for creating a quick web page, offering essential features for comfortable writing while maintaining a sense of simplicity. {.center #desc}
 
 <section id="features">
