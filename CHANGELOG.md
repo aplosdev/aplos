@@ -1,10 +1,12 @@
-## 3.0.0 (upcoming)
+# Changelog
 
-### Breaking Changes
+All notable changes to this project will be documented in this file.
 
-- Remove fallback for "Make navigation links' URL be provided with `url` not `link`
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-### Feature(s)
+## [Unreleased]
+
+### Added
 
 - **Introducing, Boosts for Aplós**
 
@@ -28,11 +30,17 @@
 
 - Support for the range type of inputs
 
-## Fix(es)
+### Removed
+
+- Remove fallback for "Make navigation links' URL be provided with `url` not `link`
+
+### Fixed
 
 - The skip to content button not being on sites without the navigation island
 
-## Cleanup(s)
+- The class name for the extra link in the helpful layout
+
+### Changed
 
 - Make grammer mistakes to have red underline
 
@@ -50,17 +58,19 @@
 
 - Hide the helpful layout on print
 
-## Development
-
 - Syntax fixes across elements
 
 - Migrate every `px` to `rem` for better scaling (I did that once already, but they appeared again)
 
-### Fix(es)
+---
+
+### Development
+
+#### Fixed
 
 - The class name for the extra link in the helpful layout
 
-### Dependency(ies)
+#### Dependency(ies)
 
 - Bump `vue` from 3.4.35 to 3.4.38 (https://github.com/aplosdev/aplos/pull/47)
 
@@ -70,15 +80,15 @@
 
 - Bump vitepress from 1.3.1 to 1.3.3 for docs (https://github.com/aplosdev/aplos/pull/42, https://github.com/aplosdev/aplos/pull/49)
 
-## Documentation
+#### Documentation
 
 - Add plugins list (Using the upcoming Sencilla plugin)
 
-## 2.5.0 (2024-07-21)
+## [2.5.0] - 2024-07-21
 
 ![Bento Grid of version 2.5.0](https://aplos.gxbs.me/images/v2-5-0.png)
 
-### Feature(s)
+### Added
 
 - Add Banners for articles
 
@@ -92,13 +102,13 @@
 
 - Redesign `ins` and `del` elements
 
-### Fix(es)
+### Fixed
 
 - Remove SASS deprecation warnings
 
 - Support for `progress` elements style on webkit browsers
 
-### Cleanup(s)
+### Changed
 
 - Add margins to tables and blockquotes
 
@@ -118,21 +128,25 @@
 
 - Sort CSS
 
-### Dependencies
+### Development
+
+#### Changed
 
 - Bump vue from 3.4.31 to 3.4.32 (https://github.com/aplosdev/aplos/pull/33)
 
 - Bump sass from 1.77.6 to 1.77.8 (https://github.com/aplosdev/aplos/pull/32)
 
-### Documentation
+#### Documentation
+
+##### Added
 
 - Rewrite the demo page
 
-## 2.4.0 (2024-07-06)
+## [2.4.0] - 2024-07-06
 
 ![Bento Grid of version 2.4.0](https://aplos.gxbs.me/images/v2-4-0.png)
 
-### Features
+### Added
 
 - Support for multiple authors
 
@@ -146,7 +160,7 @@
 
 - Allow user to customize the date locale (default is `en-US`, rather then `en-GB` as before)
 
-### Cleanup(s)
+### Changed
 
 - Modernize the Article List type logic
 
@@ -154,27 +168,29 @@
 
 - Hide language detection for code snippets inside informal cards
 
-### Fix(es)
+### Fixed
 
 - Code Blocks disappearing on hover
 
 - Fix dark mode for all the types of articles in the Article List component
 
-## 2.3.1 (2024-07-01)
+## [2.3.1] - 2024-07-01
 
 Small dependency updates that were missed in the last release.
 
-### Dependencies
+### Development
+
+#### Changed
 
 - Bump globals from 15.6.0 to 15.7.0 (https://github.com/aplosdev/aplos/pull/26)
 
 - Bump @eslint/js from 9.5.0 to 9.6.0 (https://github.com/aplosdev/aplos/pull/25)
 
-## 2.3.0 (2024-07-01)
+## [2.3.0] - 2024-07-01
 
 ![Bento Grid of version 2.3.0](https://aplos.gxbs.me/images/v2-3-0.png)
 
-### Feature(s)
+### Added
 
 - Add support for a full width image via the URL (with `#` + `full`)
 
@@ -189,7 +205,7 @@ Small dependency updates that were missed in the last release.
 
 - Add styles for `var` and `tfoot` elements
 
-### Cleanup(s)
+### Changed
 
 - New deafult color accent
 
@@ -201,11 +217,11 @@ Small dependency updates that were missed in the last release.
 
 - Remove dots from the footer copyright text and Powered by text
 
-## 2.2.0 (2024-06-22)
+## 2.2.0 - 2024-06-22
 
 ![Bento Grid of version 2.2.0](https://aplos.gxbs.me/images/v2-2-0.png)
 
-### Feature(s)
+### Added
 
 - Add screenshot support for images via the URL (if the image's URL has an "screenshot" in it, it will be displayed as a screenshot)
 
@@ -221,7 +237,7 @@ Small dependency updates that were missed in the last release.
 
 - Bring the helpful layout to the Article's Footer
 
-### Cleanup(s)
+### Changed
 
 - Slighly darker background color for dark mode
 
@@ -229,9 +245,9 @@ Small dependency updates that were missed in the last release.
 
 - Other minor changes to elements
 
-## 2.1.0 (2024-06-15)
+## [2.1.0] - 2024-06-15
 
-### Feature(s)
+### Added
 
 - More improvements to the `kbd` element
 
@@ -252,7 +268,7 @@ Small dependency updates that were missed in the last release.
 
 - Add a `style` frontmatter configuration for the `article` layout
 
-### Cleanup(s)
+### Changed
 
 - Project rebranding
 
@@ -280,27 +296,29 @@ Small dependency updates that were missed in the last release.
 
 - Minor changes to the formatter and the linter
 
-### Development Changes
+### Development
+
+#### Changed
 
 - Add `ESLint` to the project for better code consistency
 
 - Minor changes to the formatter and the linter
 
-## 2.0.2 (2024-06-05)
+## [2.0.2] - 2024-06-05
 
-### Fix(es)
+### Fixed
 
 - Make minimal ignore the `article` configuration
 
-## 2.0.1 (2024-06-05)
+## [2.0.1] - 2024-06-05
 
-### Fix(es)
+### Fixed
 
 - Fix the `main` on smaller screens
 
-## 2.0.0 (2024-06-05)
+## [2.0.0] - 2024-06-05
 
-### Breaking Changes
+### Removed
 
 - Rename `blog` configuration to `article`
 
@@ -318,7 +336,7 @@ Small dependency updates that were missed in the last release.
   - `no-blog` -> `minimal`
   - `simple` -> `helpful` (for the layout)
 
-### Features
+### Added
 
 - Rework the informational cards colors
 
@@ -353,7 +371,7 @@ Small dependency updates that were missed in the last release.
   - `del` for deleted text
   - `ins` for inserted text
 
-### Cleanup(s)
+### Changed
 
 - Added an warning that the ActivityPub-based comments aren't currently working
 
@@ -365,21 +383,27 @@ Small dependency updates that were missed in the last release.
 
 - Make Geist Mono/Main Monospace an variable
 
-### Fix(es)
+### Fixed
 
 - Make just the `glitch` class be animated in the Not Found page (instead of all `<span>` elements)
 
-### For Development
+---
+
+### Development
+
+#### Added
 
 - Add `Prettier` to the project for better code consistency (replaceing `EditorConfig`)
 
 - Add an [Contributing](https://aplos.gxbs.me/contributing) page for clear steps on how to contribute
 
+#### Changed
+
 - Make everything more <abbr title="Don't Repeat Yourself">DRY</abbr> by using `mixin` in repeated styles
 
-## 1.6.0 (2024-05-25)
+## [1.6.0] - 2024-05-25
 
-### Feature(s)
+### Added
 
 - Add a `no-underline` class to remove the underline from links
 
@@ -393,7 +417,7 @@ Small dependency updates that were missed in the last release.
 
 - Make the Not Found page smaller in width by 30%
 
-### Cleanup(s)
+### Changed
 
 - Migrate the Helpful Layout and the Not Found Layout to the `layouts` folder
 
@@ -411,21 +435,27 @@ Small dependency updates that were missed in the last release.
 
 - Sort Styles in Components
 
-### For Development
+---
+
+### Development
+
+#### Changed
 
 - Update Dependencies inside the Development Example
 
+#### Added
+
 - Add `.editorconfig` file for better code consistency
 
-## 1.5.1 (2024-05-18)
+## [1.5.1] - 2024-05-18
 
-### Feature(s)
+### Added
 
 - Unify `color-accent-alpha` dark and light into one variable
 
-## 1.5.0 (2024-05-11)
+## [1.5.0] - 2024-05-11
 
-### Feature(s)
+### Added
 
 - Ability to style images via the URL (with `#` + `not-rounded`, `static`, `small`, `medium`, `shadow`, `mono`, `invert` `blur`, `sepia`, `transparency`)
 
@@ -443,11 +473,11 @@ Small dependency updates that were missed in the last release.
 
 > Fallbacks are provided for the old names, but it is recommended to update the names to the new ones. In 2.0.0, the old names will be removed. The fallbacks are only here to not pump the version to 2.0.0 just for this change.
 
-### Fix(es)
+### Fixed
 
 - Remove the margin from `code` tags inside `pre` tags on mobile
 
-### Cleanup(s)
+### Changed
 
 - Add border to link images (with the option to remove it)
 
@@ -461,17 +491,17 @@ Small dependency updates that were missed in the last release.
 
 - Update the project details in `index.scss` to match the License
 
-### For Development
+### Development
 
-- Add .development/default folder to the repository for easy development and testing (after the issue of the last release)
+#### Added
 
-- Add `.npmignore` file to ignore the `.development` and `.github` folders
+- `.development/default` folder to the repository for easy development and testing (after the issue of the last release)
 
-### Dependencies
+- `.npmignore` file to ignore the `.development` and `.github` folders
+
+#### Changed
 
 - Pump SASS from 1.76.0 to 1.77.0 (https://github.com/aplosdev/aplos/pull/2)
-
-### Work in Progress Element(s)
 
 - Reinstate the ActivityPub comments _(not yet fully implemented)_
 
@@ -483,15 +513,17 @@ Small dependency updates that were missed in the last release.
   - [x] Migrate body to an grid
   - [ ] Provide Grid Templates
 
-## 1.4.1 (2024-05-05)
+## [1.4.1] - 2024-05-05
 
 > This release is important to fix the build process of the project, so update as soon as possible.
 
-### Fix(es)
+### Fixed
 
 - Disable ActivityPub comments (for now, till I find a fix for the errors on the build process)
 
-### Work in Progress Element(s)
+### Development
+
+#### Changed (WIP)
 
 - A full rework of how ActivityPub comments are handled (to avoid errors on build)
 
@@ -499,7 +531,7 @@ Small dependency updates that were missed in the last release.
 
 ## 1.4.0 (2024-05-04)
 
-### Cleanup(s)
+### Changed
 
 - Remove duplicated styles that are now provided by `normalize.css`
 
@@ -509,13 +541,13 @@ Small dependency updates that were missed in the last release.
 
 - Migrate all `pixel` values to `rem` values for better accessibility
 
-### Fix(es)
+### Fixed
 
 - Allow a changeable dark mode background color for code snippets
 
 - Made the navigation island have a specific minimum height (it could become smaller until now)
 
-### Feature(s)
+### Added
 
 - Add ActivityPub support for comments (now you can choose between `activitypub` and `giscus`)
 
@@ -525,18 +557,18 @@ Small dependency updates that were missed in the last release.
 
 - Provide a build-in icon for custom cards
 
-## 1.3.3 (2024-04-27)
+## [1.3.3] - 2024-04-27
 
-### Feature(s)
+### Added
 
 - **normalize.css:** Add normalize.css to the project for better cross-browser compatibility
 
-### Cleanup(s)
+### Changed
 
 - Migrated specific styles from the main SCSS file to it's component's file
 
-## 1.3.2 (2024-04-24)
+## [1.3.2] - 2024-04-24
 
-### Features
+### Added
 
 - **spoiler:** Provide a way to show spoilers while blurring the text
