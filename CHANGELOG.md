@@ -12,21 +12,21 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
   - Customize your website with plugins that enhance its functionality and appearance. Aplós offers a variety of plugins that you can easily integrate into your project. Let's explore the available plugins and how you can use them to improve your website.
 
-- New background color for the navigation island
+- The navigation bar first appears when you enter the page, as you scroll down it will disappear, and when you scroll up it will appear again (that way it won't take up space when you're reading, so you can focus on the content)
 
 - Adaptive navigation island
 
-  - The navigation bar first appears when you enter the page, as you scroll down it will disappear, and when you scroll up it will appear again (that way it won't take up space when you're reading, so you can focus on the content)
+- Add an option to make authors not be displayed
 
 - Add option to have a custom button for the helpful layout
 
 - Make comments in articles optional
 
-- Reading time for articles
-
 - Make Numeric Headings a plugin (slightly breaking change)
 
-- Add an option to make authors not be displayed
+- New background color for the navigation island
+
+- Reading time for articles
 
 - Support for the range type of inputs
 
@@ -36,9 +36,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ### Fixed
 
-- The skip to content button not being on sites without the navigation island
-
 - The class name for the extra link in the helpful layout
+
+- The skip to content button not being on sites without the navigation island
 
 ### Changed
 
