@@ -70,6 +70,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - The class name for the extra link in the helpful layout
 
+#### Changed
+
+- Made article list an flex
+
 #### Dependency(ies)
 
 - Bump `vue` from 3.4.35 to 3.4.38 (https://github.com/aplosdev/aplos/pull/47)
