@@ -70,6 +70,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - The class name for the extra link in the helpful layout
 
+#### Added
+
+- Add margin to the Giscus Comments
+
 #### Changed
 
 - Made article list an flex

@@ -2,6 +2,12 @@
   <div id="giscusContainer" />
 </template>
 
+<style lang="scss">
+#giscusContainer {
+  margin: 1.25rem 0;
+}
+</style>
+
 <script setup lang="ts">
 import { useData } from "vitepress";
 import { onMounted } from "vue";
