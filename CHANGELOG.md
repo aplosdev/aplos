@@ -90,6 +90,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - Bump `vitepress` from 1.3.1 to 1.3.4 for docs (https://github.com/aplosdev/aplos/pull/42, https://github.com/aplosdev/aplos/pull/49, https://github.com/aplosdev/aplos/pull/52, https://github.com/aplosdev/aplos/pull/54)
 
+- Bump @mdit/plugin-tasklist from 0.13.0 to 0.13.1 (https://github.com/aplosdev/aplos/pull/55)
+
 #### Documentation
 
 - Add plugins list (Using the upcoming Sencilla plugin)
