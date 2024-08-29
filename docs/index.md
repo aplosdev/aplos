@@ -10,15 +10,15 @@ It provides a straightforward solution for creating a quick web page, offering e
 <section id="features">
 <br>
 
-- <span class="emoji">🚀</span> Lightweight, minimalistic, and user-friendly, built for VitePress.
-- <span class="emoji">🎨</span> Elegantly styled with a primary color theme for a visually pleasing experience.
-- <span class="emoji">📱</span> Mobile-friendly design with support for dark mode.
-- <span class="emoji">🖋️</span> Utilizes premium fonts: Inter for text and Geist Mono for code snippets.
-- <span class="emoji">💻</span> Local development made easy with NPM/PNPM integration.
-- <span class="emoji">📦</span> Every asset is local, nothing is pulled from the internet.
-- <span class="emoji">🔧</span> Customizable configuration for a personalized touch.
-- <span class="emoji">✍️</span> Perfect integration for blogs, documentation, and personal websites.
-- <span class="emoji">💬</span> Giscus and Activitypub/Mastodon powered comments, for blog posts.
+- **🚀** Lightweight, minimalistic, and user-friendly, built for VitePress.
+- **🎨** Elegantly styled with a primary color theme for a visually pleasing experience.
+- **📱** Mobile-friendly design with support for dark mode.
+- **🖋️** Utilizes premium fonts: Inter for text and Geist Mono for code snippets.
+- **💻** Local development made easy with NPM/PNPM integration.
+- **📦** Every asset is local, nothing is pulled from the internet.
+- **🔧** Customizable configuration for a personalized touch.
+- **✍️** Perfect integration for blogs, documentation, and personal websites.
+- **💬** Giscus and Activitypub/Mastodon powered comments, for blog posts.
 
 </section>
 
