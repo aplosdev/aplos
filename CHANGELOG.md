@@ -30,6 +30,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - Support for the range type of inputs
 
+- Make the progress bar use 100% of the width
+
 ### Removed
 
 - Remove fallback for "Make navigation links' URL be provided with `url` not `link`

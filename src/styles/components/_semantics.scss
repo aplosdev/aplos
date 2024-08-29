@@ -135,6 +135,7 @@ progress {
   border-radius: calc(var(--rounded-xs) - 0.0125rem);
   background-color: var(--color-background-second);
   height: 0.625rem;
+  width: 100%;
   color: var(--color-accent);
 
   &::-webkit-progress-value {
