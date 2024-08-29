@@ -66,6 +66,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - Migrate every `px` to `rem` for better scaling (I did that once already, but they appeared again)
 
+- Move the details of the article to the bottom of the article's card
+
 ---
 
 ### Development
