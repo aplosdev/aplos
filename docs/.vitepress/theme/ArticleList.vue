@@ -49,10 +49,14 @@
             </span>
           </p>
           <div class="tags" v-if="post.tags">
-            <span v-if="typeof post.tags === 'string'" :key="post.tags">{{
-              post.tags
-            }}</span>
-            <span v-else v-for="tag in post.tags" :key="tag">{{ tag }}</span>
+            <span
+              v-if="typeof post.tags === 'string'"
+              :key="post.tags"
+              @click="filterPosts(post.tags)"
+              >{{ post.tags }}</span
+            >
+            <span v-else v-for="tag in post.tags" :key="tag" @click="filterPosts(tag)"
+            >{{ tag }}</span>
           </div>
         </div>
       </article>

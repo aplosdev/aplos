@@ -41,6 +41,10 @@
       }
     }
 
+    .tags span {
+      cursor: pointer;
+    }
+
     &.archive {
       background-color: #ff00dd11;
 
@@ -85,6 +89,7 @@
 
       .tags span {
         background-color: #5b4f001d;
+        cursor: pointer;
 
         @media (prefers-color-scheme: dark) {
           background-color: #ffff0037;
