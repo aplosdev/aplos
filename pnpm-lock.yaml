@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@aplosdev/boosts':
         specifier: github:aplosdev/boosts
-        version: https://codeload.github.com/aplosdev/boosts/tar.gz/b66e8cabd2421f8035e5def56bbeb071578d3dc8
+        version: git+https://git@github.com:aplosdev/boosts.git#b66e8cabd2421f8035e5def56bbeb071578d3dc8
       '@csstools/normalize.css':
         specifier: ^12.1.1
         version: 12.1.1
@@ -32,7 +32,7 @@ importers:
         version: 9.9.1
       eslint-plugin-vue:
         specifier: ^9.27.0
-        version: 9.27.0(eslint@9.9.1)
+        version: 9.28.0(eslint@9.9.1)
       globals:
         specifier: ^15.9.0
         version: 15.9.0
@@ -129,8 +129,8 @@ packages:
   '@algolia/transporter@4.24.0':
     resolution: {integrity: sha512-86nI7w6NzWxd1Zp9q3413dRshDqAzSbsQjhcDhPIatEFiZrL1/TjnHL8S7jVKFePlIMzDsZWXAXwXzcok9c5oA==}
 
-  '@aplosdev/boosts@https://codeload.github.com/aplosdev/boosts/tar.gz/b66e8cabd2421f8035e5def56bbeb071578d3dc8':
-    resolution: {tarball: https://codeload.github.com/aplosdev/boosts/tar.gz/b66e8cabd2421f8035e5def56bbeb071578d3dc8}
+  '@aplosdev/boosts@git+https://git@github.com:aplosdev/boosts.git#b66e8cabd2421f8035e5def56bbeb071578d3dc8':
+    resolution: {commit: b66e8cabd2421f8035e5def56bbeb071578d3dc8, repo: git@github.com:aplosdev/boosts.git, type: git}
     version: 1.0.0-rc.0
 
   '@babel/helper-string-parser@7.24.8':
@@ -697,8 +697,8 @@ packages:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
 
-  eslint-plugin-vue@9.27.0:
-    resolution: {integrity: sha512-5Dw3yxEyuBSXTzT5/Ge1X5kIkRTQ3nvBn/VwPwInNiZBSJOO/timWMUaflONnFBzU6NhB68lxnCda7ULV5N7LA==}
+  eslint-plugin-vue@9.28.0:
+    resolution: {integrity: sha512-ShrihdjIhOTxs+MfWun6oJWuk+g/LAhN+CiuOl/jjkG3l0F2AuK5NMTaWqyvBgkFtpYmyks6P4603mLmhNJW8g==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^6.2.0 || ^7.0.0 || ^8.0.0 || ^9.0.0
@@ -1289,7 +1289,7 @@ snapshots:
       '@algolia/logger-common': 4.24.0
       '@algolia/requester-common': 4.24.0
 
-  '@aplosdev/boosts@https://codeload.github.com/aplosdev/boosts/tar.gz/b66e8cabd2421f8035e5def56bbeb071578d3dc8':
+  '@aplosdev/boosts@git+https://git@github.com:aplosdev/boosts.git#b66e8cabd2421f8035e5def56bbeb071578d3dc8':
     dependencies:
       sass: 1.77.8
 
@@ -1781,7 +1781,7 @@ snapshots:
 
   escape-string-regexp@4.0.0: {}
 
-  eslint-plugin-vue@9.27.0(eslint@9.9.1):
+  eslint-plugin-vue@9.28.0(eslint@9.9.1):
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0(eslint@9.9.1)
       eslint: 9.9.1
