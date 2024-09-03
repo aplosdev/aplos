@@ -100,6 +100,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - Bump `@mdit/plugin-figure` from 0.13.0 to 0.13.1 (https://github.com/aplosdev/aplos/pull/56)
 
+- Bump `eslint-plugin-vue` from 9.27.0 to 9.28.0 (https://github.com/aplosdev/aplos/pull/57)
+
 #### Documentation
 
 - Add plugins list (Using the upcoming Sencilla plugin)
