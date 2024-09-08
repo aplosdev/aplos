@@ -28,7 +28,7 @@
             >{{ post.title }}</a
           >
         </h3>
-        <p v-if="post.description">{{ post.description }}</p>
+        <div v-if="post.excerpt" v-html="post.excerpt"></div>
         <div class="post-details">
           <p class="date">
             {{ post.date }}

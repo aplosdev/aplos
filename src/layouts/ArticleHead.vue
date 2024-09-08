@@ -53,11 +53,6 @@
           }}</span>
         </span>
       </small>
-      <br />
-      <p v-if="frontmatter.description" id="description">
-        {{ frontmatter.description }}
-      </p>
-      <hr />
     </div>
   </div>
 </template>

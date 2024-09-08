@@ -14,6 +14,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - The navigation bar first appears when you enter the page, as you scroll down it will disappear, and when you scroll up it will appear again (that way it won't take up space when you're reading, so you can focus on the content)
 
+- **Depricate the `description` field for articles**
+
+  - The `description` field for articles is now deprecated, and now the as a replacement, the content until the first `hr` element will be used as the description for the article in both the article list and the article itself.
+
 - Adaptive navigation island
 
 - Add an option to make authors not be displayed
