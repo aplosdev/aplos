@@ -8,7 +8,7 @@
         alt="Banner"
       />
     </div>
-    <div :id="frontmatter.banner ? 'banner-margin' : ''">
+    <div :id="frontmatter.banner ? 'banner-margin' : ''" class="main-head">
       <small v-if="frontmatter.update">
         Last updated on
         {{
@@ -24,7 +24,6 @@
           )
         }}
       </small>
-      <h1>{{ frontmatter.title }}</h1>
       <small>
         {{
           new Date(frontmatter.date).toLocaleDateString(
@@ -36,6 +35,9 @@
             },
           )
         }}
+      </small>
+      <h1>{{ frontmatter.title }}</h1>
+      <small>
         <span v-if="!theme.articles.authors === false && frontmatter.author">
           &middot; {{ frontmatter.author.length > 1 ? "Authors:" : "Author:" }}
           <template v-for="(author, index) in frontmatter.author" :key="index">
@@ -43,7 +45,7 @@
             }}<span v-if="index !== frontmatter.author.length - 1">, </span>
           </template>
         </span>
-        <span> &middot; {{ readingTime }} minutes to read </span>
+        <span> {{ readingTime }} minutes to read </span>
         <span class="tags">
           &middot;
           <span v-for="(tag, index) in frontmatter.tags" :key="index">{{
@@ -77,7 +79,16 @@ onMounted(() => {
 
 <style lang="scss">
 #article-head {
+  text-align: center;
   padding-top: 2.0938rem;
+
+  .main-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
 
   #banner-container {
     $mask: linear-gradient(black, transparent);
@@ -108,8 +119,21 @@ onMounted(() => {
   }
 
   h1 {
-    margin-top: 0;
-    margin-bottom: 0;
+    font-weight: 800;
+    line-height: 1.05em;
+    background-image: radial-gradient(
+      circle,
+      var(--color-accent) 0%,
+      var(--color-accent-alpha) 100%
+    );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-top: -0.5rem !important;
+    margin-bottom: 0 !important;
   }
 
   .tags {
