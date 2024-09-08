@@ -36,7 +36,7 @@ const { theme } = useData();
   margin-bottom: 20px;
   margin-left: auto;
   box-shadow: none;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   background-color: transparent;
   padding: 30px 20px;
   width: 100%;

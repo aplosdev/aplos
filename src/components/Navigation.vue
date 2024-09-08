@@ -47,8 +47,8 @@
 
 <style lang="scss">
 @mixin blurredBackground {
-  -webkit-backdrop-filter: saturate(180%) blur(10px);
-  backdrop-filter: saturate(180%) blur(10px);
+  -webkit-backdrop-filter: saturate(180%) blur(0.625rem);
+  backdrop-filter: saturate(180%) blur(0.625rem);
 }
 
 header {

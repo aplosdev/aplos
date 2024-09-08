@@ -164,11 +164,11 @@ Inside the `overwrite.css` file, you can add custom styles to modify the appeara
 
 ### Chaning the Content Width
 
-You can modify the width of the content in Aplós by changing the `--content-width` variable in the `:root` selector. For example, to set the content width to 800px, add the following CSS to your project:
+You can modify the width of the content in Aplós by changing the `--content-width` variable in the `:root` selector. For example, to set the content width to 50rem, add the following CSS to your project:
 
 ```css
 :root {
-  --content-width: 800px;
+  --content-width: 50rem;
 }
 ```
 

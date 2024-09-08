@@ -181,12 +181,12 @@ function filterplugins(tag: string) {
       right: 2rem;
       flex-wrap: wrap;
       gap: 0.3125rem;
-      margin-top: 10px;
+      margin-top: 0.625rem;
       text-align: right;
 
       span {
-        -webkit-backdrop-filter: blur(10px);
-        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(0.625rem);
+        backdrop-filter: blur(0.625rem);
         margin-bottom: 5px;
         box-shadow: var(--base-shadow);
         border: 1px solid var(--color-accent);
@@ -245,7 +245,7 @@ function filterplugins(tag: string) {
   button {
     transition: all 0.3s ease;
     cursor: pointer;
-    margin-right: 10px;
+    margin-right: 0.625rem;
     margin-bottom: 3px;
     border-radius: 20px;
     background-color: var(--color-background-second);
