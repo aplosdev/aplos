@@ -22,7 +22,6 @@ Recently I've been likeing the idea of using Lorem Ipsum in my projects. It's gr
 
 Credits to banner image: [Unsplash](https://unsplash.com/photos/an-aerial-view-of-a-tractor-in-a-field-FMzEdpO3Rko)
 
-
 Ullus investigandi veri, nisi inveneris, et quaerendi defatigatio turpis est, cum esset accusata et vituperata ab Hortensio. Qui liber cum et mortem contemnit, qua qui est imbutus quietus esse numquam potest. Praeterea bona praeterita grata recordatione.
 
 Ullus investigandi veri, nisi inveneris, et quaerendi defatigatio turpis est, cum esset accusata et vituperata ab Hortensio. Qui liber cum et mortem contemnit, qua qui est imbutus quietus esse numquam potest. Praeterea bona praeterita grata recordatione renovata delectant. Est autem situm in nobis ut et voluptates et dolores nasci fatemur e corporis voluptatibus et doloribus -- itaque concedo.
