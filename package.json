@@ -16,7 +16,7 @@
   "author": "Gabriel Cozma",
   "license": "MIT",
   "dependencies": {
-    "@aplosdev/boosts": "github:aplosdev/boosts",
+    "@aplosdev/boosts": "https://codeload.github.com/aplosdev/boosts/tar.gz/b66e8cabd2421f8035e5def56bbeb071578d3dc8",
     "@csstools/normalize.css": "^12.1.1",
     "inter-ui": "^4.0.2",
     "non.geist": "^1.0.3",
