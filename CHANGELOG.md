@@ -100,7 +100,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - Bump `sass` from 1.77.8 to 1.78.0 (https://github.com/aplosdev/aplos/pull/59)
 
-- Bump `@eslint/js` from 9.9.0 to 9.9.1 (https://github.com/aplosdev/aplos/pull/51)
+- Bump `@eslint/js` from 9.9.0 to 9.9.1 (https://github.com/aplosdev/aplos/pull/51, https://github.com/aplosdev/aplos/pull/62)
 
 - Bump `eslint` from 9.8.0 to 9.9.1 (https://github.com/aplosdev/aplos/pull/53)
 
