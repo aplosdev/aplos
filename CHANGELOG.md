@@ -52,6 +52,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - The skip to content button not being on sites without the navigation island
 
+- SCSS deprecation warning
+
 ### Changed
 
 - Make grammer mistakes to have red underline

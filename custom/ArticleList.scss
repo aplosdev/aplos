@@ -72,12 +72,11 @@
     &.draft {
       border: 0.15rem dashed #5b4f00;
       background-color: transparent;
+      border-radius: 1.2rem;
 
       @media (prefers-color-scheme: dark) {
         border-color: #ffff7d5a;
       }
-
-      border-radius: 1.2rem;
 
       a {
         color: #5b4f00;
