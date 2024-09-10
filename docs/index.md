@@ -49,7 +49,7 @@ If you want to contribute to Aplós, you can check the [Contributing](/contribut
 
 Aplós whouldn't be possible without the following projects/people:
 
-- [Duckquill](https://daudix.codeberg.page/duckquill), from where I got inspired to create this project (and many ideas are from there)
+- [Duckquill](https://duckquill.daudix.one), from where I got inspired to create this project (and many ideas are from there)
 - [Hari Rana](https://tesk.page/) for style-related feedback and suggestions
 - [Inter](https://rsms.me/inter/), used as the main body font.
 - [Geist Mono](https://vercel.com/font), used for code snippets.
