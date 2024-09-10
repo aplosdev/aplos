@@ -194,6 +194,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - Allow user to customize the date locale (default is `en-US`, rather then `en-GB` as before)
 
+- Align the date collection and the tags perfectly in the article list
+
 ### Changed
 
 - Modernize the Article List type logic
