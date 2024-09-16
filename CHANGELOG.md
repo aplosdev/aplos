@@ -102,7 +102,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - Bump `@eslint/js` from 9.9.0 to 9.9.1 (https://github.com/aplosdev/aplos/pull/51, https://github.com/aplosdev/aplos/pull/62)
 
-- Bump `eslint` from 9.8.0 to 9.9.1 (https://github.com/aplosdev/aplos/pull/53)
+- Bump `eslint` from 9.8.0 to 9.10.0 (https://github.com/aplosdev/aplos/pull/53, https://github.com/aplosdev/aplos/pull/63)
 
 - Bump `vitepress` from 1.3.1 to 1.3.4 for docs (https://github.com/aplosdev/aplos/pull/42, https://github.com/aplosdev/aplos/pull/49, https://github.com/aplosdev/aplos/pull/52, https://github.com/aplosdev/aplos/pull/54)
 
