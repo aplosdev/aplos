@@ -56,6 +56,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ### Changed
 
+- Make the lists' markers be the color accent
+
 - Make grammer mistakes to have red underline
 
 - Hovering the navigation island will make it slightly bigger

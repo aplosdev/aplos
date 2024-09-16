@@ -141,6 +141,10 @@ mark {
 ul,
 ol {
   margin: 0;
+
+  li::marker {
+    color: var(--color-accent);
+  }
 }
 
 ul {
