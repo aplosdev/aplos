@@ -218,6 +218,8 @@ Small dependency updates that were missed in the last release.
 
 #### Changed
 
+- Reword the Contributing guide
+
 - Bump globals from 15.6.0 to 15.7.0 (https://github.com/aplosdev/aplos/pull/26)
 
 - Bump @eslint/js from 9.5.0 to 9.6.0 (https://github.com/aplosdev/aplos/pull/25)

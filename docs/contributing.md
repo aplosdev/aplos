@@ -10,15 +10,15 @@ Thank you for considering contributing to Aplós! This project is open-source an
 
 If you're new to contributing to open-source projects, you can start by checking out the [GitHub documentation](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests) on how to contribute to a project.
 
-## General Guidelines
+## Recommended Guidelines
+
+**They are mandatory, but they are recommended to make the contribution process smoother.**
 
 - Ensure that your pull request is up-to-date with the `main` branch.
 
 - Make sure that your code is well-documented and follows the [conventional commit guidelines](https://www.conventionalcommits.org/en/v1.0.0/).
 
-- Ensure that you've formatted the code using `pnpm format`.
-
-The project is still in its early stages, so these guidelines aren't that strict. However, it's recommended to follow them to make the contribution process smoother, and the Developer Experience better.
+The formatting is done automatically with [Prettier](https://prettier.io) and [ESLint](https://eslint.org), so you don't have to worry about that :smile:.
 
 ## Contributing to the Main Repository (`aplosdev/aplos`)
 
@@ -39,3 +39,7 @@ pnpm docs:dev
 You can edit the project and see your changes live.
 
 All other standard VitePress commands are available, like `pnpm demo:build` and `pnpm demo:preview`.
+
+## Adding an Boost (Plugin)
+
+Check the [Boosts](https://github.com/aplosdev/boosts) repository to see how to add a new Boost to Aplós.
