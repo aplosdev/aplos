@@ -96,11 +96,13 @@ export default defineConfig({
     ["meta", { name: "og:type", content: "website" }],
     ["meta", { name: "og:locale", content: "en" }],
     ["meta", { name: "og:site_name", content: info.title }],
+    ["meta", { name: "og:title", content: info.title }],
+    ["meta", { name: "og:description", content: info.description }],
     [
       "meta",
       {
         name: "og:image",
-        content: "https://aplos.gxbs.me/images/banner.png",
+        content: "https://aplos.gxbs.dev/images/banner.png",
       },
     ],
     ["meta", { name: "twitter:card", content: "summary_large_image" }],
@@ -108,7 +110,7 @@ export default defineConfig({
       "meta",
       {
         name: "twitter:image",
-        content: "https://aplos.gxbs.me/images/banner.png",
+        content: "https://aplos.gxbs.dev/images/banner.png",
       },
     ],
     ["meta", { name: "twitter:title", content: info.title }],
@@ -119,10 +121,10 @@ export default defineConfig({
         content: info.description,
       },
     ],
-    ["meta", { name: "twitter:url", content: "https://aplos.gxbs.me" }],
+    ["meta", { name: "twitter:url", content: "https://aplos.gxbs.dev" }],
   ],
   sitemap: {
-    hostname: "https://aplos.gxbs.me",
+    hostname: "https://aplos.gxbs.dev",
   },
   vite: {
     ssr: {
