@@ -20,7 +20,7 @@
     "@csstools/normalize.css": "^12.1.1",
     "inter-ui": "^4.0.2",
     "non.geist": "^1.0.3",
-    "sass": "^1.77.8"
+    "sass": "^1.79.3"
   },
   "scripts": {
     "docs:dev": "pnpm --filter=./docs dev",
