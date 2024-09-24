@@ -98,7 +98,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 #### Dependency(ies)
 
-- Bump `vue` from 3.4.35 to 3.5.5 (https://github.com/aplosdev/aplos/pull/47, https://github.com/aplosdev/aplos/pull/61, https://github.com/aplosdev/aplos/pull/66)
+- Bump `vue` from 3.4.35 to 3.5.8 (https://github.com/aplosdev/aplos/pull/47, https://github.com/aplosdev/aplos/pull/61, https://github.com/aplosdev/aplos/pull/66, https://github.com/aplosdev/aplos/pull/70)
 
 - Bump `globals` from 15.8.0 to 15.9.0 (https://github.com/aplosdev/aplos/pull/39)
 
