@@ -58,7 +58,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - Make the lists' markers be the color accent
 
-- Use box-shadow instead of border-bottom to prevent layout jump for navigating articles ()
+- Use box-shadow instead of border-bottom to prevent layout jump for navigating articles (https://github.com/aplosdev/aplos/pull/74 by [@daudix](https://github.com/daudix))
 
 - Make grammer mistakes to have red underline
 
