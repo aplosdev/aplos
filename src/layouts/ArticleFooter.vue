@@ -108,7 +108,7 @@ const { frontmatter, theme } = useData();
 
     &:hover {
       transform: translateY(-0.3125rem);
-      border-bottom: 3px solid var(--color-accent);
+      box-shadow: 0 3px var(--color-accent);
       background-color: var(--color-background-second);
       max-width: 100%;
     }
