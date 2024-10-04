@@ -18,7 +18,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
   - New date format for articles (with the hour and minute)
 
-- **Depricate the `description` field for articles**
+- **Deprecate the `description` field for articles**
 
   - The `description` field for articles is now deprecated, and now the as a replacement, the content until the first `hr` element will be used as the description for the article in both the article list and the article itself.
 
@@ -26,7 +26,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - Add an option to make authors not be displayed
 
-- Add option to have a custom button for the helpful layout
+- Add the option to have a custom button for the helpful layout
 
 - Make comments in articles optional
 
@@ -60,19 +60,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - Use box-shadow instead of border-bottom to prevent layout jump for navigating articles (https://github.com/aplosdev/aplos/pull/74 by [@daudix](https://github.com/daudix))
 
-- Make grammer mistakes to have red underline
+- Make grammar mistakes to have a red underline
 
 - Hovering the navigation island will make it slightly bigger
 
-- Hovering the navigation title will make it turn into the color accent rather then adding an underline
+- Hovering the navigation title will make it turn into the color accent rather than adding an underline
 
-- Add a ordering note for all lists (articles & plugins)
+- Add an ordering note for all lists (articles & plugins)
 
-- Remove margin from the last paragraph
+- Remove the margin from the last paragraph
 
-- Remove margin from the first paragraph inside blockquotes
+- Remove the margin from the first paragraph inside blockquotes
 
-- Better id for the helpful layout
+- Better ID for the helpful layout
 
 - Hide the helpful layout on print
 
@@ -96,17 +96,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 #### Changed
 
-- Made article list an flex
+- Made article lists a flex
 
 #### Dependency(ies)
 
-- Bump `vue` from 3.4.35 to 3.5.10 (https://github.com/aplosdev/aplos/pull/47, https://github.com/aplosdev/aplos/pull/61, https://github.com/aplosdev/aplos/pull/66, https://github.com/aplosdev/aplos/pull/70, https://github.com/aplosdev/aplos/pull/76)
+- Bump `vue` from 3.4.35 to 3.5.11 (https://github.com/aplosdev/aplos/pull/47, https://github.com/aplosdev/aplos/pull/61, https://github.com/aplosdev/aplos/pull/66, https://github.com/aplosdev/aplos/pull/70, https://github.com/aplosdev/aplos/pull/76, https://github.com/aplosdev/aplos/pull/79)
 
-- Bump `globals` from 15.8.0 to 15.9.0 (https://github.com/aplosdev/aplos/pull/39)
+- Bump `globals` from 15.8.0 to 15.10.0 (https://github.com/aplosdev/aplos/pull/39, https://github.com/aplosdev/aplos/pull/78)
 
-- Bump `sass` from 1.77.8 to 1.79.2 (https://github.com/aplosdev/aplos/pull/59, https://github.com/aplosdev/aplos/pull/68)
+- Bump `sass` from 1.77.8 to 1.79.4 (https://github.com/aplosdev/aplos/pull/59, https://github.com/aplosdev/aplos/pull/68, https://github.com/aplosdev/aplos/pull/77)
 
-- Bump `@eslint/js` from 9.9.0 to 9.9.1 (https://github.com/aplosdev/aplos/pull/51, https://github.com/aplosdev/aplos/pull/62)
+- Bump `@eslint/js` from 9.9.0 to 9.11.1 (https://github.com/aplosdev/aplos/pull/51, https://github.com/aplosdev/aplos/pull/62, https://github.com/aplosdev/aplos/pull/73)
 
 - Bump `eslint` from 9.8.0 to 9.10.1 (https://github.com/aplosdev/aplos/pull/53, https://github.com/aplosdev/aplos/pull/63, https://github.com/aplosdev/aplos/pull/72)
 
@@ -156,7 +156,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - Add `alt` attribute to icons links
 
-- Make informal cards use all the available space on mobile
+- Make informal cards to use all the available space on the mobile
 
 - Remove the line from the helpful layout if used on articles
 
@@ -234,22 +234,22 @@ Small dependency updates that were missed in the last release.
 
 ### Added
 
-- Add support for a full width image via the URL (with `#` + `full`)
+- Add support for a full-width image via the URL (with `#` + `full`)
 
-- Add multuple types of articles
+- Add multiple types of articles
 
   - Featured
   - Draft
   - Archived
   - And the normal one
 
-- Add last updated to articles
+- Add the last updated page to the articles
 
 - Add styles for `var` and `tfoot` elements
 
 ### Changed
 
-- New deafult color accent
+- New default color accent
 
 - Better styles for normal links in the footer
 
@@ -265,13 +265,13 @@ Small dependency updates that were missed in the last release.
 
 ### Added
 
-- Add screenshot support for images via the URL (if the image's URL has an "screenshot" in it, it will be displayed as a screenshot)
+- Add screenshot support for images via the URL (if the image's URL has a "screenshot" in it, it will be displayed as a screenshot)
 
 - Add footer links
 
-  - And icorporate the "Source Code" and "Made by" links into the footer links
+  - And incorporate the "Source Code" and "Made by" links into the footer links
 
-- Add styles for check boxes
+- Add styles for checkboxes
 
 - Add `markdown-it` plugins support for better markdown parsing
 
@@ -281,9 +281,9 @@ Small dependency updates that were missed in the last release.
 
 ### Changed
 
-- Slighly darker background color for dark mode
+- Slightly darker background color for dark mode
 
-- Make a more destinctive style for descriptions in the article's header
+- Make a more distinctive style for descriptions in the article's header
 
 - Other minor changes to elements
 
@@ -330,11 +330,11 @@ Small dependency updates that were missed in the last release.
 
 - Migrate what's possible to the `src` folder
 
-- Make all components styles file begin with an underscore
+- Make all component styles file begin with an underscore
 
 - Add variables for general styles
 
-  - A huge styles cleanup
+  - A huge style cleanup
 
 - Minor changes to the formatter and the linter
 
@@ -392,30 +392,30 @@ Small dependency updates that were missed in the last release.
 
 - Add `note` informal card
 
-- Small changes to images behavior
+- Small changes to image behavior
 
   - Smaller scale when active
   - Max width for images when active
   - Images with a link:
     - Add pointer cursor
-    - Make border thicker when hover
+    - Make the border thicker when hovering
 
 - Better accessibility for keyboard users
 
-  - With an custom focus indicator
+  - With a custom focus indicator
 
 - Add support for various types of elements
   - `progress` for progress bars
   - `samp` for sample output
   - `legend` for legends
   - `q` for inline quotes
-  - `u` for trying to replicate grammer mistakes
+  - `u` for trying to replicate grammar mistakes
   - `del` for deleted text
   - `ins` for inserted text
 
 ### Changed
 
-- Added an warning that the ActivityPub-based comments aren't currently working
+- Added a warning that the ActivityPub-based comments aren't currently working
 
 - Add a `custom` folder for custom components
 
@@ -423,7 +423,7 @@ Small dependency updates that were missed in the last release.
 
 - Sort imports in Aplós Minimal
 
-- Make Geist Mono/Main Monospace an variable
+- Make Geist Mono/Main Monospace a variable
 
 ### Fixed
 
@@ -435,7 +435,7 @@ Small dependency updates that were missed in the last release.
 
 #### Added
 
-- Add `Prettier` to the project for better code consistency (replaceing `EditorConfig`)
+- Add `Prettier` to the project for better code consistency (replacing `EditorConfig`)
 
 - Add an [Contributing](https://aplos.gxbs.me/contributing) page for clear steps on how to contribute
 
@@ -451,7 +451,7 @@ Small dependency updates that were missed in the last release.
 
 - Make the Content's Width adjustable
 
-- Make "Create a new Issue" button in the Helpful Layout optional
+- Make the "Create a new Issue" button in the Helpful Layout optional
 
 - Provide Modern Font Stacks for the system font stack
 
@@ -503,7 +503,7 @@ Small dependency updates that were missed in the last release.
 
 - Give a title for Table of Contents for better accessibility
 
-- Disable the languge detection for code snippets when hovering over them
+- Disable the language detection for code snippets when hovering over them
 
 - Provide the version of Aplós in the footer when hovering over ”Aplós” in ”Powered by”
 
@@ -521,9 +521,9 @@ Small dependency updates that were missed in the last release.
 
 ### Changed
 
-- Add border to link images (with the option to remove it)
+- Add a border to link images (with the option to remove it)
 
-- Migrate the body to an grid layout
+- Migrate the body to a grid layout
 
 - Move Layouts to their own folder
 
@@ -552,7 +552,7 @@ Small dependency updates that were missed in the last release.
   - [ ] Fix the build issue
 
 - Allow elements to go over the allocated width
-  - [x] Migrate body to an grid
+  - [x] Migrate the body to a grid
   - [ ] Provide Grid Templates
 
 ## [1.4.1] - 2024-05-05
@@ -607,7 +607,7 @@ Small dependency updates that were missed in the last release.
 
 ### Changed
 
-- Migrated specific styles from the main SCSS file to it's component's file
+- Migrated specific styles from the main SCSS file to its component file
 
 ## [1.3.2] - 2024-04-24
 
