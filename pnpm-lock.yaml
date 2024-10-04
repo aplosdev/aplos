@@ -22,7 +22,7 @@ importers:
         version: 1.0.3
       sass:
         specifier: ^1.79.3
-        version: 1.79.3
+        version: 1.79.4
     devDependencies:
       '@eslint/js':
         specifier: ^9.9.0
@@ -1110,6 +1110,11 @@ packages:
     engines: {node: '>=14.0.0'}
     hasBin: true
 
+  sass@1.79.4:
+    resolution: {integrity: sha512-K0QDSNPXgyqO4GZq2HO5Q70TLxTH6cIT59RdoCHMivrC8rqzaTw5ab9prjz9KUN1El4FLXrBXJhik61JR4HcGg==}
+    engines: {node: '>=14.0.0'}
+    hasBin: true
+
   search-insights@2.14.0:
     resolution: {integrity: sha512-OLN6MsPMCghDOqlCtsIsYgtsC0pnwVTyT9Mu6A3ewOj1DxvzZF6COrn2g86E/c05xbktB0XN04m/t1Z+n+fTGw==}
 
@@ -1411,7 +1416,7 @@ snapshots:
 
   '@aplosdev/boosts@https://codeload.github.com/aplosdev/boosts/tar.gz/b66e8cabd2421f8035e5def56bbeb071578d3dc8':
     dependencies:
-      sass: 1.79.3
+      sass: 1.79.4
 
   '@babel/helper-string-parser@7.24.8': {}
 
@@ -2358,6 +2363,12 @@ snapshots:
       queue-microtask: 1.2.3
 
   sass@1.79.3:
+    dependencies:
+      chokidar: 4.0.0
+      immutable: 4.3.7
+      source-map-js: 1.2.1
+
+  sass@1.79.4:
     dependencies:
       chokidar: 4.0.0
       immutable: 4.3.7
