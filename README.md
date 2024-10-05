@@ -57,7 +57,6 @@ This project is under the MIT license:
 - **No Usage Restrictions**: There are no restrictions on the technologies or fields of use, giving you maximum flexibility.
 - **No Royalties**: You are not required to pay any royalties or fees for using, modifying, or distributing the software.
 
-
 ## Contributing
 
 If you want to contribute to Aplós, you can check the [Contributing](https://aplos.gxbs.me/contributing) page in the documentation, and you can also check the [Code of Conduct](https://aplos.gxbs.me/contributing/code-of-conduct) to understand the rules and guidelines.
