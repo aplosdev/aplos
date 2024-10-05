@@ -4,7 +4,7 @@ layout: helpful
 
 # Contributing
 
-Thank you for considering contributing to Aplós! This project is open-source and welcomes contributions from everyone. By participating, you are expected to uphold this [code of conduct](https://github.com/aplosdev/aplos/blob/main/CODE_OF_CONDUCT.md).
+Thank you for considering contributing to Aplós! This project is open-source and welcomes contributions from everyone. By participating, you are expected to uphold this [code of conduct](/contributing/code-of-conduct).
 
 ## Getting Started
 
