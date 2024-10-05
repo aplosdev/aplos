@@ -1,8 +1,6 @@
 <div align="center">
 <h1>Aplós</h1>
-
-A sleek, contemporary, and purposefully designed VitePress theme
-
+<p>A sleek, contemporary, and purposefully designed VitePress theme</p>s
 </div>
 
 > [!IMPORTANT]
@@ -47,9 +45,22 @@ npm i aplos
 
 You can check the next steps by looking at the [Guide](https://aplos.gxbs.me/guide/) I made.
 
+## Know your rights
+
+This project is under the MIT license:
+
+- **Freedom to Use**: You have the right to use the software for any purpose, whether it's personal, academic, or commercial.
+- **Freedom to Modify**: You can modify the source code of the software to suit your needs or preferences.
+- **Freedom to Distribute**: You have the right to distribute the software, whether in its original form or modified, to others.
+- **Collaboration**: You can collaborate with others on the software's development and improvement.
+- **No License Compatibility Issues**: You can combine the MIT-licensed software with other software, even if they use different licenses.
+- **No Usage Restrictions**: There are no restrictions on the technologies or fields of use, giving you maximum flexibility.
+- **No Royalties**: You are not required to pay any royalties or fees for using, modifying, or distributing the software.
+
+
 ## Contributing
 
-If you want to contribute to Aplós, you can check the [Contributing](https://aplos.gxbs.me/contributing) page in the documentation.
+If you want to contribute to Aplós, you can check the [Contributing](https://aplos.gxbs.me/contributing) page in the documentation, and you can also check the [Code of Conduct](https://aplos.gxbs.me/contributing/code-of-conduct) to understand the rules and guidelines.
 
 ## Release Cycle
 
