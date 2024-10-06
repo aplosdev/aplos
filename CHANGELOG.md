@@ -84,6 +84,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - Move the details of the article to the bottom of the article's card
 
+- Small changes to `mark` element by making smaller and more padding
+
 ---
 
 ### Development

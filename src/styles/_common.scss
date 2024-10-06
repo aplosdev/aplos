@@ -132,7 +132,8 @@ mark {
   margin: 0;
   border-radius: var(--rounded-sm);
   background-color: var(--color-background-second);
-  padding: 0.125rem 0.375rem 0.1875rem 0.375rem;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.875rem;
   color: var(--color-accent);
 }
 
