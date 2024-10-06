@@ -69,9 +69,10 @@ const { theme } = useData();
 
   nav {
     margin: 0 auto 1rem;
-    border-radius: 1.375rem;
-    background-color: var(--color-background-second);
-    padding: 0.25rem;
+    border: 0.4px solid var(--color-border);
+    border-radius: 2.5rem;
+    background-color: var(--color-header);
+    padding: 0.6625rem 2.5625rem;
     width: fit-content;
     max-width: min(var(--content-width) / 1.5, 100%);
 
@@ -80,9 +81,10 @@ const { theme } = useData();
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      gap: 0.25rem;
+      gap: 0.7rem;
       margin: 0;
       padding: 0;
+      list-style: none;
       width: min(var(--content-width) / 1.5, 100%);
 
       li {
@@ -92,14 +94,15 @@ const { theme } = useData();
 
         a {
           transition: var(--transition);
+          background-color: transparent !important;
           border-radius: 999rem;
-          padding: 0.5rem 0.75rem;
-          color: var(--color-accent);
+          color: var(--color-text-secondary);
+          font-weight: 600;
+          letter-spacing: -0.015rem;
           text-decoration: none;
 
           &:hover {
-            background-color: var(--color-accent);
-            color: var(--color-background);
+            color: var(--color-accent);
           }
 
           &:active {

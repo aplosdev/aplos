@@ -62,6 +62,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - Make grammar mistakes to have a red underline
 
+- Make the footer navigation look similar to the header navigation
+
 - Hovering the navigation island will make it slightly bigger
 
 - Hovering the navigation title will make it turn into the color accent rather than adding an underline
