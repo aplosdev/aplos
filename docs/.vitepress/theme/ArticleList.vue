@@ -20,7 +20,10 @@
         class="post"
         :class="post.type"
       >
-      <a :href="`posts/${post.title.toLowerCase().replace(/\s+/g, '-')}.html`" class="full-link"></a>
+        <a
+          :href="`posts/${post.title.toLowerCase().replace(/\s+/g, '-')}.html`"
+          class="full-link"
+        ></a>
         <h3>
           <a
             :href="`posts/${post.title
