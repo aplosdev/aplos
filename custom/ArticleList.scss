@@ -14,7 +14,7 @@
     grid-template-columns: repeat(auto-fill, minmax(15.625rem, 1fr));
   }
 
-  article {
+  .post {
     display: flex;
     flex-direction: column;
     gap: 0.625rem;
@@ -22,6 +22,14 @@
     border-radius: 0.5rem;
     background-color: var(--color-background-second);
     padding: 1.25rem;
+
+    > .full-link {
+      position: absolute;
+      inset: 0;
+      border-start-end-radius: 2.125rem;
+      border-end-end-radius: 1.8125rem;
+      cursor: pointer;
+    }
 
     &:first-child {
       background-color: var(--color-background-mute);
@@ -33,10 +41,16 @@
 
       a {
         font-weight: 800;
-        letter-spacing: normal;
+        letter-spacing: -.05em;
 
         &::after {
           display: none;
+        }
+
+        &:hover {
+          &::after {
+            display: block;
+          }
         }
       }
     }
