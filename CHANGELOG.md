@@ -84,7 +84,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - Move the details of the article to the bottom of the article's card
 
-- Small changes to `mark` element by making smaller and more padding
+- Small changes to the `mark` element by making smaller and more padding
 
 ---
 
@@ -106,13 +106,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - Bump `vue` from 3.4.35 to 3.5.11 (https://github.com/aplosdev/aplos/pull/47, https://github.com/aplosdev/aplos/pull/61, https://github.com/aplosdev/aplos/pull/66, https://github.com/aplosdev/aplos/pull/70, https://github.com/aplosdev/aplos/pull/76, https://github.com/aplosdev/aplos/pull/79)
 
-- Bump `globals` from 15.8.0 to 15.10.0 (https://github.com/aplosdev/aplos/pull/39, https://github.com/aplosdev/aplos/pull/78)
+- Bump `globals` from 15.8.0 to 15.11.0 (https://github.com/aplosdev/aplos/pull/39, https://github.com/aplosdev/aplos/pull/78, https://github.com/aplosdev/aplos/pull/83)
 
-- Bump `sass` from 1.77.8 to 1.79.4 (https://github.com/aplosdev/aplos/pull/59, https://github.com/aplosdev/aplos/pull/68, https://github.com/aplosdev/aplos/pull/77)
+- Bump `sass` from 1.77.8 to 1.79.5 (https://github.com/aplosdev/aplos/pull/59, https://github.com/aplosdev/aplos/pull/68, https://github.com/aplosdev/aplos/pull/77, https://github.com/aplosdev/aplos/pull/84)
 
-- Bump `@eslint/js` from 9.9.0 to 9.11.1 (https://github.com/aplosdev/aplos/pull/51, https://github.com/aplosdev/aplos/pull/62, https://github.com/aplosdev/aplos/pull/73)
+- Bump `@eslint/js` from 9.9.0 to 9.12.0 (https://github.com/aplosdev/aplos/pull/51, https://github.com/aplosdev/aplos/pull/62, https://github.com/aplosdev/aplos/pull/73, https://github.com/aplosdev/aplos/pull/81)
 
-- Bump `eslint` from 9.8.0 to 9.10.1 (https://github.com/aplosdev/aplos/pull/53, https://github.com/aplosdev/aplos/pull/63, https://github.com/aplosdev/aplos/pull/72)
+- Bump `eslint` from 9.8.0 to 9.12.0 (https://github.com/aplosdev/aplos/pull/53, https://github.com/aplosdev/aplos/pull/63, https://github.com/aplosdev/aplos/pull/72, https://github.com/aplosdev/aplos/pull/82)
 
 - Bump `vitepress` from 1.3.1 to 1.3.4 for docs (https://github.com/aplosdev/aplos/pull/42, https://github.com/aplosdev/aplos/pull/49, https://github.com/aplosdev/aplos/pull/52, https://github.com/aplosdev/aplos/pull/54)
 
@@ -121,6 +121,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - Bump `@mdit/plugin-figure` from 0.13.0 to 0.13.1 (https://github.com/aplosdev/aplos/pull/56)
 
 - Bump `eslint-plugin-vue` from 9.27.0 to 9.28.0 (https://github.com/aplosdev/aplos/pull/57)
+
+- Bump `non.geist` from 1.0.3 to 1.0.4 (https://github.com/aplosdev/aplos/pull/85)
 
 #### Documentation
 
