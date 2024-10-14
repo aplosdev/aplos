@@ -19,7 +19,7 @@ importers:
         version: 4.0.2
       non.geist:
         specifier: ^1.0.3
-        version: 1.0.3
+        version: 1.0.4
       sass:
         specifier: ^1.79.3
         version: 1.79.5
@@ -1091,8 +1091,8 @@ packages:
   node-addon-api@7.1.1:
     resolution: {integrity: sha512-5m3bsyrjFWE1xf7nz7YXdN4udnVtXK6/Yfgn5qnahL6bCkf2yKt4k3nuTKAtT4r3IG8JNR2ncsIMdZuAzJjHQQ==}
 
-  non.geist@1.0.3:
-    resolution: {integrity: sha512-KTT38rJKUTijUZtwqZR38OJeHDupfTkl1JoVNVVoQ0vV41Zjax/BMULWFyXtsK5YCd1SU2ofFSJooD8nWClXcA==}
+  non.geist@1.0.4:
+    resolution: {integrity: sha512-2spmLTgz5ipZrFGLiI1YkiHb8Yit0yFySPvWzal3wCwCFilMFQQ/Jwwz4lcEatwIKUpOeMYwyFwP8MJ8EVKqGA==}
 
   nth-check@2.1.1:
     resolution: {integrity: sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==}
@@ -2397,7 +2397,7 @@ snapshots:
 
   node-addon-api@7.1.1: {}
 
-  non.geist@1.0.3: {}
+  non.geist@1.0.4: {}
 
   nth-check@2.1.1:
     dependencies:
