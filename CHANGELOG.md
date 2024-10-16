@@ -104,7 +104,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 #### Dependency(ies)
 
-- Bump `vue` from 3.4.35 to 3.5.11 (https://github.com/aplosdev/aplos/pull/47, https://github.com/aplosdev/aplos/pull/61, https://github.com/aplosdev/aplos/pull/66, https://github.com/aplosdev/aplos/pull/70, https://github.com/aplosdev/aplos/pull/76, https://github.com/aplosdev/aplos/pull/79)
+- Bump `vue` from 3.4.35 to 3.5.12 (https://github.com/aplosdev/aplos/pull/47, https://github.com/aplosdev/aplos/pull/61, https://github.com/aplosdev/aplos/pull/66, https://github.com/aplosdev/aplos/pull/70, https://github.com/aplosdev/aplos/pull/76, https://github.com/aplosdev/aplos/pull/79, https://github.com/aplosdev/aplos/pull/87)
 
 - Bump `globals` from 15.8.0 to 15.11.0 (https://github.com/aplosdev/aplos/pull/39, https://github.com/aplosdev/aplos/pull/78, https://github.com/aplosdev/aplos/pull/83)
 
@@ -120,7 +120,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - Bump `@mdit/plugin-figure` from 0.13.0 to 0.13.1 (https://github.com/aplosdev/aplos/pull/56)
 
-- Bump `eslint-plugin-vue` from 9.27.0 to 9.28.0 (https://github.com/aplosdev/aplos/pull/57)
+- Bump `eslint-plugin-vue` from 9.27.0 to 9.29.0 (https://github.com/aplosdev/aplos/pull/57, https://github.com/aplosdev/aplos/pull/86)
 
 - Bump `non.geist` from 1.0.3 to 1.0.4 (https://github.com/aplosdev/aplos/pull/85)
 
