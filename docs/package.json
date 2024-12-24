@@ -6,7 +6,7 @@
     "preview": "vitepress preview"
   },
   "dependencies": {
-    "@mdit/plugin-figure": "^0.13.1",
+    "@mdit/plugin-figure": "^0.14.0",
     "@mdit/plugin-tasklist": "^0.14.0",
     "aplos": "workspace:*"
   },
