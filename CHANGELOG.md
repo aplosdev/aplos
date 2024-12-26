@@ -121,7 +121,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - Bump `@mdit/plugin-figure` from 0.13.0 to 0.13.1 (https://github.com/aplosdev/aplos/pull/56)
 
-- Bump `eslint-plugin-vue` from 9.27.0 to 9.30.0 (https://github.com/aplosdev/aplos/pull/57, https://github.com/aplosdev/aplos/pull/86, https://github.com/aplosdev/aplos/pull/91, https://github.com/aplosdev/aplos/pull/95)
+- Bump `eslint-plugin-vue` from 9.27.0 to 9.32.0 (https://github.com/aplosdev/aplos/pull/57, https://github.com/aplosdev/aplos/pull/86, https://github.com/aplosdev/aplos/pull/91, https://github.com/aplosdev/aplos/pull/95, https://github.com/aplosdev/aplos/pull/111)
 
 - Bump `non.geist` from 1.0.3 to 1.0.4 (https://github.com/aplosdev/aplos/pull/85)
 
