@@ -51,10 +51,10 @@ The project is licensed under [The MIT License](LICENSE)
 
 ## Acknowledgements
 
-- [Duckquill](https://daudix.codeberg.page/duckquill), from where I got inspired to create this project (and many ideas are from there)
-- [Inter](https://rsms.me/inter/), which is the font used in **all** _Aeolus_ apps.
-- [Source Code Pro](https://adobe-fonts.github.io/source-code-pro/), used for code snippets.
-- [Noto Color Emoji](https://fonts.google.com/noto/specimen/Noto+Color+Emoji), used for all emojis.
+- [Duckquill](https://duckquill.daudix.one), from where I got inspired to create this project (and many ideas are from there)
+- [Hari Rana](https://tesk.page/) for style-related feedback and suggestions
+- [Inter](https://rsms.me/inter/), used for all Sans Serif text.
+- [Geist Mono](https://vercel.com/font/), used for all monospaced text.
 - [VitePress](https://vitepress.dev), which is used to power Aplós.
 - Everyone that supported the project.
 
