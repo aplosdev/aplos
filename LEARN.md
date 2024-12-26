@@ -34,7 +34,7 @@ pnpm run docs:build
 
 ## Configuration & Usage
 
-Refer to the documentation at https://aplos.gxbs.me/guide/ for detailed information on configuration and usage.
+Refer to the documentation at https://aplos.gxbs.dev/guide/ for detailed information on configuration and usage.
 
 ## Contributing
 
@@ -46,8 +46,8 @@ The project is licensed under [The MIT License](LICENSE)
 
 ## Resources
 
-- [Aplós Documentation](https://aplos.gxbs.me/guide/)
-- [Aplós Demo](https://aplos.gxbs.me/demo/)
+- [Aplós Documentation](https://aplos.gxbs.dev/guide/)
+- [Aplós Demo](https://aplos.gxbs.dev/demo/)
 
 ## Acknowledgements
 
