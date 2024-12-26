@@ -11,7 +11,7 @@ Ensure that Node and NPM/PNPM are installed on your machine.
 Clone the repository using the following command:
 
 ```bash
-git clone https://github.com/GabsEdits/aplos.git
+git clone https://github.com/aplosdev/aplos.git
 ```
 
 Make sure to have PNPM (or NPM) installed, then install dependencies:
@@ -23,13 +23,13 @@ pnpm install
 To run a development server, use:
 
 ```bash
-pnpm run pages:dev
+pnpm run docs:dev
 ```
 
 To build the project run:
 
 ```bash
-pnpm run pages:build
+pnpm run docs:build
 ```
 
 ## Configuration & Usage
