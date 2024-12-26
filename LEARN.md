@@ -60,4 +60,4 @@ The project is licensed under [The MIT License](LICENSE)
 
 ## Contact
 
-In case of anything please contact me through [Email](mailto:me@gabs.eu.org) or [any of the links provided here](https://gabs.eu.org/findme)
+In case of anything please contact me through [Email](mailto:me@gxbs.dev) or [any of the links provided here](https://gxbs.dev/find)
