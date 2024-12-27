@@ -105,7 +105,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 #### Dependencies
 
-- Bump `vue` from 3.4.35 to 3.5.12 (https://github.com/aplosdev/aplos/pull/47, https://github.com/aplosdev/aplos/pull/61, https://github.com/aplosdev/aplos/pull/66, https://github.com/aplosdev/aplos/pull/70, https://github.com/aplosdev/aplos/pull/76, https://github.com/aplosdev/aplos/pull/79, https://github.com/aplosdev/aplos/pull/87)
+- Bump `vue` from 3.4.35 to 3.5.13 (https://github.com/aplosdev/aplos/pull/47, https://github.com/aplosdev/aplos/pull/61, https://github.com/aplosdev/aplos/pull/66, https://github.com/aplosdev/aplos/pull/70, https://github.com/aplosdev/aplos/pull/76, https://github.com/aplosdev/aplos/pull/79, https://github.com/aplosdev/aplos/pull/87, https://github.com/aplosdev/aplos/pull/123)
 
 - Bump `globals` from 15.8.0 to 15.12.0 (https://github.com/aplosdev/aplos/pull/39, https://github.com/aplosdev/aplos/pull/78, https://github.com/aplosdev/aplos/pull/83, https://github.com/aplosdev/aplos/pull/102)
 
