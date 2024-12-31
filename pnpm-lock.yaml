@@ -16,7 +16,7 @@ importers:
         version: 12.1.1
       inter-ui:
         specifier: ^4.0.2
-        version: 4.0.2
+        version: 4.1.0
       non.geist:
         specifier: ^1.0.3
         version: 1.0.4
@@ -979,8 +979,8 @@ packages:
     resolution: {integrity: sha512-JmXMZ6wuvDmLiHEml9ykzqO6lwFbof0GG4IkcGaENdCRDDmMVnny7s5HsIgHCbaq0w2MyPhDqkhTUgS2LU2PHA==}
     engines: {node: '>=0.8.19'}
 
-  inter-ui@4.0.2:
-    resolution: {integrity: sha512-YmfzwEtzuVzEenQwSB/tmmqi/A0a2GnFk4mG4ZFULXiO5DNk0fJWiO3o9i1sdVKuMVGx9iiNQnCq8ghWZJVVHw==}
+  inter-ui@4.1.0:
+    resolution: {integrity: sha512-lUJ5YLtpj7jWsrhTbN5w32MLOqISGFGOTMRNn+IGhLrbt67z5yvmBRoqpLCWLVlJ+l7kqnH6su4meEqvLMfAAA==}
     engines: {node: '>=16.0.0'}
 
   is-extglob@2.1.1:
@@ -2249,7 +2249,7 @@ snapshots:
 
   imurmurhash@0.1.4: {}
 
-  inter-ui@4.0.2: {}
+  inter-ui@4.1.0: {}
 
   is-extglob@2.1.1: {}
 
