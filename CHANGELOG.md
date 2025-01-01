@@ -125,6 +125,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - Bump `non.geist` from 1.0.3 to 1.0.4 (https://github.com/aplosdev/aplos/pull/85)
 
+- Bump `inter-ui` from 4.0.2 to 4.1.0 (https://github.com/aplosdev/aplos/pull/127)
+
 #### Documentation
 
 - Add plugins list (Using the upcoming Sencilla plugin)
