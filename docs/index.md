@@ -2,6 +2,9 @@
 pageClass: home
 ---
 
+> [!WARNING] Warning
+> **Aplós has reached maintenance mode** and will no longer receive feature updates. The project will continue to get minor updates for dependencies and bug fixes. While its future is uncertain, there are plans to evolve Aplós into a theme for [Steno](https://github.com/stenodevs/steno), a new static site generator. This may involve a rebranding and structural changes, blending elements of Aplós and Duckquill.
+
 # Aplós {.center #title}
 
 A Sleek, Contemporary, and Purposefully Designed Vitepress Theme.\
