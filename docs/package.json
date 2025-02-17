@@ -12,6 +12,6 @@
   },
   "devDependencies": {
     "sass": "^1.85.0",
-    "vitepress": "^1.5.0"
+    "vitepress": "^1.6.3"
   }
 }
