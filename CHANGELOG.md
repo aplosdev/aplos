@@ -111,7 +111,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - Bump `sass` from 1.77.8 to 1.85.0 (https://github.com/aplosdev/aplos/pull/59, https://github.com/aplosdev/aplos/pull/68, https://github.com/aplosdev/aplos/pull/77, https://github.com/aplosdev/aplos/pull/84, https://github.com/aplosdev/aplos/pull/93, https://github.com/aplosdev/aplos/pull/94, https://github.com/aplosdev/aplos/pull/101, https://github.com/aplosdev/aplos/pull/118, https://github.com/aplosdev/aplos/pull/119, https://github.com/aplosdev/aplos/pull/129, https://github.com/aplosdev/aplos/pull/144, https://github.com/aplosdev/aplos/pull/152, https://github.com/aplosdev/aplos/pull/153)
 
-- Bump `@eslint/js` from 9.9.0 to 9.13.0 (https://github.com/aplosdev/aplos/pull/51, https://github.com/aplosdev/aplos/pull/62, https://github.com/aplosdev/aplos/pull/73, https://github.com/aplosdev/aplos/pull/81, https://github.com/aplosdev/aplos/pull/92)
+- Bump `@eslint/js` from 9.9.0 to 9.21.0 (https://github.com/aplosdev/aplos/pull/51, https://github.com/aplosdev/aplos/pull/62, https://github.com/aplosdev/aplos/pull/73, https://github.com/aplosdev/aplos/pull/81, https://github.com/aplosdev/aplos/pull/92, https://github.com/aplosdev/aplos/pull/157)
 
 - Bump `eslint` from 9.8.0 to 9.20.1 (https://github.com/aplosdev/aplos/pull/53, https://github.com/aplosdev/aplos/pull/63, https://github.com/aplosdev/aplos/pull/72, https://github.com/aplosdev/aplos/pull/82, https://github.com/aplosdev/aplos/pull/90, https://github.com/aplosdev/aplos/pull/99, https://github.com/aplosdev/aplos/pull/120, https://github.com/aplosdev/aplos/pull/149)
 
