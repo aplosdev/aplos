@@ -22,7 +22,7 @@ importers:
         version: 1.0.4
       sass:
         specifier: ^1.79.3
-        version: 1.85.0
+        version: 1.85.1
     devDependencies:
       '@eslint/js':
         specifier: ^9.9.0
@@ -56,11 +56,11 @@ importers:
         version: link:..
     devDependencies:
       sass:
-        specifier: ^1.85.0
-        version: 1.85.0
+        specifier: ^1.85.1
+        version: 1.85.1
       vitepress:
         specifier: ^1.5.0
-        version: 1.6.3(@algolia/client-search@5.20.3)(postcss@8.5.2)(sass@1.85.0)(search-insights@2.14.0)
+        version: 1.6.3(@algolia/client-search@5.20.3)(postcss@8.5.2)(sass@1.85.1)(search-insights@2.14.0)
 
 packages:
 
@@ -1197,8 +1197,8 @@ packages:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
     engines: {node: '>=6'}
 
-  readdirp@4.1.1:
-    resolution: {integrity: sha512-h80JrZu/MHUZCyHu5ciuoI0+WxsCxzxJTILn6Fs8rxSnFPh+UVHYfeIxK1nVGugMqkfC4vJcBOYbkfkwYK0+gw==}
+  readdirp@4.1.2:
+    resolution: {integrity: sha512-GDhwkLfywWL2s6vEjyhri+eXmfH6j1L7JE27WhqLeYzoh/A3DBaYGEj2H/HFZCn/kMfim73FXxEJTw06WtxQwg==}
     engines: {node: '>= 14.18.0'}
 
   regex-recursion@6.0.2:
@@ -1222,8 +1222,8 @@ packages:
     engines: {node: '>=18.0.0', npm: '>=8.0.0'}
     hasBin: true
 
-  sass@1.85.0:
-    resolution: {integrity: sha512-3ToiC1xZ1Y8aU7+CkgCI/tqyuPXEmYGJXO7H4uqp0xkLXUqp88rQQ4j1HmP37xSJLbCJPaIiv+cT1y+grssrww==}
+  sass@1.85.1:
+    resolution: {integrity: sha512-Uk8WpxM5v+0cMR0XjX9KfRIacmSG86RH4DCCZjLU2rFh5tyutt9siAXJ7G+YfxQ99Q6wrRMbMlVl6KqUms71ag==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -1507,7 +1507,7 @@ snapshots:
 
   '@aplosdev/boosts@https://codeload.github.com/aplosdev/boosts/tar.gz/b66e8cabd2421f8035e5def56bbeb071578d3dc8':
     dependencies:
-      sass: 1.85.0
+      sass: 1.85.1
 
   '@babel/helper-string-parser@7.24.8': {}
 
@@ -1885,9 +1885,9 @@ snapshots:
 
   '@ungap/structured-clone@1.3.0': {}
 
-  '@vitejs/plugin-vue@5.2.1(vite@5.4.14(sass@1.85.0))(vue@3.5.13)':
+  '@vitejs/plugin-vue@5.2.1(vite@5.4.14(sass@1.85.1))(vue@3.5.13)':
     dependencies:
-      vite: 5.4.14(sass@1.85.0)
+      vite: 5.4.14(sass@1.85.1)
       vue: 3.5.13
 
   '@vue/compiler-core@3.5.13':
@@ -2055,7 +2055,7 @@ snapshots:
 
   chokidar@4.0.3:
     dependencies:
-      readdirp: 4.1.1
+      readdirp: 4.1.2
 
   color-convert@2.0.1:
     dependencies:
@@ -2475,7 +2475,7 @@ snapshots:
 
   punycode@2.3.1: {}
 
-  readdirp@4.1.1: {}
+  readdirp@4.1.2: {}
 
   regex-recursion@6.0.2:
     dependencies:
@@ -2516,7 +2516,7 @@ snapshots:
       '@rollup/rollup-win32-x64-msvc': 4.34.8
       fsevents: 2.3.3
 
-  sass@1.85.0:
+  sass@1.85.1:
     dependencies:
       chokidar: 4.0.3
       immutable: 5.0.3
@@ -2622,16 +2622,16 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.2
 
-  vite@5.4.14(sass@1.85.0):
+  vite@5.4.14(sass@1.85.1):
     dependencies:
       esbuild: 0.21.5
       postcss: 8.5.2
       rollup: 4.34.8
     optionalDependencies:
       fsevents: 2.3.3
-      sass: 1.85.0
+      sass: 1.85.1
 
-  vitepress@1.6.3(@algolia/client-search@5.20.3)(postcss@8.5.2)(sass@1.85.0)(search-insights@2.14.0):
+  vitepress@1.6.3(@algolia/client-search@5.20.3)(postcss@8.5.2)(sass@1.85.1)(search-insights@2.14.0):
     dependencies:
       '@docsearch/css': 3.8.2
       '@docsearch/js': 3.8.2(@algolia/client-search@5.20.3)(search-insights@2.14.0)
@@ -2640,7 +2640,7 @@ snapshots:
       '@shikijs/transformers': 2.4.2
       '@shikijs/types': 2.4.2
       '@types/markdown-it': 14.1.2
-      '@vitejs/plugin-vue': 5.2.1(vite@5.4.14(sass@1.85.0))(vue@3.5.13)
+      '@vitejs/plugin-vue': 5.2.1(vite@5.4.14(sass@1.85.1))(vue@3.5.13)
       '@vue/devtools-api': 7.7.2
       '@vue/shared': 3.5.13
       '@vueuse/core': 12.7.0
@@ -2649,7 +2649,7 @@ snapshots:
       mark.js: 8.11.1
       minisearch: 7.1.1
       shiki: 2.4.2
-      vite: 5.4.14(sass@1.85.0)
+      vite: 5.4.14(sass@1.85.1)
       vue: 3.5.13
     optionalDependencies:
       postcss: 8.5.2
