@@ -115,7 +115,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - Bump `eslint` from 9.8.0 to 9.20.1 (https://github.com/aplosdev/aplos/pull/53, https://github.com/aplosdev/aplos/pull/63, https://github.com/aplosdev/aplos/pull/72, https://github.com/aplosdev/aplos/pull/82, https://github.com/aplosdev/aplos/pull/90, https://github.com/aplosdev/aplos/pull/99, https://github.com/aplosdev/aplos/pull/120, https://github.com/aplosdev/aplos/pull/149)
 
-- Bump `vitepress` from 1.3.1 to 1.6.3 for docs (https://github.com/aplosdev/aplos/pull/42, https://github.com/aplosdev/aplos/pull/49, https://github.com/aplosdev/aplos/pull/52, https://github.com/aplosdev/aplos/pull/54, https://github.com/aplosdev/aplos/pull/98, https://github.com/aplosdev/aplos/pull/103, https://github.com/aplosdev/aplos/pull/116, https://github.com/aplosdev/aplos/pull/124, https://github.com/aplosdev/aplos/pull/146)
+- Bump `vitepress` from 1.3.1 to 1.6.3 for docs (https://github.com/aplosdev/aplos/pull/42, https://github.com/aplosdev/aplos/pull/49, https://github.com/aplosdev/aplos/pull/52, https://github.com/aplosdev/aplos/pull/54, https://github.com/aplosdev/aplos/pull/98, https://github.com/aplosdev/aplos/pull/103, https://github.com/aplosdev/aplos/pull/116, https://github.com/aplosdev/aplos/pull/124, https://github.com/aplosdev/aplos/pull/141, https://github.com/aplosdev/aplos/pull/146)
 
 - Bump `@mdit/plugin-tasklist` from 0.13.0 to 0.16.0 (https://github.com/aplosdev/aplos/pull/55, https://github.com/aplosdev/aplos/pull/109, https://github.com/aplosdev/aplos/pull/133, https://github.com/aplosdev/aplos/pull/136)
 
