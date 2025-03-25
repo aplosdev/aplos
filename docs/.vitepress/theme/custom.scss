@@ -178,3 +178,77 @@ input[type="checkbox"] {
 }
 
 */
+
+.usedby ul {
+   margin: 0;
+   padding: 0;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+
+   @media screen and (max-width: 37.5rem) {
+     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+   }
+
+   min-width: 100%;
+   gap: 0.625rem;
+
+   li {
+     list-style: none;
+     text-align: center;
+
+     a {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       height: 100%;
+       padding: 1.25rem;
+       text-align: center;
+       background-color: var(--color-background-second);
+       border-radius: 0.5rem;
+       transition:
+         transform 0.3s ease 0s,
+         background-color 0.3s ease 0s;
+
+       @media (prefers-color-scheme: light) {
+         &:hover {
+           background-color: var(--color-background-mute);
+         }
+       }
+
+       @media (prefers-color-scheme: dark) {
+         transition: all 0.3s;
+
+         &:hover {
+           filter: grayscale(0) invert(0);
+           background-color: rgb(255, 255, 255);
+
+           img {
+             filter: grayscale(0) invert(0);
+             box-shadow: none;
+             transform: none;
+           }
+         }
+
+         img {
+           filter: grayscale(1) invert(1);
+           transition: all 0.3s;
+           margin: 1.25rem;
+           width: 12.5rem;
+           border-radius: 0;
+         }
+       }
+
+       img {
+         margin: 1.25rem;
+         width: 12.5rem;
+         border-radius: 0;
+
+         &:hover {
+           box-shadow: none;
+           transform: none;
+           cursor: pointer;
+         }
+       }
+     }
+   }
+ }
