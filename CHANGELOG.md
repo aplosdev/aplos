@@ -127,7 +127,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - Bump `inter-ui` from 4.0.2 to 4.1.0 (https://github.com/aplosdev/aplos/pull/127)
 
-- Bump `prettier` from 3.3.3 to 3.5.0 (https://github.com/aplosdev/aplos/pull/128, https://github.com/aplosdev/aplos/pull/150)
+- Bump `prettier` from 3.3.3 to 3.5.3 (https://github.com/aplosdev/aplos/pull/128, https://github.com/aplosdev/aplos/pull/150, https://github.com/aplosdev/aplos/pull/161)
 
 #### Documentation
 
