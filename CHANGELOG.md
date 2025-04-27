@@ -135,7 +135,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [2.5.0] - 2024-07-21
 
-![Bento Grid of version 2.5.0](https://aplos.gxbs.me/images/v2-5-0.png)
+![Bento Grid of version 2.5.0](https://aplos.gxbs.dev/images/v2-5-0.png)
 
 ### Added
 
@@ -193,7 +193,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [2.4.0] - 2024-07-06
 
-![Bento Grid of version 2.4.0](https://aplos.gxbs.me/images/v2-4-0.png)
+![Bento Grid of version 2.4.0](https://aplos.gxbs.dev/images/v2-4-0.png)
 
 ### Added
 
@@ -241,7 +241,7 @@ Small dependency updates that were missed in the last release.
 
 ## [2.3.0] - 2024-07-01
 
-![Bento Grid of version 2.3.0](https://aplos.gxbs.me/images/v2-3-0.png)
+![Bento Grid of version 2.3.0](https://aplos.gxbs.dev/images/v2-3-0.png)
 
 ### Added
 
