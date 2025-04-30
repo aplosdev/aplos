@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "@mdit/plugin-figure": "^0.16.0",
-    "@mdit/plugin-tasklist": "^0.16.0",
+    "@mdit/plugin-tasklist": "^0.17.0",
     "aplos": "workspace:*"
   },
   "devDependencies": {
