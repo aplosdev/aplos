@@ -45,12 +45,16 @@ Once you've installed the package, you will need to follow the [Guide](/guide/#p
 
 If you want to contribute to Aplós, you can check the [Contributing](/contributing) page in the documentation. {.local-link}
 
-## Sponsors
+## Sponsor
 
 <section class="usedby">
-
-- [![](https://tuta.com/assets/Logo_text.LuqsxYBF_Z2cigi2.webp#no-border#static)](https://tuta.com)
-
+  <ul>
+    <li>
+      <a href="https://tuta.com" target="_blank" rel="noreferrer">
+        <img src="https://tuta.com/assets/Logo_text.LuqsxYBF_Z2cigi2.webp#no-border#static" alt="Tuta Logo" tabindex="0">
+      </a>
+    </li>
+  </ul>
 </section>
 
 ## Credits & Thanks To
