@@ -133,7 +133,7 @@ export default defineConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          api: 'modern-compiler',
+          api: "modern-compiler",
           additionalData: `
             $color-accent: ${info.accentColor};
             $bg-color-code-l: #ffffff;
