@@ -6,20 +6,20 @@
  * A VitePress theme (https://vitepress.dev) & inspired by Duckquill (https://duckquill.daudix.one)
  */
 
-@import "common";
-@import "medias";
-@import "typography";
-@import "color";
-@import "variables";
+@use "common";
+@use "medias";
+@use "typography";
+@use "color";
+@use "variables";
 
 /* Components */
 
-@import "components/cards";
-@import "components/semantics";
-@import "components/table";
-@import "components/images";
-@import "components/links";
-@import "components/list";
+@use "components/cards";
+@use "components/semantics";
+@use "components/table";
+@use "components/images";
+@use "components/links";
+@use "components/list";
 
 /* Plugins */
 
