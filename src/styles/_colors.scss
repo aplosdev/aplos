@@ -1,5 +1,5 @@
 @use "sass:color";
-@use './variables-color' as *;
+@use "./variables-color" as *;
 
 $color-accent-l: color.scale($color-accent, $lightness: -60%) !default;
 $color-accent-d: color.scale($color-accent, $lightness: 60%) !default;
