@@ -27,15 +27,18 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
     margin: 0;
+    gap: 0.625rem;
 
     @media screen and (max-width: 37.5rem) {
       grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
     }
 
     & {
-      gap: 0.625rem;
       padding: 0;
-      min-width: 100%;
+
+      & {
+        min-width: 100%;
+      }
     }
 
     li {
@@ -184,13 +187,15 @@ input[type="checkbox"] {
   padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  gap: 0.625rem;
 
   @media screen and (max-width: 37.5rem) {
     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
   }
 
-  min-width: 100%;
-  gap: 0.625rem;
+  & {
+    min-width: 100%;
+  }
 
   li {
     list-style: none;

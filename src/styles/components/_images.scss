@@ -9,7 +9,7 @@
     box-shadow: none;
 
     & {
-      @include roundedNone;
+      @include variables.roundedNone;
     }
   }
 
@@ -18,7 +18,7 @@
     box-shadow: none;
 
     & {
-      @include roundedNone;
+      @include variables.roundedNone;
     }
   }
 }
@@ -29,18 +29,18 @@ img {
     max-width: 100%;
 
     & {
-      @include roundedNone;
+      @include variables.roundedNone;
     }
   }
 
   &[src*="#not-rounded"] {
     & {
-      @include roundedNone;
+      @include variables.roundedNone;
     }
 
     &:hover {
       & {
-        @include roundedNone;
+        @include variables.roundedNone;
       }
     }
   }
@@ -105,14 +105,14 @@ img {
     border: none;
 
     & {
-      @include roundedNone;
+      @include variables.roundedNone;
     }
 
     &:hover {
       box-shadow: none;
       border: 0;
       & {
-        @include roundedNone;
+        @include variables.roundedNone;
       }
     }
   }
@@ -128,7 +128,7 @@ img {
     width: 100vw;
     max-width: 100vw;
     & {
-      @include roundedNone;
+      @include variables.roundedNone;
     }
 
     & {
@@ -152,11 +152,11 @@ img {
 }
 
 a img {
-  @include borderBasic(1px);
+  @include variables.borderBasic(1px);
 
   &:hover {
     cursor: pointer;
-    @include borderBasic(2px);
+    @include variables.borderBasic(2px);
   }
 
   &[src*="#no-border"] {

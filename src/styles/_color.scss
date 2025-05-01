@@ -30,7 +30,7 @@ $bg-color-m-d: color.scale($bg-color-s-d, $lightness: 5%) !default;
 $bg-color-accent-alpha: color.scale($color-accent, $alpha: -60%) !default;
 
 $bg-color-code-l: color.scale($bg-color-l, $lightness: -5%) !default;
-$bg-color-code-d: mix($bg-color-d, $bg-color-s-d, 60%) !default;
+$bg-color-code-d: color.mix($bg-color-d, $bg-color-s-d, 60%) !default;
 
 $nav-bg-l: color.scale(
   $bg-color-s-l,

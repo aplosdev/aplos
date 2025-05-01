@@ -23,7 +23,7 @@ pre {
 
   code {
     border: 0;
-    @include roundedNone;
+    @include variables.roundedNone;
     background-color: transparent;
     padding: 0;
     color: var(--color-text);
@@ -110,7 +110,7 @@ video {
 
 video:hover {
   transform: scale(1.06);
-  @include roundedNone;
+  @include variables.roundedNone;
 }
 
 figcaption {
@@ -124,7 +124,7 @@ figcaption {
 
 hr {
   margin: 1.25rem 5%;
-  @include borderBasic(0.125rem);
+  @include variables.borderBasic(0.125rem);
   border-radius: var(--rounded);
 }
 
