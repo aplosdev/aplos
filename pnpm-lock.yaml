@@ -21,8 +21,8 @@ importers:
         specifier: ^1.0.3
         version: 1.0.4
       sass:
-        specifier: ^1.79.3
-        version: 1.85.1
+        specifier: ^1.87.0
+        version: 1.87.0
     devDependencies:
       '@eslint/js':
         specifier: ^9.9.0
@@ -1221,6 +1221,11 @@ packages:
     engines: {node: '>=14.0.0'}
     hasBin: true
 
+  sass@1.87.0:
+    resolution: {integrity: sha512-d0NoFH4v6SjEK7BoX810Jsrhj7IQSYHAHLi/iSpgqKc7LaIDshFRlSg5LOymf9FqQhxEHs2W5ZQXlvy0KD45Uw==}
+    engines: {node: '>=14.0.0'}
+    hasBin: true
+
   search-insights@2.14.0:
     resolution: {integrity: sha512-OLN6MsPMCghDOqlCtsIsYgtsC0pnwVTyT9Mu6A3ewOj1DxvzZF6COrn2g86E/c05xbktB0XN04m/t1Z+n+fTGw==}
 
@@ -1501,7 +1506,7 @@ snapshots:
 
   '@aplosdev/boosts@https://codeload.github.com/aplosdev/boosts/tar.gz/93dc815823e07632dd3cb02061d1e3ec4603017d':
     dependencies:
-      sass: 1.85.1
+      sass: 1.87.0
 
   '@babel/helper-string-parser@7.24.8': {}
 
@@ -2506,6 +2511,14 @@ snapshots:
       fsevents: 2.3.3
 
   sass@1.85.1:
+    dependencies:
+      chokidar: 4.0.3
+      immutable: 5.0.3
+      source-map-js: 1.2.1
+    optionalDependencies:
+      '@parcel/watcher': 2.5.1
+
+  sass@1.87.0:
     dependencies:
       chokidar: 4.0.3
       immutable: 5.0.3
