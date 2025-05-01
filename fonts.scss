@@ -1,0 +1,32 @@
+$main-font: "Inter", sans-serif;
+$variable-font: "InterVariable", sans-serif;
+
+@mixin fontSetting {
+  --main-mono: "Geist Mono", monospace;
+
+  font-feature-settings:
+    "liga" 1,
+    "calt" 1,
+    "cv05" 1;
+  text-wrap: pretty;
+  scroll-behavior: smooth;
+  font-family: $main-font;
+
+  @supports (font-variation-settings: normal) {
+    font-family: $variable-font;
+  }
+}
+
+:root,
+html,
+body {
+  @include fontSetting;
+}
+
+body {
+  color: var(--color-text);
+  font-weight: 400;
+  font-size: medium;
+  font-synthesis: style;
+  text-rendering: optimizeLegibility;
+}

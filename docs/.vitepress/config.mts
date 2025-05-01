@@ -1,6 +1,9 @@
 import { defineConfig } from "vitepress";
 import { figure } from "@mdit/plugin-figure";
 import { tasklist } from "@mdit/plugin-tasklist";
+import path from 'path';
+
+const __dirname = path.resolve();
 
 const info = {
   title: "Aplós",
@@ -130,13 +133,19 @@ export default defineConfig({
     ssr: {
       noExternal: ["vitepress-plugin-testcomponents"],
     },
+    resolve: {
+      alias: {
+        '@': path.resolve(__dirname, '../src')
+      }
+    },
     css: {
       preprocessorOptions: {
         scss: {
           api: "modern-compiler",
           additionalData: `
-            $color-accent: ${info.accentColor};
-            $bg-color-code-l: #ffffff;
+          @use "@/styles/variables-color" with (
+            $color-accent: ${info.accentColor}
+          );
             `,
         },
       },
