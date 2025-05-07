@@ -88,6 +88,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - Update Aplos link in footer
 
+- Remove the version that is shown hovering over the Aplos link in footer
+
 ---
 
 ### Development
