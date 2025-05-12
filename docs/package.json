@@ -11,7 +11,7 @@
     "aplos": "workspace:*"
   },
   "devDependencies": {
-    "sass": "^1.85.1",
+    "sass": "^1.88.0",
     "vitepress": "^1.6.3"
   }
 }
