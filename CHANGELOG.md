@@ -48,6 +48,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ### Fixed
 
+- Table of Contents going over the content of the page
+
 - The class name for the extra link in the helpful layout
 
 - The skip to content button not being on sites without the navigation island
