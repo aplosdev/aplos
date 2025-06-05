@@ -95,12 +95,13 @@ html {
   -webkit-backdrop-filter: blur(0.625rem);
   position: fixed;
   top: 9.375rem;
-  left: 10%;
+  left: 3%;
   z-index: 9999;
+  background-color: var(--color-header-hover);
+  border: 0.0625rem solid var(--color-border);
   backdrop-filter: blur(0.625rem);
   border-radius: 1rem;
-  background-color: transparent;
-  padding: 0.625rem 1.5625rem;
+  padding: 1.625rem 1.5625rem;
   overflow: hidden;
   text-align: left;
 
