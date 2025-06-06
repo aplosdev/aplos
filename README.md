@@ -3,6 +3,9 @@
 <p>A sleek, contemporary, and purposefully designed VitePress theme</p>
 </div>
 
+> [!WARNING]
+> Aplós has transitioned into maintenance mode, indicating that it will only receive critical updates and bug fixes. The development focus has shifted to other projects, particularly [Steno](https://github.com/stenodevs/steno), a new static site generator that is likely to become Aplós’ future home. Although Aplós is currently in maintenance mode, it doesn’t mean it will remain in this state indefinitely. Development will resume, but it’s unlikely to be a VitePress theme. Instead, it’s more likely to become a Steno theme. If you’re interested in contributing to Aplós, you can still do so, but please be aware that it may not receive regular updates.
+
 > [!IMPORTANT]
 > If you want to see the documentation/guide check <https://aplos.gxbs.me>.
 
