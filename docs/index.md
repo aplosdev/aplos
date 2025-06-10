@@ -50,7 +50,7 @@ If you want to contribute to Aplós, you can check the [Contributing](/contribut
 
 ## Sponsor
 
-<section class="usedby">
+<section class="sponsors">
   <ul>
     <li>
       <a href="https://tuta.com" target="_blank" rel="noreferrer">
