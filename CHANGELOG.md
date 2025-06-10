@@ -139,6 +139,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - Add plugins list (Using the upcoming Sencilla plugin)
 
+- Update the sponsor section to match Tuta's offical colors
+
 ## [2.5.0] - 2024-07-21
 
 ![Bento Grid of version 2.5.0](https://aplos.gxbs.dev/images/v2-5-0.png)
