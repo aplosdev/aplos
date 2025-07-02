@@ -125,7 +125,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - Bump `@mdit/plugin-tasklist` from 0.13.0 to 0.22.1 (https://github.com/aplosdev/aplos/pull/55, https://github.com/aplosdev/aplos/pull/109, https://github.com/aplosdev/aplos/pull/133, https://github.com/aplosdev/aplos/pull/136, https://github.com/aplosdev/aplos/pull/218, https://github.com/aplosdev/aplos/pull/224)
 
-- Bump `@mdit/plugin-figure` from 0.13.0 to 0.21.0 (https://github.com/aplosdev/aplos/pull/56, https://github.com/aplosdev/aplos/pull/110, https://github.com/aplosdev/aplos/pull/209)
+- Bump `@mdit/plugin-figure` from 0.13.0 to 0.22.1 (https://github.com/aplosdev/aplos/pull/56, https://github.com/aplosdev/aplos/pull/110, https://github.com/aplosdev/aplos/pull/209, https://github.com/aplosdev/aplos/pull/225)
 
 - Bump `eslint-plugin-vue` from 9.27.0 to 9.33.0 (https://github.com/aplosdev/aplos/pull/57, https://github.com/aplosdev/aplos/pull/86, https://github.com/aplosdev/aplos/pull/91, https://github.com/aplosdev/aplos/pull/95, https://github.com/aplosdev/aplos/pull/111, https://github.com/aplosdev/aplos/pull/162)
 
