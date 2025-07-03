@@ -131,7 +131,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 - Bump `non.geist` from 1.0.3 to 1.0.4 (https://github.com/aplosdev/aplos/pull/85)
 
-- Bump `inter-ui` from 4.0.2 to 4.11 (https://github.com/aplosdev/aplos/pull/127, https://github.com/aplosdev/aplos/pull/129,  https://github.com/aplosdev/aplos/pull/229)
+- Bump `inter-ui` from 4.0.2 to 4.1.1 (https://github.com/aplosdev/aplos/pull/127, https://github.com/aplosdev/aplos/pull/129,  https://github.com/aplosdev/aplos/pull/229)
 
 - Bump `prettier` from 3.3.3 to 3.5.3 (https://github.com/aplosdev/aplos/pull/128, https://github.com/aplosdev/aplos/pull/150, https://github.com/aplosdev/aplos/pull/161)
 
