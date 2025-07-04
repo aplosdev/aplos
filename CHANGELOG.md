@@ -9,17 +9,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ### Added
 
 - **Introducing, Boosts for Aplós**
-
   - Customize your website with plugins that enhance its functionality and appearance. Aplós offers a variety of plugins that you can easily integrate into your project. Let's explore the available plugins and how you can use them to improve your website.
 
 - The navigation bar first appears when you enter the page, as you scroll down it will disappear, and when you scroll up it will appear again (that way it won't take up space when you're reading, so you can focus on the content)
 
 - New style for article headers
-
   - New date format for articles (with the hour and minute)
 
 - **Deprecate the `description` field for articles**
-
   - The `description` field for articles is now deprecated, and now the as a replacement, the content until the first `hr` element will be used as the description for the article in both the article list and the article itself.
 
 - Adaptive navigation island
@@ -150,7 +147,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - Add Banners for articles
 
 - Partial rewrite the navigation island
-
   - New way of centering it
   - Make it allow more items without overflowing
   - Reorganize styles and remove unnecessary ones
@@ -206,7 +202,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ### Added
 
 - Support for multiple authors
-
   - Including in the article list
 
 - Make blog descriptions optional
@@ -256,7 +251,6 @@ Small dependency updates that were missed in the last release.
 - Add support for a full-width image via the URL (with `#` + `full`)
 
 - Add multiple types of articles
-
   - Featured
   - Draft
   - Archived
@@ -287,7 +281,6 @@ Small dependency updates that were missed in the last release.
 - Add screenshot support for images via the URL (if the image's URL has a "screenshot" in it, it will be displayed as a screenshot)
 
 - Add footer links
-
   - And incorporate the "Source Code" and "Made by" links into the footer links
 
 - Add styles for checkboxes
@@ -319,7 +312,6 @@ Small dependency updates that were missed in the last release.
 - Make the RSS feed link the navigation to download the file linked to the link
 
 - Configurable message
-
   - After each article
   - After the footer
 
@@ -332,7 +324,6 @@ Small dependency updates that were missed in the last release.
 ### Changed
 
 - Project rebranding
-
   - New accent color
   - New icon
 
@@ -343,7 +334,6 @@ Small dependency updates that were missed in the last release.
 - Warp text pretty
 
 - Restyle informal cards
-
   - Make their title be the accent color of the card
   - Make the background color of the cards be slightly more transparent
 
@@ -352,7 +342,6 @@ Small dependency updates that were missed in the last release.
 - Make all component styles file begin with an underscore
 
 - Add variables for general styles
-
   - A huge style cleanup
 
 - Minor changes to the formatter and the linter
@@ -388,7 +377,6 @@ Small dependency updates that were missed in the last release.
 - Make `minimal` layout an option in the configuration, rather then an import
 
 - Make the Blog List an custom component due to it's complexity
-
   - This will allow for more customization and easier maintenance
   - **Will require extra effort to implement it again** (example provided in the [documentation](https://aplos.gxbs.me/guide/articles-list) and package file under `custom/BlogListExample.txt`)
 
@@ -404,7 +392,6 @@ Small dependency updates that were missed in the last release.
 - Provide a non-custom font version of Aplós (`aplos/plain`)
 
 - Provide `style` frontmatter configuration for any page
-
   - `numeric` for numeric style headings
 
 - Make Icon Links a toggleable option in Configuration
@@ -412,7 +399,6 @@ Small dependency updates that were missed in the last release.
 - Add `note` informal card
 
 - Small changes to image behavior
-
   - Smaller scale when active
   - Max width for images when active
   - Images with a link:
@@ -420,7 +406,6 @@ Small dependency updates that were missed in the last release.
     - Make the border thicker when hovering
 
 - Better accessibility for keyboard users
-
   - With a custom focus indicator
 
 - Add support for various types of elements
@@ -565,7 +550,6 @@ Small dependency updates that were missed in the last release.
 - Pump SASS from 1.76.0 to 1.77.0 (https://github.com/aplosdev/aplos/pull/2)
 
 - Reinstate the ActivityPub comments _(not yet fully implemented)_
-
   - [x] Migrate script to TypeScript locally
   - [x] Make it run `onMounted`
   - [ ] Fix the build issue

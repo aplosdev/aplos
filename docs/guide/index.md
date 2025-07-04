@@ -13,7 +13,6 @@ Aplós is a user-friendly template for Vitepress that allows you to quickly set 
 1. Aplós provides a convenient template that you can use to kickstart your project. To begin, click on the following link to initialize a repository with the Aplós template: Initialize Aplós Template.
 
 2. After initializing, you have two options:
-
    - Clone the repository to edit the project locally: `git clone https://github.com/*your_username*/aplos`
    - Use GitHub Codespaces to edit the project online: [GitHub Codespaces](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=737827959)
 
