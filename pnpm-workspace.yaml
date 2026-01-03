@@ -2,5 +2,5 @@ packages:
   - docs
 
 onlyBuiltDependencies:
-  - '@parcel/watcher'
+  - "@parcel/watcher"
   - esbuild
