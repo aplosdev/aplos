@@ -19,7 +19,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: latest
-      - uses: pnpm/action-setup@v4
+      - uses: pnpm/action-setup@v5
         with:
           version: latest
       - run: pnpm install
@@ -37,7 +37,7 @@ jobs:
         with:
           node-version: latest
           registry-url: https://registry.npmjs.org/
-      - uses: pnpm/action-setup@v4
+      - uses: pnpm/action-setup@v5
         with:
           version: latest
       - run: pnpm install
