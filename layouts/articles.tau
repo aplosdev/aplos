@@ -1,0 +1,18 @@
+{@include "ShellStart"}
+{@html content}
+<section class="article-list" data-article-list>
+  <div class="filter-tags" data-tag-filters></div>
+  <div class="post-container">
+    {#each collections.posts.items as post}
+      <article class="post {#if post.frontmatter.archive}archive {/if}{#if post.frontmatter.draft}draft {/if}{#if post.frontmatter.featured}featured{/if}" data-tags="{#each post.frontmatter.tags as tag}{ tag }|{/each}">
+        <h3><a href="{post.url | url}">{ post.frontmatter.title }</a></h3>
+        {#if post.frontmatter.description}<p>{ post.frontmatter.description }</p>{/if}
+        <div class="post-details">
+          {#if post.frontmatter.date}<time class="date" datetime="{post.frontmatter.date}" data-localize-date>{ post.frontmatter.date | date }</time>{/if}
+          {#if post.frontmatter.tags}<span class="tags">{#each post.frontmatter.tags as tag}<span>{ tag }</span>{/each}</span>{/if}
+        </div>
+      </article>
+    {/each}
+  </div>
+</section>
+{@include "ShellEnd"}

@@ -1,0 +1,7 @@
+<!doctype html>
+<html lang="{theme.locale}" style="{#if theme.accent}--accent: { theme.accent };{/if}{#if theme.accentDark}--accent-dark: { theme.accentDark };{/if}">
+  {@include "Head"}
+  <body>
+    {@include "Nav"}
+    {#if layout !== 'articles' && layout !== 'notfound'}{@include "Toc"}{/if}
+    <main id="content-main" class="{#if style === 'numeric' || theme.numericHeadings}numeric {/if}{#if theme.links === 'icons'}icon-links {/if}{#if pageClass}{ pageClass }{/if}">

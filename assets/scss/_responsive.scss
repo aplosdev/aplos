@@ -1,0 +1,95 @@
+@media (max-width: 1414px) {
+  main {
+    margin-top: 9.375rem !important;
+    margin-bottom: 9.375rem !important;
+    width: 90vw !important;
+  }
+
+  .site-nav {
+    padding: 0.3125rem 1.25rem !important;
+  }
+
+  .site-nav .site-title a,
+  .site-nav a {
+    font-size: 1rem !important;
+  }
+
+  :not(pre) > code {
+    margin-top: 0.9375rem;
+    padding: 0.1875rem 0.625rem;
+    line-height: 1.2;
+  }
+
+  .tip,
+  .info,
+  .note,
+  .warning,
+  .danger,
+  .details {
+    width: 100% !important;
+  }
+
+  .table-of-contents {
+    left: 6% !important;
+  }
+}
+
+@media (max-width: 1828px) {
+  .table-of-contents {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    width: min(100% - 2rem, var(--content-width));
+    margin-top: 6.5rem;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  ul,
+  ol {
+    margin: 0 0 0 0.625rem;
+  }
+
+  aside {
+    float: none;
+    margin-inline-start: 0;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1414px) and (max-width: 1902px) {
+  main {
+    margin: 7% 20%;
+  }
+}
+
+@media print {
+  main {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+
+  .site-nav,
+  .site-footer,
+  .table-of-contents {
+    display: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .glitch,
+  .glitch::before,
+  .glitch::after {
+    animation: none !important;
+  }
+}

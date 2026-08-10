@@ -1,0 +1,106 @@
+/* Article collection */
+
+.article-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.post-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  gap: 0.9375rem;
+}
+
+.post-container .post {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  transition: transform 0.3s ease;
+  border-radius: 0.5rem;
+  background: var(--color-background-second);
+  padding: 1.25rem;
+}
+
+.post-container .post:first-child {
+  background: var(--color-background-mute);
+}
+
+.post-container .post[hidden] {
+  display: none;
+}
+
+.post-container .post h3,
+.post-container .post p {
+  margin: 0 !important;
+}
+
+.post-container .post h3 {
+  font-size: 1.5rem;
+}
+
+.post-container .post.archive {
+  background: #ff00dd11;
+}
+
+.post-container .post.draft {
+  border: 0.15rem dashed #5b4f00;
+  border-radius: 1.2rem;
+  background: transparent;
+}
+
+.post-container .post.featured {
+  transition: all 0.3s ease;
+  background: #5b4f0011;
+}
+
+.post-container .post.featured:hover {
+  outline: 0.15rem dashed #5b4f00;
+  outline-offset: 0.5rem;
+}
+
+.post-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  border-top: 0.0625rem solid var(--color-border);
+  padding-top: 0.625rem;
+}
+
+.post-details .date {
+  color: var(--color-text-secondary);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.filter-tags button {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin: 0 0.625rem 0.25rem 0;
+  border-radius: 20px;
+  background: var(--color-background-second);
+  padding: 0.25rem 0.75rem;
+  font-size: 0.8rem;
+}
+
+.filter-tags button:hover,
+.filter-tags button.active {
+  background: var(--color-accent-alpha);
+  color: var(--color-accent);
+}
+
+@media (prefers-color-scheme: dark) {
+  .post-container .post.archive {
+    background: #ff00ff14;
+  }
+
+  .post-container .post.draft {
+    border-color: #ffff7d5a;
+  }
+
+  .post-container .post.featured {
+    background: #ffff0011;
+  }
+}

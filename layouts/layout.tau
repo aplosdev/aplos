@@ -1,0 +1,5 @@
+{@include "ShellStart"}
+{#if home}<h1>{ site.title }</h1>{/if}
+{#if date}<p class="page-date"><time datetime="{date}" data-localize-date>{ date | date }</time></p>{/if}
+{@html content}
+{@include "ShellEnd"}

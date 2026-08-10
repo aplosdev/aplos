@@ -1,0 +1,79 @@
+/*
+ * @aplos/theme
+ * A Steno port of the Aplós VitePress theme (https://aplos.gxbs.dev/).
+ * Original copyright 2024-present Gabriel Cozma, MIT License.
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: clip;
+  font-feature-settings:
+    "liga" 1,
+    "calt" 1,
+    "cv05" 1;
+  font-family: var(--font-sans);
+  text-wrap: pretty;
+}
+
+html {
+  scroll-behavior: smooth;
+  accent-color: var(--color-accent);
+}
+
+body {
+  margin: 8px;
+  min-height: 100vh;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-synthesis: style;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background-color: var(--color-accent);
+  color: var(--color-background);
+}
+
+:focus-visible {
+  outline: 0.125rem solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+:target {
+  animation: highlight-in-out 800ms 0.4s;
+  scroll-margin-top: 15vh;
+  color: var(--color-accent);
+  text-shadow:
+    var(--color-background-second) 0 0 0.25rem,
+    var(--color-accent) 0 0 0.75rem;
+}
+
+@keyframes highlight-in-out {
+  50% {
+    font-style: italic;
+    font-weight: bolder;
+    letter-spacing: 0.25rem;
+  }
+}
+
+a,
+area,
+button,
+[role="button"],
+input,
+label,
+select,
+summary,
+textarea {
+  font-feature-settings: inherit;
+  touch-action: manipulation;
+  color: var(--color-text);
+  font-family: inherit;
+}

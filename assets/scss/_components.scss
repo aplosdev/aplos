@@ -1,0 +1,288 @@
+/* Icon links: an external-link arrow after a plain text link */
+
+.icon-links a:not(:has(img))::after {
+  @include phosphor-icon("M224.49,136.49l-72,72a12,12,0,0,1-17-17L187,140H40a12,12,0,0,1,0-24H187L135.51,64.48a12,12,0,0,1,17-17l72,72A12,12,0,0,1,224.49,136.49Z");
+  display: inline-block;
+  margin-inline-start: 0.2em;
+  background-color: currentcolor;
+  width: 0.75em;
+  height: 0.75em;
+  vertical-align: 0;
+  content: "";
+  -webkit-mask: var(--ph-icon) center / contain no-repeat;
+  mask: var(--ph-icon) center / contain no-repeat;
+}
+
+.icon-links a[href*="https://"]:not(:has(img))::after,
+.icon-links a[href*="http://"]:not(:has(img))::after {
+  @include phosphor-icon("M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z");
+}
+
+/* Admonitions: hand-authored <div class="tip">, not a Markdown container
+   syntax - Steno's Markdown pipeline has no `::: tip` equivalent. */
+
+.tip,
+.info,
+.note,
+.warning,
+.danger {
+  margin: 1.25rem 0;
+  border-radius: var(--rounded-sm);
+  padding: 1.8rem 1.25rem;
+  width: max-content;
+  min-width: 45%;
+  max-width: 70%;
+  line-height: 1.5rem;
+}
+
+.tip .custom-block-title,
+.info .custom-block-title,
+.note .custom-block-title,
+.warning .custom-block-title,
+.danger .custom-block-title {
+  margin: 0 0 0.625rem;
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+
+.tip .custom-block-title::before {
+  @include phosphor-icon("M176,232a8,8,0,0,1-8,8H88a8,8,0,0,1,0-16h80A8,8,0,0,1,176,232Zm40-128a87.55,87.55,0,0,1-33.64,69.21A16.24,16.24,0,0,0,176,186v6a16,16,0,0,1-16,16H96a16,16,0,0,1-16-16v-6a16,16,0,0,0-6.23-12.66A87.59,87.59,0,0,1,40,104.49C39.74,56.83,78.26,17.14,125.88,16A88,88,0,0,1,216,104Zm-16,0a72,72,0,0,0-73.74-72c-39,.92-70.47,33.39-70.26,72.39a71.65,71.65,0,0,0,27.64,56.3A32,32,0,0,1,96,186v6h64v-6a32.15,32.15,0,0,1,12.47-25.35A71.65,71.65,0,0,0,200,104Z");
+}
+
+.info .custom-block-title::before,
+.note .custom-block-title::before {
+  @include phosphor-icon("M108,84a16,16,0,1,1,16,16A16,16,0,0,1,108,84Zm128,44A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Zm-72,36.68V132a20,20,0,0,0-20-20,12,12,0,0,0-4,23.32V168a20,20,0,0,0,20,20,12,12,0,0,0,4-23.32Z");
+}
+
+.warning .custom-block-title::before {
+  @include phosphor-icon("M236.8,188.09,149.35,36.22a24.76,24.76,0,0,0-42.7,0L19.2,188.09a23.51,23.51,0,0,0,0,23.72A24.35,24.35,0,0,0,40.55,224h174.9a24.35,24.35,0,0,0,21.33-12.19A23.51,23.51,0,0,0,236.8,188.09ZM120,144V104a8,8,0,0,1,16,0v40a8,8,0,0,1-16,0Zm20,36a12,12,0,1,1-12-12A12,12,0,0,1,140,180Z");
+}
+
+.danger .custom-block-title::before {
+  @include phosphor-icon("M116,132V80a12,12,0,0,1,24,0v52a12,12,0,0,1-24,0ZM236,91.55v72.9a19.86,19.86,0,0,1-5.86,14.14l-51.55,51.55A19.85,19.85,0,0,1,164.45,236H91.55a19.85,19.85,0,0,1-14.14-5.86L25.86,178.59A19.86,19.86,0,0,1,20,164.45V91.55a19.86,19.86,0,0,1,5.86-14.14L77.41,25.86A19.85,19.85,0,0,1,91.55,20h72.9a19.85,19.85,0,0,1,14.14,5.86l51.55,51.55A19.86,19.86,0,0,1,236,91.55Zm-24,1.66L162.79,44H93.21L44,93.21v69.58L93.21,212h69.58L212,162.79ZM128,156a16,16,0,1,0,16,16A16,16,0,0,0,128,156Z");
+}
+
+.custom-block-title::before {
+  display: inline-block;
+  margin-inline-end: 0.25em;
+  background-color: currentcolor;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.1em;
+  content: "";
+  -webkit-mask: var(--ph-icon) center / contain no-repeat;
+  mask: var(--ph-icon) center / contain no-repeat;
+}
+
+.tip p:not(.custom-block-title),
+.info p:not(.custom-block-title),
+.note p:not(.custom-block-title),
+.warning p:not(.custom-block-title),
+.danger p:not(.custom-block-title) {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.tip {
+  border-inline-start: #009900 0.4rem solid;
+  background-color: #0099001e;
+}
+
+.info,
+.note {
+  border-inline-start: #0066cc 0.4rem solid;
+  background-color: #0066cc1e;
+}
+
+.warning {
+  border-inline-start: #ff9900 0.4rem solid;
+  background-color: #ff99001e;
+}
+
+.danger {
+  border-inline-start: #cc0000 0.4rem solid;
+  background-color: #cc00001e;
+}
+
+.danger .custom-block-title,
+.danger a {
+  color: #ff6666;
+}
+
+.warning .custom-block-title,
+.warning a {
+  color: #cc7a00;
+}
+
+@media (prefers-color-scheme: dark) {
+  .tip {
+    background-color: #0099002a;
+  }
+
+  .info,
+  .note {
+    background-color: #0066cc2a;
+  }
+
+  .warning {
+    background-color: #ff99002a;
+  }
+
+  .danger {
+    background-color: #cc00002a;
+  }
+
+  .warning .custom-block-title,
+  .warning a {
+    color: #ffc266;
+  }
+}
+
+/* `.details` styles a plain <details>/<summary> instead of relying on
+   custom-container syntax the Markdown pipeline doesn't have. */
+
+.details {
+  margin: 1.25rem 0;
+  border-radius: var(--rounded-sm);
+  background-color: var(--color-background-second);
+  padding: 1rem;
+  min-width: 45%;
+  max-width: max-content;
+}
+
+.details summary {
+  cursor: pointer;
+  margin-top: 0;
+  font-weight: 700;
+}
+
+.details p {
+  margin: 0.625rem 0 0;
+  font-size: 0.9375rem;
+}
+
+/* Table of contents: opt-in, not automatic - a page supplies its own `toc`
+   frontmatter array ({url, title, level}), since Steno has no built-in
+   heading extraction to generate one for you. See layout.tau. */
+
+.table-of-contents {
+  -webkit-backdrop-filter: blur(0.625rem);
+  backdrop-filter: blur(0.625rem);
+  position: fixed;
+  top: 9.375rem;
+  left: 3%;
+  z-index: 999;
+  border: 0.0625rem solid var(--color-border);
+  border-radius: 1rem;
+  background-color: var(--color-header-hover);
+  padding: 1.625rem 1.5625rem;
+  overflow: hidden;
+  text-align: left;
+}
+
+.table-of-contents ul {
+  margin: 0 0 0 0.9375rem;
+  padding: 0;
+  color: var(--color-text-secondary);
+  font-weight: 600;
+  font-size: 0.875rem;
+  list-style-type: decimal;
+}
+
+.table-of-contents ul::before {
+  display: block;
+  margin-bottom: 0.625rem;
+  color: var(--color-text-secondary);
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-align: center;
+  content: "Table of Contents";
+}
+
+.table-of-contents li {
+  margin: 0.3rem 0;
+  text-align: left;
+}
+
+.table-of-contents li[class*="toc-level-3"],
+.table-of-contents li[class*="toc-level-4"],
+.table-of-contents li[class*="toc-level-5"],
+.table-of-contents li[class*="toc-level-6"] {
+  margin-inline-start: 0.9375rem;
+  list-style-type: disc;
+}
+
+.table-of-contents a {
+  display: block;
+  margin: 0 0.3125rem;
+  color: var(--color-text-secondary);
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: -0.045rem;
+  text-align: left;
+  text-decoration: underline solid var(--color-accent);
+  transition: color 0.5s ease;
+}
+
+.table-of-contents a:hover,
+.table-of-contents a:active,
+.table-of-contents a.active {
+  color: var(--color-accent);
+}
+
+/* Footer */
+
+.site-footer {
+  position: relative;
+  margin: 0 0.625rem 0.625rem;
+  margin-inline: auto;
+  border-top: 0.0625rem solid var(--color-border);
+  padding: 1.25rem;
+  max-width: var(--content-width);
+  text-align: center;
+}
+
+.site-footer nav {
+  margin: 0 auto 1rem;
+  border: 0.4px solid var(--color-border);
+  border-radius: 2.5rem;
+  background-color: var(--color-header);
+  padding: 0.6625rem 2.5625rem;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.site-footer nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-footer nav a {
+  border-radius: 999rem;
+  color: var(--color-text-secondary);
+  font-weight: 600;
+  letter-spacing: -0.015rem;
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.site-footer nav a:hover {
+  color: var(--color-accent);
+}
+
+.site-footer p {
+  margin: 0.625rem 0 0;
+  font-weight: 500;
+}
+
+.site-footer small {
+  display: block;
+  margin-top: 0.625rem;
+  color: var(--color-text-secondary);
+}

@@ -1,0 +1,121 @@
+/* Skip link */
+
+.skip-to-content {
+  position: absolute;
+  z-index: 999;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+}
+
+.skip-to-content:focus {
+  position: static;
+  margin: 0;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip: auto;
+  clip-path: none;
+}
+
+/* Header / floating nav pill */
+
+.site-header {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.site-nav {
+  --nav-margin-top: 1.5rem;
+  -webkit-backdrop-filter: saturate(180%) blur(0.625rem);
+  backdrop-filter: saturate(180%) blur(0.625rem);
+  position: fixed;
+  z-index: 9999;
+  margin-top: var(--nav-margin-top);
+  border: 0.4px solid var(--color-border);
+  border-radius: 2.5rem;
+  background-color: var(--color-header);
+  padding: 0.0625rem 1.5625rem;
+  max-width: 90%;
+  text-align: center;
+  transition: background-color 0.4s ease, transform 0.5s ease;
+}
+
+.site-nav.hidden {
+  transform: translate3d(0, calc((100% + var(--nav-margin-top)) * -1), 0);
+}
+
+.site-nav:hover {
+  background-color: var(--color-header-hover);
+}
+
+.site-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-nav li {
+  display: inline-block;
+}
+
+.site-nav .site-title {
+  position: relative;
+  margin-inline-end: 1.8rem;
+}
+
+.site-nav .site-title::after {
+  position: absolute;
+  top: 0;
+  right: -1.25rem;
+  background-color: var(--color-border);
+  width: 0.0625rem;
+  height: 100%;
+  content: "";
+}
+
+.site-nav .site-title a {
+  margin: 0.5rem 0.3125rem;
+  color: var(--color-text);
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: -0.0325rem;
+}
+
+.site-nav a {
+  display: block;
+  color: var(--color-text-secondary);
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: -0.015rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+  color: var(--color-accent);
+}
+
+.site-nav a:active {
+  transform: scale(0.9);
+}
+
+.site-nav .site-icon .ph-icon {
+  width: 1rem;
+  height: 1rem;
+}

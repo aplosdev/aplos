@@ -1,0 +1,149 @@
+/* Article layout: banner, gradient title, author/tag line, prev/next nav,
+   and helpful links. See layouts/article.tau. */
+
+#article-head {
+  padding-top: 2.0938rem;
+  text-align: center;
+}
+
+#article-head .main-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#article-head #banner-container {
+  -webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient(black, transparent);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 50vw;
+  max-height: 45vh;
+  user-select: none;
+}
+
+#article-head #banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  transition: none;
+}
+
+#article-head #banner-container + .main-head {
+  margin-top: 15vh;
+}
+
+#article-head h1 {
+  margin-top: -0.5rem !important;
+  margin-bottom: 0 !important;
+  background-image: radial-gradient(
+    circle,
+    var(--color-accent) 0%,
+    var(--color-accent-alpha) 100%
+  );
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 800;
+  line-height: 1.05em;
+}
+
+#article-head .tags span {
+  transition: all 0.3s ease;
+  cursor: default;
+  margin-right: 0.3rem;
+  border-radius: 20px;
+  background-color: var(--color-background-second);
+  padding: 0.15rem 0.45rem;
+  color: var(--color-text-secondary);
+  font-size: 0.75rem;
+}
+
+#article-head .tags span:hover {
+  transform: scale(1.05);
+  background-color: var(--color-accent-alpha);
+  color: var(--color-accent);
+}
+
+#article-footer {
+  margin-top: 3rem;
+}
+
+.dialog-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.dialog-buttons a {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  background-color: var(--color-background-second);
+  padding: 0.5rem 1rem;
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.dialog-buttons a:hover {
+  background-color: var(--color-background-mute);
+}
+
+.extra-link {
+  background-color: transparent !important;
+  color: var(--color-accent) !important;
+}
+
+.extra-link:hover {
+  background-color: var(--color-accent) !important;
+  color: var(--color-background) !important;
+}
+
+.article-nav {
+  display: block;
+  flex: 1 1 0;
+  transition: all 0.3s ease;
+  margin: 0 0.2rem;
+  border-radius: 0.625rem;
+  background-color: transparent;
+  padding: 1.25rem;
+  max-width: calc(50% - 0.125rem);
+  color: var(--color-accent);
+  text-align: center;
+  text-decoration: none;
+}
+
+.article-nav:first-child {
+  text-align: left;
+}
+
+.article-nav:last-child {
+  text-align: right;
+}
+
+.article-nav:hover {
+  transform: translateY(-0.3125rem);
+  box-shadow: 0 3px var(--color-accent);
+  background-color: var(--color-background-second);
+  max-width: 100%;
+}
+
+.article-nav:active {
+  transform: translateY(0.3125rem);
+}

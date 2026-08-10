@@ -1,0 +1,15 @@
+{@include "ShellStart"}
+<section id="not-found">
+  <span class="glitch" data-text="404">404</span>
+  <h1>Not Found!</h1>
+  <p>
+    Oops! The page you are looking for has been removed, relocated, or never existed.
+    Please check the URL or go back to the homepage.
+    {#if theme.nav?.git}If you believe something should be here, feel free to file an issue below.{/if}
+  </p>
+</section>
+<p class="dialog-buttons">
+  <a href="#" onclick="history.back(); return false;"><span class="ph-icon ph-arrow-left" aria-hidden="true"></span> Go back</a>
+  {#if theme.nav?.git}<a class="extra-link" href="{theme.nav.git | url}/issues/new">File an issue</a>{/if}
+</p>
+{@include "ShellEnd"}

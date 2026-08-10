@@ -1,0 +1,4 @@
+demo/dist/
+demo/.dist.steno-backup/
+demo/.steno/build-cache.json
+.DS_Store

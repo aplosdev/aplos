@@ -1,0 +1,26 @@
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="/icon.svg" />
+  <meta name="theme-color" content="{#if theme.accent}{ theme.accent }{:else}#55B458{/if}" />
+  <title>{#if title && title !== site.title}{ title } · { site.title }{:else}{ site.title }{/if}</title>
+  <meta name="description" content="{#if description}{ description }{:else}{ site.description }{/if}" />
+  <meta property="og:type" content="{#if layout === 'article'}article{:else}website{/if}" />
+  <meta property="og:title" content="{#if title}{ title }{:else}{ site.title }{/if}" />
+  <meta property="og:description" content="{#if description}{ description }{:else}{ site.description }{/if}" />
+  {#if banner || theme.social?.image}<meta property="og:image" content="{#if banner}{ banner }{:else}{ theme.social.image }{/if}" />{/if}
+  {#if canonical}<link rel="canonical" href="{canonical}" />{/if}
+  <meta name="twitter:card" content="{#if theme.social?.twitterCard}{ theme.social.twitterCard }{:else}summary_large_image{/if}" />
+  <meta name="twitter:title" content="{#if title}{ title }{:else}{ site.title }{/if}" />
+  <meta name="twitter:description" content="{#if description}{ description }{:else}{ site.description }{/if}" />
+  {#if banner || theme.social?.image}<meta name="twitter:image" content="{#if banner}{ banner }{:else}{ theme.social.image }{/if}" />{/if}
+  {#if theme.webFonts}
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Inter:opsz,wght@14..32,100..900&display=swap"
+    />
+  {/if}
+  <link rel="stylesheet" href="/assets/{ assets?.['style.css'] }" />
+</head>

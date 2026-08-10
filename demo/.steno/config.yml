@@ -1,0 +1,39 @@
+title: Aplós
+description: A sleek, contemporary, and purposefully designed theme and template
+author: Gabriel Cozma
+contentDir: demo
+output: demo/dist
+publicDir: public
+shortUrls: true
+theme: .
+collections:
+  posts:
+    sortBy: date
+    order: desc
+themeConfig:
+  accent: "#523894"
+  links: icons
+  locale: en-GB
+  social:
+    image: https://aplos.gxbs.dev/images/banner.png
+  nav:
+    title: Aplós
+    git: https://github.com/aplosdev/aplos
+    links:
+      - { title: Demo, url: /demo/ }
+      - { title: Guide, url: /guide/ }
+  footer:
+    startYear: "2024"
+    copyright: true
+    poweredBy: true
+    madeby:
+      show: true
+      name: Gabs
+      link: https://gxbs.dev/
+    copyleft:
+      show: true
+      license: MIT License
+      info: https://github.com/aplosdev/aplos?tab=MIT-1-ov-file#readme
+    sourcecode:
+      show: true
+      link: https://github.com/aplosdev/aplos

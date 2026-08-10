@@ -1,0 +1,72 @@
+:root {
+  color-scheme: light dark;
+
+  --accent: #55b458;
+
+  // CSS relative colors reproduce the original Sass color.scale formulas at
+  // runtime, so a site's configured accent recolors the complete palette.
+  --color-accent: hsl(from var(--accent) h s calc(l * 0.4));
+  --color-accent-alpha: rgb(from var(--accent) r g b / 40%);
+  --color-background: hsl(
+    from var(--accent) h calc(s * 0.25) calc(l + (100 - l) * 0.9)
+  );
+  --color-background-second: hsl(
+    from var(--accent) h s calc(l + (100 - l) * 0.75)
+  );
+  --color-background-mute: hsl(
+    from var(--color-background-second) h s calc(l * 0.95)
+  );
+  --color-background-code: hsl(
+    from var(--color-background) h s calc(l * 0.95)
+  );
+  --color-header: hsl(
+    from var(--color-background-second) h calc(s * 0.7)
+      calc(l + (100 - l) * 0.4) / 80%
+  );
+  --color-header-hover: rgb(from var(--color-background) r g b / 80%);
+  --color-text: hsl(from var(--color-background) h s calc(l * 0.1));
+  --color-text-secondary: hsl(
+    from var(--color-background) h s calc(l * 0.2) / 85%
+  );
+  --color-border: #75757560;
+  --base-shadow: 0 0.625rem 2.125rem rgb(0 0 0 / 15%);
+
+  --content-width: 58rem;
+  --active: 0.9;
+  --rounded: 1.25rem;
+  --rounded-sm: 0.625rem;
+  --rounded-xs: 0.325rem;
+  --transition: 0.2s;
+  --font-sans: "InterVariable", "Inter", ui-sans-serif, system-ui,
+    -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, "Cascadia Code",
+    "Source Code Pro", Menlo, Consolas, monospace;
+
+  @media (prefers-color-scheme: dark) {
+    --dark-seed: var(--accent-dark, var(--accent));
+    --color-accent: hsl(
+      from var(--dark-seed) h s calc(l + (100 - l) * 0.6)
+    );
+    --color-accent-alpha: rgb(from var(--dark-seed) r g b / 40%);
+    --color-background: hsl(
+      from var(--dark-seed) h calc(s * 0.2) calc(l * 0.13)
+    );
+    --color-background-second: hsl(
+      from var(--dark-seed) h calc(s * 0.2) calc(l * 0.3)
+    );
+    --color-background-mute: hsl(
+      from var(--color-background-second) h s calc(l + (100 - l) * 0.05)
+    );
+    --color-background-code: color-mix(
+      in srgb,
+      var(--color-background) 60%,
+      var(--color-background-second)
+    );
+    --color-header: hsl(
+      from var(--color-background-second) h s calc(l * 0.62) / 80%
+    );
+    --color-header-hover: rgb(from var(--color-background) r g b / 80%);
+    --color-text: #fdfdfd;
+    --color-text-secondary: rgb(243 243 243 / 60%);
+  }
+}

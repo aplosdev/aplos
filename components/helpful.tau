@@ -1,0 +1,10 @@
+<section id="helpful-layout">
+  <p class="dialog-buttons">
+    <a href="#content-main"><span class="ph-icon ph-arrow-up" aria-hidden="true"></span> Go to top</a>
+    {#if footlink}
+      <a class="extra-link" href="{footlink.url | url}">{ footlink.title || footlink.text }</a>
+    {:else if theme.nav?.git}
+      <a class="extra-link" href="{theme.nav.git | url}/issues/new">File an issue</a>
+    {/if}
+  </p>
+</section>

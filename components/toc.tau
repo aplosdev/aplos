@@ -1,0 +1,13 @@
+{#if toc}
+  <nav class="table-of-contents" aria-label="Table of contents">
+    <ul>
+      {#each toc as item}
+        <li class="toc-level-{item.level}"><a href="{item.url | url}">{ item.title }</a></li>
+      {/each}
+    </ul>
+  </nav>
+{:else}
+  <nav class="table-of-contents" aria-label="Table of contents" data-auto-toc hidden>
+    <ul></ul>
+  </nav>
+{/if}

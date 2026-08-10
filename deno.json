@@ -1,0 +1,27 @@
+{
+  "name": "@aplos/theme",
+  "version": "0.2.2",
+  "license": "MIT",
+  "lock": false,
+  "exports": {
+    ".": "./mod.ts"
+  },
+  "tasks": {
+    "check": "deno fmt --check && deno lint && deno check mod.ts && deno task build && deno task doctor",
+    "build": "deno run -A jsr:@steno/steno build --config demo/.steno/config.yml",
+    "dev": "deno run -A jsr:@steno/steno dev --config demo/.steno/config.yml",
+    "doctor": "deno run -A jsr:@steno/steno doctor --config demo/.steno/config.yml",
+    "preview": "deno run -A jsr:@steno/steno preview --config demo/.steno/config.yml"
+  },
+  "imports": {
+    "@steno/steno": "jsr:@steno/steno@^0.11.2",
+    "sass": "npm:sass@^1.77.0"
+  },
+  "minimumDependencyAge": {
+    "age": "P1D",
+    "exclude": ["jsr:@steno/steno"]
+  },
+  "fmt": {
+    "exclude": ["demo/dist", "demo/.dist.steno-backup", "demo/.steno/build-cache.json"]
+  }
+}

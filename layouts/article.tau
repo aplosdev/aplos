@@ -1,0 +1,53 @@
+{@include "ShellStart"}
+      {#if !theme.minimal}<div id="article-head">
+        {#if banner}
+          <div id="banner-container">
+            <img id="banner" src="{banner}#full" alt="Banner" />
+          </div>
+        {/if}
+        <div class="main-head">
+          {#if update}<small>Last updated on <time datetime="{update}" data-localize-date data-date-time>{ update | date }</time></small>{/if}
+          {#if date}<small><time datetime="{date}" data-localize-date>{ date | date }</time></small>{/if}
+          <h1>{#if title}{ title }{:else}{ site.title }{/if}</h1>
+          <small>
+            {#if author && theme.articles?.authors !== false}
+              &middot; {#if author.length > 1}Authors:{:else}Author:{/if}
+              {#each author as name, index}{ name }{#if index !== author.length - 1}, {/if}{/each}
+            {/if}
+            <span class="reading-time" data-reading-time>&middot; Calculating reading time&hellip;</span>
+            {#if tags}
+              <span class="tags">
+                &middot;
+                {#each tags as tag}<span>{ tag }</span>{/each}
+              </span>
+            {/if}
+          </small>
+        </div>
+      </div>{/if}
+
+      {@html content}
+
+      {#if !theme.minimal}<section id="article-footer">
+        <hr />
+        {#if message || theme.articles?.message}<p>{ message || theme.articles.message }</p>{/if}
+
+        {#if prev || next}
+          <div class="dialog-buttons">
+            {#if prev}
+              <a class="article-nav" href="{prev.url | url}">
+                <span><small><span class="ph-icon ph-arrow-left" aria-hidden="true"></span> Previous</small></span><br />
+                <span>{ prev.title }</span>
+              </a>
+            {/if}
+            {#if next}
+              <a class="article-nav" href="{next.url | url}">
+                <span><small>Next <span class="ph-icon ph-arrow-right" aria-hidden="true"></span></small></span><br />
+                <span>{ next.title }</span>
+              </a>
+            {/if}
+          </div>
+        {/if}
+
+        {@include "Helpful"}
+      </section>{/if}
+{@include "ShellEnd"}

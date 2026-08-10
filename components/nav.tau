@@ -1,0 +1,27 @@
+<header class="site-header">
+  <a href="#content-main" class="skip-to-content">Skip to main content</a>
+  {#if theme.nav?.show !== false}<nav class="site-nav" aria-label="Main navigation">
+    <ul>
+      <li class="site-title">
+        <a href="/">{#if theme.nav?.title}{ theme.nav.title }{:else}{ site.title }{/if}</a>
+      </li>
+      {#each theme.nav?.links as link}
+        <li><a href="{(link.url || link.link) | url}">{ link.title || link.text }</a></li>
+      {/each}
+      {#if theme.nav?.rss}
+        <li>
+          <a class="site-icon" target="_blank" href="{theme.nav.rss | url}" download aria-label="RSS feed">
+            <span class="ph-icon ph-rss-simple" aria-hidden="true"></span>
+          </a>
+        </li>
+      {/if}
+      {#if theme.nav?.git}
+        <li>
+          <a class="site-icon" target="_blank" href="{theme.nav.git | url}" aria-label="Source code">
+            <span class="ph-icon ph-code" aria-hidden="true"></span>
+          </a>
+        </li>
+      {/if}
+    </ul>
+  </nav>{/if}
+</header>

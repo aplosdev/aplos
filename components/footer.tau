@@ -1,0 +1,28 @@
+<footer class="site-footer">
+  {#if theme.footer?.links || theme.footer?.sourcecode?.show || theme.footer?.madeby?.show}
+    <nav>
+      <ul>
+        {#each theme.footer.links as link}
+          <li><a href="{(link.url || link.link) | url}">{ link.title || link.text }</a></li>
+        {/each}
+        {#if theme.footer?.sourcecode?.show}<li><a href="{theme.footer.sourcecode.link | url}">Source Code</a></li>{/if}
+        {#if theme.footer?.madeby?.show}<li><a href="{theme.footer.madeby.link | url}">Made with <span class="ph-icon ph-heart" aria-label="love"></span> by <b id="author">{ theme.footer.madeby.name }</b></a></li>{/if}
+      </ul>
+    </nav>
+  {/if}
+  {#if theme.footer?.copyright !== false}
+    <p id="copyright">
+      {#if theme.footer?.customCopyright || theme.footer?.custom?.copyright}
+        { theme.footer.customCopyright || theme.footer.custom.copyright }
+      {:else}
+        &copy; <b>{#if theme.author}{ theme.author }{:else}{ site.author || site.title }{/if}</b>,
+        {#if theme.footer?.startYear}{ theme.footer.startYear }-{/if}{ theme.currentYear }
+      {/if}
+    </p>
+  {/if}
+  {#if theme.footer?.copyleft?.show}<p id="copyleft"><span class="ph-icon ph-copyleft" aria-hidden="true"></span> Licensed under the <a href="{theme.footer.copyleft.info | url}">{ theme.footer.copyleft.license }</a></p>{/if}
+  {#if theme.footer?.poweredBy !== false}
+    <small>Powered by <a href="https://steno.gxbs.dev/">Steno</a> and <a href="https://aplos.gxbs.dev/">Aplós</a></small>
+  {/if}
+  {#if theme.footer?.message}<small>{ theme.footer.message }</small>{/if}
+</footer>

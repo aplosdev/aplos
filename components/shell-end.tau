@@ -1,0 +1,5 @@
+    </main>
+    {@include "Footer"}
+    <script src="/assets/{ assets?.['site.js'] }" defer></script>
+  </body>
+</html>

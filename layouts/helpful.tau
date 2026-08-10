@@ -1,0 +1,5 @@
+{@include "ShellStart"}
+{@html content}
+<hr />
+{@include "Helpful"}
+{@include "ShellEnd"}
