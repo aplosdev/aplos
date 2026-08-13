@@ -6,7 +6,8 @@
  */
 
 import type { StenoTheme } from "@steno/steno";
-import * as sass from "sass";
+import pluginShiki from "plugin-shiki";
+import { compileFromUrls } from "plugin-scss";
 
 // fetch() works universally: file:// for local/bundled imports, https://
 // for direct JSR imports (jsr:@steno/theme-aplos@x.y.z).
@@ -46,7 +47,9 @@ const components = await loadTemplates("components", {
   Toc: "toc",
 });
 
-const styleSources = await Promise.all(
+// Compiled once at theme-load time; ordered to match assets/style.scss.
+const style = await compileFromUrls(
+  import.meta.url,
   [
     "colors",
     "base",
@@ -59,7 +62,7 @@ const styleSources = await Promise.all(
     "article",
     "notfound",
     "collections",
-  ].map((name) => readLocal(`./assets/scss/_${name}.scss`)),
+  ].map((name) => `./assets/scss/_${name}.scss`),
 );
 const site = await readLocal("./assets/site.js");
 
@@ -91,12 +94,6 @@ const linkListSchema = {
   },
 };
 
-// Compiled once at theme-load time. The ordered partial list mirrors
-// assets/style.scss while remaining portable for both file:// and direct JSR
-// imports; Steno themes ultimately serve only plain CSS/JS/binary assets.
-const style =
-  sass.compileString(styleSources.join("\n"), { style: "compressed" }).css;
-
 /** Aplós theme, ported to Steno. */
 const theme: StenoTheme = {
   name: "aplos",
@@ -107,7 +104,7 @@ const theme: StenoTheme = {
     "style.css": style,
     "site.js": site,
   },
-  plugins: [aplosMarkdown],
+  plugins: [aplosMarkdown, pluginShiki()],
   defaultConfig: {
     author: "",
     currentYear: new Date().getFullYear(),
@@ -131,7 +128,8 @@ const theme: StenoTheme = {
     webFonts: {
       type: "boolean",
       default: true,
-      description: "Load Inter/Geist Mono from Google Fonts. " +
+      description:
+        "Load Inter/Geist Mono from Google Fonts. " +
         "Set false to use the system font stack only, no network request.",
     },
     nav: {

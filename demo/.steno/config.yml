@@ -2,7 +2,7 @@ title: Aplós
 description: A sleek, contemporary, and purposefully designed theme and template
 author: Gabriel Cozma
 contentDir: demo
-output: demo/dist
+output: dist
 publicDir: public
 shortUrls: true
 theme: .
