@@ -24,4 +24,15 @@
       {/if}
     </ul>
   </nav>{/if}
+  {#if theme.nav?.show !== false && layout === 'article' && !theme.minimal}
+    <div class="nav-pill nav-pill-reading" aria-hidden="true">
+      <span class="reading-progress-ring" data-reading-progress></span>
+      <span data-reading-time>&hellip;</span>
+    </div>
+  {/if}
+  {#if theme.nav?.show !== false && layout !== 'articles' && layout !== 'notfound'}
+    <button type="button" class="nav-pill nav-pill-toc" aria-label="Table of contents" aria-expanded="false" data-toc-toggle>
+      <span class="ph-icon ph-list" aria-hidden="true"></span>
+    </button>
+  {/if}
 </header>
