@@ -8,14 +8,15 @@
   },
   "tasks": {
     "check": "deno fmt --check && deno lint && deno check mod.ts && deno task build && deno task doctor",
-    "build": "deno run -A jsr:@steno/steno build --config demo/.steno/config.yml",
-    "dev": "deno run -A jsr:@steno/steno dev --config demo/.steno/config.yml",
-    "doctor": "deno run -A jsr:@steno/steno doctor --config demo/.steno/config.yml",
-    "preview": "deno run -A jsr:@steno/steno preview --config demo/.steno/config.yml"
+    "build": "deno run -A jsr:@steno/steno@^0.12.0 build --config demo/.steno/config.yml",
+    "dev": "deno run -A jsr:@steno/steno@^0.12.0 dev --config demo/.steno/config.yml",
+    "doctor": "deno run -A jsr:@steno/steno@^0.12.0 doctor --config demo/.steno/config.yml",
+    "preview": "deno run -A jsr:@steno/steno@^0.12.0 preview --config demo/.steno/config.yml"
   },
   "imports": {
-    "@steno/steno": "jsr:@steno/steno@^0.11.2",
-    "sass": "npm:sass@^1.77.0"
+    "@steno/steno": "jsr:@steno/steno@^0.12.0",
+    "plugin-shiki": "jsr:@steno/plugin-shiki@^1.0.1",
+    "plugin-scss": "../plugin-scss/mod.ts"
   },
   "minimumDependencyAge": {
     "age": "P1D",

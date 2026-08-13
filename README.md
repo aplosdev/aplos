@@ -1,4 +1,4 @@
-# @steno/theme-aplos
+# @gabs/aplos
 
 Aplós for [Steno](https://steno.gxbs.dev/): a polished, responsive theme for
 documentation, blogs, and personal sites.
@@ -14,7 +14,7 @@ deno create jsr:@steno/init
 Choose Aplós when prompted, or set one line in `content/.steno/config.yml`:
 
 ```yaml
-theme: jsr:@steno/theme-aplos
+theme: jsr:@gabs/aplos
 ```
 
 Then run:
@@ -37,7 +37,7 @@ author: Ada Lovelace
 contentDir: content
 output: dist
 shortUrls: true
-theme: jsr:@steno/theme-aplos
+theme: jsr:@gabs/aplos
 
 themeConfig:
   accent: "#55b458"
