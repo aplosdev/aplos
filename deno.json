@@ -1,6 +1,6 @@
 {
   "name": "@gabs/aplos",
-  "version": "0.2.2",
+  "version": "4.0.0",
   "license": "MIT",
   "lock": true,
   "exports": {
@@ -23,11 +23,7 @@
     "exclude": ["jsr:@steno/steno", "jsr:@steno/plugin-scss"]
   },
   "fmt": {
-    "exclude": [
-      "demo/dist",
-      "demo/.dist.steno-backup",
-      "demo/.steno/build-cache.json"
-    ]
+    "exclude": ["demo/dist", "demo/.dist.steno-backup", "demo/.steno/build-cache.json"]
   },
   "nodeModulesDir": "auto",
   "allowScripts": ["npm:@parcel/watcher@2.6.0"]
