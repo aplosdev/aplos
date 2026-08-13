@@ -2,7 +2,7 @@
 
 main {
   margin: 7.5% auto 4%;
-  width: 60vw;
+  width: 60%;
   max-width: var(--content-width);
 }
 
@@ -13,16 +13,24 @@ h4,
 h5,
 h6 {
   margin: 1.25rem 0;
-  font-weight: 800;
+  background: linear-gradient(180deg, var(--color-heading-from) 0%, var(--color-heading-to) 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
   line-height: normal;
-  letter-spacing: -0.075rem;
+  letter-spacing: -0.03em;
   overflow-wrap: break-word;
+
+  code {
+    background: none;
+    color: var(--color-accent);
+    font-weight: 600;
+  }
 }
 
 h1 {
   margin: 2.0938rem 0;
   font-size: 3.125rem;
-  font-weight: 900;
 }
 
 h2 {
@@ -68,13 +76,15 @@ small {
 
 main a {
   color: var(--color-accent);
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: underline;
-  transition: text-decoration 0.3s ease;
+  text-decoration-color: var(--color-accent-alpha);
+  text-underline-offset: 0.2em;
+  transition: text-decoration-color 0.3s ease;
 }
 
 main a:hover {
-  text-decoration: dotted underline;
+  text-decoration-color: var(--color-accent);
 }
 
 main a:active {
@@ -101,15 +111,75 @@ abbr {
 
 /* Content blocks */
 
-pre {
+.code-block {
+  position: relative;
   margin: 1.25rem 0;
-  border-right: var(--color-accent) 0.3125rem solid;
-  border-radius: var(--rounded-sm);
-  background-color: var(--color-background-code);
+}
+
+.code-block pre {
+  margin: 0;
+}
+
+pre {
+  @include surface;
+
   padding: 0.625rem 1.25rem;
   overflow: auto;
   font-weight: 500;
   font-family: var(--font-mono);
+}
+
+.copy-code {
+  display: flex;
+  position: absolute;
+  top: -0.75rem;
+  right: -0.75rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition:
+    color var(--transition),
+    border-color var(--transition);
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  background-color: var(--color-surface);
+  backdrop-filter: blur(var(--blur));
+  -webkit-backdrop-filter: blur(var(--blur));
+  width: 2rem;
+  height: 2rem;
+  color: var(--color-text-secondary);
+}
+
+.copy-code:hover {
+  color: var(--color-text);
+}
+
+.copy-code .ph-check {
+  display: none;
+  color: var(--color-accent);
+}
+
+.copy-code.copied .ph-copy {
+  display: none;
+}
+
+.copy-code.copied .ph-check {
+  display: inline-block;
+  animation: copy-code-pop 0.35s ease;
+}
+
+@keyframes copy-code-pop {
+  0% {
+    transform: scale(0.5);
+  }
+
+  60% {
+    transform: scale(1.25);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 pre code {
@@ -132,11 +202,12 @@ pre .highlighted {
 pre .has-focused-lines .line:not(.has-focus) {
   opacity: 0.4;
   filter: blur(0.095rem);
-  transition: filter 0.35s, opacity 0.35s;
+  transition:
+    filter 0.35s,
+    opacity 0.35s;
 }
 
 :not(pre) > code,
-kbd,
 samp {
   border-radius: var(--rounded-xs);
   background-color: var(--color-background-second);
@@ -146,10 +217,11 @@ samp {
 }
 
 blockquote {
+  @include surface;
+
   margin: 1.25rem 0;
   border-inline-start: var(--color-accent) 0.3125rem solid;
   border-radius: 0.5rem 0.8rem 0.8rem 0.5rem;
-  background-color: var(--color-background-second);
   padding: 0.625rem 1.1875rem;
   width: max-content;
   max-width: 97%;
@@ -176,7 +248,10 @@ video {
   margin: 0.625rem 0;
   border-radius: var(--rounded-sm);
   width: 100%;
-  transition: transform 0.4s, border-radius 0.4s, box-shadow 1.5s ease;
+  transition:
+    transform 0.4s,
+    border-radius 0.4s,
+    box-shadow 1.5s ease;
 }
 
 img:hover,
@@ -342,8 +417,9 @@ li::marker {
 }
 
 table {
+  @include surface;
+
   margin: 1.25rem 0;
-  border-radius: var(--rounded-sm);
   border-collapse: collapse;
   width: 100%;
   table-layout: fixed;
@@ -353,6 +429,7 @@ table {
 
 th,
 tfoot {
+  border-bottom: 1px solid var(--color-border);
   background-color: var(--color-background-mute);
   padding: 0.625rem 1.25rem;
   color: var(--color-accent);
@@ -366,7 +443,11 @@ td {
 }
 
 tr {
-  background-color: var(--color-background);
+  background-color: transparent;
+}
+
+tr:not(:last-child) {
+  border-bottom: 1px solid var(--color-border);
 }
 
 tr:nth-child(2n) {
@@ -380,36 +461,24 @@ tr:nth-child(2n) {
 }
 
 kbd {
+  @include surface;
+
   display: inline-block;
-  transition-duration: var(--transition);
-  transition-property: transform, box-shadow, background-color;
-  cursor: pointer;
-  box-shadow: inset 0 -2px 0 var(--color-border), 0 -1px 0 var(--color-border);
   border-radius: var(--rounded-xs);
-  background-color: var(--color-background-second);
   padding: 0.125rem 0.375rem;
   font-size: 0.8rem;
   line-height: normal;
   font-family: var(--font-mono);
 }
 
-kbd:active {
-  transform: translateY(2px);
-  box-shadow: inset 0 1px 0 var(--color-border);
-  background-color: var(--color-background-mute);
-}
-
 time {
-  cursor: pointer;
-  border: 0.0625rem solid var(--color-border);
-  border-bottom: 0.125rem solid var(--color-border);
-  border-radius: calc(var(--rounded-xs) - 0.0125rem);
-  background-color: var(--color-background-second);
-  padding: 0.1875rem;
+  @include surface;
+
+  border-radius: 999rem;
+  padding: 0.1875rem 0.6rem;
   color: var(--color-accent);
-  font-weight: 700;
+  font-weight: 600;
   font-size: 0.875rem;
-  transition: border 0.1s ease, font-weight 0.1s ease;
 }
 
 .spoiler {
@@ -427,10 +496,10 @@ time {
 }
 
 aside {
+  @include surface;
+
   float: right;
   margin-inline-start: 1rem;
-  border-radius: var(--rounded-sm);
-  background-color: var(--color-background-second);
   padding: 1rem;
   width: 30%;
 }

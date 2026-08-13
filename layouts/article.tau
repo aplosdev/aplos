@@ -9,19 +9,16 @@
           {#if update}<small>Last updated on <time datetime="{update}" data-localize-date data-date-time>{ update | date }</time></small>{/if}
           {#if date}<small><time datetime="{date}" data-localize-date>{ date | date }</time></small>{/if}
           <h1>{#if title}{ title }{:else}{ site.title }{/if}</h1>
-          <small>
+          <div class="article-meta">
             {#if author && theme.articles?.authors !== false}
-              &middot; {#if author.length > 1}Authors:{:else}Author:{/if}
-              {#each author as name, index}{ name }{#if index !== author.length - 1}, {/if}{/each}
+              <span class="meta-item">{#if author.length > 1}Authors:{:else}Author:{/if} {#each author as name, index}{ name }{#if index !== author.length - 1}, {/if}{/each}</span>
             {/if}
-            <span class="reading-time" data-reading-time>&middot; Calculating reading time&hellip;</span>
             {#if tags}
               <span class="tags">
-                &middot;
                 {#each tags as tag}<span>{ tag }</span>{/each}
               </span>
             {/if}
-          </small>
+          </div>
         </div>
       </div>{/if}
 

@@ -56,23 +56,45 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.05em;
+}
+
+.article-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.375rem;
+}
+
+.article-meta .meta-item {
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+}
+
+#article-head .tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.375rem;
 }
 
 #article-head .tags span {
   transition: all 0.3s ease;
   cursor: default;
-  margin-right: 0.3rem;
-  border-radius: 20px;
-  background-color: var(--color-background-second);
-  padding: 0.15rem 0.45rem;
+  border: 1px solid var(--color-border);
+  border-radius: 999rem;
+  background-color: var(--color-surface);
+  padding: 0.15rem 0.55rem;
   color: var(--color-text-secondary);
   font-size: 0.75rem;
 }
 
 #article-head .tags span:hover {
   transform: scale(1.05);
+  border-color: var(--color-accent-alpha);
   background-color: var(--color-accent-alpha);
   color: var(--color-accent);
 }
@@ -92,17 +114,18 @@
 }
 
 .dialog-buttons a {
-  transition: all 0.3s ease;
+  @include surface;
+
+  transition: color var(--transition), border-color var(--transition);
   cursor: pointer;
   border-radius: 0.5rem;
-  background-color: var(--color-background-second);
   padding: 0.5rem 1rem;
   color: var(--color-accent);
   text-decoration: none;
 }
 
 .dialog-buttons a:hover {
-  background-color: var(--color-background-mute);
+  border-color: var(--color-accent-alpha);
 }
 
 .extra-link {
@@ -118,9 +141,10 @@
 .article-nav {
   display: block;
   flex: 1 1 0;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, border-color 0.3s ease;
   margin: 0 0.2rem;
-  border-radius: 0.625rem;
+  border: 1px solid transparent;
+  border-radius: var(--rounded-sm);
   background-color: transparent;
   padding: 1.25rem;
   max-width: calc(50% - 0.125rem);
@@ -138,12 +162,12 @@
 }
 
 .article-nav:hover {
-  transform: translateY(-0.3125rem);
-  box-shadow: 0 3px var(--color-accent);
-  background-color: var(--color-background-second);
+  transform: translateY(-0.1875rem);
+  border-color: var(--color-border);
+  background-color: var(--color-surface);
   max-width: 100%;
 }
 
 .article-nav:active {
-  transform: translateY(0.3125rem);
+  transform: translateY(0);
 }

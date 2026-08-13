@@ -26,9 +26,10 @@
 .note,
 .warning,
 .danger {
+  @include surface;
+
   margin: 1.25rem 0;
-  border-radius: var(--rounded-sm);
-  padding: 1.8rem 1.25rem;
+  padding: 1.25rem 1.4rem;
   width: max-content;
   min-width: 45%;
   max-width: 70%;
@@ -40,9 +41,9 @@
 .note .custom-block-title,
 .warning .custom-block-title,
 .danger .custom-block-title {
-  margin: 0 0 0.625rem;
-  font-weight: 800;
-  font-size: 1.8rem;
+  margin: 0 0 0.5rem;
+  font-weight: 700;
+  font-size: 1.05rem;
 }
 
 .tip .custom-block-title::before {
@@ -83,58 +84,108 @@
   font-size: 0.9rem;
 }
 
-.tip {
-  border-inline-start: #009900 0.4rem solid;
-  background-color: #0099001e;
+.tip .custom-block-title::before {
+  background: linear-gradient(
+    95deg,
+    #009900 20%,
+    color-mix(in srgb, #009900 55%, white) 100%
+  );
 }
 
-.info,
-.note {
-  border-inline-start: #0066cc 0.4rem solid;
-  background-color: #0066cc1e;
+.info .custom-block-title::before,
+.note .custom-block-title::before {
+  background: linear-gradient(
+    95deg,
+    var(--color-accent) 20%,
+    var(--color-accent-light) 100%
+  );
 }
 
-.warning {
-  border-inline-start: #ff9900 0.4rem solid;
-  background-color: #ff99001e;
+.warning .custom-block-title::before {
+  background: linear-gradient(
+    95deg,
+    #cc7a00 20%,
+    color-mix(in srgb, #cc7a00 55%, white) 100%
+  );
 }
 
-.danger {
-  border-inline-start: #cc0000 0.4rem solid;
-  background-color: #cc00001e;
+.danger .custom-block-title::before {
+  background: linear-gradient(
+    95deg,
+    #cc0000 20%,
+    color-mix(in srgb, #cc0000 55%, white) 100%
+  );
 }
 
-.danger .custom-block-title,
-.danger a {
-  color: #ff6666;
+// `background:` is a shorthand and would silently reset `background-clip`
+// back to border-box if combined into the icon rules above - keep the
+// text-clip gradients in their own rules, with background-clip declared
+// after background so it isn't reset by the shorthand.
+.tip .custom-block-title {
+  background: linear-gradient(
+    95deg,
+    #009900 20%,
+    color-mix(in srgb, #009900 55%, white) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.warning .custom-block-title,
+.info .custom-block-title,
+.note .custom-block-title {
+  background: linear-gradient(
+    95deg,
+    var(--color-accent) 20%,
+    var(--color-accent-light) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.warning .custom-block-title {
+  background: linear-gradient(
+    95deg,
+    #cc7a00 20%,
+    color-mix(in srgb, #cc7a00 55%, white) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.danger .custom-block-title {
+  background: linear-gradient(
+    95deg,
+    #cc0000 20%,
+    color-mix(in srgb, #cc0000 55%, white) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tip a {
+  color: #009900;
+}
+
+.info a,
+.note a {
+  color: var(--color-accent);
+}
+
 .warning a {
   color: #cc7a00;
 }
 
+.danger a {
+  color: #cc0000;
+}
+
 @media (prefers-color-scheme: dark) {
-  .tip {
-    background-color: #0099002a;
-  }
-
-  .info,
-  .note {
-    background-color: #0066cc2a;
-  }
-
-  .warning {
-    background-color: #ff99002a;
-  }
-
-  .danger {
-    background-color: #cc00002a;
-  }
-
-  .warning .custom-block-title,
   .warning a {
     color: #ffc266;
+  }
+
+  .danger a {
+    color: #ff6666;
   }
 }
 
@@ -142,9 +193,9 @@
    custom-container syntax the Markdown pipeline doesn't have. */
 
 .details {
+  @include surface;
+
   margin: 1.25rem 0;
-  border-radius: var(--rounded-sm);
-  background-color: var(--color-background-second);
   padding: 1rem;
   min-width: 45%;
   max-width: max-content;
@@ -165,28 +216,85 @@
    frontmatter array ({url, title, level}), since Steno has no built-in
    heading extraction to generate one for you. See layout.tau. */
 
+// Reached only through the nav's TOC-toggle pill, at every screen width -
+// there's no always-on sidebar anymore. It's a literal container-transform:
+// site.js drives top/left/width/height/border-radius as inline styles,
+// starting the panel as an exact copy of the toggle button's own box (same
+// position, same size, same round corners) and animating it out into the
+// full panel - so it reads as the button itself expanding, not a separate
+// thing appearing next to it. See the `[data-toc-toggle]` block in site.js.
 .table-of-contents {
-  -webkit-backdrop-filter: blur(0.625rem);
-  backdrop-filter: blur(0.625rem);
   position: fixed;
-  top: 9.375rem;
-  left: 3%;
-  z-index: 999;
-  border: 0.0625rem solid var(--color-border);
-  border-radius: 1rem;
-  background-color: var(--color-header-hover);
-  padding: 1.625rem 1.5625rem;
+  z-index: 10000;
+  top: 0;
+  left: 0;
   overflow: hidden;
+  // Size/position ease out smoothly (no bounce - a big panel is heavier
+  // than the nav pills, an overshoot would look sloppy on it). Corner
+  // radius runs on its own slower, delayed transition so it visibly lags
+  // behind the box while that's still growing - the shape reads as round
+  // through most of the motion and only relaxes into a rectangle near the
+  // end, which is what actually sells "a circle expanding" instead of "a
+  // rectangle fading in where a circle used to be".
+  transition: top 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    left 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    width 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    height 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    border-radius 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.05s;
+  // Same border/background/blur as `.nav-pill` (not the generic `surface`
+  // token every other card uses) - it starts life as an exact stand-in for
+  // the toggle button, so it has to render identically to one, not just
+  // look similar. Any mismatch here reads as a color flash at the instant
+  // the button swaps for the panel.
+  border: 0.4px solid var(--color-border);
+  background-color: var(--color-header);
+  -webkit-backdrop-filter: saturate(180%) blur(0.625rem);
+  backdrop-filter: saturate(180%) blur(0.625rem);
+  padding: 1.625rem 1.5625rem;
   text-align: left;
+  pointer-events: none;
+  visibility: hidden;
 }
 
+// Scroll dismissal: the button is sliding off the top of the screen at the
+// same moment (see .nav-pill.hidden) - follow it with the identical
+// transform, transition timing, and easing (0.5s ease - `.site-nav` and
+// `.nav-pill` both use exactly that for their own `.hidden`) instead of
+// shrinking back into a button that's vanishing underneath the panel.
+// `--nav-margin-top` is the same custom property `.nav-pill.hidden` uses,
+// so both travel the exact same distance too.
+.table-of-contents.sliding-away {
+  transition: transform 0.5s ease, opacity 0.3s ease;
+  transform: translate3d(0, calc((100% + var(--nav-margin-top, 1.5rem)) * -1), 0);
+  opacity: 0;
+  visibility: visible;
+  pointer-events: none;
+}
+
+.table-of-contents.open {
+  overflow-y: auto;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+// The list itself only fades in once the box has finished (most of) its
+// growth - otherwise text visibly reflows/clips mid-animation, which reads
+// as broken rather than as a single continuous morph.
 .table-of-contents ul {
+  transition: opacity 0.2s ease;
+  transition-delay: 0s;
+  opacity: 0;
   margin: 0 0 0 0.9375rem;
   padding: 0;
   color: var(--color-text-secondary);
   font-weight: 600;
   font-size: 0.875rem;
   list-style-type: decimal;
+}
+
+.table-of-contents.open ul {
+  transition-delay: 0.2s;
+  opacity: 1;
 }
 
 .table-of-contents ul::before {
@@ -218,7 +326,7 @@
   color: var(--color-text-secondary);
   font-weight: 600;
   font-size: 0.875rem;
-  letter-spacing: -0.045rem;
+  letter-spacing: -0.03em;
   text-align: left;
   text-decoration: underline solid var(--color-accent);
   transition: color 0.5s ease;
@@ -243,10 +351,10 @@
 }
 
 .site-footer nav {
+  @include surface;
+
   margin: 0 auto 1rem;
-  border: 0.4px solid var(--color-border);
   border-radius: 2.5rem;
-  background-color: var(--color-header);
   padding: 0.6625rem 2.5625rem;
   width: fit-content;
   max-width: 100%;

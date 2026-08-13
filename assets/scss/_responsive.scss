@@ -2,7 +2,7 @@
   main {
     margin-top: 9.375rem !important;
     margin-bottom: 9.375rem !important;
-    width: 90vw !important;
+    width: 90% !important;
   }
 
   .site-nav {
@@ -27,16 +27,6 @@
   .danger,
   .details {
     width: 100% !important;
-  }
-
-  .table-of-contents {
-    left: 6% !important;
-  }
-}
-
-@media (max-width: 1828px) {
-  .table-of-contents {
-    display: none !important;
   }
 }
 
@@ -90,6 +80,10 @@
   .glitch,
   .glitch::before,
   .glitch::after {
+    animation: none !important;
+  }
+
+  .copy-code.copied .ph-check {
     animation: none !important;
   }
 }

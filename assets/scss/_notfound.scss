@@ -15,8 +15,10 @@
 #not-found h1 {
   margin-top: 0;
   margin-bottom: 0;
+  background: none;
+  -webkit-text-fill-color: currentcolor;
   color: var(--color-accent);
-  font-weight: 800;
+  font-weight: 700;
   font-size: 2em;
 }
 
@@ -25,9 +27,9 @@
   position: relative;
   animation: notfound-blink 0.8s infinite alternate;
   color: var(--color-text);
-  font-weight: 800;
+  font-weight: 700;
   font-size: 7em;
-  letter-spacing: -0.15em;
+  letter-spacing: -0.03em;
   line-height: 1;
 }
 
