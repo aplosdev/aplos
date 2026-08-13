@@ -4,7 +4,7 @@
 </div>
 
 > [!IMPORTANT]
-> If you want to see the documentation/guide check <https://aplos.gxbs.me>.
+> If you want to see the documentation/guide check <https://aplos.gxbs.dev>.
 
 ![Screenshot of Aplos](https://github.com/GabsEdits/aplos/assets/110247388/3c98f962-b560-442a-9f56-9b805156a272)
 
@@ -49,8 +49,8 @@ deno task dev
 ```
 
 That is enough for a complete site. Add Markdown files to `content/`; folders
-become routes and `index.md` becomes the folder homepage. You can check the next
-steps by looking at the [Guide](https://aplos.gxbs.me/guide/).
+become routes and `index.md` becomes the folder homepage. You can check the
+next steps by looking at the [Guide](https://aplos.gxbs.dev/guide/).
 
 ## A practical configuration
 
