@@ -6,6 +6,12 @@
 > [!IMPORTANT]
 > If you want to see the documentation/guide check <https://aplos.gxbs.dev>.
 
+> [!NOTE]
+> Aplós is now a [Steno](https://steno.gxbs.dev/) theme — this branch replaces
+> the old VitePress theme. The previous VitePress version still lives on the
+> [`main`](https://github.com/aplosdev/aplos/tree/main) branch, in maintenance
+> mode only.
+
 ![Screenshot of Aplos](https://github.com/GabsEdits/aplos/assets/110247388/3c98f962-b560-442a-9f56-9b805156a272)
 
 ## Features
