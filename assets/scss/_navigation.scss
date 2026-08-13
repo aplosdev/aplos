@@ -215,8 +215,10 @@
     var(--color-accent) calc(var(--progress) * 1%),
     var(--color-border) 0
   );
-  -webkit-mask-image: radial-gradient(closest-side, transparent calc(65% - 1px), #000 65%);
-  mask-image: radial-gradient(closest-side, transparent calc(65% - 1px), #000 65%);
+  -webkit-mask-image: radial-gradient(closest-side, transparent calc(65% - 1px),
+    #000 65%);
+  mask-image: radial-gradient(closest-side, transparent calc(65% - 1px), #000
+    65%);
 }
 
 .nav-pill-toc {

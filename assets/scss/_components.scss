@@ -265,7 +265,8 @@
 // so both travel the exact same distance too.
 .table-of-contents.sliding-away {
   transition: transform 0.5s ease, opacity 0.3s ease;
-  transform: translate3d(0, calc((100% + var(--nav-margin-top, 1.5rem)) * -1), 0);
+  transform: translate3d(0, calc((100% + var(--nav-margin-top, 1.5rem)) * -1),
+    0);
   opacity: 0;
   visibility: visible;
   pointer-events: none;

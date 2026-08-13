@@ -37,7 +37,10 @@
 
   const currentPath = location.pathname.replace(/index\.html$/, "");
   for (const link of nav.querySelectorAll("li:not(.site-title) a[href]")) {
-    const target = new URL(link.href, location.href).pathname.replace(/index\.html$/, "");
+    const target = new URL(link.href, location.href).pathname.replace(
+      /index\.html$/,
+      "",
+    );
     if (target === currentPath) link.classList.add("active");
   }
 
@@ -105,9 +108,10 @@
   const content = main.cloneNode(true);
   content.querySelector("#article-head")?.remove();
   content.querySelector("#article-footer")?.remove();
-  const words = (content.textContent || "").trim().split(/\s+/).filter(Boolean).length;
-  output.textContent =
-    Math.max(1, Math.ceil(words / 200)) + " min" + (words > 200 ? "s" : "") + " left";
+  const words =
+    (content.textContent || "").trim().split(/\s+/).filter(Boolean).length;
+  output.textContent = Math.max(1, Math.ceil(words / 200)) + " min" +
+    (words > 200 ? "s" : "") + " left";
 })();
 
 // Reading-progress ring: fills based on how far the reader has scrolled
@@ -126,9 +130,15 @@
   let end = 0;
 
   function measure() {
-    start = (head ? head.getBoundingClientRect().bottom : main.getBoundingClientRect().top) +
+    start =
+      (head
+        ? head.getBoundingClientRect().bottom
+        : main.getBoundingClientRect().top) +
       scrollY;
-    end = (footer ? footer.getBoundingClientRect().top : main.getBoundingClientRect().bottom) +
+    end =
+      (footer
+        ? footer.getBoundingClientRect().top
+        : main.getBoundingClientRect().bottom) +
       scrollY;
   }
 
@@ -171,16 +181,16 @@
   const main = document.querySelector("#content-main");
   if (!toc || !main) return;
 
-  const headings = Array.from(main.querySelectorAll("h2, h3, h4, h5, h6")).filter(
-    (heading) => !heading.closest("#article-footer"),
-  );
+  const headings = Array.from(main.querySelectorAll("h2, h3, h4, h5, h6"))
+    .filter(
+      (heading) => !heading.closest("#article-footer"),
+    );
   if (headings.length === 0) return;
 
   const used = new Set();
   const list = toc.querySelector("ul");
   for (const heading of headings) {
-    const base =
-      heading.id ||
+    const base = heading.id ||
       (heading.textContent || "section")
         .toLowerCase()
         .normalize("NFKD")
@@ -230,7 +240,14 @@
   function buttonBox() {
     const rect = toggle.getBoundingClientRect();
     const radius = getComputedStyle(toggle).borderRadius;
-    return { top: rect.top, left: rect.left, right: rect.right, width: rect.width, height: rect.height, radius };
+    return {
+      top: rect.top,
+      left: rect.left,
+      right: rect.right,
+      width: rect.width,
+      height: rect.height,
+      radius,
+    };
   }
 
   function setBox(box) {
@@ -463,7 +480,8 @@
         other.classList.toggle("active", other === button);
       }
       for (const post of posts) {
-        post.hidden = tag !== "All" && !post.dataset.tags.split("|").includes(tag);
+        post.hidden = tag !== "All" &&
+          !post.dataset.tags.split("|").includes(tag);
       }
     });
     controls.append(button);

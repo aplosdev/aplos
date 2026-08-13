@@ -23,7 +23,11 @@
     "exclude": ["jsr:@steno/steno"]
   },
   "fmt": {
-    "exclude": ["demo/dist", "demo/.dist.steno-backup", "demo/.steno/build-cache.json"]
+    "exclude": [
+      "demo/dist",
+      "demo/.dist.steno-backup",
+      "demo/.steno/build-cache.json"
+    ]
   },
   "nodeModulesDir": "auto",
   "allowScripts": ["npm:@parcel/watcher@2.6.0"]
