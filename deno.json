@@ -2,7 +2,7 @@
   "name": "@gabs/aplos",
   "version": "0.2.2",
   "license": "MIT",
-  "lock": false,
+  "lock": true,
   "exports": {
     ".": "./mod.ts"
   },

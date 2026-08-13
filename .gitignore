@@ -1,4 +1,5 @@
 dist/
 .dist.steno-backup/
+node_modules/
 demo/.steno/build-cache.json
 .DS_Store
