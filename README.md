@@ -49,8 +49,8 @@ deno task dev
 ```
 
 That is enough for a complete site. Add Markdown files to `content/`; folders
-become routes and `index.md` becomes the folder homepage. You can check the
-next steps by looking at the [Guide](https://aplos.gxbs.dev/guide/).
+become routes and `index.md` becomes the folder homepage. You can check the next
+steps by looking at the [Guide](https://aplos.gxbs.dev/guide/).
 
 ## A practical configuration
 
