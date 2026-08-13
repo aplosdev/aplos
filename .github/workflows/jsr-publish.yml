@@ -1,13 +1,12 @@
 name: Publish to JSR
 
 on:
-  push:
-    branches: ["steno", "main"]
+  release:
+    types: [published]
   workflow_dispatch:
 
 jobs:
   publish-jsr:
-    if: contains(github.event.comment.body, 'Publish this Release') || startsWith(github.event.head_commit.message, 'release:') || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     permissions:
       contents: read
