@@ -1,0 +1,35 @@
+name: Format Code
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ["steno", "main"]
+
+permissions:
+  contents: write
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+
+      - name: Lint
+        run: deno lint || true
+
+      - name: Format
+        run: deno fmt
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add .
+          git commit -am "chore: format code" || true
+          git push
