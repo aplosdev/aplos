@@ -43,16 +43,18 @@
 
 .site-nav {
   --nav-margin-top: 1.5rem;
-  -webkit-backdrop-filter: saturate(180%) blur(0.625rem);
-  backdrop-filter: saturate(180%) blur(0.625rem);
+  -webkit-backdrop-filter: saturate(140%) blur(0.35rem);
+  backdrop-filter: saturate(140%) blur(0.35rem);
   margin-top: var(--nav-margin-top);
   border: 0.4px solid var(--color-border);
   border-radius: 2.5rem;
-  background-color: var(--color-header);
+  background-color: color-mix(in srgb, var(--color-header) 88%, var(--color-background));
   padding: 0.0625rem 1.5625rem;
   max-width: 90%;
   text-align: center;
-  transition: background-color 0.4s ease, transform 0.5s ease;
+  transition:
+    background-color 0.4s ease,
+    transform 0.5s ease;
 }
 
 .site-nav.hidden {
@@ -60,7 +62,7 @@
 }
 
 .site-nav:hover {
-  background-color: var(--color-header-hover);
+  background-color: color-mix(in srgb, var(--color-header-hover) 88%, var(--color-background));
 }
 
 .site-nav ul {
@@ -93,7 +95,10 @@
 .site-nav li:not(.site-title) {
   max-width: 12rem;
   opacity: 1;
-  transition: max-width 0.4s ease, opacity 0.3s ease, margin 0.4s ease;
+  transition:
+    max-width 0.4s ease,
+    opacity 0.3s ease,
+    margin 0.4s ease;
 }
 
 .site-nav .site-title {
@@ -169,14 +174,16 @@
   display: flex;
   align-items: center;
   gap: 0.4rem;
-  -webkit-backdrop-filter: saturate(180%) blur(0.625rem);
-  backdrop-filter: saturate(180%) blur(0.625rem);
+  -webkit-backdrop-filter: saturate(140%) blur(0.35rem);
+  backdrop-filter: saturate(140%) blur(0.35rem);
   margin-top: var(--nav-margin-top);
-  transition: background-color 0.4s ease, transform 0.5s ease,
+  transition:
+    background-color 0.4s ease,
+    transform 0.5s ease,
     color 0.3s ease;
   border: 0.4px solid var(--color-border);
   border-radius: 2.5rem;
-  background-color: var(--color-header);
+  background-color: color-mix(in srgb, var(--color-header) 88%, var(--color-background));
   padding: 0.5rem 1.125rem;
   color: var(--color-text-secondary);
   font-weight: 600;
@@ -192,7 +199,7 @@
 }
 
 .nav-pill:hover {
-  background-color: var(--color-header-hover);
+  background-color: color-mix(in srgb, var(--color-header-hover) 88%, var(--color-background));
 }
 
 .nav-pill .ph-icon {
@@ -211,14 +218,9 @@
   width: 0.9rem;
   height: 0.9rem;
   border-radius: 50%;
-  background: conic-gradient(
-    var(--color-accent) calc(var(--progress) * 1%),
-    var(--color-border) 0
-  );
-  -webkit-mask-image: radial-gradient(closest-side, transparent calc(65% - 1px),
-    #000 65%);
-  mask-image: radial-gradient(closest-side, transparent calc(65% - 1px), #000
-    65%);
+  background: conic-gradient(var(--color-accent) calc(var(--progress) * 1%), var(--color-border) 0);
+  -webkit-mask-image: radial-gradient(closest-side, transparent calc(65% - 1px), #000 65%);
+  mask-image: radial-gradient(closest-side, transparent calc(65% - 1px), #000 65%);
 }
 
 .nav-pill-toc {
@@ -230,7 +232,9 @@
   // `.nav-pill.hidden`'s slide-away animation depends on. Repeat the full
   // list so this button hides/reveals in sync with the rest of the nav
   // instead of snapping instantly while its siblings slide.
-  transition: background-color 0.4s ease, transform 0.5s ease,
+  transition:
+    background-color 0.4s ease,
+    transform 0.5s ease,
     color 0.3s ease;
   padding: 0;
   // No hardcoded size: `.site-header` is a flex row with the default
