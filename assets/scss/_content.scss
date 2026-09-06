@@ -13,7 +13,8 @@ h4,
 h5,
 h6 {
   margin: 1.25rem 0;
-  background: linear-gradient(180deg, var(--color-heading-from) 0%, var(--color-heading-to) 100%);
+  background: linear-gradient(180deg, var(--color-heading-from) 0%,
+    var(--color-heading-to) 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 700;
