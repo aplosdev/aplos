@@ -134,16 +134,16 @@
   font-size: 0.875rem;
   letter-spacing: -0.015rem;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
 }
 
-.site-nav a:hover,
-.site-nav a.active {
+.site-nav li:not(.site-title) a:hover,
+.site-nav li:not(.site-title) a.active {
+  border-radius: var(--rounded-xs);
+  background-color: var(--color-background-second);
   color: var(--color-accent);
-}
-
-.site-nav a:active {
-  transform: scale(0.9);
 }
 
 .site-nav .site-icon .ph-icon {

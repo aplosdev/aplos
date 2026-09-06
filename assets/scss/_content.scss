@@ -81,15 +81,17 @@ main a {
   text-decoration: underline;
   text-decoration-color: var(--color-accent-alpha);
   text-underline-offset: 0.2em;
-  transition: text-decoration-color 0.3s ease;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    text-decoration-color 0.2s ease;
 }
 
 main a:hover {
+  border-radius: var(--rounded-xs);
+  background-color: var(--color-accent-alpha);
+  color: var(--color-text);
   text-decoration-color: var(--color-accent);
-}
-
-main a:active {
-  transform: scale(0.9);
 }
 
 .no-underline a {
