@@ -1,8 +1,7 @@
 @media (max-width: 1414px) {
   main {
-    margin-top: 9.375rem !important;
-    margin-bottom: 9.375rem !important;
-    width: 90% !important;
+    margin-top: 8rem !important;
+    margin-bottom: 6rem !important;
   }
 
   .site-nav {
@@ -32,7 +31,6 @@
 
 @media (max-width: 768px) {
   main {
-    width: min(100% - 2rem, var(--content-width));
     margin-top: 6.5rem;
   }
 
