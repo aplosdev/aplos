@@ -1,7 +1,9 @@
 /* Icon links: an external-link arrow after a plain text link */
 
 .icon-links a:not(:has(img))::after {
-  @include phosphor-icon("M224.49,136.49l-72,72a12,12,0,0,1-17-17L187,140H40a12,12,0,0,1,0-24H187L135.51,64.48a12,12,0,0,1,17-17l72,72A12,12,0,0,1,224.49,136.49Z");
+  @include phosphor-icon(
+    "M224.49,136.49l-72,72a12,12,0,0,1-17-17L187,140H40a12,12,0,0,1,0-24H187L135.51,64.48a12,12,0,0,1,17-17l72,72A12,12,0,0,1,224.49,136.49Z"
+  );
   display: inline-block;
   margin-inline-start: 0.2em;
   background-color: currentcolor;
@@ -15,7 +17,9 @@
 
 .icon-links a[href*="https://"]:not(:has(img))::after,
 .icon-links a[href*="http://"]:not(:has(img))::after {
-  @include phosphor-icon("M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z");
+  @include phosphor-icon(
+    "M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"
+  );
 }
 
 /* Admonitions: hand-authored <div class="tip">, not a Markdown container
@@ -36,6 +40,23 @@
   line-height: 1.5rem;
 }
 
+.tip {
+  background-color: color-mix(in srgb, #009900 8%, var(--color-surface));
+}
+
+.info,
+.note {
+  background-color: color-mix(in srgb, var(--color-accent) 8%, var(--color-surface));
+}
+
+.warning {
+  background-color: color-mix(in srgb, #cc7a00 9%, var(--color-surface));
+}
+
+.danger {
+  background-color: color-mix(in srgb, #cc0000 8%, var(--color-surface));
+}
+
 .tip .custom-block-title,
 .info .custom-block-title,
 .note .custom-block-title,
@@ -47,20 +68,28 @@
 }
 
 .tip .custom-block-title::before {
-  @include phosphor-icon("M176,232a8,8,0,0,1-8,8H88a8,8,0,0,1,0-16h80A8,8,0,0,1,176,232Zm40-128a87.55,87.55,0,0,1-33.64,69.21A16.24,16.24,0,0,0,176,186v6a16,16,0,0,1-16,16H96a16,16,0,0,1-16-16v-6a16,16,0,0,0-6.23-12.66A87.59,87.59,0,0,1,40,104.49C39.74,56.83,78.26,17.14,125.88,16A88,88,0,0,1,216,104Zm-16,0a72,72,0,0,0-73.74-72c-39,.92-70.47,33.39-70.26,72.39a71.65,71.65,0,0,0,27.64,56.3A32,32,0,0,1,96,186v6h64v-6a32.15,32.15,0,0,1,12.47-25.35A71.65,71.65,0,0,0,200,104Z");
+  @include phosphor-icon(
+    "M176,232a8,8,0,0,1-8,8H88a8,8,0,0,1,0-16h80A8,8,0,0,1,176,232Zm40-128a87.55,87.55,0,0,1-33.64,69.21A16.24,16.24,0,0,0,176,186v6a16,16,0,0,1-16,16H96a16,16,0,0,1-16-16v-6a16,16,0,0,0-6.23-12.66A87.59,87.59,0,0,1,40,104.49C39.74,56.83,78.26,17.14,125.88,16A88,88,0,0,1,216,104Zm-16,0a72,72,0,0,0-73.74-72c-39,.92-70.47,33.39-70.26,72.39a71.65,71.65,0,0,0,27.64,56.3A32,32,0,0,1,96,186v6h64v-6a32.15,32.15,0,0,1,12.47-25.35A71.65,71.65,0,0,0,200,104Z"
+  );
 }
 
 .info .custom-block-title::before,
 .note .custom-block-title::before {
-  @include phosphor-icon("M108,84a16,16,0,1,1,16,16A16,16,0,0,1,108,84Zm128,44A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Zm-72,36.68V132a20,20,0,0,0-20-20,12,12,0,0,0-4,23.32V168a20,20,0,0,0,20,20,12,12,0,0,0,4-23.32Z");
+  @include phosphor-icon(
+    "M108,84a16,16,0,1,1,16,16A16,16,0,0,1,108,84Zm128,44A108,108,0,1,1,128,20,108.12,108.12,0,0,1,236,128Zm-24,0a84,84,0,1,0-84,84A84.09,84.09,0,0,0,212,128Zm-72,36.68V132a20,20,0,0,0-20-20,12,12,0,0,0-4,23.32V168a20,20,0,0,0,20,20,12,12,0,0,0,4-23.32Z"
+  );
 }
 
 .warning .custom-block-title::before {
-  @include phosphor-icon("M236.8,188.09,149.35,36.22a24.76,24.76,0,0,0-42.7,0L19.2,188.09a23.51,23.51,0,0,0,0,23.72A24.35,24.35,0,0,0,40.55,224h174.9a24.35,24.35,0,0,0,21.33-12.19A23.51,23.51,0,0,0,236.8,188.09ZM120,144V104a8,8,0,0,1,16,0v40a8,8,0,0,1-16,0Zm20,36a12,12,0,1,1-12-12A12,12,0,0,1,140,180Z");
+  @include phosphor-icon(
+    "M236.8,188.09,149.35,36.22a24.76,24.76,0,0,0-42.7,0L19.2,188.09a23.51,23.51,0,0,0,0,23.72A24.35,24.35,0,0,0,40.55,224h174.9a24.35,24.35,0,0,0,21.33-12.19A23.51,23.51,0,0,0,236.8,188.09ZM120,144V104a8,8,0,0,1,16,0v40a8,8,0,0,1-16,0Zm20,36a12,12,0,1,1-12-12A12,12,0,0,1,140,180Z"
+  );
 }
 
 .danger .custom-block-title::before {
-  @include phosphor-icon("M116,132V80a12,12,0,0,1,24,0v52a12,12,0,0,1-24,0ZM236,91.55v72.9a19.86,19.86,0,0,1-5.86,14.14l-51.55,51.55A19.85,19.85,0,0,1,164.45,236H91.55a19.85,19.85,0,0,1-14.14-5.86L25.86,178.59A19.86,19.86,0,0,1,20,164.45V91.55a19.86,19.86,0,0,1,5.86-14.14L77.41,25.86A19.85,19.85,0,0,1,91.55,20h72.9a19.85,19.85,0,0,1,14.14,5.86l51.55,51.55A19.86,19.86,0,0,1,236,91.55Zm-24,1.66L162.79,44H93.21L44,93.21v69.58L93.21,212h69.58L212,162.79ZM128,156a16,16,0,1,0,16,16A16,16,0,0,0,128,156Z");
+  @include phosphor-icon(
+    "M116,132V80a12,12,0,0,1,24,0v52a12,12,0,0,1-24,0ZM236,91.55v72.9a19.86,19.86,0,0,1-5.86,14.14l-51.55,51.55A19.85,19.85,0,0,1,164.45,236H91.55a19.85,19.85,0,0,1-14.14-5.86L25.86,178.59A19.86,19.86,0,0,1,20,164.45V91.55a19.86,19.86,0,0,1,5.86-14.14L77.41,25.86A19.85,19.85,0,0,1,91.55,20h72.9a19.85,19.85,0,0,1,14.14,5.86l51.55,51.55A19.86,19.86,0,0,1,236,91.55Zm-24,1.66L162.79,44H93.21L44,93.21v69.58L93.21,212h69.58L212,162.79ZM128,156a16,16,0,1,0,16,16A16,16,0,0,0,128,156Z"
+  );
 }
 
 .custom-block-title::before {
@@ -85,36 +114,20 @@
 }
 
 .tip .custom-block-title::before {
-  background: linear-gradient(
-    95deg,
-    #009900 20%,
-    color-mix(in srgb, #009900 55%, white) 100%
-  );
+  background: linear-gradient(95deg, #009900 20%, color-mix(in srgb, #009900 55%, white) 100%);
 }
 
 .info .custom-block-title::before,
 .note .custom-block-title::before {
-  background: linear-gradient(
-    95deg,
-    var(--color-accent) 20%,
-    var(--color-accent-light) 100%
-  );
+  background: linear-gradient(95deg, var(--color-accent) 20%, var(--color-accent-light) 100%);
 }
 
 .warning .custom-block-title::before {
-  background: linear-gradient(
-    95deg,
-    #cc7a00 20%,
-    color-mix(in srgb, #cc7a00 55%, white) 100%
-  );
+  background: linear-gradient(95deg, #cc7a00 20%, color-mix(in srgb, #cc7a00 55%, white) 100%);
 }
 
 .danger .custom-block-title::before {
-  background: linear-gradient(
-    95deg,
-    #cc0000 20%,
-    color-mix(in srgb, #cc0000 55%, white) 100%
-  );
+  background: linear-gradient(95deg, #cc0000 20%, color-mix(in srgb, #cc0000 55%, white) 100%);
 }
 
 // `background:` is a shorthand and would silently reset `background-clip`
@@ -122,42 +135,26 @@
 // text-clip gradients in their own rules, with background-clip declared
 // after background so it isn't reset by the shorthand.
 .tip .custom-block-title {
-  background: linear-gradient(
-    95deg,
-    #009900 20%,
-    color-mix(in srgb, #009900 55%, white) 100%
-  );
+  background: linear-gradient(95deg, #009900 20%, color-mix(in srgb, #009900 55%, white) 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .info .custom-block-title,
 .note .custom-block-title {
-  background: linear-gradient(
-    95deg,
-    var(--color-accent) 20%,
-    var(--color-accent-light) 100%
-  );
+  background: linear-gradient(95deg, var(--color-accent) 20%, var(--color-accent-light) 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .warning .custom-block-title {
-  background: linear-gradient(
-    95deg,
-    #cc7a00 20%,
-    color-mix(in srgb, #cc7a00 55%, white) 100%
-  );
+  background: linear-gradient(95deg, #cc7a00 20%, color-mix(in srgb, #cc7a00 55%, white) 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .danger .custom-block-title {
-  background: linear-gradient(
-    95deg,
-    #cc0000 20%,
-    color-mix(in srgb, #cc0000 55%, white) 100%
-  );
+  background: linear-gradient(95deg, #cc0000 20%, color-mix(in srgb, #cc0000 55%, white) 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -236,7 +233,8 @@
   // through most of the motion and only relaxes into a rectangle near the
   // end, which is what actually sells "a circle expanding" instead of "a
   // rectangle fading in where a circle used to be".
-  transition: top 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+  transition:
+    top 0.4s cubic-bezier(0.16, 1, 0.3, 1),
     left 0.4s cubic-bezier(0.16, 1, 0.3, 1),
     width 0.4s cubic-bezier(0.16, 1, 0.3, 1),
     height 0.4s cubic-bezier(0.16, 1, 0.3, 1),
@@ -264,9 +262,10 @@
 // `--nav-margin-top` is the same custom property `.nav-pill.hidden` uses,
 // so both travel the exact same distance too.
 .table-of-contents.sliding-away {
-  transition: transform 0.5s ease, opacity 0.3s ease;
-  transform: translate3d(0, calc((100% + var(--nav-margin-top, 1.5rem)) * -1),
-    0);
+  transition:
+    transform 0.5s ease,
+    opacity 0.3s ease;
+  transform: translate3d(0, calc((100% + var(--nav-margin-top, 1.5rem)) * -1), 0);
   opacity: 0;
   visibility: visible;
   pointer-events: none;

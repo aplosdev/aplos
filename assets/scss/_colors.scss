@@ -24,6 +24,16 @@
   --base-shadow: 0 0.625rem 2.125rem rgb(0 0 0 / 15%);
 
   --color-surface: rgb(255 255 255 / 70%);
+  --color-surface-code: color-mix(
+    in srgb,
+    var(--color-background) 72%,
+    var(--color-background-second)
+  );
+  --color-surface-muted: color-mix(
+    in srgb,
+    var(--color-background-second) 55%,
+    var(--color-background)
+  );
   --blur: 0.75rem;
 
   --content-width: 58rem;
@@ -61,6 +71,16 @@
     --color-heading-to: #a0a0a0;
     --color-border: rgb(255 255 255 / 8%);
     --color-surface: rgb(24 25 31 / 88%);
+    --color-surface-code: color-mix(
+      in srgb,
+      var(--color-background) 65%,
+      var(--color-background-second)
+    );
+    --color-surface-muted: color-mix(
+      in srgb,
+      var(--color-background-second) 75%,
+      var(--color-background)
+    );
   }
 }
 
