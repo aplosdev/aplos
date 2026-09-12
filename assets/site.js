@@ -41,7 +41,13 @@
       /index\.html$/,
       "",
     );
-    if (target === currentPath) link.classList.add("active");
+    const isCurrent = target === currentPath;
+    link.classList.toggle("active", isCurrent);
+    if (isCurrent) {
+      link.setAttribute("aria-current", "page");
+    } else {
+      link.removeAttribute("aria-current");
+    }
   }
 
   let lastScrollY = scrollY;
@@ -275,6 +281,21 @@
     return Math.min(height, innerHeight * 0.65);
   }
 
+  function cleanup() {
+    toc.removeEventListener("transitionend", onTransitionEnd);
+    clearTimeout(fallback);
+    toc.classList.remove("sliding-away");
+    toc.removeAttribute("style");
+  }
+
+  function onTransitionEnd(event) {
+    if (event.target === toc && event.propertyName === "transform") {
+      cleanup();
+    }
+  }
+
+  let fallback = 0;
+
   function setOpen(next, slideAway) {
     open = next;
     toggle.setAttribute("aria-expanded", String(open));
@@ -330,19 +351,8 @@
       // panel back to its default (invisible) styles mid-flight - it snaps
       // away instead of visibly sliding. The 900ms timeout is only a
       // fallback in case `transitionend` never fires at all.
-      function cleanup() {
-        toc.removeEventListener("transitionend", onTransitionEnd);
-        clearTimeout(fallback);
-        toc.classList.remove("sliding-away");
-        toc.removeAttribute("style");
-      }
-      function onTransitionEnd(event) {
-        if (event.target === toc && event.propertyName === "transform") {
-          cleanup();
-        }
-      }
       toc.addEventListener("transitionend", onTransitionEnd);
-      const fallback = setTimeout(cleanup, 900);
+      fallback = setTimeout(cleanup, 900);
     } else {
       const button = buttonBox();
       setBox(button);
