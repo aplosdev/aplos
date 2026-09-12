@@ -95,8 +95,7 @@
     .trim()
     .split(/\s+/)
     .filter(Boolean).length;
-  output.textContent =
-    Math.max(1, Math.ceil(words / 200)) +
+  output.textContent = Math.max(1, Math.ceil(words / 200)) +
     " min" +
     (words > 200 ? "s" : "") +
     " left";
@@ -167,8 +166,7 @@
   const used = new Set();
   const list = toc.querySelector("ul");
   for (const heading of headings) {
-    const base =
-      heading.id ||
+    const base = heading.id ||
       (heading.textContent || "section")
         .toLowerCase()
         .normalize("NFKD")
@@ -415,8 +413,8 @@
         other.classList.toggle("active", other === button);
       }
       for (const post of posts) {
-        post.hidden =
-          tag !== "All" && !post.dataset.tags.split("|").includes(tag);
+        post.hidden = tag !== "All" &&
+          !post.dataset.tags.split("|").includes(tag);
       }
     });
     controls.append(button);
