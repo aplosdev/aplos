@@ -10,14 +10,14 @@
       {/each}
       {#if theme.nav?.rss}
         <li>
-          <a class="site-icon" target="_blank" href="{theme.nav.rss | url}" download aria-label="RSS feed">
+          <a class="site-icon" target="_blank" rel="noopener noreferrer" href="{theme.nav.rss | url}" download aria-label="RSS feed">
             <span class="ph-icon ph-rss-simple" aria-hidden="true"></span>
           </a>
         </li>
       {/if}
       {#if theme.nav?.git}
         <li>
-          <a class="site-icon" target="_blank" href="{theme.nav.git | url}" aria-label="Source code">
+          <a class="site-icon" target="_blank" rel="noopener noreferrer" href="{theme.nav.git | url}" aria-label="Source code">
             <span class="ph-icon ph-code" aria-hidden="true"></span>
           </a>
         </li>
