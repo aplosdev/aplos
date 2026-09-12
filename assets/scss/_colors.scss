@@ -3,8 +3,6 @@
 
   --accent: #55b458;
 
-  // CSS relative colors reproduce the original Sass color.scale formulas at
-  // runtime, so a site's configured accent recolors the complete palette.
   --color-accent: hsl(from var(--accent) h s calc(l * 0.4));
   --color-accent-alpha: rgb(from var(--accent) r g b / 40%);
   --color-accent-light: hsl(from var(--accent) h s calc(l + (100 - l) * 0.35));

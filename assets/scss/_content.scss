@@ -1,5 +1,3 @@
-/* Main content */
-
 main {
   margin: var(--space-section) auto;
   width: min(calc(100% - 2rem), var(--content-measure));
@@ -117,8 +115,6 @@ button {
 abbr {
   cursor: help;
 }
-
-/* Content blocks */
 
 .code-block {
   position: relative;
@@ -282,10 +278,6 @@ figcaption {
   font-size: 0.8rem;
   text-align: center;
 }
-
-/* Image modifiers: append a #hash to a Markdown image's URL to opt into
-   one, e.g. `![alt](/photo.jpg#small)`. Plain CSS attribute selectors, no
-   Markdown syntax or JS needed. */
 
 img[src*="#not-rounded"] {
   border-radius: 0;
@@ -467,8 +459,6 @@ tr:not(:last-child) {
 tr:nth-child(2n) {
   background-color: var(--color-background-second);
 }
-
-/* Inline semantic elements */
 
 :not(pre) > code {
   color: var(--color-accent);

@@ -1,5 +1,3 @@
-/* Skip link */
-
 .skip-to-content {
   position: absolute;
   z-index: 999;
@@ -27,12 +25,6 @@
   color: var(--color-text);
 }
 
-/* Header / floating nav pill */
-
-// `.site-header` (not each pill) is the fixed-positioned box: `position:
-// fixed` siblings don't reliably lay out side-by-side purely off flexbox's
-// static-position rules across browsers - they can collapse onto the same
-// spot. A fixed row with normal-flow children sidesteps that entirely.
 .site-header {
   display: flex;
   flex-wrap: wrap;
@@ -83,11 +75,6 @@
   list-style: none;
 }
 
-// flexbox's `gap` still inserts space between every adjacent pair of items
-// regardless of their own width, so collapsed (max-width: 0) links each
-// leave a stray 0.7rem gap next to the title even though they're invisible -
-// that's the extra space to the right of the title on collapse. Kill the
-// gap outright once collapsed; only the title's left there anyway.
 .site-nav.links-collapsed ul {
   gap: 0;
 }
@@ -157,9 +144,6 @@
   height: 1rem;
 }
 
-/* Article pages: reading-time and TOC-toggle pills, siblings of .site-nav in
-   the same flex header - see nav.tau's `layout === 'article'` block. */
-
 .site-nav.links-collapsed li:not(.site-title) {
   margin: 0;
   max-width: 0;
@@ -215,11 +199,6 @@
   height: 0.9rem;
 }
 
-// Reading-progress ring: replaces the reading-time pill's clock icon with a
-// donut that fills as the reader scrolls through the article body (see
-// site.js). Built from a conic-gradient sweep punched into a ring by a
-// radial-gradient mask, rather than SVG, so the fill angle is just a CSS
-// custom property (`--progress`, 0-100) the scroll handler updates.
 .reading-progress-ring {
   --progress: 0;
   flex-shrink: 0;
@@ -237,26 +216,11 @@
 .nav-pill-toc {
   cursor: pointer;
   justify-content: center;
-  // `transition` is a shorthand: declaring only `color` here would replace
-  // `.nav-pill`'s whole list (background-color, transform, color), not
-  // merge with it - silently killing the transform transition that
-  // `.nav-pill.hidden`'s slide-away animation depends on. Repeat the full
-  // list so this button hides/reveals in sync with the rest of the nav
-  // instead of snapping instantly while its siblings slide.
   transition:
     background-color 0.4s ease,
     transform 0.5s ease,
     color 0.3s ease;
   padding: 0;
-  // No hardcoded size: `.site-header` is a flex row with the default
-  // `align-items: stretch`, so leaving height unset already matches
-  // whatever the tallest pill (`.site-nav`) ends up being - font-size or
-  // padding changes to the nav keep this in sync automatically. Locking
-  // width to that same value via aspect-ratio keeps it a perfect circle.
-  // `min-width: 0` is required here: a flex item's automatic minimum size
-  // otherwise floors its width at its content's natural size (the icon),
-  // which wins over the aspect-ratio-derived width and silently breaks
-  // the circle.
   aspect-ratio: 1;
   min-width: 0;
 }
@@ -265,10 +229,6 @@
   color: var(--color-accent);
 }
 
-// While open, the `.table-of-contents` panel starts life as a copy of this
-// button's own box (see site.js) and grows from there. The swap needs to be
-// instant (not faded) on both sides at once - a fade would read as a color
-// change rather than the button continuing on as the same shape.
 .nav-pill-toc.morphed {
   visibility: hidden;
   pointer-events: none;

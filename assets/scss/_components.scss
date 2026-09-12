@@ -1,5 +1,3 @@
-/* Icon links: an external-link arrow after a plain text link */
-
 .icon-links a:not(:has(img))::after {
   @include phosphor-icon(
     "M224.49,136.49l-72,72a12,12,0,0,1-17-17L187,140H40a12,12,0,0,1,0-24H187L135.51,64.48a12,12,0,0,1,17-17l72,72A12,12,0,0,1,224.49,136.49Z"
@@ -21,9 +19,6 @@
     "M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z"
   );
 }
-
-/* Admonitions: hand-authored <div class="tip">, not a Markdown container
-   syntax - Steno's Markdown pipeline has no `::: tip` equivalent. */
 
 .tip,
 .info,
@@ -135,10 +130,6 @@
     55%, white) 100%);
 }
 
-// `background:` is a shorthand and would silently reset `background-clip`
-// back to border-box if combined into the icon rules above - keep the
-// text-clip gradients in their own rules, with background-clip declared
-// after background so it isn't reset by the shorthand.
 .tip .custom-block-title {
   background: linear-gradient(95deg, #009900 20%, color-mix(in srgb, #009900
     55%, white) 100%);
@@ -195,9 +186,6 @@
   }
 }
 
-/* `.details` styles a plain <details>/<summary> instead of relying on
-   custom-container syntax the Markdown pipeline doesn't have. */
-
 .details {
   @include surface;
 
@@ -218,41 +206,18 @@
   font-size: 0.9375rem;
 }
 
-/* Table of contents: opt-in, not automatic - a page supplies its own `toc`
-   frontmatter array ({url, title, level}), since Steno has no built-in
-   heading extraction to generate one for you. See layout.tau. */
-
-// Reached only through the nav's TOC-toggle pill, at every screen width -
-// there's no always-on sidebar anymore. It's a literal container-transform:
-// site.js drives top/left/width/height/border-radius as inline styles,
-// starting the panel as an exact copy of the toggle button's own box (same
-// position, same size, same round corners) and animating it out into the
-// full panel - so it reads as the button itself expanding, not a separate
-// thing appearing next to it. See the `[data-toc-toggle]` block in site.js.
 .table-of-contents {
   position: fixed;
   z-index: 10000;
   top: 0;
   left: 0;
   overflow: hidden;
-  // Size/position ease out smoothly (no bounce - a big panel is heavier
-  // than the nav pills, an overshoot would look sloppy on it). Corner
-  // radius runs on its own slower, delayed transition so it visibly lags
-  // behind the box while that's still growing - the shape reads as round
-  // through most of the motion and only relaxes into a rectangle near the
-  // end, which is what actually sells "a circle expanding" instead of "a
-  // rectangle fading in where a circle used to be".
   transition:
     top 0.4s cubic-bezier(0.16, 1, 0.3, 1),
     left 0.4s cubic-bezier(0.16, 1, 0.3, 1),
     width 0.4s cubic-bezier(0.16, 1, 0.3, 1),
     height 0.4s cubic-bezier(0.16, 1, 0.3, 1),
     border-radius 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.05s;
-  // Same border/background/blur as `.nav-pill` (not the generic `surface`
-  // token every other card uses) - it starts life as an exact stand-in for
-  // the toggle button, so it has to render identically to one, not just
-  // look similar. Any mismatch here reads as a color flash at the instant
-  // the button swaps for the panel.
   border: 0.4px solid var(--color-border);
   background-color: var(--color-header);
   -webkit-backdrop-filter: saturate(180%) blur(0.625rem);
@@ -263,13 +228,6 @@
   visibility: hidden;
 }
 
-// Scroll dismissal: the button is sliding off the top of the screen at the
-// same moment (see .nav-pill.hidden) - follow it with the identical
-// transform, transition timing, and easing (0.5s ease - `.site-nav` and
-// `.nav-pill` both use exactly that for their own `.hidden`) instead of
-// shrinking back into a button that's vanishing underneath the panel.
-// `--nav-margin-top` is the same custom property `.nav-pill.hidden` uses,
-// so both travel the exact same distance too.
 .table-of-contents.sliding-away {
   transition:
     transform 0.5s ease,
@@ -287,9 +245,6 @@
   visibility: visible;
 }
 
-// The list itself only fades in once the box has finished (most of) its
-// growth - otherwise text visibly reflows/clips mid-animation, which reads
-// as broken rather than as a single continuous morph.
 .table-of-contents ul {
   transition: opacity 0.2s ease;
   transition-delay: 0s;
@@ -347,8 +302,6 @@
 .table-of-contents a.active {
   color: var(--color-accent);
 }
-
-/* Footer */
 
 .site-footer {
   position: relative;
