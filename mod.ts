@@ -128,7 +128,8 @@ const theme: StenoTheme = {
     webFonts: {
       type: "boolean",
       default: true,
-      description: "Load Inter/Geist Mono from Google Fonts. " +
+      description:
+        "Load Inter/Geist Mono from Google Fonts. " +
         "Set false to use the system font stack only, no network request.",
     },
     nav: {

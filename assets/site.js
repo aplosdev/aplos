@@ -91,10 +91,15 @@
   const content = main.cloneNode(true);
   content.querySelector("#article-head")?.remove();
   content.querySelector("#article-footer")?.remove();
-  const words =
-    (content.textContent || "").trim().split(/\s+/).filter(Boolean).length;
-  output.textContent = Math.max(1, Math.ceil(words / 200)) + " min" +
-    (words > 200 ? "s" : "") + " left";
+  const words = (content.textContent || "")
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean).length;
+  output.textContent =
+    Math.max(1, Math.ceil(words / 200)) +
+    " min" +
+    (words > 200 ? "s" : "") +
+    " left";
 })();
 
 (function () {
@@ -112,13 +117,11 @@
     start =
       (head
         ? head.getBoundingClientRect().bottom
-        : main.getBoundingClientRect().top) +
-      scrollY;
+        : main.getBoundingClientRect().top) + scrollY;
     end =
       (footer
         ? footer.getBoundingClientRect().top
-        : main.getBoundingClientRect().bottom) +
-      scrollY;
+        : main.getBoundingClientRect().bottom) + scrollY;
   }
 
   function update() {
@@ -156,16 +159,16 @@
   const main = document.querySelector("#content-main");
   if (!toc || !main) return;
 
-  const headings = Array.from(main.querySelectorAll("h2, h3, h4, h5, h6"))
-    .filter(
-      (heading) => !heading.closest("#article-footer"),
-    );
+  const headings = Array.from(
+    main.querySelectorAll("h2, h3, h4, h5, h6"),
+  ).filter((heading) => !heading.closest("#article-footer"));
   if (headings.length === 0) return;
 
   const used = new Set();
   const list = toc.querySelector("ul");
   for (const heading of headings) {
-    const base = heading.id ||
+    const base =
+      heading.id ||
       (heading.textContent || "section")
         .toLowerCase()
         .normalize("NFKD")
@@ -412,8 +415,8 @@
         other.classList.toggle("active", other === button);
       }
       for (const post of posts) {
-        post.hidden = tag !== "All" &&
-          !post.dataset.tags.split("|").includes(tag);
+        post.hidden =
+          tag !== "All" && !post.dataset.tags.split("|").includes(tag);
       }
     });
     controls.append(button);

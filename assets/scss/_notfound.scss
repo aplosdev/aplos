@@ -55,16 +55,21 @@
     left: 2px;
     opacity: 0.8;
     animation: notfound-glitch 1s infinite linear alternate-reverse;
-    text-shadow: -3px 0 var(--color-accent), 0 3px var(--color-accent),
-      3px 0 var(--color-accent), 0 -3px var(--color-accent);
+    text-shadow:
+      -3px 0 var(--color-accent),
+      0 3px var(--color-accent),
+      3px 0 var(--color-accent),
+      0 -3px var(--color-accent);
   }
 
   .glitch::after {
     left: -2px;
     opacity: 0.8;
     animation: notfound-glitch 1.5s infinite linear alternate-reverse;
-    text-shadow: 3px 0 var(--color-background-mute),
-      0 -3px var(--color-background-mute), -3px 0 var(--color-background-mute),
+    text-shadow:
+      3px 0 var(--color-background-mute),
+      0 -3px var(--color-background-mute),
+      -3px 0 var(--color-background-mute),
       0 3px var(--color-background-mute);
   }
 }

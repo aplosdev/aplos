@@ -30,7 +30,7 @@ Text can be **bold**, _italic_, ~~strikethrough~~ and even ~~**_combined_**~~.
 
 > “Simplicity is the ultimate sophistication.”
 >
->> — Leonardo da Vinci
+> > — Leonardo da Vinci
 
 - Item 1
 - Item 2
@@ -282,8 +282,7 @@ tag:
 You can add deleted text by using the `<del>` tag:
 
 ```html
-<del>Deleted Text</del>
-<ins>Inserted Text</ins>
+<del>Deleted Text</del> <ins>Inserted Text</ins>
 ```
 
 <del>Deleted Text</del> <ins>Inserted Text</ins>
