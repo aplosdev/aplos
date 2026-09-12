@@ -6,11 +6,11 @@
  */
 
 import type { StenoTheme } from "@steno/steno";
-import pluginShiki from "plugin-shiki";
 import { compileFromUrls } from "plugin-scss";
+import pluginShiki from "plugin-shiki";
 
 // fetch() works universally: file:// for local/bundled imports, https://
-// for direct JSR imports (jsr:@steno/theme-aplos@x.y.z).
+// for direct JSR imports (jsr:@gabs/aplos@x.y.z).
 async function readLocal(path: string): Promise<string> {
   return await fetch(new URL(path, import.meta.url)).then((r) => r.text());
 }
@@ -128,7 +128,8 @@ const theme: StenoTheme = {
     webFonts: {
       type: "boolean",
       default: true,
-      description: "Load Inter/Geist Mono from Google Fonts. " +
+      description:
+        "Load Inter/Geist Mono from Google Fonts. " +
         "Set false to use the system font stack only, no network request.",
     },
     nav: {

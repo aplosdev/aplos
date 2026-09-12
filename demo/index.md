@@ -51,7 +51,7 @@ uncomplicated and contemporary solution for website creation.
 Aplós can be used as a Steno theme from JSR. Add it to your Steno configuration:
 
 ```yaml
-theme: jsr:@steno/theme-aplos
+theme: jsr:@gabs/aplos
 ```
 
 Then follow the [Guide](/guide/#package) to configure the theme.

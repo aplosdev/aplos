@@ -130,7 +130,7 @@ contentDir: content
 output: dist
 publicDir: public
 shortUrls: true
-theme: jsr:@steno/theme-aplos
+theme: jsr:@gabs/aplos
 ```
 
 Place static files such as `favicon.svg`, `robots.txt`, and social images in
