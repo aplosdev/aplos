@@ -8,13 +8,13 @@
   },
   "tasks": {
     "check": "deno fmt --check && deno lint && deno check mod.ts && deno task build && deno task doctor",
-    "build": "deno run -A jsr:@steno/steno@^0.12.0 build --config demo/.steno/config.yml",
-    "dev": "deno run -A jsr:@steno/steno@^0.12.0 dev --config demo/.steno/config.yml",
-    "doctor": "deno run -A jsr:@steno/steno@^0.12.0 doctor --config demo/.steno/config.yml",
-    "preview": "deno run -A jsr:@steno/steno@^0.12.0 preview --config demo/.steno/config.yml"
+    "build": "deno run -A jsr:@steno/steno@^0.13.0 build --config demo/.steno/config.yml",
+    "dev": "deno run -A jsr:@steno/steno@^0.13.0 dev --config demo/.steno/config.yml",
+    "doctor": "deno run -A jsr:@steno/steno@^0.13.0 doctor --config demo/.steno/config.yml",
+    "preview": "deno run -A jsr:@steno/steno@^0.13.0 preview --config demo/.steno/config.yml"
   },
   "imports": {
-    "@steno/steno": "jsr:@steno/steno@^0.12.0",
+    "@steno/steno": "jsr:@steno/steno@^0.13.0",
     "plugin-shiki": "jsr:@steno/plugin-shiki@^1.0.1",
     "plugin-scss": "jsr:@steno/plugin-scss@^0.20.0"
   },
@@ -23,11 +23,7 @@
     "exclude": ["jsr:@steno/steno", "jsr:@steno/plugin-scss"]
   },
   "fmt": {
-    "exclude": [
-      "demo/dist",
-      "demo/.dist.steno-backup",
-      "demo/.steno/build-cache.json"
-    ]
+    "exclude": ["demo/dist", "demo/.dist.steno-backup", "demo/.steno/build-cache.json"]
   },
   "nodeModulesDir": "auto",
   "allowScripts": ["npm:@parcel/watcher@2.6.0"]
