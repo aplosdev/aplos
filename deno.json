@@ -16,7 +16,7 @@
   "imports": {
     "@steno/steno": "jsr:@steno/steno@^0.12.0",
     "plugin-shiki": "jsr:@steno/plugin-shiki@^1.0.1",
-    "plugin-scss": "jsr:@steno/plugin-scss@^0.2.0"
+    "plugin-scss": "jsr:@steno/plugin-scss@^0.20.0"
   },
   "minimumDependencyAge": {
     "age": "P1D",
