@@ -3,35 +3,22 @@
 <p>A sleek, contemporary, and purposefully designed theme for Steno</p>
 </div>
 
-> [!IMPORTANT]
-> If you want to see the documentation/guide check <https://aplos.gxbs.dev>.
-
 > [!NOTE]
-> Aplós is now a [Steno](https://steno.gxbs.dev/) theme — this branch replaces
-> the old VitePress theme. The VitePress version is archived at
-> [aplosdev/vitepress](https://github.com/aplosdev/vitepress).
+> Aplós is now a [Steno](https://steno.gxbs.dev/) theme. The VitePress version is archived at [aplosdev/vitepress](https://github.com/aplosdev/vitepress).
 
 ![Screenshot of Aplos](https://github.com/GabsEdits/aplos/assets/110247388/3c98f962-b560-442a-9f56-9b805156a272)
 
-## Features
+## Feautres
 
-- Lightweight and minimalistic, powered by [Steno](https://steno.gxbs.dev/).
-- Elegantly styled with a primary color theme for a visually pleasing
-  experience.
-- Mobile-friendly design with support for dark mode.
-- Optimized for social media sharing with meta cards.
-- Utilizes premium fonts: Inter for text and Geist Mono for code snippets.
-- Local development made easy with Deno/JSR, no `node_modules` required to run
-  the theme itself.
+- Native Dark Mode
+- Mobile-Optimized Layouts
+- Minimalist and clean design
+- Styled with a primary color theme chosen by the user
+- Perfect Typography: Inter for Prose & Geist Mono for Code
 
 ## Name
 
-The name 'Aplós', pronounced as `/aplós/` is the Romanized representation of the
-Greek word 'Απλός,' which translates to 'Simple'. This naming choice showcases
-the essence of the project — it's dedication to providing users with a
-straightforward and modern web experience. Aplós is centered around the
-philosophy of simplicity, aiming to deliver an uncomplicated and contemporary
-solution for website creation.
+The name "Aplós" is the Romanized representation of the Greek word 'Απλός,' which translates to 'Simple'. The name showcases the essence of this theme in the first place; the dedication of trying to humanize the web using streightforward and modern design. Aplós is centered around the philosophy of simplicity, focusing on the content itself, with small great touches all around it.
 
 ## Try & Use
 
@@ -53,11 +40,9 @@ Then run:
 deno task dev
 ```
 
-That is enough for a complete site. Add Markdown files to `content/`; folders
-become routes and `index.md` becomes the folder homepage. You can check the next
-steps by looking at the [Guide](https://aplos.gxbs.dev/guide/).
+That's actually all you need to know for a basic starter. If you would like to learn more you can look Steno's [Guide](https://aplos.gxbs.dev/guide/).
 
-## A practical configuration
+## Configuration
 
 Everything is optional except Steno's normal site metadata:
 
@@ -85,9 +70,7 @@ themeConfig:
       link: https://github.com/example/example
 ```
 
-Start small. Add configuration only when you need to change a default.
-
-## Write pages
+## Pages
 
 An ordinary page is ordinary Markdown—frontmatter is optional:
 
@@ -140,6 +123,14 @@ prev: { url: /posts/previous/, title: Previous post }
 next: { url: /posts/next/, title: Next post }
 ```
 
+## Layouts
+
+- `layout` — normal pages; this is the default.
+- `helpful` — normal content plus helpful actions.
+- `article` — article metadata, reading time, tags, and previous/next links.
+- `articles` — filterable listing from `collections.posts`.
+- `notfound` — Aplós 404 page; use it in `content/404.md`.
+
 ## Useful options
 
 | Option                  | What it changes                            |
@@ -156,48 +147,15 @@ next: { url: /posts/next/, title: Next post }
 links. Footer configuration supports links, copyright, attribution, license,
 source code, and a short message.
 
-## Markdown extras
-
-GitHub-style admonitions work without a plugin:
-
-```md
-> [!TIP] Tip Keep the configuration small.
-```
-
-Images support Aplós modifiers in the URL hash:
-
-```md
-![Screenshot](/screenshot.png#small#shadow)
-```
-
-Available modifiers include `small`, `medium`, `full`, `shadow`, `mono`,
-`invert`, `sepia`, `blur`, `pixel`, `static`, `not-rounded`, `start`, `end`,
-`transparency`, and `no-border`.
-
-The table of contents is generated automatically from `h2`–`h6` headings. You
-can supply an explicit `toc` array in frontmatter when you need custom labels or
-ordering.
-
 ## Icons
 
 Aplós includes a small self-hosted bold subset of
 [Phosphor Icons](https://phosphoricons.com/) for navigation, links, callouts,
-articles, and theme actions. Icons inherit the surrounding text color and need
-no font, script, package installation, or CDN request. The bundled Phosphor
-assets are MIT licensed.
-
-## Layouts
-
-- `layout` — normal pages; this is the default.
-- `helpful` — normal content plus helpful actions.
-- `article` — article metadata, reading time, tags, and previous/next links.
-- `articles` — filterable listing from `collections.posts`.
-- `notfound` — Aplós 404 page; use it in `content/404.md`.
+articles, and theme actions. The bundled Phosphor assets are MIT licensed.
 
 ## Development
 
-If you want to contribute to Aplós, make sure to fork the repository and clone
-it with `git clone` or `gh repo clone`.
+If you wish to contribute to Aplós, below are some basic information that might help you navigate the codebase:
 
 The five layouts share `ShellStart` and `ShellEnd`, so document structure,
 assets, navigation, TOC, and footer are maintained once. Sass is split by
@@ -211,8 +169,7 @@ deno task check    # fmt, lint, types, build, doctor
 The demo under [`demo/`](demo/) is the complete Aplós documentation site and
 exercises every supported layout; it always uses the latest code from this
 branch, so you can see the latest changes and use it as the development
-environment. **If you happen to find any issues, please report them in the
-[Issues](https://github.com/aplosdev/aplos/issues) section.**
+environment.
 
 ## Know your rights
 
