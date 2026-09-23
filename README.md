@@ -4,7 +4,8 @@
 </div>
 
 > [!NOTE]
-> Aplós is now a [Steno](https://steno.gxbs.dev/) theme. The VitePress version is archived at [aplosdev/vitepress](https://github.com/aplosdev/vitepress).
+> Aplós is now a [Steno](https://steno.gxbs.dev/) theme. The VitePress version
+> is archived at [aplosdev/vitepress](https://github.com/aplosdev/vitepress).
 
 ![Screenshot of Aplos](https://github.com/GabsEdits/aplos/assets/110247388/3c98f962-b560-442a-9f56-9b805156a272)
 
@@ -18,7 +19,12 @@
 
 ## Name
 
-The name "Aplós" is the Romanized representation of the Greek word 'Απλός,' which translates to 'Simple'. The name showcases the essence of this theme in the first place; the dedication of trying to humanize the web using streightforward and modern design. Aplós is centered around the philosophy of simplicity, focusing on the content itself, with small great touches all around it.
+The name "Aplós" is the Romanized representation of the Greek word 'Απλός,'
+which translates to 'Simple'. The name showcases the essence of this theme in
+the first place; the dedication of trying to humanize the web using
+streightforward and modern design. Aplós is centered around the philosophy of
+simplicity, focusing on the content itself, with small great touches all around
+it.
 
 ## Try & Use
 
@@ -40,7 +46,8 @@ Then run:
 deno task dev
 ```
 
-That's actually all you need to know for a basic starter. If you would like to learn more you can look Steno's [Guide](https://aplos.gxbs.dev/guide/).
+That's actually all you need to know for a basic starter. If you would like to
+learn more you can look Steno's [Guide](https://aplos.gxbs.dev/guide/).
 
 ## Configuration
 
@@ -155,7 +162,8 @@ articles, and theme actions. The bundled Phosphor assets are MIT licensed.
 
 ## Development
 
-If you wish to contribute to Aplós, below are some basic information that might help you navigate the codebase:
+If you wish to contribute to Aplós, below are some basic information that might
+help you navigate the codebase:
 
 The five layouts share `ShellStart` and `ShellEnd`, so document structure,
 assets, navigation, TOC, and footer are maintained once. Sass is split by
