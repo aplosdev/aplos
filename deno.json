@@ -14,7 +14,7 @@
     "preview": "deno run -A jsr:@steno/steno@^0.13.0 preview --config demo/.steno/config.yml"
   },
   "imports": {
-    "@steno/steno": "jsr:@steno/steno@^0.13.0",
+    "@steno/steno": "jsr:@steno/steno@^0.14.0",
     "plugin-shiki": "jsr:@steno/plugin-shiki@^1.0.1",
     "plugin-scss": "jsr:@steno/plugin-scss@^0.20.0"
   },
